@@ -1,0 +1,148 @@
+.section {
+  padding: 80px 40px;
+  width: min(1200px, 100%);
+  font-family: var(--font-poppins),sans-serif;
+}
+
+.intro {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.intro h1 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 16px;
+}
+
+.intro p {
+  font-size: 18px;
+  color: #555;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+/* Card */
+.card {
+  background: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+/* Header */
+.header {
+  background: linear-gradient(135deg, #0b3c63, #0a2e4f);
+  color: white;
+  padding: 26px;
+}
+
+.header h3 {
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.header p {
+  font-size: 20px;
+  opacity: 0.9;
+}
+
+/* Dots */
+.dots {
+  display: flex;
+  gap: 12px;
+  padding: 22px 26px 10px;
+}
+
+.dots span {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+}
+
+.blue {
+  background: #3b82f6;
+}
+.teal {
+  background: #2dd4bf;
+}
+.green {
+  background: #a3e635;
+}
+.purple {
+  background: #a78bfa;
+}
+
+
+/* Text */
+.description {
+  padding: 0 26px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #222;
+  margin-bottom: 22px;
+  flex-grow: 1;
+}
+
+.bottomContent {
+  margin-top: auto;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 4px;
+}
+
+/* Button */
+.button {
+  margin-left: 26px;
+  background: #9ca3af;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 12px 22px;
+  font-size: 16px;
+  font-weight: 600;
+  flex-shrink: 0;
+  cursor: pointer;
+  width: fit-content;
+}
+
+.button:hover {
+  background: #6b7280;
+}
+
+/* Rating */
+.rating {
+  padding-left:26px;
+  font-size: 20px;
+  color: #fbbf24;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.rating span {
+  color: #000;
+  font-size: 16px;
+}
+
+/* Level */
+.level {
+  padding-left:  26px ;
+  font-size: 16px;
+  font-weight: 600;
+  color: #000;
+  flex-shrink: 0;
+}
