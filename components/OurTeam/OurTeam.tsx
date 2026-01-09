@@ -1,5 +1,5 @@
 // OurTeam.tsx
-'use client';
+"use client";
 
 import { useState, useEffect } from "react";
 import styles from "./OurTeam.module.css";
@@ -15,31 +15,36 @@ const TEAM: TeamMember[] = [
   {
     name: "Shimna Thasnim",
     role: "Marketing & Growth Strategist",
-    image: "/team/shimna.png",
+    image:
+      "https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     linkedin: "#",
   },
   {
     name: "Harshini Priya",
     role: "Product Manager",
-    image: "/team/harshini.png",
+    image:
+      "https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     linkedin: "#",
   },
   {
     name: "Rakshith",
     role: "Regional Manager",
-    image: "/team/rakshith.png",
+    image:
+      "https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     linkedin: "#",
   },
   {
     name: "Prabakaran",
     role: "Operations Manager",
-    image: "/team/prabakaran.png",
+    image:
+      "https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     linkedin: "#",
   },
   {
     name: "Sarah Johnson",
     role: "Head of Design",
-    image: "/team/sarah.png",
+    image:
+      "https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
     linkedin: "#",
   },
 ];
@@ -86,7 +91,7 @@ export default function OurTeam() {
 
       {/* Cards Container with Overflow Hidden */}
       <div className={styles.cardsContainer}>
-        <div 
+        <div
           className={styles.cardsWrapper}
           style={{
             transform: `translateX(-${currentIndex * 100}%)`,
@@ -100,7 +105,6 @@ export default function OurTeam() {
               ).map((member, idx) => (
                 <div key={`${member.name}-${idx}`} className={styles.card}>
                   <div className={styles.cardTop}>
-
                     <img
                       src={member.image}
                       alt={member.name}
@@ -134,7 +138,9 @@ export default function OurTeam() {
         {Array.from({ length: totalPages }).map((_, i) => (
           <button
             key={i}
-            className={`${styles.dot} ${i === currentIndex ? styles.active : ""}`}
+            className={`${styles.dot} ${
+              i === currentIndex ? styles.active : ""
+            }`}
             onClick={() => handleDotClick(i)}
             aria-label={`Go to page ${i + 1}`}
           />
