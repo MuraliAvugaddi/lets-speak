@@ -1,3 +1,4 @@
+// Hero.tsx
 import styles from './Hero.module.css';
 
 export default function Hero() {
@@ -17,17 +18,29 @@ export default function Hero() {
             <span className={styles.winning}>Winning</span>
             <svg
               className={styles.circle}
-              viewBox="10 -15 180 100"
+              viewBox="-10 5 260 110"
               xmlns="http://www.w3.org/2000/svg"
-              width="240"
-              height="140"
+              width="260"
+              height="110"
             >
+              {/* Hand-drawn ellipse with slight imperfections */}
               <path
-              d="M 5 40 Q 20 15, 60 18 T 140 25 Q 180 28, 195 38 Q 185 50, 150 53 T 60 58 Q 25 56, 10 48 Q 3 43, 5 40"
-              fill="none"
-              stroke="#d61f26"
-              strokeWidth="3"
-              strokeLinecap="round"
+                d="M 20 55 
+                   Q 25 22, 70 18 
+                   Q 115 15, 160 18 
+                   Q 205 22, 235 42
+                   Q 242 52, 238 62
+                   Q 232 75, 190 82
+                   Q 145 88, 95 87
+                   Q 50 85, 22 70
+                   Q 15 62, 18 55
+                   Q 19 52, 20 55 Z"
+                fill="none"
+                stroke="#d61f26"
+                strokeWidth="7"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                className={styles.circlePath}
               />
             </svg>
           </span>
@@ -49,6 +62,7 @@ export default function Hero() {
           <a
             href="https://wa.me/919999999999"
             target="_blank"
+            rel="noopener noreferrer"
             className={styles.whatsappBtn}
           >
             WhatsApp Now
@@ -59,6 +73,9 @@ export default function Hero() {
           </button>
         </div>
 
+      </div>
+      <div className={styles.right}>
+        <img src="./hero-right.png" alt="HERO-RIGHT"/>
       </div>
     </section>
   );
