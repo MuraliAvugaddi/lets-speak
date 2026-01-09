@@ -7,25 +7,62 @@
   background-color: #f7f7f7;
   box-shadow: 0 2px 10px rgba(0,0,0,0.05);
   font-family: var(--font-poppins), sans-serif;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .wrapper {
-display: flex;
-align-items: center;
-width: min(1440px,100%);
-justify-content: space-between;
+  display: flex;
+  align-items: center;
+  width: min(1440px, 100%);
+  justify-content: space-between;
+  position: relative;
 }
 
 .logo {
   display: flex;
   flex-direction: column;
   line-height: 1;
+  z-index: 1001;
 }
 
 .logoImage {
   width: 100px;
   height: auto;
   border-radius: 8px;
+}
+
+/* HAMBURGER MENU */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  z-index: 1001;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: #111;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(7px, 7px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(7px, -7px);
 }
 
 /* NAV LINKS */
@@ -42,6 +79,12 @@ justify-content: space-between;
   font-size: 15px;
   font-weight: 500;
   cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.navLinks a:hover,
+.dropdown span:hover {
+  color: #eb9e33;
 }
 
 .highlight {
@@ -52,6 +95,11 @@ justify-content: space-between;
 /* DROPDOWN */
 .dropdown {
   position: relative;
+}
+
+.arrow {
+  display: inline-block;
+  transition: transform 0.2s ease;
 }
 
 .dropdownMenu {
@@ -96,8 +144,143 @@ justify-content: space-between;
   font-weight: 600;
   text-decoration: none;
   transition: background 0.2s ease;
+  white-space: nowrap;
 }
 
 .whatsappBtn:hover {
   background: #ffd580;
+}
+
+.mobileWhatsapp {
+  display: none;
+}
+
+.desktopWhatsapp {
+  display: block;
+}
+
+/* TABLET BREAKPOINT */
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 0px 20px;
+  }
+
+  .navLinks {
+    gap: 20px;
+  }
+
+  .navLinks a,
+  .dropdown span {
+    font-size: 14px;
+  }
+
+  .whatsappBtn {
+    padding: 8px 14px;
+    font-size: 13px;
+  }
+
+  .logoImage {
+    width: 80px;
+  }
+}
+
+/* MOBILE BREAKPOINT */
+@media (max-width: 768px) {
+  .navbar {
+    padding: 12px 20px;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .navLinks {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 280px;
+    height: 100vh;
+    background: white;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0;
+    padding: 80px 30px 30px;
+    box-shadow: -5px 0 20px rgba(0,0,0,0.1);
+    transition: right 0.3s ease;
+    overflow-y: auto;
+  }
+
+  .navLinks.open {
+    right: 0;
+  }
+
+  .navLinks a,
+  .dropdown span {
+    width: 100%;
+    padding: 15px 0;
+    font-size: 16px;
+    border-bottom: 1px solid #f0f0f0;
+  }
+
+  .dropdown {
+    width: 100%;
+  }
+
+  .dropdown span {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .dropdownMenu {
+    position: static;
+    opacity: 0;
+    visibility: hidden;
+    max-height: 0;
+    transform: none;
+    box-shadow: none;
+    padding: 0;
+    margin-left: 15px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+
+  .dropdownMenu.dropdownOpen {
+    opacity: 1;
+    visibility: visible;
+    max-height: 300px;
+    padding: 10px 0;
+  }
+
+  .dropdownMenu a {
+    padding: 10px 0;
+    font-size: 14px;
+    border: none;
+  }
+
+  .desktopWhatsapp {
+    display: none;
+  }
+
+  .mobileWhatsapp {
+    display: block;
+    margin-top: 20px;
+    text-align: center;
+    width: 100%;
+  }
+
+  .logoImage {
+    width: 70px;
+  }
+}
+
+/* SMALL MOBILE */
+@media (max-width: 480px) {
+  .navLinks {
+    width: 250px;
+  }
+
+  .logoImage {
+    width: 60px;
+  }
 }

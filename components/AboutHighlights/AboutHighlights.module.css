@@ -1,15 +1,31 @@
 .section {
   padding: 80px 40px;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  font-family: var(--font-poppins), sans-serif;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background: #f6f9fc;
+  width: 100%;
 }
 
 /* Shared Heading */
 .heading {
   text-align: center;
-  font-size: 32px;
+  font-size: 42px;
   font-weight: 800;
-  margin: 48px 0 24px;
+  margin: 60px 0 40px;
   color: #0b3c63;
+}
+
+.heading:first-of-type {
+  margin-top: 0;
 }
 
 /* --- Core Values --- */
@@ -22,32 +38,45 @@
 .card {
   background: #fff;
   border-radius: 14px;
-  padding: 28px;
+  padding: 32px 28px;
   text-align: center;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
 }
 
-.icon svg {
-  width: 40px;
-  height: 40px;
-  stroke: #0b3c63;
-  fill: none;
-  stroke-width: 2;
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 16px;
 }
 
+.icon img {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+  display: block;
+}
+
 .card h3 {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 700;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
+  color: #0b3c63;
 }
 
 .card p {
   font-size: 15px;
-  color: #333;
+  color: #555;
+  line-height: 1.6;
 }
 
-/* --- Achievements --- */
+/* --- Teaching Style / YouTube Shorts --- */
 .achieveGrid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -60,18 +89,118 @@
   border-radius: 14px;
   overflow: hidden;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+}
+
+.achieveCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
+}
+
+.videoWrapper {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%;
+  background: #000;
+  overflow: hidden;
 }
 
 .video {
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  height: 200px;
+  height: 100%;
   border: none;
 }
 
+.thumbnail {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.playButton {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(11, 60, 99, 0.9);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 72px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 2;
+}
+
+.playButton:hover {
+  background: rgba(11, 60, 99, 1);
+  transform: translate(-50%, -50%) scale(1.1);
+}
+
+.playButton svg {
+  margin-left: 4px;
+}
+
+.skeleton {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, #e0e0e0 25%, #f0f0f0 50%, #e0e0e0 75%);
+  background-size: 200% 100%;
+  animation: shimmer 1.5s infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
 .achieveText {
-  padding: 16px;
+  padding: 20px;
   font-size: 15px;
-  color: #222;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* More Button */
+.moreButtonWrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 32px;
+}
+
+.moreButton {
+  background: #0b3c63;
+  color: white;
+  padding: 14px 32px;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  display: inline-block;
+}
+
+.moreButton:hover {
+  background: #082c49;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(11, 60, 99, 0.3);
 }
 
 /* --- Reviews --- */
@@ -85,17 +214,269 @@
 .reviewCard {
   background: #fff;
   border-radius: 14px;
-  padding: 24px;
+  padding: 28px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.reviewCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
+}
+
+.reviewPhoto {
+  width: 96px;
+  height: 96px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
 }
 
 .reviewText {
-  font-size: 15px;
+  font-size: 16px;
   color: #333;
+  line-height: 1.7;
   margin-bottom: 16px;
+  font-style: italic;
 }
 
 .reviewName {
   font-weight: 700;
+  font-size: 15px;
   color: #0b3c63;
+}
+
+/* RESPONSIVE STYLES */
+
+/* Large Desktop */
+@media (max-width: 1200px) {
+  .section {
+    padding: 70px 40px;
+  }
+
+  .heading {
+    font-size: 38px;
+    margin: 50px 0 36px;
+  }
+}
+
+/* Tablet - Large */
+@media (max-width: 1024px) {
+  .section {
+    padding: 60px 30px;
+  }
+
+  .heading {
+    font-size: 36px;
+    margin: 50px 0 32px;
+  }
+
+  .coreGrid {
+    gap: 24px;
+  }
+
+  .card {
+    padding: 28px 24px;
+  }
+
+  .achieveGrid {
+    gap: 24px;
+  }
+
+  .reviewGrid {
+    gap: 24px;
+  }
+}
+
+/* Tablet - Medium */
+@media (max-width: 968px) {
+  .coreGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .icon img {
+    width: 56px;
+    height: 56px;
+  }
+
+  .card h3 {
+    font-size: 18px;
+  }
+
+  .card p {
+    font-size: 14px;
+  }
+}
+
+/* Tablet - Small */
+@media (max-width: 768px) {
+  .section {
+    padding: 50px 24px;
+  }
+
+  .heading {
+    font-size: 32px;
+    margin: 40px 0 28px;
+  }
+
+  .achieveGrid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .reviewGrid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .playButton {
+    width: 64px;
+    height: 64px;
+  }
+
+  .playButton svg {
+    width: 40px;
+    height: 40px;
+  }
+
+  .reviewPhoto {
+    width: 80px;
+    height: 80px;
+  }
+
+  .moreButton {
+    padding: 12px 28px;
+    font-size: 15px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .section {
+    padding: 40px 20px;
+  }
+
+  .heading {
+    font-size: 28px;
+    margin: 36px 0 24px;
+  }
+
+  .coreGrid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .card {
+    padding: 24px 20px;
+  }
+
+  .icon img {
+    width: 48px;
+    height: 48px;
+  }
+
+  .card h3 {
+    font-size: 17px;
+  }
+
+  .card p {
+    font-size: 14px;
+  }
+
+  .achieveGrid {
+    gap: 16px;
+  }
+
+  .achieveText {
+    padding: 16px;
+    font-size: 14px;
+  }
+
+  .moreButtonWrapper {
+    margin-top: 24px;
+  }
+
+  .moreButton {
+    width: 100%;
+    max-width: 300px;
+    text-align: center;
+  }
+
+  .reviewGrid {
+    gap: 16px;
+  }
+
+  .reviewCard {
+    padding: 24px 20px;
+  }
+
+  .reviewText {
+    font-size: 15px;
+  }
+
+  .reviewName {
+    font-size: 14px;
+  }
+
+  .playButton {
+    width: 56px;
+    height: 56px;
+  }
+
+  .playButton svg {
+    width: 36px;
+    height: 36px;
+  }
+
+  .reviewPhoto {
+    width: 64px;
+    height: 64px;
+  }
+}
+
+/* Extra Small Mobile */
+@media (max-width: 360px) {
+  .section {
+    padding: 36px 16px;
+  }
+
+  .heading {
+    font-size: 24px;
+    margin: 32px 0 20px;
+  }
+
+  .card {
+    padding: 20px 16px;
+  }
+
+  .icon img {
+    width: 44px;
+    height: 44px;
+  }
+
+  .card h3 {
+    font-size: 16px;
+  }
+
+  .card p {
+    font-size: 13px;
+  }
+
+  .achieveText {
+    font-size: 13px;
+  }
+
+  .reviewText {
+    font-size: 14px;
+  }
+
+  .moreButton {
+    padding: 11px 24px;
+    font-size: 14px;
+  }
 }

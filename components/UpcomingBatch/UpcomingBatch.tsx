@@ -1,11 +1,17 @@
-'use client';
+"use client";
 
-import { useEffect, useState } from 'react';
-import styles from './UpcomingBatch.module.css';
+import { useEffect, useState } from "react";
+import styles from "./UpcomingBatch.module.css";
 
 function getNextBatchDate() {
   const now = new Date();
   return new Date(now.getFullYear(), now.getMonth() + 1, 1, 0, 0, 0);
+}
+
+function getNextMonthName() {
+  const now = new Date();
+  const next = new Date(now.getFullYear(), now.getMonth() + 1, 1);
+  return next.toLocaleString("en-US", { month: "long" });
 }
 
 export default function UpcomingBatch() {
@@ -33,9 +39,7 @@ export default function UpcomingBatch() {
         hours: Math.floor(
           (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
         ),
-        minutes: Math.floor(
-          (distance % (1000 * 60 * 60)) / (1000 * 60)
-        ),
+        minutes: Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)),
         seconds: Math.floor((distance % (1000 * 60)) / 1000),
       });
     }, 1000);
@@ -43,12 +47,14 @@ export default function UpcomingBatch() {
     return () => clearInterval(interval);
   }, []);
 
+  const nextMonthName = getNextMonthName();
+
   return (
     <section className={styles.section}>
       <h2 className={styles.heading}>Upcoming Batch</h2>
       <p className={styles.subheading}>
-        Plan your schedule now to never miss any crucial deadlines and ensure you
-        enroll on time.
+        Plan your schedule now to never miss any crucial deadlines and ensure
+        you enroll on time.
       </p>
 
       {/* Countdown */}
@@ -74,11 +80,14 @@ export default function UpcomingBatch() {
         </div>
       </div>
 
-      <p className={styles.note}>Next batch starts on the 1st of every month.</p>
+      <p className={styles.note}>
+        Next batch starts on the 1st of {nextMonthName}.
+      </p>
 
       <a
         href="https://wa.me/919999999999"
         target="_blank"
+        rel="noopener noreferrer"
         className={styles.button}
       >
         Join via WhatsApp

@@ -1,0 +1,138 @@
+/* ContactPage.module.css */
+
+.contactPage {
+  min-height: 100vh;
+  background: #f9fafb;
+  font-family: var(--font-poppins), sans-serif;
+}
+
+/* Banner */
+.banner {
+  background: linear-gradient(135deg, #0b2a6f 0%, #1e4a9e 100%);
+  padding: 32px 24px;
+  text-align: center;
+}
+
+.banner h1 {
+  color: #fff;
+  font-size: 32px;
+  font-weight: 700;
+  margin: 0;
+}
+
+@media (max-width: 640px) {
+  .banner h1 {
+    font-size: 24px;
+  }
+}
+
+/* Container */
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 40px 24px;
+}
+
+/* Contact Details */
+.contactDetails {
+  background: #fff;
+  border-radius: 16px;
+  padding: 40px 32px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+@media (max-width: 640px) {
+  .contactDetails {
+    padding: 32px 24px;
+  }
+}
+
+.title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 32px;
+  text-align: left;
+}
+
+@media (max-width: 640px) {
+  .title {
+    font-size: 28px;
+    margin-bottom: 24px;
+  }
+}
+
+/* Contact List */
+.contactList {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.contactItem {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.contactItem:hover {
+  transform: translateX(8px);
+}
+
+.iconWrapper {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.iconWrapper svg {
+  width: 24px;
+  height: 24px;
+}
+
+.whatsapp {
+  background: #25d366;
+  color: #fff;
+}
+
+.phone {
+  background: #6b7280;
+  color: #fff;
+}
+
+.email {
+  background: #6b7280;
+  color: #fff;
+}
+
+.contactItem span {
+  font-size: 18px;
+  font-weight: 500;
+  color: #111827;
+}
+
+.contactItem:hover span {
+  color: #0b2a6f;
+}
+
+/* Map Container */
+.mapContainer {
+  width: 100%;
+  height: 400px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 640px) {
+  .mapContainer {
+    height: 300px;
+  }
+}

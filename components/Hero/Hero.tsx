@@ -1,11 +1,9 @@
-// Hero.tsx
-import styles from './Hero.module.css';
+import styles from "./Hero.module.css";
 
 export default function Hero() {
   return (
     <section className={styles.hero}>
       <div className={styles.left}>
-
         {/* Eyebrow text */}
         <p className={styles.eyebrow}>
           Learn English Through Mother Tongue Languages
@@ -18,23 +16,13 @@ export default function Hero() {
             <span className={styles.winning}>Winning</span>
             <svg
               className={styles.circle}
-              viewBox="-10 5 260 110"
+              viewBox="-2 10 260 90"
               xmlns="http://www.w3.org/2000/svg"
-              width="260"
-              height="110"
+              // Removed inline width/height to let CSS control it
+              preserveAspectRatio="xMidYMid meet"
             >
-              {/* Hand-drawn ellipse with slight imperfections */}
               <path
-                d="M 20 55 
-                   Q 25 22, 70 18 
-                   Q 115 15, 160 18 
-                   Q 205 22, 235 42
-                   Q 242 52, 238 62
-                   Q 232 75, 190 82
-                   Q 145 88, 95 87
-                   Q 50 85, 22 70
-                   Q 15 62, 18 55
-                   Q 19 52, 20 55 Z"
+                d="M 20 55 Q 25 22, 70 18 Q 115 15, 160 18 Q 205 22, 235 42 Q 242 52, 238 62 Q 232 75, 190 82 Q 145 88, 95 87 Q 50 85, 22 70 Q 15 62, 18 55 Q 19 52, 20 55 Z"
                 fill="none"
                 stroke="#d61f26"
                 strokeWidth="7"
@@ -68,14 +56,19 @@ export default function Hero() {
             WhatsApp Now
           </a>
 
-          <button className={styles.courseBtn}>
-            Get Course & Price
-          </button>
+          <button className={styles.courseBtn}>Get Course & Price</button>
         </div>
-
       </div>
+
       <div className={styles.right}>
-        <img src="./hero-right.png" alt="HERO-RIGHT"/>
+        <div className={styles.imageContainer}>
+          {/* Ensure your image path is correct */}
+          <img
+            src="/hero-right.png"
+            alt="Student learning online"
+            className={styles.floating}
+          />
+        </div>
       </div>
     </section>
   );

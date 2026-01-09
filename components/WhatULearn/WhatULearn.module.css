@@ -1,0 +1,445 @@
+.section {
+  padding: 80px 40px;
+  max-width: 1400px;
+  margin: 0 auto;
+  background: #ffffff;
+  font-family: var(--font-poppins), sans-serif;
+}
+
+/* Google Rating Badge */
+.ratingBadge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 50px;
+  padding: 20px 32px;
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.googleIcon {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+}
+
+.ratingText {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.ratingScore {
+  font-size: 24px;
+  font-weight: 800;
+  color: #000;
+}
+
+.ratingReviews {
+  font-size: 14px;
+  color: #666;
+  font-weight: 500;
+}
+
+/* Main Heading */
+.heading {
+  text-align: center;
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 32px;
+  color: #000;
+  line-height: 1.2;
+}
+
+.going {
+  color: #dc2626;
+}
+
+.learn {
+  color: #0b3c63;
+}
+
+/* Description */
+.description {
+  text-align: center;
+  font-size: 17px;
+  color: #333;
+  line-height: 1.8;
+  max-width: 1200px;
+  margin: 0 auto 20px;
+}
+
+.underline {
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.descriptionBold {
+  text-align: center;
+  font-size: 17px;
+  color: #000;
+  line-height: 1.8;
+  max-width: 1200px;
+  margin: 0 auto 50px;
+  font-weight: 600;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 50px;
+  flex-wrap: wrap;
+}
+
+.tab {
+  padding: 14px 32px;
+  border: 2px solid #e5e7eb;
+  border-radius: 999px;
+  background: #ffffff;
+  color: #333;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.tab:hover {
+  border-color: #0b3c63;
+  color: #0b3c63;
+  transform: translateY(-2px);
+}
+
+.tabActive {
+  background: linear-gradient(135deg, #7c1d3f 0%, #0b3c63 100%);
+  color: white;
+  border-color: transparent;
+}
+
+.tabActive:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(11, 60, 99, 0.3);
+}
+
+/* Content Area */
+.contentWrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  background: #f6f9fc;
+  border-radius: 20px;
+  padding: 60px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.06);
+}
+
+.contentLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contentHeading {
+  font-size: 32px;
+  font-weight: 800;
+  color: #000;
+  margin-bottom: 8px;
+}
+
+.contentSubheading {
+  font-size: 24px;
+  font-weight: 700;
+  color: #0b3c63;
+  margin-bottom: 4px;
+}
+
+.contentDescription {
+  font-size: 16px;
+  color: #555;
+  line-height: 1.8;
+}
+
+.contentRight {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contentImage {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  border-radius: 16px;
+  object-fit: cover;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* RESPONSIVE STYLES */
+
+/* Large Desktop */
+@media (max-width: 1200px) {
+  .section {
+    padding: 70px 40px;
+  }
+
+  .heading {
+    font-size: 44px;
+  }
+
+  .contentWrapper {
+    gap: 50px;
+    padding: 50px;
+  }
+
+  .contentHeading {
+    font-size: 28px;
+  }
+
+  .contentSubheading {
+    font-size: 22px;
+  }
+}
+
+/* Tablet - Large */
+@media (max-width: 1024px) {
+  .section {
+    padding: 60px 30px;
+  }
+
+  .heading {
+    font-size: 40px;
+  }
+
+  .description,
+  .descriptionBold {
+    font-size: 16px;
+  }
+
+  .tabs {
+    gap: 12px;
+  }
+
+  .tab {
+    padding: 12px 28px;
+    font-size: 15px;
+  }
+
+  .contentWrapper {
+    gap: 40px;
+    padding: 40px;
+  }
+
+  .contentHeading {
+    font-size: 26px;
+  }
+
+  .contentSubheading {
+    font-size: 20px;
+  }
+
+  .contentDescription {
+    font-size: 15px;
+  }
+}
+
+/* Tablet - Medium */
+@media (max-width: 900px) {
+  .contentWrapper {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .contentLeft {
+    align-items: center;
+  }
+
+  .contentImage {
+    max-width: 400px;
+  }
+}
+
+/* Tablet - Small */
+@media (max-width: 768px) {
+  .section {
+    padding: 50px 24px;
+  }
+
+  .ratingBadge {
+    padding: 16px 24px;
+    margin-bottom: 40px;
+  }
+
+  .googleIcon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .ratingScore {
+    font-size: 20px;
+  }
+
+  .ratingReviews {
+    font-size: 13px;
+  }
+
+  .heading {
+    font-size: 36px;
+    margin-bottom: 28px;
+  }
+
+  .description,
+  .descriptionBold {
+    font-size: 15px;
+    margin-bottom: 16px;
+  }
+
+  .descriptionBold {
+    margin-bottom: 40px;
+  }
+
+  .tabs {
+    gap: 10px;
+  }
+
+  .tab {
+    padding: 10px 24px;
+    font-size: 14px;
+  }
+
+  .contentWrapper {
+    padding: 32px;
+    gap: 32px;
+  }
+
+  .contentHeading {
+    font-size: 24px;
+  }
+
+  .contentSubheading {
+    font-size: 18px;
+  }
+
+  .contentDescription {
+    font-size: 14px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .section {
+    padding: 40px 20px;
+  }
+
+  .ratingBadge {
+    flex-direction: column;
+    padding: 20px;
+    gap: 12px;
+  }
+
+  .heading {
+    font-size: 32px;
+  }
+
+  .description,
+  .descriptionBold {
+    font-size: 14px;
+    text-align: left;
+  }
+
+  .tabs {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .tab {
+    width: 100%;
+    padding: 12px 24px;
+  }
+
+  .contentWrapper {
+    padding: 28px 20px;
+    gap: 28px;
+  }
+
+  .contentHeading {
+    font-size: 22px;
+  }
+
+  .contentSubheading {
+    font-size: 17px;
+  }
+
+  .contentDescription {
+    font-size: 14px;
+    text-align: left;
+  }
+
+  .contentImage {
+    max-width: 100%;
+  }
+}
+
+/* Extra Small Mobile */
+@media (max-width: 480px) {
+  .section {
+    padding: 36px 16px;
+  }
+
+  .heading {
+    font-size: 28px;
+  }
+
+  .ratingScore {
+    font-size: 18px;
+  }
+
+  .description,
+  .descriptionBold {
+    font-size: 13px;
+  }
+
+  .tab {
+    padding: 11px 20px;
+    font-size: 13px;
+  }
+
+  .contentWrapper {
+    padding: 24px 16px;
+  }
+
+  .contentHeading {
+    font-size: 20px;
+  }
+
+  .contentSubheading {
+    font-size: 16px;
+  }
+
+  .contentDescription {
+    font-size: 13px;
+  }
+}
+
+/* Extra Small Mobile */
+@media (max-width: 360px) {
+  .heading {
+    font-size: 24px;
+  }
+
+  .contentHeading {
+    font-size: 18px;
+  }
+
+  .contentSubheading {
+    font-size: 15px;
+  }
+}
