@@ -22,6 +22,10 @@ export default function UpcomingBatch() {
     seconds: 0,
   });
 
+  const [typedText, setTypedText] = useState("");
+  const fullText = "Batch";
+
+  // Countdown timer
   useEffect(() => {
     const targetDate = getNextBatchDate();
 
@@ -47,15 +51,58 @@ export default function UpcomingBatch() {
     return () => clearInterval(interval);
   }, []);
 
+  // Typing effect
+  useEffect(() => {
+    let currentIndex = 0;
+    let isDeleting = false;
+    let timeout: NodeJS.Timeout;
+
+    const type = () => {
+      if (!isDeleting && currentIndex <= fullText.length) {
+        setTypedText(fullText.slice(0, currentIndex));
+        currentIndex++;
+        timeout = setTimeout(type, 150); // Typing speed
+      } else if (!isDeleting && currentIndex > fullText.length) {
+        // Pause at the end before deleting
+        timeout = setTimeout(() => {
+          isDeleting = true;
+          type();
+        }, 2000);
+      } else if (isDeleting && currentIndex >= 0) {
+        setTypedText(fullText.slice(0, currentIndex));
+        currentIndex--;
+        timeout = setTimeout(type, 100); // Deleting speed
+      } else if (isDeleting && currentIndex < 0) {
+        // Pause before typing again
+        isDeleting = false;
+        currentIndex = 0;
+        timeout = setTimeout(type, 500);
+      }
+    };
+
+    type();
+
+    return () => clearTimeout(timeout);
+  }, []);
+
   const nextMonthName = getNextMonthName();
 
   return (
     <section className={styles.section}>
-      <h2 className={styles.heading}>Upcoming Batch</h2>
+      <h2 className={styles.heading}>
+        <p>Upcoming</p> 
+        <span className={styles.typingText}>
+          {typedText}
+          <span className={styles.cursor}>|</span>
+        </span>
+      </h2>
       <p className={styles.subheading}>
         Plan your schedule now to never miss any crucial deadlines and ensure
         you enroll on time.
       </p>
+
+      <p className={styles.note}><i>So begin your journey right now. We have batches every week; we will allocate the batch according to your level, and our trainers are always here to help you kickstart your learning journey.
+      </i></p>
 
       {/* Countdown */}
       <div className={styles.timeline}>
@@ -81,7 +128,8 @@ export default function UpcomingBatch() {
       </div>
 
       <p className={styles.note}>
-        Next batch starts on the 1st of {nextMonthName}.
+        Next batch starts on the <b>1st of{" "}
+        {nextMonthName}</b>.
       </p>
 
       <a

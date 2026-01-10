@@ -40,41 +40,30 @@ export default function Navbar() {
         {/* Navigation */}
         <nav className={`${styles.navLinks} ${isMenuOpen ? styles.open : ''}`}>
           <Link href="/" onClick={closeMenu}>Home</Link>
-          <Link href="/about" onClick={closeMenu}>About Us</Link>
 
           <div className={styles.dropdown}>
             <span onClick={() => toggleDropdown('courses')}>
               Courses <span className={styles.arrow}>▾</span>
             </span>
             <div className={`${styles.dropdownMenu} ${openDropdown === 'courses' ? styles.dropdownOpen : ''}`}>
-              <Link href="/courses/spoken" onClick={closeMenu}>Spoken English</Link>
-              <Link href="/courses/business" onClick={closeMenu}>Business English</Link>
-              <Link href="/courses/personality" onClick={closeMenu}>Personality Development</Link>
+              <Link href="/courses/spoken" onClick={closeMenu}>Hindi</Link>
+              <Link href="/courses/business" onClick={closeMenu}>English</Link>
+              <Link href="/courses/personality" onClick={closeMenu}>Club</Link>
             </div>
           </div>
 
-          <Link href="/ielts" className={styles.highlight} onClick={closeMenu}>IELTS</Link>
-
-          <div className={styles.dropdown}>
+          {/* <div className={styles.dropdown}>
             <span onClick={() => toggleDropdown('languages')}>
               Languages <span className={styles.arrow}>▾</span>
             </span>
             <div className={`${styles.dropdownMenu} ${openDropdown === 'languages' ? styles.dropdownOpen : ''}`}>
-              <Link href="/languages/french" onClick={closeMenu}>French</Link>
-              <Link href="/languages/german" onClick={closeMenu}>German</Link>
-              <Link href="/languages/japanese" onClick={closeMenu}>Japanese</Link>
+              <Link href="/languages/french" onClick={closeMenu}>Telugu</Link>
+              <Link href="/languages/german" onClick={closeMenu}>English</Link>
+              <Link href="/languages/japanese" onClick={closeMenu}>Hindi</Link>
             </div>
-          </div>
+          </div> */}
 
-          <div className={styles.dropdown}>
-            <span onClick={() => toggleDropdown('b2b')}>
-              B2B <span className={styles.arrow}>▾</span>
-            </span>
-            <div className={`${styles.dropdownMenu} ${openDropdown === 'b2b' ? styles.dropdownOpen : ''}`}>
-              <Link href="/b2b/corporate" onClick={closeMenu}>Corporate Training</Link>
-              <Link href="/b2b/institutes" onClick={closeMenu}>Institutes</Link>
-            </div>
-          </div>
+          <Link href="/about" onClick={closeMenu}>About Us</Link>
 
           <Link href="/contact" onClick={closeMenu}>Contact Us</Link>
 

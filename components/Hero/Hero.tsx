@@ -11,9 +11,9 @@ export default function Hero() {
 
         {/* Main Heading */}
         <h1 className={styles.heading}>
-          Award{" "}
+          Trust{" "}
           <span className={styles.winningWrapper}>
-            <span className={styles.winning}>Winning</span>
+            <span className={styles.winning}>Gaining</span>
             <svg
               className={styles.circle}
               viewBox="-2 10 260 90"
@@ -33,7 +33,8 @@ export default function Hero() {
             </svg>
           </span>
           <br />
-          Online English
+          Online & Offline
+          <br /> English & Hindi
           <br />
           Learning Platform
         </h1>

@@ -1,0 +1,40 @@
+.aboutPage {
+  width: 100%;
+}
+
+.headImage {
+  width: 100%;
+  height: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.headImage img {
+  width: 100%;
+  height: auto;
+}
+
+.headImage p {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-25%, -50%);
+  font-size: 4rem;
+  font-weight: bold;
+  font-family: var(--font-poppins), sans-serif;
+  /* Gradient fill for glossy look */
+  background: linear-gradient(
+    180deg,
+    #ffffff 0%,
+    #f0f0f0 45%,
+    #ffffff 55%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* subtle dark edge for contrast */
+  text-shadow: 0 3px 8px rgba(0, 0, 0, 0.6);
+  z-index: 2;
+}
+

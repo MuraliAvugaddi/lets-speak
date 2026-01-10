@@ -19,7 +19,6 @@ export default function Home() {
       <LearnSection/>
       <OurTeam/>
       <FAQ/>
-      <Footer/>
     </div>
   );
 }

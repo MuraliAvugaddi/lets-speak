@@ -1,4 +1,4 @@
-.section {
+  .section {
   padding: 80px 40px;
   max-width: 1200px;
   width: 100%;
@@ -42,11 +42,13 @@
   text-align: center;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
   transition: all 0.3s ease;
+  border: solid 5px #dae6f2;
 }
 
 .card:hover {
   transform: translateY(-6px);
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
+  border: solid 5px #0b3c63;
 }
 
 .icon {
@@ -186,8 +188,8 @@
 }
 
 .moreButton {
-  background: #0b3c63;
-  color: white;
+  background: transparent;
+  color: #0b3c63;
   padding: 14px 32px;
   border-radius: 10px;
   font-size: 16px;
@@ -195,10 +197,11 @@
   text-decoration: none;
   transition: all 0.3s ease;
   display: inline-block;
+  border: solid 2px #0b3c63;
 }
 
 .moreButton:hover {
-  background: #082c49;
+  background: #ffffff;
   transform: translateY(-2px);
   box-shadow: 0 6px 20px rgba(11, 60, 99, 0.3);
 }

@@ -170,7 +170,7 @@ export default function AboutHighlights() {
         </div>
 
         {/* ===== Reviews ===== */}
-        <h2 className={styles.heading}>Where Do Our Students Work?</h2>
+        <h2 className={styles.heading}>Students Feedback</h2>
 
         <div className={styles.reviewGrid}>
           {reviews.map((r, i) => (

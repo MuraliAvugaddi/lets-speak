@@ -11,65 +11,133 @@ type TeamMember = {
   linkedin: string;
 };
 
-const TEAM: TeamMember[] = [
+export const TEAM: TeamMember[] = [
   {
-    name: "Shimna Thasnim",
-    role: "Marketing & Growth Strategist",
-    image:
-      "https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    name: "Sireesha",
+    role: "English Trainer",
+    image: "/staff/0.2.Sireesha mam 1.png",
     linkedin: "#",
   },
   {
-    name: "Harshini Priya",
-    role: "Product Manager",
-    image:
-      "https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    name: "Poornima",
+    role: "English Trainer",
+    image: "/staff/0.3.Poornima garu1 1.png",
     linkedin: "#",
   },
   {
-    name: "Rakshith",
-    role: "Regional Manager",
-    image:
-      "https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    name: "Mourya",
+    role: "English Trainer",
+    image: "/staff/0.5.Mourya mam 1.png",
     linkedin: "#",
   },
   {
-    name: "Prabakaran",
-    role: "Operations Manager",
-    image:
-      "https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    name: "Gayatri",
+    role: "English Trainer",
+    image: "/staff/Gayatri mam 1.png",
     linkedin: "#",
   },
   {
-    name: "Sarah Johnson",
-    role: "Head of Design",
-    image:
-      "https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    name: "Gopal",
+    role: "English Trainer",
+    image: "/staff/gopal mam 1.png",
+    linkedin: "#",
+  },
+  {
+    name: "Jyothi",
+    role: "English Trainer",
+    image: "/staff/jyothi mam 1.png",
+    linkedin: "#",
+  },
+  {
+    name: "Laxman",
+    role: "English Trainer",
+    image: "/staff/laxman sir 1.png",
+    linkedin: "#",
+  },
+  {
+    name: "Padmavathi",
+    role: "English Trainer",
+    image: "/staff/padmavathi mam 1.png",
+    linkedin: "#",
+  },
+  {
+    name: "Pavani",
+    role: "English Trainer",
+    image: "/staff/pavani mam 1.png",
+    linkedin: "#",
+  },
+  {
+    name: "Raju",
+    role: "English Trainer",
+    image: "/staff/raju sir 1.png",
+    linkedin: "#",
+  },
+  {
+    name: "Revathi",
+    role: "English Trainer",
+    image: "/staff/revathi mam 1.png",
+    linkedin: "#",
+  },
+  {
+    name: "Sripathi",
+    role: "English Trainer",
+    image: "/staff/sripathi sir 1.png",
+    linkedin: "#",
+  },
+  {
+    name: "Surendhra",
+    role: "English Trainer",
+    image: "/staff/suredhra sir 1.png",
     linkedin: "#",
   },
 ];
 
+
 export default function OurTeam() {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const cardsPerView = 4;
-  const totalPages = Math.ceil(TEAM.length / cardsPerView);
+  const [cardsToShow, setCardsToShow] = useState(3);
 
-  // Auto-scroll every 4 seconds
+  // Determine number of cards to show based on screen size
+  useEffect(() => {
+    const updateCardsToShow = () => {
+      if (window.innerWidth <= 600) {
+        setCardsToShow(1);
+      } else if (window.innerWidth <= 900) {
+        setCardsToShow(2);
+      } else {
+        setCardsToShow(3);
+      }
+    };
+
+    updateCardsToShow();
+    window.addEventListener("resize", updateCardsToShow);
+    return () => window.removeEventListener("resize", updateCardsToShow);
+  }, []);
+
+  const maxIndex = TEAM.length - cardsToShow;
+
+  // Auto-scroll every 5 seconds
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentIndex((prev) => (prev + 1) % totalPages);
-    }, 4000);
+      setCurrentIndex((prev) => {
+        if (prev >= maxIndex) return 0;
+        return prev + 1;
+      });
+    }, 5000);
 
     return () => clearInterval(interval);
-  }, [totalPages]);
+  }, [maxIndex]);
 
   const handleDotClick = (index: number) => {
     setCurrentIndex(index);
   };
 
-  const getVisibleCards = () => {
-    const start = currentIndex * cardsPerView;
-    return TEAM.slice(start, start + cardsPerView);
+  const handlePrev = () => {
+    setCurrentIndex((prev) => (prev > 0 ? prev - 1 : maxIndex));
+  };
+
+  const handleNext = () => {
+    setCurrentIndex((prev) => (prev < maxIndex ? prev + 1 : 0));
   };
 
   return (
@@ -77,10 +145,8 @@ export default function OurTeam() {
       {/* Header */}
       <div className={styles.header}>
         <h2 className={styles.title}>
-          <span className={styles.red}>Our</span>{" "}
-          <span className={styles.blue}>Team</span>
+          Our <span className={styles.red}>Team</span>
         </h2>
-
         <p className={styles.description}>
           Our team is driven by a passion for empowering learners worldwide. We
           combine innovative methods with personalized attention to help every
@@ -89,60 +155,79 @@ export default function OurTeam() {
         </p>
       </div>
 
-      {/* Cards Container with Overflow Hidden */}
-      <div className={styles.cardsContainer}>
-        <div
-          className={styles.cardsWrapper}
-          style={{
-            transform: `translateX(-${currentIndex * 100}%)`,
-          }}
+      {/* Cards Container with Navigation */}
+      <div className={styles.carouselWrapper}>
+        <button
+          className={styles.navButton}
+          onClick={handlePrev}
+          aria-label="Previous"
         >
-          {Array.from({ length: totalPages }).map((_, pageIndex) => (
-            <div key={pageIndex} className={styles.cardsPage}>
-              {TEAM.slice(
-                pageIndex * cardsPerView,
-                (pageIndex + 1) * cardsPerView
-              ).map((member, idx) => (
-                <div key={`${member.name}-${idx}`} className={styles.card}>
-                  <div className={styles.cardTop}>
-                    <img
-                      src={member.image}
-                      alt={member.name}
-                      className={styles.avatar}
-                    />
-                  </div>
+          <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+            <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
+          </svg>
+        </button>
 
-                  <div className={styles.cardBody}>
-                    <h3>{member.name}</h3>
-                    <p>{member.role}</p>
-
-                    <a
-                      href={member.linkedin}
-                      className={styles.linkedin}
-                      aria-label="LinkedIn"
-                    >
-                      <svg viewBox="0 0 24 24">
-                        <path d="M4.98 3.5c0 1.38-1.11 2.5-2.48 2.5S0 4.88 0 3.5 1.11 1 2.5 1 4.98 2.12 4.98 3.5zM.5 8h4V24h-4V8zm7.5 0h3.8v2.2h.05c.53-1 1.83-2.2 3.77-2.2 4.03 0 4.78 2.65 4.78 6.1V24h-4v-7.4c0-1.76-.03-4.03-2.46-4.03-2.46 0-2.84 1.92-2.84 3.9V24h-4V8z" />
-                      </svg>
-                    </a>
-                  </div>
+        <div className={styles.cardsContainer}>
+          <div
+            className={styles.cardsWrapper}
+            style={{
+              transform: `translateX(calc(-${currentIndex} * (100% / ${cardsToShow} + ${
+                cardsToShow === 1 ? "16px" : cardsToShow === 2 ? "10px" : "9.33px"
+              })))`,
+            }}
+          >
+            {TEAM.map((member, idx) => (
+              <div key={idx} className={styles.card}>
+                <div className={styles.cardTop}>
+                  <div className={styles.diagonalRed}></div>
+                  <div className={styles.diagonalBlue}></div>
+                  <img
+                    src={member.image}
+                    alt={member.name}
+                    className={styles.avatar}
+                  />
                 </div>
-              ))}
-            </div>
-          ))}
+
+                <div className={styles.cardBody}>
+                  <h3>{member.name}</h3>
+                  <p>{member.role}</p>
+                  <a
+                    href={member.linkedin}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={styles.linkedin}
+                  >
+                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
+
+        <button
+          className={styles.navButton}
+          onClick={handleNext}
+          aria-label="Next"
+        >
+          <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+            <path d="M8.59 16.59L10 18l6-6-6-6-1.41 1.41L13.17 12z" />
+          </svg>
+        </button>
       </div>
 
       {/* Pagination Dots */}
       <div className={styles.dots}>
-        {Array.from({ length: totalPages }).map((_, i) => (
+        {Array.from({ length: maxIndex + 1 }).map((_, i) => (
           <button
             key={i}
             className={`${styles.dot} ${
               i === currentIndex ? styles.active : ""
             }`}
             onClick={() => handleDotClick(i)}
-            aria-label={`Go to page ${i + 1}`}
+            aria-label={`Go to slide ${i + 1}`}
           />
         ))}
       </div>

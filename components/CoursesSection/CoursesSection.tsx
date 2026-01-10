@@ -8,7 +8,7 @@ const courses = [
       "Learn American and British pronunciation rules, intonation patterns, and common challenges through interactive modules and expert feedback. Master clear communication.",
     rating: 4.6,
     reviews: 1248,
-    level: 6,
+    level: 7,
   },
   {
     language: "Telugu to Hindi",
@@ -17,7 +17,7 @@ const courses = [
       "Improve fluency from Hindi to English with practical speaking exercises, daily conversations, and personalized trainer feedback.",
     rating: 4.5,
     reviews: 986,
-    level: 5,
+    level: 7,
   },
   {
     language: "Club",
@@ -26,7 +26,7 @@ const courses = [
       "Master English speaking from Telugu with structured lessons, pronunciation drills, and real-life conversation practice.",
     rating: 4.7,
     reviews: 1432,
-    level: 6,
+    level: 7,
   },
 ];
 

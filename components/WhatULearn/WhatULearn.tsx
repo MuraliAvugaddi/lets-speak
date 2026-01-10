@@ -9,35 +9,35 @@ const mentorTypes = [
     title: 'The Mentor',
     heading: 'Personalized Guidance Every Step',
     description: 'Get one-on-one attention from expert trainers who understand your learning style. Our mentors provide customized feedback, track your progress, and adapt lessons to your pace. With years of teaching experience, they help you overcome challenges and build confidence in speaking English naturally.',
-    image: '/mentor-image.jpg',
+    image: '/WUL-1.PNG',
   },
   {
     id: 'motivator',
     title: 'The Motivator',
     heading: 'Stay Inspired and Energized',
     description: 'Learning a language requires consistent motivation. Our courses are designed to keep you engaged with interactive sessions, gamified learning, and regular achievements. Celebrate your milestones with our supportive community and trainers who encourage you to push beyond your limits.',
-    image: '/motivator-image.jpg',
+    image: '/WUL-2.PNG',
   },
   {
     id: 'curator',
     title: 'The Curator',
     heading: 'Carefully Crafted Content',
     description: 'Every lesson is thoughtfully designed by language experts. We curate content that is relevant, practical, and aligned with real-world scenarios. From business presentations to casual conversations, our curriculum covers what you actually need to succeed in your personal and professional life.',
-    image: '/curator-image.jpg',
+    image: '/WUL-3.PNG',
   },
   {
     id: 'companion',
     title: 'The Companion',
     heading: 'Learn Together, Grow Together',
     description: 'Join a vibrant community of learners just like you. Practice speaking with peers, participate in group discussions, and build lasting connections. Our companion approach ensures you never feel alone on your learning journey. Share experiences, learn from others, and grow your network.',
-    image: '/companion-image.jpg',
+    image: '/WUL-4.PNG',
   },
   {
     id: 'champion',
     title: 'The Champion',
     heading: 'Achieve Excellence',
     description: 'We are committed to making you a champion in English communication. With proven teaching methods, comprehensive support, and result-oriented strategies, we help you achieve fluency and confidence. Our success stories speak for themselves - join thousands who have transformed their careers and lives.',
-    image: '/champion-image.jpg',
+    image: '/WUL-5.PNG',
   },
 ];
 
@@ -73,21 +73,21 @@ export default function LearnSection() {
       {/* Description */}
       <p className={styles.description}>
         If you're looking for the{' '}
-        <span className={styles.underline}>best online spoken English classes in India</span>, you're
-        in the right place. At English Partner, our program is designed for every stage of your journey,
+        <span className={styles.underline}>best online & offline spoken English & Hindi classes in India</span>, you're
+        in the right place. At Let's Speak, our program is designed for every stage of your journey,
         starting from Pre-Basic to IELTS, including levels like Basic, Intermediate, Advanced, and
         Business Communication.
       </p>
 
       <p className={styles.description}>
-        Our online English classes for adults are perfect if you want to build fluency, expand your
+        Our online & offline English & Hindi classes for adults are perfect if you want to build fluency, expand your
         vocabulary, and improve real-life communication. Along with that, we offer focused grammar
-        classes online and practical English speaking classes that make learning easy and engaging
+        classes online & offline and practical English speaking classes that make learning easy and engaging
         according to the learner's level.
       </p>
 
       <p className={styles.descriptionBold}>
-        This isn't just another English learning course it's your opportunity to speak confidently,
+        This isn't just another English or Hindi learning course it's your opportunity to speak confidently,
         learn flexibly on WhatsApp, and grow with expert support.
       </p>
 
