@@ -46,8 +46,8 @@ export default function Navbar() {
               Courses <span className={styles.arrow}>▾</span>
             </span>
             <div className={`${styles.dropdownMenu} ${openDropdown === 'courses' ? styles.dropdownOpen : ''}`}>
-              <Link href="/hindi" onClick={closeMenu}>Hindi</Link>
               <Link href="/english" onClick={closeMenu}>English</Link>
+              <Link href="/hindi" onClick={closeMenu}>Hindi</Link>
               <Link href="/club" onClick={closeMenu}>Club</Link>
             </div>
           </div>
