@@ -36,6 +36,14 @@ const coreValues = [
   },
 ];
 
+// Define quotes for each video ID
+const videoQuotes: Record<string, string> = {
+  'UlJ9vAynJUc': "Our structured approach provides lifelong learners of every age with the expert mentorship and practical tools needed to master real-world communication.",
+  'ToE1Te-qhoQ': "Through a foundation of practical application and expert-led guidance, we have designed a structured environment where communication skills are honed for real-world success.",
+  'THCndMIgQpM': "We bridge the gap between learning and real-world application, offering a structured, inclusive program that builds communication clarity and confidence across all generations.",
+  'LaL28u278gk': "Regardless of age, our primary focus is empowering individuals with the confidence and clarity required to navigate real-world interactions effectively through practical, skill-based training.",
+};
+
 const reviews = [
   {
     name: "Kalyani",
@@ -171,7 +179,7 @@ export default function AboutHighlights() {
                     )}
                   </div>
                   <p className={styles.achieveText}>
-                    A structured learning program designed for every age group, focusing on confidence, clarity, and real-world communication skills—guided by expert mentors and practical training.
+                    {videoQuotes[id] || "A structured learning program designed for every age group, focusing on confidence, clarity, and real-world communication skills—guided by expert mentors and practical training."}
                   </p>
                 </div>
               ))

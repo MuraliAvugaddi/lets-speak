@@ -15,14 +15,12 @@ export async function GET(request: NextRequest) {
     const searchParams = request.nextUrl.searchParams;
     const count = parseInt(searchParams.get('count') || '4');
 
-    // Shuffle and return random shorts
-    const shuffled = [...HARDCODED_SHORTS]
-      .sort(() => Math.random() - 0.5)
-      .slice(0, Math.min(count, HARDCODED_SHORTS.length));
+    // Return shorts in original order
+    const videos = HARDCODED_SHORTS.slice(0, Math.min(count, HARDCODED_SHORTS.length));
 
     return NextResponse.json({
-      videos: shuffled,
-      count: shuffled.length
+      videos: videos,
+      count: videos.length
     });
 
   } catch (error) {
