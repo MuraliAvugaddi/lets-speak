@@ -1,7 +1,7 @@
 // OurTeam.tsx
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import styles from "./OurTeam.module.css";
 
 type TeamMember = {
@@ -12,6 +12,12 @@ type TeamMember = {
 };
 
 export const TEAM: TeamMember[] = [
+  {
+    name: "Surendhra",
+    role: "English Trainer",
+    image: "/staff/suredhra sir 1.png",
+    linkedin: "#",
+  },
   {
     name: "Sireesha",
     role: "English Trainer",
@@ -85,24 +91,32 @@ export const TEAM: TeamMember[] = [
     linkedin: "#",
   },
   {
-    name: "Surendhra",
+    name: "Hyma",
     role: "English Trainer",
-    image: "/staff/suredhra sir 1.png",
+    image: "/staff/hyma.png",
+    linkedin: "#",
+  },
+  {
+    name: "Santhosh",
+    role: "English Trainer",
+    image: "/staff/santhosh.png",
     linkedin: "#",
   },
 ];
 
-
 export default function OurTeam() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [cardsToShow, setCardsToShow] = useState(3);
+  const [touchStart, setTouchStart] = useState(0);
+  const [touchEnd, setTouchEnd] = useState(0);
+  const autoScrollRef = useRef<NodeJS.Timeout | null>(null);
 
   // Determine number of cards to show based on screen size
   useEffect(() => {
     const updateCardsToShow = () => {
-      if (window.innerWidth <= 600) {
+      if (window.innerWidth < 640) {
         setCardsToShow(1);
-      } else if (window.innerWidth <= 900) {
+      } else if (window.innerWidth < 1024) {
         setCardsToShow(2);
       } else {
         setCardsToShow(3);
@@ -114,38 +128,99 @@ export default function OurTeam() {
     return () => window.removeEventListener("resize", updateCardsToShow);
   }, []);
 
-  const maxIndex = TEAM.length - cardsToShow;
+  const maxIndex = Math.max(0, TEAM.length - cardsToShow);
 
-  // Auto-scroll every 5 seconds
+  // Auto-scroll
   useEffect(() => {
-    const interval = setInterval(() => {
+    const startAutoScroll = () => {
+      autoScrollRef.current = setInterval(() => {
+        setCurrentIndex((prev) => {
+          if (prev >= maxIndex) return 0;
+          return prev + 1;
+        });
+      }, 5000);
+    };
+
+    startAutoScroll();
+
+    return () => {
+      if (autoScrollRef.current) {
+        clearInterval(autoScrollRef.current);
+      }
+    };
+  }, [maxIndex]);
+
+  const resetAutoScroll = () => {
+    if (autoScrollRef.current) {
+      clearInterval(autoScrollRef.current);
+    }
+    autoScrollRef.current = setInterval(() => {
       setCurrentIndex((prev) => {
         if (prev >= maxIndex) return 0;
         return prev + 1;
       });
     }, 5000);
-
-    return () => clearInterval(interval);
-  }, [maxIndex]);
+  };
 
   const handleDotClick = (index: number) => {
     setCurrentIndex(index);
+    resetAutoScroll();
   };
 
   const handlePrev = () => {
     setCurrentIndex((prev) => (prev > 0 ? prev - 1 : maxIndex));
+    resetAutoScroll();
   };
 
   const handleNext = () => {
     setCurrentIndex((prev) => (prev < maxIndex ? prev + 1 : 0));
+    resetAutoScroll();
   };
+
+  // Touch handlers for mobile swipe
+  const handleTouchStart = (e: React.TouchEvent) => {
+    setTouchStart(e.targetTouches[0].clientX);
+  };
+
+  const handleTouchMove = (e: React.TouchEvent) => {
+    setTouchEnd(e.targetTouches[0].clientX);
+  };
+
+  const handleTouchEnd = () => {
+    if (!touchStart || !touchEnd) return;
+    
+    const distance = touchStart - touchEnd;
+    const isLeftSwipe = distance > 50;
+    const isRightSwipe = distance < -50;
+
+    if (isLeftSwipe) {
+      handleNext();
+    }
+    if (isRightSwipe) {
+      handlePrev();
+    }
+
+    setTouchStart(0);
+    setTouchEnd(0);
+  };
+
+  // Calculate gap based on cards to show
+  const getGap = () => {
+    if (cardsToShow === 1) return 0;
+    if (cardsToShow === 2) return 20;
+    return 24;
+  };
+
+  const gap = getGap();
+  const cardWidth = `calc((100% - ${gap * (cardsToShow - 1)}px) / ${cardsToShow})`;
+  const offset = currentIndex * (100 / cardsToShow + (gap * currentIndex) / (cardsToShow * 10));
 
   return (
     <section className={styles.section}>
       {/* Header */}
       <div className={styles.header}>
         <h2 className={styles.title}>
-          Our <span className={styles.red}>Team</span>
+          Our <span className={styles.highlight}>Team</span>
         </h2>
         <p className={styles.description}>
           Our team is driven by a passion for empowering learners worldwide. We
@@ -160,47 +235,49 @@ export default function OurTeam() {
         <button
           className={styles.navButton}
           onClick={handlePrev}
-          aria-label="Previous"
+          aria-label="Previous team member"
         >
-          <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+          <svg viewBox="0 0 24 24" fill="currentColor">
             <path d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z" />
           </svg>
         </button>
 
-        <div className={styles.cardsContainer}>
+        <div 
+          className={styles.cardsContainer}
+          onTouchStart={handleTouchStart}
+          onTouchMove={handleTouchMove}
+          onTouchEnd={handleTouchEnd}
+        >
           <div
-            className={styles.cardsWrapper}
+            className={styles.cardsTrack}
             style={{
-              transform: `translateX(calc(-${currentIndex} * (100% / ${cardsToShow} + ${
-                cardsToShow === 1 ? "16px" : cardsToShow === 2 ? "10px" : "9.33px"
-              })))`,
+              transform: `translateX(-${currentIndex * (100 / cardsToShow + gap / 10)}%)`,
+              gap: `${gap}px`,
             }}
           >
             {TEAM.map((member, idx) => (
-              <div key={idx} className={styles.card}>
+              <div 
+                key={idx} 
+                className={styles.card}
+                style={{
+                  minWidth: cardWidth,
+                  maxWidth: cardWidth,
+                }}
+              >
                 <div className={styles.cardTop}>
                   <div className={styles.diagonalRed}></div>
                   <div className={styles.diagonalBlue}></div>
                   <img
                     src={member.image}
-                    alt={member.name}
+                    alt={`${member.name} - ${member.role}`}
                     className={styles.avatar}
+                    loading="lazy"
                   />
                 </div>
 
                 <div className={styles.cardBody}>
-                  <h3>{member.name}</h3>
-                  <p>{member.role}</p>
-                  <a
-                    href={member.linkedin}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={styles.linkedin}
-                  >
-                    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
-                    </svg>
-                  </a>
+                  <h3 className={styles.memberName}>{member.name}</h3>
+                  <p className={styles.memberRole}>{member.role}</p>
                 </div>
               </div>
             ))}
@@ -210,26 +287,32 @@ export default function OurTeam() {
         <button
           className={styles.navButton}
           onClick={handleNext}
-          aria-label="Next"
+          aria-label="Next team member"
         >
-          <svg viewBox="0 0 24 24" fill="currentColor" width="24" height="24">
+          <svg viewBox="0 0 24 24" fill="currentColor">
             <path d="M8.59 16.59L10 18l6-6-6-6-1.41 1.41L13.17 12z" />
           </svg>
         </button>
       </div>
 
       {/* Pagination Dots */}
-      <div className={styles.dots}>
-        {Array.from({ length: maxIndex + 1 }).map((_, i) => (
-          <button
-            key={i}
-            className={`${styles.dot} ${
-              i === currentIndex ? styles.active : ""
-            }`}
-            onClick={() => handleDotClick(i)}
-            aria-label={`Go to slide ${i + 1}`}
-          />
-        ))}
+      <div className={styles.pagination}>
+        <div className={styles.dots}>
+          {Array.from({ length: maxIndex + 1 }).map((_, i) => (
+            <button
+              key={i}
+              className={`${styles.dot} ${
+                i === currentIndex ? styles.active : ""
+              }`}
+              onClick={() => handleDotClick(i)}
+              aria-label={`Go to slide ${i + 1}`}
+              aria-current={i === currentIndex ? "true" : "false"}
+            />
+          ))}
+        </div>
+        <div className={styles.counter}>
+          {currentIndex + 1} / {maxIndex + 1}
+        </div>
       </div>
     </section>
   );

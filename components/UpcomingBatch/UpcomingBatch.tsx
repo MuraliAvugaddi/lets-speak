@@ -133,7 +133,7 @@ export default function UpcomingBatch() {
       </p>
 
       <a
-        href="https://wa.me/919999999999"
+        href="https://wa.me/91995975  1194"
         target="_blank"
         rel="noopener noreferrer"
         className={styles.button}

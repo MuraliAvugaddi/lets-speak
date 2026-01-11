@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import styles from "./AboutHighlights.module.css";
 
 const coreValues = [
@@ -38,22 +38,54 @@ const coreValues = [
 
 const reviews = [
   {
-    name: "Sarah K",
-    text: "Thanks to this training, I am now working as a software engineer at a top company.",
+    name: "Kalyani",
+    job: "Circle Inspector",
+    text: "The management is very sincere and the classes are very productive and interactive. I truly feel that anybody can learn both the languages here from anywhere in the world",
+    image: "/kalyani-reviewer.webp"
   },
   {
-    name: "Rahul Sharma",
-    text: "The structured training helped me become a project manager with a multinational.",
+    name: "Kayala Surya Reddy",
+    job: "Businessman & Politician",
+    text: "English language has always been my dream to achieve but due to my hectic schedule I couldn't give time. I came across this institution through my friend and could learn the language so comfortably.",
+    image: "/surya-reviewer.webp"
   },
   {
-    name: "Emily Davis",
-    text: "I got my dream role in data analytics right after completing the course.",
+    name: "Padmavathi",
+    job: "Home Maker",
+    text: "Let's Speak is not just a language coaching center but a hub for personality development. The dedication of our founder, Mr. Surendra Garu whom I consider a god-given brother, and the entire LS team has been truly inspiring.",
+    image: "/sahasra-reviewer.webp"
   },
+  {
+    name: "Chandrahasa",
+    job: "Dietician",
+    text: "The dedication and commitment of every trainer are exceptional, and I've truly enjoyed every stage of learning here. This institute stands out for its high-quality instruction, excellent training, and welcoming environment.",
+    image: "/chandrahasa.webp"
+  },
+  {
+    name: "Parnika",
+    job: "Student",
+    text: "After attending three free demo classes, I loved the teaching methods and got motivated to join. My short-term goal was to speak English and Hindi fluently, and though people doubted me, I achieved it!",
+    image: "/parnika-reviewer.webp"
+  },
+  {
+    name: "Murali",
+    job: "Software Engineer",
+    text: "The structured curriculum and personalized attention from trainers made a real difference in my communication skills. As a software engineer, clear communication is crucial, and Let's Speak helped me express my ideas confidently in both professional and social settings.",
+    image: "https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  },
+  {
+    name: "Kamal",
+    job: "Student",
+    text: "I was always hesitant to speak Hindi in public, but Let's Speak changed that completely. The trainers created such a supportive environment that I felt comfortable making mistakes and learning from them. Now I can confidently communicate in Hindi in any situation, whether it's casual conversations or formal settings.",
+    image: "https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  }
 ];
 
 export default function AboutHighlights() {
   const [shorts, setShorts] = useState<string[]>([]);
   const [playingVideo, setPlayingVideo] = useState<string | null>(null);
+  const [isPaused, setIsPaused] = useState(false);
+  const scrollRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     let mounted = true;
@@ -118,7 +150,6 @@ export default function AboutHighlights() {
                           alt="Video thumbnail"
                           className={styles.thumbnail}
                           onError={(e) => {
-                            // Fallback to hqdefault if maxresdefault doesn't exist
                             e.currentTarget.src = `https://img.youtube.com/vi/${id}/hqdefault.jpg`;
                           }}
                         />
@@ -140,8 +171,7 @@ export default function AboutHighlights() {
                     )}
                   </div>
                   <p className={styles.achieveText}>
-                    We've delivered impactful learning initiatives focused on
-                    innovation, growth, and real-world results.
+                    A structured learning program designed for every age group, focusing on confidence, clarity, and real-world communication skills—guided by expert mentors and practical training.
                   </p>
                 </div>
               ))
@@ -172,19 +202,51 @@ export default function AboutHighlights() {
         {/* ===== Reviews ===== */}
         <h2 className={styles.heading}>Students Feedback</h2>
 
-        <div className={styles.reviewGrid}>
-          {reviews.map((r, i) => (
-            <div key={i} className={styles.reviewCard}>
-              <img
-                src={`https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1`}
-                alt={`Photo of ${r.name}`}
-                className={styles.reviewPhoto}
-                loading="lazy"
-              />
-              <p className={styles.reviewText}>"{r.text}"</p>
-              <p className={styles.reviewName}>— {r.name}</p>
+        <div className={styles.reviewContainer}>
+          <div className={styles.fadeLeft}></div>
+          <div className={styles.fadeRight}></div>
+          
+          <div 
+            className={styles.reviewScroller}
+            ref={scrollRef}
+            onMouseEnter={() => setIsPaused(true)}
+            onMouseLeave={() => setIsPaused(false)}
+          >
+            <div className={`${styles.reviewTrack} ${isPaused ? styles.paused : ''}`}>
+              {/* First set of reviews */}
+              {reviews.map((r, i) => (
+                <div key={`first-${i}`} className={styles.reviewCard}>
+                  <img
+                    src={r.image}
+                    alt={`Photo of ${r.name}`}
+                    className={styles.reviewPhoto}
+                    loading="lazy"
+                  />
+                  <p className={styles.reviewText}>"{r.text}"</p>
+                  <div className={styles.reviewAuthor}>
+                    <p className={styles.reviewName}>{r.name}</p>
+                    <p className={styles.reviewJob}>{r.job}</p>
+                  </div>
+                </div>
+              ))}
+              {/* Duplicate set for seamless loop */}
+              {reviews.map((r, i) => (
+                <div key={`second-${i}`} className={styles.reviewCard}>
+                  <img
+                    src={r.image}
+                    alt={`Photo of ${r.name}`}
+                    className={styles.reviewPhoto}
+                    loading="lazy"
+                  />
+                  <p className={styles.reviewText}>"{r.text}"</p>
+                  <div className={styles.reviewAuthor}>
+                    <p className={styles.reviewName}>{r.name}</p>
+                    <p className={styles.reviewJob}>{r.job}</p>
+                  </div>
+                </div>
+              ))}
             </div>
-          ))}
+          </div>
         </div>
       </section>
     </div>

@@ -2,11 +2,12 @@ import styles from "./Hero.module.css";
 
 export default function Hero() {
   return (
+    <div className={styles.heroContainer}>
     <section className={styles.hero}>
       <div className={styles.left}>
         {/* Eyebrow text */}
         <p className={styles.eyebrow}>
-          Learn English Through Mother Tongue Languages
+          Learn English & Hindi Through Mother Tongue Languages
         </p>
 
         {/* Main Heading */}
@@ -41,7 +42,7 @@ export default function Hero() {
 
         {/* Description */}
         <p className={styles.description}>
-          Learn English through WhatsApp | Grammar + Spoken English
+          Learn Hindi & English through Online & Offline | Grammar + Spoken English
           <br />
           Course | 1 to 1 Personal Training
         </p>
@@ -49,7 +50,7 @@ export default function Hero() {
         {/* CTA Buttons */}
         <div className={styles.actions}>
           <a
-            href="https://wa.me/919999999999"
+            href="https://wa.me/919959751194"
             target="_blank"
             rel="noopener noreferrer"
             className={styles.whatsappBtn}
@@ -57,7 +58,14 @@ export default function Hero() {
             WhatsApp Now
           </a>
 
-          <button className={styles.courseBtn}>Get Course & Price</button>
+          <a
+            href="https://wa.me/919959751194"
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.courseBtn}
+          >
+            Get Course Details
+          </a>
         </div>
       </div>
 
@@ -72,5 +80,6 @@ export default function Hero() {
         </div>
       </div>
     </section>
+    </div>
   );
 }

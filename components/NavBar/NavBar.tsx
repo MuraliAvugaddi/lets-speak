@@ -23,7 +23,7 @@ export default function Navbar() {
     <header className={styles.navbar}>
       <div className={styles.wrapper}>
         <div className={styles.logo}>
-          <img src="./lets-speak.jpg" alt="LOGO" className={styles.logoImage}/>
+          <img src="/navbar-logo.png" alt="LOGO" className={styles.logoImage}/>
         </div>
 
         {/* Hamburger Icon */}
@@ -46,9 +46,9 @@ export default function Navbar() {
               Courses <span className={styles.arrow}>▾</span>
             </span>
             <div className={`${styles.dropdownMenu} ${openDropdown === 'courses' ? styles.dropdownOpen : ''}`}>
-              <Link href="/courses/spoken" onClick={closeMenu}>Hindi</Link>
-              <Link href="/courses/business" onClick={closeMenu}>English</Link>
-              <Link href="/courses/personality" onClick={closeMenu}>Club</Link>
+              <Link href="/hindi" onClick={closeMenu}>Hindi</Link>
+              <Link href="/english" onClick={closeMenu}>English</Link>
+              <Link href="/club" onClick={closeMenu}>Club</Link>
             </div>
           </div>
 
@@ -69,7 +69,7 @@ export default function Navbar() {
 
           {/* Mobile WhatsApp Button */}
           <a
-            href="https://wa.me/919999999999"
+            href="https://wa.me/919959751194"
             target="_blank"
             className={`${styles.whatsappBtn} ${styles.mobileWhatsapp}`}
             onClick={closeMenu}
@@ -80,7 +80,7 @@ export default function Navbar() {
 
         {/* Desktop WhatsApp Button */}
         <a
-          href="https://wa.me/919999999999"
+          href="https://wa.me/919959751194"
           target="_blank"
           className={`${styles.whatsappBtn} ${styles.desktopWhatsapp}`}
         >

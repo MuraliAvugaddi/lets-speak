@@ -4,7 +4,8 @@ import styles from "./MissionVision.module.css";
 
 const MissionVisionSection: React.FC = () => {
   return (
-    <>
+    <section className={styles.wrapper}>
+      {/* Mission, Vision, Passion, Achievement Section */}
       <div className={styles.container}>
         {/* Left Column: The 2x2 Grid of Cards */}
         <div className={styles.cardGrid}>
@@ -65,31 +66,39 @@ const MissionVisionSection: React.FC = () => {
 
           {/* Image Container & Image */}
           <div className={styles.imageBackground}>
-            {/* TODO: Replace the src below with the path to your actual image file */}
             <img
               src="./surendra-pose-1.jpg"
               alt="Trainer speaking with microphone"
               className={styles.personImage}
+              loading="lazy"
             />
           </div>
         </div>
       </div>
+
+      {/* Founder Section */}
       <div className={styles.founderSpace}>
         <div className={styles.leftSection}>
-          <img src="./surendra-the-founder.jpg" alt="" />
+          <img 
+            src="./surendra-the-founder.jpg" 
+            alt="Surendra - Founder of Let's Speak" 
+            loading="lazy"
+          />
         </div>
         <div className={styles.rightSection}>
-          <h1>I'm <span>Surendra</span></h1>
-          <h2>The Founder of Let's Speak</h2>
-          <p>
+          <h1 className={styles.founderHeading}>
+            I'm <span className={styles.founderName}>Surendra</span>
+          </h1>
+          <h2 className={styles.founderSubtitle}>The Founder of Let's Speak</h2>
+          <p className={styles.founderText}>
             With 30+ expert trainers, you can learn efficiently at your own
             pace. We work tirelessly to help you understand languages better.
             Our trainers are gracious, friendly, and available around the clock
             to support your learning journey.
           </p>
           
-          <p>
-            You’ll receive personalised guidance that adapts to your unique
+          <p className={styles.founderText}>
+            You'll receive personalised guidance that adapts to your unique
             goals. Our sessions are interactive, engaging, and designed to keep
             you motivated. We blend proven teaching methods with modern tools
             for maximum results. Every step you take is supported by a community
@@ -97,7 +106,7 @@ const MissionVisionSection: React.FC = () => {
           </p>
         </div>
       </div>
-    </>
+    </section>
   );
 };
 

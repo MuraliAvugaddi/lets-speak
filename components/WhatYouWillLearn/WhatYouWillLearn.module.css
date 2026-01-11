@@ -1,0 +1,783 @@
+/* Main Section */
+.mainSection {
+  width: 100%;
+  max-width: 100vw;
+  padding: 80px 20px;
+  overflow: hidden;
+  box-sizing: border-box;
+  font-family: var(--font-poppins), -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.mainContainer {
+  max-width: 1300px;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Logo */
+.logoWrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 32px;
+  height: 100px;
+  aspect-ratio: 1/1;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.logoWrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+  background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 8px 24px rgba(37, 99, 235, 0.3);
+  position: relative;
+}
+
+.logo::before {
+  content: '';
+  position: absolute;
+  inset: 8px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+}
+
+.logoText {
+  font-size: 32px;
+  font-weight: 800;
+  color: white;
+  font-style: italic;
+}
+
+/* Header */
+.mainHeading {
+  text-align: center;
+  font-size: clamp(32px, 5vw, 48px);
+  font-weight: 800;
+  color: #000000;
+  margin: 0 0 12px 0;
+  line-height: 1.2;
+}
+
+.highlight {
+  color: #0c4a7d;
+}
+
+.highlightGreen {
+  color: #0c4a7d;
+}
+
+.subheading {
+  text-align: center;
+  font-size: clamp(16px, 2vw, 20px);
+  color: #000000;
+  margin: 0 0 48px 0;
+  font-weight: 500;
+}
+
+/* Learning Cards Grid */
+.cardsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.learningCard {
+  background: white;
+  border-radius: 20px;
+  padding: 28px 24px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+.learningCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 6px;
+  transition: height 0.3s ease;
+}
+
+.learningCard.orange::before {
+  background: linear-gradient(90deg, #f59e0b 0%, #fbbf24 100%);
+}
+
+.learningCard.blue::before {
+  background: linear-gradient(90deg, #3b82f6 0%, #60a5fa 100%);
+}
+
+.learningCard.cyan::before {
+  background: linear-gradient(90deg, #06b6d4 0%, #22d3ee 100%);
+}
+
+.learningCard.green::before {
+  background: linear-gradient(90deg, #10b981 0%, #34d399 100%);
+}
+
+.learningCard:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Card Header */
+.cardHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.iconCircle {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+}
+
+.orange .iconCircle {
+  background: linear-gradient(135deg, #f59e0b 0%, #fbbf24 100%);
+}
+
+.blue .iconCircle {
+  background: linear-gradient(135deg, #3b82f6 0%, #60a5fa 100%);
+}
+
+.cyan .iconCircle {
+  background: linear-gradient(135deg, #06b6d4 0%, #22d3ee 100%);
+}
+
+.green .iconCircle {
+  background: linear-gradient(135deg, #10b981 0%, #34d399 100%);
+}
+
+.iconCircle svg {
+  width: 28px;
+  height: 28px;
+  color: white;
+}
+
+.cardTitle {
+  font-size: 20px;
+  font-weight: 700;
+  color: #1e293b;
+  margin: 0;
+  text-align: center;
+}
+
+/* Features List */
+.featuresList {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  flex-grow: 1;
+}
+
+.featureItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 14px;
+  color: #475569;
+  line-height: 1.6;
+}
+
+.checkIcon {
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.orange .checkIcon {
+  color: #f59e0b;
+}
+
+.blue .checkIcon {
+  color: #3b82f6;
+}
+
+.cyan .checkIcon {
+  color: #06b6d4;
+}
+
+.green .checkIcon {
+  color: #10b981;
+}
+
+/* Explore Button */
+.exploreButton {
+  width: 100%;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: inherit;
+}
+
+.orange .exploreButton {
+  background: linear-gradient(135deg, #f59e0b 0%, #fbbf24 100%);
+}
+
+.blue .exploreButton {
+  background: linear-gradient(135deg, #3b82f6 0%, #60a5fa 100%);
+}
+
+.cyan .exploreButton {
+  background: linear-gradient(135deg, #06b6d4 0%, #22d3ee 100%);
+}
+
+.green .exploreButton {
+  background: linear-gradient(135deg, #10b981 0%, #34d399 100%);
+}
+
+.exploreButton:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* CTA Wrapper */
+.ctaWrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 80px;
+}
+
+.startButton {
+  background: linear-gradient(135deg, #06b6d4 0%, #22d3ee 100%);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 18px 48px;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 8px 24px rgba(6, 182, 212, 0.3);
+  font-family: inherit;
+}
+
+.startButton:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 32px rgba(6, 182, 212, 0.4);
+}
+
+/* Who Can Join Section */
+.whoCanJoinSection {
+  margin-top: 60px;
+}
+
+.whoCanJoinHeading {
+  text-align: center;
+  font-size: clamp(32px, 5vw, 44px);
+  font-weight: 800;
+  color: #1e3a8a;
+  margin: 0 0 8px 0;
+  line-height: 1.2;
+}
+
+.criteriaSubtitle {
+  text-align: center;
+  font-size: 18px;
+  color: #475569;
+  margin: 0 0 40px 0;
+  font-weight: 600;
+}
+
+/* Criteria Grid */
+.criteriaGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.criteriaCard {
+  background: white;
+  border-radius: 16px;
+  padding: 32px 20px;
+  text-align: center;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.criteriaCard:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+  border-color: #10b981;
+}
+
+.criteriaIcon {
+  width: 56px;
+  height: 56px;
+  margin: 0 auto 16px;
+  color: #10b981;
+}
+
+.criteriaIcon svg {
+  width: 100%;
+  height: 100%;
+  stroke-width: 1.5;
+}
+
+.criteriaTitle {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1e3a8a;
+  margin: 0;
+  line-height: 1.4;
+}
+
+/* Categories */
+.categoriesWrapper {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-bottom: 0;
+  transition: margin-bottom 0.3s ease;
+}
+
+.categoryButton {
+  background: white;
+  border: 2px solid #cbd5e1;
+  border-radius: 12px;
+  padding: 14px 24px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: inherit;
+  font-size: 15px;
+  font-weight: 600;
+  color: #475569;
+  position: relative;
+}
+
+.categoryButton::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #10b981 0%, #34d399 100%);
+  transform: scaleX(0);
+  transition: transform 0.3s ease;
+  border-radius: 0 0 10px 10px;
+}
+
+.categoryButton:hover {
+  border-color: #10b981;
+  background: #f0fdf4;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(16, 185, 129, 0.2);
+}
+
+.categoryButton.active {
+  background: linear-gradient(135deg, #10b981 0%, #34d399 100%);
+  color: white;
+  border-color: #10b981;
+}
+
+.categoryButton.active::after {
+  transform: scaleX(1);
+}
+
+.categoryIcon {
+  font-size: 20px;
+}
+
+.categoryLabel {
+  white-space: nowrap;
+}
+
+.chevronIcon {
+  width: 16px;
+  height: 16px;
+  transition: transform 0.3s ease;
+}
+
+.categoryButton.active .chevronIcon {
+  transform: rotate(180deg);
+}
+
+/* Description Box */
+.descriptionBox {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease, margin-top 0.3s ease, opacity 0.3s ease;
+  opacity: 0;
+  margin-top: 0;
+}
+
+.descriptionBox.visible {
+  max-height: 300px;
+  opacity: 1;
+  margin-top: 24px;
+}
+
+.descriptionContent {
+  background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+  border-radius: 16px;
+  padding: 28px 32px;
+  border-left: 4px solid #10b981;
+  box-shadow: 0 4px 16px rgba(16, 185, 129, 0.1);
+  position: relative;
+}
+
+.quoteIcon {
+  width: 32px;
+  height: 32px;
+  color: #10b981;
+  opacity: 0.3;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.descriptionText {
+  font-size: 17px;
+  line-height: 1.8;
+  color: #1e293b;
+  margin: 0;
+  font-weight: 500;
+  padding-left: 20px;
+}
+
+/* RESPONSIVE STYLES */
+
+/* Large tablets */
+@media (max-width: 1024px) {
+  .mainSection {
+    padding: 60px 20px;
+  }
+
+  .cardsGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .criteriaGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .descriptionText {
+    font-size: 16px;
+  }
+}
+
+/* Tablets */
+@media (max-width: 768px) {
+  .mainSection {
+    padding: 50px 16px;
+  }
+
+  .logo {
+    width: 70px;
+    height: 70px;
+  }
+
+  .logoText {
+    font-size: 28px;
+  }
+
+  .subheading {
+    margin-bottom: 36px;
+  }
+
+  .cardsGrid {
+    gap: 16px;
+  }
+
+  .learningCard {
+    padding: 24px 20px;
+  }
+
+  .iconCircle {
+    width: 52px;
+    height: 52px;
+  }
+
+  .iconCircle svg {
+    width: 26px;
+    height: 26px;
+  }
+
+  .cardTitle {
+    font-size: 18px;
+  }
+
+  .featureItem {
+    font-size: 13px;
+  }
+
+  .exploreButton {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .startButton {
+    padding: 16px 40px;
+    font-size: 16px;
+  }
+
+  .criteriaGrid {
+    gap: 16px;
+  }
+
+  .criteriaCard {
+    padding: 28px 16px;
+  }
+
+  .criteriaIcon {
+    width: 48px;
+    height: 48px;
+  }
+
+  .criteriaTitle {
+    font-size: 15px;
+  }
+
+  .categoryButton {
+    padding: 12px 20px;
+    font-size: 14px;
+  }
+
+  .descriptionContent {
+    padding: 24px 28px;
+  }
+
+  .descriptionText {
+    font-size: 15px;
+    padding-left: 16px;
+  }
+
+  .quoteIcon {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+  .mainSection {
+    padding: 40px 16px;
+  }
+
+  .logo {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 24px;
+  }
+
+  .logoText {
+    font-size: 24px;
+  }
+
+  .subheading {
+    margin-bottom: 32px;
+  }
+
+  .cardsGrid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .learningCard {
+    padding: 24px 20px;
+  }
+
+  .ctaWrapper {
+    margin-bottom: 60px;
+  }
+
+  .startButton {
+    width: 100%;
+    max-width: 320px;
+    padding: 14px 32px;
+    font-size: 16px;
+  }
+
+  .whoCanJoinSection {
+    margin-top: 40px;
+  }
+
+  .criteriaGrid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+  }
+
+  .criteriaCard {
+    padding: 24px 16px;
+  }
+
+  .categoriesWrapper {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .categoryButton {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .descriptionBox.visible {
+    max-height: 400px;
+  }
+
+  .descriptionContent {
+    padding: 20px 24px;
+  }
+
+  .descriptionText {
+    font-size: 14px;
+    padding-left: 12px;
+  }
+
+  .quoteIcon {
+    width: 24px;
+    height: 24px;
+    top: 16px;
+    left: 16px;
+  }
+}
+
+/* Small mobile */
+@media (max-width: 480px) {
+  .mainSection {
+    padding: 36px 12px;
+  }
+
+  .learningCard {
+    padding: 20px 16px;
+  }
+
+  .iconCircle {
+    width: 48px;
+    height: 48px;
+  }
+
+  .iconCircle svg {
+    width: 24px;
+    height: 24px;
+  }
+
+  .cardTitle {
+    font-size: 17px;
+  }
+
+  .featureItem {
+    font-size: 13px;
+  }
+
+  .exploreButton {
+    padding: 10px 18px;
+    font-size: 14px;
+  }
+
+  .startButton {
+    padding: 13px 28px;
+    font-size: 15px;
+  }
+
+  .criteriaCard {
+    padding: 20px 14px;
+  }
+
+  .criteriaIcon {
+    width: 44px;
+    height: 44px;
+    margin-bottom: 12px;
+  }
+
+  .criteriaTitle {
+    font-size: 14px;
+  }
+
+  .descriptionContent {
+    padding: 18px 20px;
+  }
+
+  .descriptionText {
+    font-size: 13px;
+  }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .learningCard,
+  .exploreButton,
+  .startButton,
+  .criteriaCard,
+  .categoryButton,
+  .chevronIcon,
+  .descriptionBox {
+    transition: none;
+  }
+}
+
+/* Print */
+@media print {
+  .mainSection {
+    background: white;
+    padding: 20px;
+  }
+
+  .cardsGrid,
+  .criteriaGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+  }
+
+  .learningCard,
+  .criteriaCard {
+    break-inside: avoid;
+    box-shadow: none;
+    border: 1px solid #ddd;
+  }
+
+  .startButton,
+  .exploreButton {
+    display: none;
+  }
+
+  .descriptionBox.visible {
+    max-height: none;
+    opacity: 1;
+    break-inside: avoid;
+  }
+
+  .categoriesWrapper {
+    display: none;
+  }
+}

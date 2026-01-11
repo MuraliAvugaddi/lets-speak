@@ -6,7 +6,7 @@ import AboutHighlights from "@/components/AboutHighlights/AboutHighlights";
 import LearnSection from "@/components/WhatULearn/WhatULearn";
 import OurTeam from "@/components/OurTeam/OurTeam";
 import FAQ from "@/components/FAQ/FAQ";
-import Footer from "@/components/Footer/Footer";
+import ClassroomCulture from "@/components/ClassroomCulture/ClassroomCulture";
 
 export default function Home() {
   return (
@@ -16,6 +16,7 @@ export default function Home() {
       <CoursesSection/>
       <UpcomingBatch/>
       <AboutHighlights/>
+      <ClassroomCulture/>
       <LearnSection/>
       <OurTeam/>
       <FAQ/>

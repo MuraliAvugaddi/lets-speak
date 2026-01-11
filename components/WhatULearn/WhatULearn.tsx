@@ -42,7 +42,7 @@ const mentorTypes = [
 ];
 
 export default function LearnSection() {
-  const [activeTab, setActiveTab] = useState('champion');
+  const [activeTab, setActiveTab] = useState('mentor');
 
   const activeContent = mentorTypes.find(m => m.id === activeTab) || mentorTypes[4];
 

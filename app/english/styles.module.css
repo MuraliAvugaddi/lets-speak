@@ -1,0 +1,1120 @@
+/* Hero.module.css */
+
+.englishPage{
+  background-color: #fafbfa;
+}
+
+.englishHero {
+  width: min(1200px, 100%);
+  /* Use min-height to ensure it doesn't collapse on large screens */
+  min-height: 80vh;
+  padding: 80px 20px; /* Reduced side padding slightly */
+  font-family: var(--font-poppins), -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+  margin: 0 auto;
+  display: flex;
+  align-items: center; /* Vertically center content */
+  justify-content: space-between;
+  gap: 40px;
+  background-color: #fafbfa;
+}
+
+/* --- Columns --- */
+.englishLeft {
+  flex: 1;
+  max-width: 650px;
+  z-index: 2; /* Ensure text stays above images if they overlap */
+}
+
+.englishRight {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.englishImageContainer {
+  width: 100%;
+  max-width: 500px; /* Prevent image from getting too huge on large screens */
+  height: auto;
+  position: relative; /* needed for the pseudo-shadow */
+}
+.englishImageContainer img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  /* Optional: Add a subtle drop shadow or animation */
+}
+
+/* --- Typography --- */
+
+.englishEyebrow {
+  font-size: 16px;
+  font-weight: 600;
+  color: #555;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 16px;
+}
+
+.englishHeading {
+  font-size: 42px;
+  font-weight: 800;
+  line-height: 1.2;
+  color: #1a1a1a;
+  margin-bottom: 24px;
+}
+
+/* --- The Winning Circle Animation --- */
+.englishWinningWrapper {
+  position: relative;
+  display: inline-block;
+  white-space: nowrap; /* Prevent "Winning" and the circle from splitting lines */
+}
+
+.englishWinning {
+  color: #0b2c6f;
+  position: relative;
+  z-index: 2;
+}
+
+.englishCircle {
+  position: absolute;
+  left: -20%;
+  top: -25%;
+  width: 140%; /* Relative width ensures it scales with the text */
+  height: 160%;
+  z-index: 1;
+  pointer-events: none;
+  overflow: visible;
+}
+
+.englishCirclePath {
+  stroke-dasharray: 600;
+  stroke-dashoffset: 600;
+  animation: drawCircle 3s ease-in-out infinite;
+}
+
+@keyframes drawCircle {
+  0% {
+    stroke-dashoffset: 600;
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  50% {
+    stroke-dashoffset: 0;
+    opacity: 1;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    opacity: 0;
+  }
+}
+
+/* --- Description --- */
+.englishDescription {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 36px;
+  max-width: 90%;
+}
+
+/* --- Buttons --- */
+.englishActions {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.englishWhatsappBtn,
+.englishCourseBtn {
+  padding: 14px 28px;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.englishWhatsappBtn {
+  background: #25d366;
+  color: #fff;
+  border: none;
+}
+
+.whatsappBtn:hover {
+  background: #20bd5a;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(37, 211, 102, 0.3);
+}
+
+.englishCourseBtn {
+  background: #0b2c6f;
+  color: white;
+  border: none;
+}
+
+.courseBtn:hover {
+  background: #082255;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(11, 44, 111, 0.3);
+}
+
+/* =========================================
+   RESPONSIVE MEDIA QUERIES
+   ========================================= */
+
+/* Tablet (Portrait) and below */
+@media (max-width: 968px) {
+  .englishHero {
+    flex-direction: column-reverse; /* Brings image to top, text below */
+    text-align: center;
+    padding-top: 40px;
+    gap: 30px;
+  }
+
+  .englishLeft,
+  .englishRight {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .englishDescription {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .englishActions {
+    justify-content: center;
+  }
+
+  .englishImageContainer {
+    max-width: 400px; /* Slightly smaller image on tablet */
+  }
+}
+
+/* Mobile Devices */
+@media (max-width: 600px) {
+  .englishHero {
+    padding: 40px 20px;
+  }
+
+  .englishEyebrow {
+    font-size: 14px;
+  }
+
+  .englishHeading {
+    font-size: 32px; /* Scale down font to fit screen */
+  }
+
+  /* Adjust circle position for smaller font */
+  .englishCircle {
+    top: -20%;
+    left: -15%;
+    width: 130%;
+  }
+
+  .englishDescription {
+    font-size: 16px;
+  }
+
+  .englishActions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .englishWhatsappBtn,
+  .englishCourseBtn {
+    width: 100%;
+    justify-content: center;
+    display: flex;
+  }
+}
+
+/* Tiny Phones */
+@media (max-width: 380px) {
+  .englishHeading {
+    font-size: 28px;
+  }
+}
+
+/* Smoother floating animation using translate3d for GPU-acceleration
+   and a pseudo-element shadow for better performance and cleaner visuals */
+.englishFloating {
+  will-change: transform;
+  transform-origin: center;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  animation: float 6.4s cubic-bezier(0.22, 0.9, 0.3, 1) infinite;
+  -webkit-transform: translate3d(0, 0, 0);
+}
+
+/* Lightweight shadow placed under image using pseudo-element to avoid
+   animating heavy filter effects on the image itself */
+.englishImageContainer::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 6%;
+  transform: translateX(-50%) scale(1);
+  width: 60%;
+  height: 18px;
+  background: radial-gradient(
+    ellipse at center,
+    rgba(0, 0, 0, 0.16),
+    rgba(0, 0, 0, 0.04)
+  );
+  filter: blur(8px);
+  border-radius: 50%;
+  opacity: 1;
+  pointer-events: none;
+  animation: shadowPulse 6.4s cubic-bezier(0.22, 0.9, 0.3, 1) infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translate3d(0, 0, 0) rotate(-0.4deg);
+  }
+  50% {
+    transform: translate3d(0, -18px, 0) rotate(0.4deg);
+  }
+  100% {
+    transform: translate3d(0, 0, 0) rotate(-0.4deg);
+  }
+}
+
+@keyframes shadowPulse {
+  0% {
+    transform: translateX(-50%) scale(1);
+    opacity: 1;
+    filter: blur(8px);
+  }
+  50% {
+    transform: translateX(-50%) scale(1.12);
+    opacity: 0.88;
+    filter: blur(12px);
+  }
+  100% {
+    transform: translateX(-50%) scale(1);
+    opacity: 1;
+    filter: blur(8px);
+  }
+}
+
+/* Reduce motion and disable animations for users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .floating,
+  .imageContainer::before {
+    animation: none !important;
+  }
+}
+
+/* Slightly reduce amplitude / duration on smaller screens for better fit */
+@media (max-width: 968px) {
+  .englishFloating {
+    animation-duration: 5s;
+  }
+  .englishImageContainer::before {
+    bottom: 4%;
+    height: 14px;
+    width: 55%;
+  }
+}
+
+@media (max-width: 600px) {
+  .englishFloating {
+    animation-duration: 4s;
+  }
+  .englishImageContainer::before {
+    bottom: 3%;
+    height: 12px;
+    width: 50%;
+  }
+}
+
+/* =========================
+   MAIN SECTION
+========================= */
+.english_section {
+  width: 100%;
+  max-width: 100vw;
+  padding: 80px 20px;
+  background: #ffffff;
+  overflow: hidden;
+  box-sizing: border-box;
+  font-family: var(--font-poppins), -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.english_container {
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* =========================
+   HEADER
+========================= */
+.english_heading {
+  text-align: center;
+  font-size: clamp(32px, 5vw, 48px);
+  font-weight: 800;
+  color: #1a1a1a;
+  margin: 0 0 56px 0;
+  line-height: 1.2;
+}
+
+.english_highlight {
+  color: #0b2c6f;
+}
+
+/* =========================
+   COURSES GRID
+========================= */
+.english_coursesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 28px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* =========================
+   COURSE CARD
+========================= */
+.english_courseCard {
+  background: #ffffff;
+  border: 2px solid #e5e7eb;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.english_courseCard:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+  border-color: #0b3c63;
+}
+
+/* =========================
+   CARD HEADER
+========================= */
+.english_cardHeader {
+  background: #f8fafc;
+  padding: 24px;
+  border-bottom: 2px solid #e5e7eb;
+}
+
+.english_stageName {
+  font-size: 24px;
+  font-weight: 700;
+  color: #0b3c63;
+  margin: 0;
+  text-align: center;
+}
+
+/* =========================
+   CARD BODY
+========================= */
+.english_cardBody {
+  padding: 28px 24px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.english_duration {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 16px;
+  background: #f1f5f9;
+  border-radius: 10px;
+  font-size: 14px;
+  color: #475569;
+  font-weight: 500;
+}
+
+.english_clockIcon {
+  width: 18px;
+  height: 18px;
+  color: #0b3c63;
+  flex-shrink: 0;
+}
+
+/* =========================
+   FEATURES LIST
+========================= */
+.english_featuresList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.english_featureItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 14px;
+  color: #374151;
+  line-height: 1.6;
+}
+
+.english_checkIcon {
+  width: 20px;
+  height: 20px;
+  color: #10b981;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+/* =========================
+   CARD FOOTER
+========================= */
+.english_cardFooter {
+  padding: 24px;
+  border-top: 2px solid #f1f5f9;
+}
+
+.english_enrollButton {
+  width: 100%;
+  background: #0b3c63;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 14px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-family: inherit;
+  text-decoration: none;
+}
+
+.english_enrollButton:hover {
+  background: #082c49;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(11, 60, 99, 0.3);
+}
+
+.english_enrollButton:active {
+  transform: translateY(0);
+}
+
+.english_arrowIcon {
+  width: 20px;
+  height: 20px;
+  transition: transform 0.3s ease;
+}
+
+
+.english_enrollButton:hover .english_arrowIcon {
+  transform: translateX(4px);
+}
+
+/* =========================
+   RESPONSIVE STYLES
+========================= */
+
+/* Large screens */
+@media (min-width: 1400px) {
+  .english_coursesGrid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) and (max-width: 1399px) {
+  .english_coursesGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Tablet */
+@media (min-width: 768px) and (max-width: 1023px) {
+  .english_section {
+    padding: 60px 20px;
+  }
+
+  .english_heading {
+    margin-bottom: 44px;
+  }
+
+  .english_coursesGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  .english_cardBody {
+    padding: 24px 20px;
+  }
+
+  .english_stageName {
+    font-size: 22px;
+  }
+
+  .english_featureItem {
+    font-size: 13px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .english_section {
+    padding: 50px 16px;
+  }
+
+  .english_heading {
+    margin-bottom: 36px;
+  }
+
+  .english_coursesGrid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .english_cardHeader {
+    padding: 20px;
+  }
+
+  .english_stageName {
+    font-size: 20px;
+  }
+
+  .english_cardBody {
+    padding: 24px 20px;
+    gap: 16px;
+  }
+
+  .english_duration {
+    padding: 10px 14px;
+    font-size: 13px;
+  }
+
+  .english_clockIcon {
+    width: 16px;
+    height: 16px;
+  }
+
+  .english_featuresList {
+    gap: 12px;
+  }
+
+  .english_featureItem {
+    font-size: 13px;
+  }
+
+  .english_checkIcon {
+    width: 18px;
+    height: 18px;
+  }
+
+  .english_cardFooter {
+    padding: 20px;
+  }
+
+  .english_enrollButton {
+    padding: 12px 20px;
+    font-size: 15px;
+  }
+
+  .english_arrowIcon {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+/* Small mobile */
+@media (max-width: 480px) {
+  .english_section {
+    padding: 40px 12px;
+  }
+
+  .english_heading {
+    margin-bottom: 32px;
+  }
+
+  .english_coursesGrid {
+    gap: 16px;
+  }
+
+  .english_cardHeader {
+    padding: 18px;
+  }
+
+  .english_stageName {
+    font-size: 18px;
+  }
+
+  .english_cardBody {
+    padding: 20px 16px;
+  }
+
+  .english_duration {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+    padding: 12px;
+  }
+
+  .english_featureItem {
+    font-size: 12px;
+    gap: 10px;
+  }
+
+  .english_cardFooter {
+    padding: 16px;
+  }
+
+  .english_enrollButton {
+    padding: 11px 18px;
+    font-size: 14px;
+  }
+}
+
+/* Extra small */
+@media (max-width: 360px) {
+  .english_section {
+    padding: 36px 10px;
+  }
+
+  .english_coursesGrid {
+    gap: 14px;
+  }
+
+  .english_stageName {
+    font-size: 17px;
+  }
+
+  .english_cardBody {
+    padding: 18px 14px;
+  }
+
+  .english_featureItem {
+    font-size: 12px;
+  }
+
+  .english_checkIcon {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+/* =========================
+   ACCESSIBILITY
+========================= */
+@media (prefers-reduced-motion: reduce) {
+  .english_courseCard,
+  .english_enrollButton,
+  .english_arrowIcon {
+    transition: none;
+  }
+}
+
+/* =========================
+   PRINT STYLES
+========================= */
+@media print {
+  .english_section {
+    padding: 20px;
+  }
+
+  .english_coursesGrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .english_courseCard {
+    break-inside: avoid;
+    box-shadow: none;
+    border: 1px solid #ddd;
+  }
+
+  .english_enrollButton {
+    display: none;
+  }
+}
+
+/* Main Section */
+.simpleSection {
+  width: 100%;
+  max-width: 100vw;
+  padding: 80px 20px;
+  background: #ffffff;
+  overflow: hidden;
+  box-sizing: border-box;
+  font-family: var(--font-poppins), -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.simpleContainer {
+  max-width: 1300px;
+  margin: 0 auto;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Header */
+.simpleHeading {
+  text-align: center;
+  font-size: clamp(28px, 5vw, 44px);
+  font-weight: 800;
+  color: #000000;
+  margin: 0 0 56px 0;
+  line-height: 1.3;
+}
+
+.simpleHighlightRed {
+  color: #0b3c63;
+}
+
+.simpleHighlightBlue {
+  color: #0b3c63;
+}
+
+/* Grid Layout */
+.simpleGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Card Styles */
+.simpleCard {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 36px 28px;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.simpleCardRed {
+  border: 3px solid #0b3c63;
+}
+
+.simpleCardBlue {
+  border: 3px solid #0b3c63;
+}
+
+.simpleCard:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.15);
+}
+
+/* Icon Wrapper */
+.simpleIconWrapper {
+  width: 64px;
+  height: 64px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+  flex-shrink: 0;
+}
+
+.simpleCardRed .simpleIconWrapper {
+  background-color: #0b3c63;
+}
+
+.simpleCardBlue .simpleIconWrapper {
+  background-color: #0b3c63;
+}
+
+.simpleIcon {
+  width: 32px;
+  height: 32px;
+  color: white;
+}
+
+/* Card Title */
+.simpleCardTitle {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1a202c;
+  margin: 0 0 20px 0;
+  line-height: 1.3;
+}
+
+/* List Styles */
+.simpleList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  width: 100%;
+}
+
+.simpleListItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  font-size: 15px;
+  color: #4a5568;
+  line-height: 1.6;
+}
+
+.simpleCheckIcon {
+  width: 20px;
+  height: 20px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.simpleCardRed .simpleCheckIcon {
+  color: #0b3c63;
+}
+
+.simpleCardBlue .simpleCheckIcon {
+  color: #0b3c63;
+}
+
+.simpleListItem span {
+  flex: 1;
+}
+
+/* RESPONSIVE STYLES */
+
+/* Large tablets and small desktops */
+@media (max-width: 1024px) {
+  .simpleSection {
+    padding: 60px 20px;
+  }
+
+  .simpleHeading {
+    margin-bottom: 48px;
+  }
+
+  .simpleGrid {
+    gap: 28px;
+  }
+
+  .simpleCard {
+    padding: 32px 24px;
+  }
+
+  .simpleIconWrapper {
+    width: 60px;
+    height: 60px;
+  }
+
+  .simpleIcon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .simpleCardTitle {
+    font-size: 20px;
+    margin-bottom: 18px;
+  }
+
+  .simpleListItem {
+    font-size: 14px;
+  }
+}
+
+/* Tablets - 2 column layout */
+@media (max-width: 900px) {
+  .simpleSection {
+    padding: 50px 16px;
+  }
+
+  .simpleHeading {
+    margin-bottom: 40px;
+  }
+
+  .simpleGrid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  /* Make third card span full width on 2-column layout */
+  .simpleCard:nth-child(3) {
+    grid-column: 1 / -1;
+    max-width: 600px;
+    margin: 0 auto;
+    width: 100%;
+  }
+}
+
+/* Mobile - 1 column layout */
+@media (max-width: 640px) {
+  .simpleSection {
+    padding: 40px 16px;
+  }
+
+  .simpleHeading {
+    margin-bottom: 36px;
+  }
+
+  .simpleGrid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .simpleCard {
+    padding: 28px 20px;
+  }
+
+  .simpleCard:nth-child(3) {
+    grid-column: 1;
+    max-width: none;
+  }
+
+  .simpleIconWrapper {
+    width: 56px;
+    height: 56px;
+    margin-bottom: 16px;
+  }
+
+  .simpleIcon {
+    width: 28px;
+    height: 28px;
+  }
+
+  .simpleCardTitle {
+    font-size: 19px;
+    margin-bottom: 16px;
+  }
+
+  .simpleList {
+    gap: 12px;
+  }
+
+  .simpleListItem {
+    font-size: 14px;
+    gap: 10px;
+  }
+
+  .simpleCheckIcon {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+/* Small mobile */
+@media (max-width: 480px) {
+  .simpleSection {
+    padding: 36px 12px;
+  }
+
+  .simpleHeading {
+    margin-bottom: 32px;
+  }
+
+  .simpleGrid {
+    gap: 16px;
+  }
+
+  .simpleCard {
+    padding: 24px 18px;
+    border-radius: 16px;
+  }
+
+  .simpleIconWrapper {
+    width: 52px;
+    height: 52px;
+  }
+
+  .simpleIcon {
+    width: 26px;
+    height: 26px;
+  }
+
+  .simpleCardTitle {
+    font-size: 18px;
+  }
+
+  .simpleListItem {
+    font-size: 13px;
+  }
+}
+
+/* Extra small mobile */
+@media (max-width: 360px) {
+  .simpleSection {
+    padding: 32px 10px;
+  }
+
+  .simpleCard {
+    padding: 22px 16px;
+  }
+
+  .simpleIconWrapper {
+    width: 48px;
+    height: 48px;
+  }
+
+  .simpleIcon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .simpleCardTitle {
+    font-size: 17px;
+  }
+
+  .simpleListItem {
+    font-size: 13px;
+  }
+
+  .simpleCheckIcon {
+    width: 16px;
+    height: 16px;
+  }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  .simpleCard {
+    transition: none;
+  }
+}
+
+/* Print styles */
+@media print {
+  .simpleSection {
+    padding: 20px;
+  }
+
+  .simpleGrid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .simpleCard {
+    break-inside: avoid;
+    box-shadow: none;
+    border-width: 2px;
+  }
+
+  .simpleCard:nth-child(3) {
+    grid-column: auto;
+    max-width: none;
+  }
+}

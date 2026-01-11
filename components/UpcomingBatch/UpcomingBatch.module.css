@@ -1,10 +1,14 @@
 .section {
   text-align: center;
   background: #ffffff;
-  max-width: 1400px;
+  max-width: 1220px;
   margin: 0 auto;
   font-family: var(--font-poppins), sans-serif;
   padding-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .heading {
@@ -119,6 +123,7 @@
   margin-bottom: 24px;
   color: #333;
   max-width: 800px;
+  text-align: center;
 }
 
 /* Button */

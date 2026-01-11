@@ -1,4 +1,6 @@
+import Link from "next/link";
 import styles from "./CoursesSection.module.css";
+import { link } from "fs";
 
 const courses = [
   {
@@ -7,17 +9,19 @@ const courses = [
     description:
       "Learn American and British pronunciation rules, intonation patterns, and common challenges through interactive modules and expert feedback. Master clear communication.",
     rating: 4.6,
-    reviews: 1248,
+    reviews: 4.6,
     level: 7,
+    link: "/english",
   },
   {
     language: "Telugu to Hindi",
     subtitle: "Spoken English",
     description:
-      "Improve fluency from Hindi to English with practical speaking exercises, daily conversations, and personalized trainer feedback.",
+      "Improve fluency from Telugu to English with practical speaking exercises, daily conversations, and personalized trainer feedback.",
     rating: 4.5,
-    reviews: 986,
+    reviews: 4.5,
     level: 7,
+    link: "/hindi",
   },
   {
     language: "Club",
@@ -25,8 +29,9 @@ const courses = [
     description:
       "Master English speaking from Telugu with structured lessons, pronunciation drills, and real-life conversation practice.",
     rating: 4.7,
-    reviews: 1432,
+    reviews: 4.7,
     level: 7,
+    link: "/club",
   },
 ];
 
@@ -63,7 +68,9 @@ export default function CoursesSection() {
 
             <div className={styles.bottomContent}>
               {/* Button */}
-              <button className={styles.button}>View Details</button>
+              <button className={styles.button}>
+                <Link href={course.link}>View Details</Link>
+              </button>
 
               {/* Rating */}
               <div className={styles.rating}>
