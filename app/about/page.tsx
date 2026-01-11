@@ -9,7 +9,6 @@ const about = () => {
     <div className={styles.aboutPage}>
       <div className={styles.headImage}>
         <img src="./staff/whole-staff.png" alt="TEAM-LETS-SPEAK" />
-        <p>About Us</p>
       </div>
       <WhyChooseUs/>
       <MissionVision/>
