@@ -10,16 +10,16 @@ import ClassroomCulture from "@/components/ClassroomCulture/ClassroomCulture";
 
 export default function Home() {
   return (
-    <div style={{ width: 100 + '%' ,display: 'flex', justifyContent: 'center' , alignItems: 'center', flexDirection: 'column'}}>
-      <Hero/>
-      <WhyChooseUs/>
-      <CoursesSection/>
-      <UpcomingBatch/>
-      <AboutHighlights/>
-      <ClassroomCulture/>
-      <LearnSection/>
-      <OurTeam/>
-      <FAQ/>
+    <div style={{ width: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}>
+      <div id="home"><Hero /></div>
+      <div id="why-choose-us"><WhyChooseUs /></div>
+      <div id="courses"><CoursesSection /></div>
+      <div id="upcoming-batch"><UpcomingBatch /></div>
+      <div id="about"><AboutHighlights /></div>
+      <div id="classroom-culture"><ClassroomCulture /></div>
+      <div id="learn"><LearnSection /></div>
+      <div id="our-team"><OurTeam /></div>
+      <div id="faq"><FAQ /></div>
     </div>
   );
 }

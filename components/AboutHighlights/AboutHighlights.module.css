@@ -251,7 +251,7 @@
 .reviewTrack {
   display: flex;
   gap: 28px;
-  animation: scrollReviews 60s linear infinite;
+  animation: scrollReviews 30s linear infinite;
   will-change: transform;
 }
 
