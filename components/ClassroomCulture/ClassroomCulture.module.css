@@ -3,7 +3,7 @@
   width: 100%;
   max-width: 100vw;
   padding: 80px 20px;
-  background: linear-gradient(135deg, #f6f9fc 0%, #e9f2f9 100%);
+  background-color: #fafbfa;
   overflow: hidden;
   box-sizing: border-box;
   font-family: var(--font-poppins), -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
