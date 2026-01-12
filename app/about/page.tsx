@@ -8,7 +8,7 @@ const about = () => {
   return (
     <div className={styles.aboutPage}>
       <div className={styles.headImage}>
-        <img src="./staff/whole-staff.png" alt="TEAM-LETS-SPEAK" />
+        <img src="./staff/whole-staff.jpg" alt="TEAM-LETS-SPEAK" />
       </div>
       <WhyChooseUs/>
       <MissionVision/>
