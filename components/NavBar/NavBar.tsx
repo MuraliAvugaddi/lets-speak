@@ -1,15 +1,15 @@
-'use client';
+"use client";
 
-import styles from './NavBar.module.css';
-import Link from 'next/link';
-import { useState } from 'react';
+import styles from "./NavBar.module.css";
+import Link from "next/link";
+import { useState } from "react";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
 
   const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
-  
+
   const toggleDropdown = (name: string) => {
     setOpenDropdown(openDropdown === name ? null : name);
   };
@@ -22,13 +22,13 @@ export default function Navbar() {
   return (
     <header className={styles.navbar}>
       <div className={styles.wrapper}>
-        <div className={styles.logo}>
-          <img src="/navbar-logo.png" alt="LOGO" className={styles.logoImage}/>
-        </div>
+        <Link href="/" onClick={closeMenu} className={styles.logo}>
+          <img src="/navbar-logo.png" alt="LOGO" className={styles.logoImage} />
+        </Link>
 
         {/* Hamburger Icon */}
-        <button 
-          className={`${styles.hamburger} ${isMenuOpen ? styles.active : ''}`}
+        <button
+          className={`${styles.hamburger} ${isMenuOpen ? styles.active : ""}`}
           onClick={toggleMenu}
           aria-label="Toggle menu"
         >
@@ -38,16 +38,24 @@ export default function Navbar() {
         </button>
 
         {/* Navigation */}
-        <nav className={`${styles.navLinks} ${isMenuOpen ? styles.open : ''}`}>
-          <Link href="/" onClick={closeMenu}>Home</Link>
+        <nav className={`${styles.navLinks} ${isMenuOpen ? styles.open : ""}`}>
+          <Link href="/" onClick={closeMenu}>
+            Home
+          </Link>
 
           <div className={styles.dropdown}>
-            <span onClick={() => toggleDropdown('courses')}>
+            <span onClick={() => toggleDropdown("courses")}>
               Courses <span className={styles.arrow}>▾</span>
             </span>
-            <div className={`${styles.dropdownMenu} ${openDropdown === 'courses' ? styles.dropdownOpen : ''}`}>
-              <Link href="/english" onClick={closeMenu}>English</Link>
-              <Link href="/hindi" onClick={closeMenu}>Hindi</Link>
+            <div
+              className={`${styles.dropdownMenu} ${openDropdown === "courses" ? styles.dropdownOpen : ""}`}
+            >
+              <Link href="/courses/english" onClick={closeMenu}>
+                English
+              </Link>
+              <Link href="/courses/hindi" onClick={closeMenu}>
+                Hindi
+              </Link>
             </div>
           </div>
 
@@ -62,9 +70,13 @@ export default function Navbar() {
             </div>
           </div> */}
 
-          <Link href="/about" onClick={closeMenu}>About Us</Link>
+          <Link href="/about" onClick={closeMenu}>
+            About Us
+          </Link>
 
-          <Link href="/contact" onClick={closeMenu}>Contact Us</Link>
+          <Link href="/contact" onClick={closeMenu}>
+            Contact Us
+          </Link>
 
           {/* Mobile WhatsApp Button */}
           <a

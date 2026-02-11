@@ -67,7 +67,7 @@ const MissionVisionSection: React.FC = () => {
           {/* Image Container & Image */}
           <div className={styles.imageBackground}>
             <img
-              src="./surendra-pose-1.jpg"
+              src="/surendra-pose-1.jpg"
               alt="Trainer speaking with microphone"
               className={styles.personImage}
               loading="lazy"
@@ -80,7 +80,7 @@ const MissionVisionSection: React.FC = () => {
       <div className={styles.founderSpace}>
         <div className={styles.leftSection}>
           <img 
-            src="./surendra-the-founder.jpg" 
+            src="/surendra-the-founder.jpg" 
             alt="Surendra - Founder of Let's Speak" 
             loading="lazy"
           />

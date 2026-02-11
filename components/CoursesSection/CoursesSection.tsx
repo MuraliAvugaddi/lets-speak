@@ -1,37 +1,51 @@
 import Link from "next/link";
 import styles from "./CoursesSection.module.css";
-import { link } from "fs";
 
 const courses = [
   {
-    language: "Telugu to English",
-    subtitle: "Spoken English",
-    description:
-      "Learn American and British pronunciation rules, intonation patterns, and common challenges through interactive modules and expert feedback. Master clear communication.",
+    language: "English Language Course",
+    subtitle:
+      "Stage-based, personalized English training to improve speaking, listening, reading, and writing skills",
+    bullets: [
+      "Level-based stages (Beginner to Advanced)",
+      "Online, Offline & One-on-One sessions",
+      "Focus on spoken English & communication",
+      "Practical, real-life usage",
+    ],
     rating: 4.6,
     reviews: 4.6,
     level: 7,
-    link: "/english",
+    link: "/courses/english",
   },
   {
-    language: "Telugu to Hindi",
-    subtitle: "Spoken English",
-    description:
-      "Improve fluency from Telugu to English with practical speaking exercises, daily conversations, and personalized trainer feedback.",
+    language: "Hindi Language Course",
+    subtitle:
+      "Personalized, stage-based Hindi training to build confidence in speaking and understanding.",
+    bullets: [
+      "Beginner-friendly stages",
+      "Speaking-focused approach",
+      "Online, Offline & One-on-One options",
+      "Useful for daily and professional use",
+    ],
     rating: 4.5,
     reviews: 4.5,
     level: 7,
-    link: "/hindi",
+    link: "/courses/hindi",
   },
   {
-    language: "Club",
-    subtitle: "Communication",
-    description:
-      "Master English speaking from Telugu with structured lessons, pronunciation drills, and real-life conversation practice.",
+    language: "More Courses Coming Soon",
+    subtitle:
+      "We’re expanding our learning programs to help you grow in communication and life skills.",
+    bullets: [
+      "New language courses",
+      "Communication & life skills training",
+      "Skill-based programs for all age groups",
+      "Skill-based programs for all age groups",
+    ],
     rating: 4.7,
     reviews: 4.7,
     level: 7,
-    link: "/club",
+    link: "/coming-soon",
   },
 ];
 
@@ -39,7 +53,7 @@ export default function CoursesSection() {
   return (
     <section className={styles.section}>
       <div className={styles.intro}>
-        <h1>Our Courses</h1>
+        <h1>Choose Your Choice</h1>
         <p>
           Our online English courses are customized according to your level,
           ensuring a progressive learning experience, explore the comprehensive
@@ -52,19 +66,28 @@ export default function CoursesSection() {
             {/* Header */}
             <div className={styles.header}>
               <h3>{course.language}</h3>
-              <p>({course.subtitle})</p>
+              <p>{course.subtitle} </p>
             </div>
 
-            {/* Dots */}
-            <div className={styles.dots}>
-              <span className={styles.blue}></span>
-              <span className={styles.teal}></span>
-              <span className={styles.green}></span>
-              <span className={styles.purple}></span>
-            </div>
-
-            {/* Content */}
-            <p className={styles.description}>{course.description}</p>
+            {/* Content (bullet points with colored dots) */}
+            <ul className={styles.bulletList}>
+              {course.bullets.map((b, i) => {
+                const colors = [
+                  styles.blue,
+                  styles.teal,
+                  styles.green,
+                  styles.purple,
+                ];
+                return (
+                  <li key={i} className={styles.bulletItem}>
+                    <span
+                      className={`${styles.bulletDot} ${colors[i % 4]}`}
+                    ></span>
+                    <span className={styles.bulletText}>{b}</span>
+                  </li>
+                );
+              })}
+            </ul>
 
             <div className={styles.bottomContent}>
               {/* Button */}

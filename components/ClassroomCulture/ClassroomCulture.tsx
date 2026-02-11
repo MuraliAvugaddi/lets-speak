@@ -4,13 +4,13 @@ import React, { useState, useEffect, useRef } from "react";
 import styles from "./ClassroomCulture.module.css";
 
 const images = [
-  { src: "cc-1.webp", alt: "Classroom culture moment 1" },
-  { src: "cc-2.webp", alt: "Classroom culture moment 2" },
-  { src: "cc-3.webp", alt: "Classroom culture moment 3" },
-  { src: "cc-4.webp", alt: "Classroom culture moment 4" },
-  { src: "cc-5.webp", alt: "Classroom culture moment 5" },
-  { src: "cc-6.webp", alt: "Classroom culture moment 6" },
-  { src: "cc-7.webp", alt: "Classroom culture moment 7" },
+  { src: "/cc-1.webp", alt: "Classroom culture moment 1" },
+  { src: "/cc-2.webp", alt: "Classroom culture moment 2" },
+  { src: "/cc-3.webp", alt: "Classroom culture moment 3" },
+  { src: "/cc-4.webp", alt: "Classroom culture moment 4" },
+  { src: "/cc-5.webp", alt: "Classroom culture moment 5" },
+  { src: "/cc-6.webp", alt: "Classroom culture moment 6" },
+  { src: "/cc-7.webp", alt: "Classroom culture moment 7" },
 ];
 
 const ClassroomCulture = () => {

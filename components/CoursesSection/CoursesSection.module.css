@@ -63,38 +63,60 @@
 }
 
 .header p {
-  font-size: 20px;
+  font-size: 14px;
   opacity: 0.9;
   margin: 0;
 }
 
 /* Dots */
-.dots {
+
+/* Bullet List */
+.bulletList {
+  padding: 20px 26px 0 26px;
+  list-style: none;
+  margin: 0;
+  margin-bottom: 22px;
+  flex-grow: 1;
+}
+
+.bulletItem {
   display: flex;
+  align-items: center;
   gap: 12px;
-  padding: 22px 26px 10px;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #333;
+  margin-bottom: 12px;
 }
 
-.dots span {
-  width: 28px;
-  height: 28px;
+.bulletItem:last-child {
+  margin-bottom: 0;
+}
+
+.bulletDot {
+  width: 12px;
+  height: 12px;
   border-radius: 50%;
-  transition: transform 0.2s ease;
+  flex-shrink: 0;
+  display: inline-block;
 }
 
-.dots span:hover {
-  transform: scale(1.15);
+.bulletText {
+  font-weight: 500;
 }
 
 .blue {
   background: #3b82f6;
 }
+
 .teal {
   background: #2dd4bf;
 }
+
 .green {
   background: #a3e635;
 }
+
 .purple {
   background: #a78bfa;
 }
@@ -132,9 +154,9 @@
   transition: all 0.3s ease;
 }
 
-.button a{
-   color: white;
-   text-decoration: none;
+.button a {
+  color: white;
+  text-decoration: none;
 }
 
 .button:hover {
@@ -216,8 +238,14 @@
     font-size: 18px;
   }
 
-  .dots {
-    padding: 18px 22px 8px;
+  .bulletList {
+    padding: 18px 22px 0 22px;
+  }
+
+  .bulletItem {
+    font-size: 14px;
+    gap: 10px;
+    margin-bottom: 10px;
   }
 
   .description {
@@ -280,13 +308,14 @@
     font-size: 17px;
   }
 
-  .dots {
-    padding: 20px 24px 10px;
+  .bulletList {
+    padding: 18px 24px 0 24px;
   }
 
-  .dots span {
-    width: 24px;
-    height: 24px;
+  .bulletItem {
+    font-size: 14px;
+    gap: 10px;
+    margin-bottom: 10px;
   }
 
   .description {
@@ -359,14 +388,14 @@
     font-size: 16px;
   }
 
-  .dots {
-    padding: 16px 20px 8px;
-    gap: 10px;
+  .bulletList {
+    padding: 16px 20px 0 20px;
   }
 
-  .dots span {
-    width: 22px;
-    height: 22px;
+  .bulletItem {
+    font-size: 13px;
+    gap: 8px;
+    margin-bottom: 8px;
   }
 
   .description {
@@ -430,14 +459,14 @@
     font-size: 15px;
   }
 
-  .dots {
-    padding: 14px 18px 6px;
-    gap: 8px;
+  .bulletList {
+    padding: 14px 18px 0 18px;
   }
 
-  .dots span {
-    width: 20px;
-    height: 20px;
+  .bulletItem {
+    font-size: 12px;
+    gap: 8px;
+    margin-bottom: 8px;
   }
 
   .description {

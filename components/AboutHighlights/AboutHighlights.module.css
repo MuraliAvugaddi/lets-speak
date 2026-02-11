@@ -214,7 +214,7 @@
 }
 
 /* --- Reviews with Auto-Scroll --- */
-.reviewContainer {
+.review_reviewContainer {
   position: relative;
   width: 100%;
   overflow: hidden;
@@ -223,8 +223,8 @@
 }
 
 /* Cloudy fade effects on edges */
-.fadeLeft,
-.fadeRight {
+.review_fadeLeft,
+.review_fadeRight {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -233,29 +233,29 @@
   pointer-events: none;
 }
 
-.fadeLeft {
+.review_fadeLeft {
   left: 0;
   background: linear-gradient(to right, #f6f9fc 0%, transparent 100%);
 }
 
-.fadeRight {
+.review_fadeRight {
   right: 0;
   background: linear-gradient(to left, #f6f9fc 0%, transparent 100%);
 }
 
-.reviewScroller {
+.review_reviewScroller {
   overflow: hidden;
   width: 100%;
 }
 
-.reviewTrack {
+.review_reviewTrack {
   display: flex;
   gap: 28px;
   animation: scrollReviews 30s linear infinite;
   will-change: transform;
 }
 
-.reviewTrack.paused {
+.review_reviewTrack.review_paused {
   animation-play-state: paused;
 }
 
@@ -268,7 +268,7 @@
   }
 }
 
-.reviewCard {
+.review_reviewCard {
   background: #fff;
   border-radius: 14px;
   padding: 28px;
@@ -284,12 +284,12 @@
   box-sizing: border-box;
 }
 
-.reviewCard:hover {
+.review_reviewCard:hover {
   transform: translateY(-4px);
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
 }
 
-.reviewPhoto {
+.review_reviewPhoto {
   width: 96px;
   height: 96px;
   object-fit: cover;
@@ -299,7 +299,7 @@
   flex-shrink: 0;
 }
 
-.reviewText {
+.review_reviewText {
   font-size: 15px;
   color: #333;
   line-height: 1.7;
@@ -308,18 +308,18 @@
   flex-grow: 1;
 }
 
-.reviewAuthor {
+.review_reviewAuthor {
   width: 100%;
 }
 
-.reviewName {
+.review_reviewName {
   font-weight: 700;
   font-size: 16px;
   color: #0b3c63;
   margin: 0 0 4px 0;
 }
 
-.reviewJob {
+.review_reviewJob {
   font-size: 13px;
   color: #6b7280;
   margin: 0;
@@ -338,7 +338,7 @@
     margin: 50px 0 36px;
   }
 
-  .reviewCard {
+  .review_reviewCard {
     min-width: 320px;
     max-width: 320px;
   }
@@ -372,8 +372,8 @@
     padding: 24px;
   }
 
-  .fadeLeft,
-  .fadeRight {
+  .review_fadeLeft,
+  .review_fadeRight {
     width: 80px;
   }
 }
@@ -434,20 +434,20 @@
     padding: 22px;
   }
 
-  .reviewPhoto {
+  .review_reviewPhoto {
     width: 80px;
     height: 80px;
   }
 
-  .reviewText {
+  .review_reviewText {
     font-size: 14px;
   }
 
-  .reviewName {
+  .review_reviewName {
     font-size: 15px;
   }
 
-  .reviewJob {
+  .review_reviewJob {
     font-size: 12px;
   }
 
@@ -552,7 +552,7 @@
     width: 40px;
   }
 
-  .reviewTrack {
+  .review_reviewTrack {
     gap: 16px;
   }
 }
@@ -588,7 +588,7 @@
     font-size: 13px;
   }
 
-  .reviewCard {
+  .review_reviewCard {
     min-width: 220px;
     max-width: 220px;
     padding: 18px;

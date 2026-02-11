@@ -38,10 +38,14 @@ const coreValues = [
 
 // Define quotes for each video ID
 const videoQuotes: Record<string, string> = {
-  'UlJ9vAynJUc': "Our structured approach provides lifelong learners of every age with the expert mentorship and practical tools needed to master real-world communication.",
-  'ToE1Te-qhoQ': "Through a foundation of practical application and expert-led guidance, we have designed a structured environment where communication skills are honed for real-world success.",
-  'THCndMIgQpM': "We bridge the gap between learning and real-world application, offering a structured, inclusive program that builds communication clarity and confidence across all generations.",
-  'LaL28u278gk': "Regardless of age, our primary focus is empowering individuals with the confidence and clarity required to navigate real-world interactions effectively through practical, skill-based training.",
+  UlJ9vAynJUc:
+    "Our structured approach provides lifelong learners of every age with the expert mentorship and practical tools needed to master real-world communication.",
+  "ToE1Te-qhoQ":
+    "Through a foundation of practical application and expert-led guidance, we have designed a structured environment where communication skills are honed for real-world success.",
+  THCndMIgQpM:
+    "We bridge the gap between learning and real-world application, offering a structured, inclusive program that builds communication clarity and confidence across all generations.",
+  LaL28u278gk:
+    "Regardless of age, our primary focus is empowering individuals with the confidence and clarity required to navigate real-world interactions effectively through practical, skill-based training.",
 };
 
 const reviews = [
@@ -49,44 +53,46 @@ const reviews = [
     name: "Kalyani",
     job: "Circle Inspector",
     text: "The management is very sincere and the classes are very productive and interactive. I truly feel that anybody can learn both the languages here from anywhere in the world",
-    image: "/kalyani-reviewer.webp"
+    image: "/kalyani-reviewer.webp",
   },
   {
     name: "Kayala Surya Reddy",
     job: "Businessman & Politician",
     text: "English language has always been my dream to achieve but due to my hectic schedule I couldn't give time. I came across this institution through my friend and could learn the language so comfortably.",
-    image: "/surya-reviewer.webp"
+    image: "/surya-reviewer.webp",
   },
   {
     name: "Padmavathi",
     job: "Home Maker",
     text: "Let's Speak is not just a language coaching center but a hub for personality development. The dedication of our founder, Mr. Surendra Garu whom I consider a god-given brother, and the entire LS team has been truly inspiring.",
-    image: "/sahasra-reviewer.webp"
+    image: "/sahasra-reviewer.webp",
   },
   {
     name: "Chandrahasa",
     job: "Dietician",
     text: "The dedication and commitment of every trainer are exceptional, and I've truly enjoyed every stage of learning here. This institute stands out for its high-quality instruction, excellent training, and welcoming environment.",
-    image: "/chandrahasa.webp"
+    image: "/chandrahasa.webp",
   },
   {
     name: "Parnika",
     job: "Student",
     text: "After attending three free demo classes, I loved the teaching methods and got motivated to join. My short-term goal was to speak English and Hindi fluently, and though people doubted me, I achieved it!",
-    image: "/parnika-reviewer.webp"
+    image: "/parnika-reviewer.webp",
   },
   {
     name: "Murali",
     job: "Software Engineer",
     text: "The structured curriculum and personalized attention from trainers made a real difference in my communication skills. As a software engineer, clear communication is crucial, and Let's Speak helped me express my ideas confidently in both professional and social settings.",
-    image: "https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    image:
+      "https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
   },
   {
     name: "Kamal",
     job: "Student",
     text: "I was always hesitant to speak Hindi in public, but Let's Speak changed that completely. The trainers created such a supportive environment that I felt comfortable making mistakes and learning from them. Now I can confidently communicate in Hindi in any situation, whether it's casual conversations or formal settings.",
-    image: "https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-  }
+    image:
+      "https://images.pexels.com/photos/1681010/pexels-photo-1681010.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+  },
 ];
 
 export default function AboutHighlights() {
@@ -179,7 +185,8 @@ export default function AboutHighlights() {
                     )}
                   </div>
                   <p className={styles.achieveText}>
-                    {videoQuotes[id] || "A structured learning program designed for every age group, focusing on confidence, clarity, and real-world communication skills—guided by expert mentors and practical training."}
+                    {videoQuotes[id] ||
+                      "A structured learning program designed for every age group, focusing on confidence, clarity, and real-world communication skills—guided by expert mentors and practical training."}
                   </p>
                 </div>
               ))
@@ -210,46 +217,48 @@ export default function AboutHighlights() {
         {/* ===== Reviews ===== */}
         <h2 className={styles.heading}>Students Feedback</h2>
 
-        <div className={styles.reviewContainer}>
-          <div className={styles.fadeLeft}></div>
-          <div className={styles.fadeRight}></div>
-          
-          <div 
-            className={styles.reviewScroller}
+        <div className={styles.review_reviewContainer}>
+          <div className={styles.review_fadeLeft}></div>
+          <div className={styles.review_fadeRight}></div>
+
+          <div
+            className={styles.review_reviewScroller}
             ref={scrollRef}
             onMouseEnter={() => setIsPaused(true)}
             onMouseLeave={() => setIsPaused(false)}
           >
-            <div className={`${styles.reviewTrack} ${isPaused ? styles.paused : ''}`}>
+            <div
+              className={`${styles.review_reviewTrack} ${isPaused ? styles.review_paused : ""}`}
+            >
               {/* First set of reviews */}
               {reviews.map((r, i) => (
-                <div key={`first-${i}`} className={styles.reviewCard}>
+                <div key={`first-${i}`} className={styles.review_reviewCard}>
                   <img
                     src={r.image}
                     alt={`Photo of ${r.name}`}
-                    className={styles.reviewPhoto}
+                    className={styles.review_reviewPhoto}
                     loading="lazy"
                   />
-                  <p className={styles.reviewText}>"{r.text}"</p>
-                  <div className={styles.reviewAuthor}>
-                    <p className={styles.reviewName}>{r.name}</p>
-                    <p className={styles.reviewJob}>{r.job}</p>
+                  <p className={styles.review_reviewText}>"{r.text}"</p>
+                  <div className={styles.review_reviewAuthor}>
+                    <p className={styles.review_reviewName}>{r.name}</p>
+                    <p className={styles.review_reviewJob}>{r.job}</p>
                   </div>
                 </div>
               ))}
               {/* Duplicate set for seamless loop */}
               {reviews.map((r, i) => (
-                <div key={`second-${i}`} className={styles.reviewCard}>
+                <div key={`second-${i}`} className={styles.review_reviewCard}>
                   <img
                     src={r.image}
                     alt={`Photo of ${r.name}`}
-                    className={styles.reviewPhoto}
+                    className={styles.review_reviewPhoto}
                     loading="lazy"
                   />
-                  <p className={styles.reviewText}>"{r.text}"</p>
-                  <div className={styles.reviewAuthor}>
-                    <p className={styles.reviewName}>{r.name}</p>
-                    <p className={styles.reviewJob}>{r.job}</p>
+                  <p className={styles.review_reviewText}>"{r.text}"</p>
+                  <div className={styles.review_reviewAuthor}>
+                    <p className={styles.review_reviewName}>{r.name}</p>
+                    <p className={styles.review_reviewJob}>{r.job}</p>
                   </div>
                 </div>
               ))}

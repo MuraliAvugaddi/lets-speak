@@ -15,25 +15,25 @@ const STATS: StatData[] = [
   {
     target: 50000,
     suffix: "+",
-    label: "Satisfied Students",
+    label: "Satisfied & Empowered",
     icon: "/wcu-sub-1.webp",
   },
   {
-    target: 30,
-    suffix: "+",
-    label: "Expert Trainers",
+    target: 7,
+    suffix: "~",
+    label: "Extra care provided through clubs in 7 days, stages and timings",
     icon: "/wcu-sub-2.png",
   },
   {
     target: 7,
     suffix: "~",
-    label: "Time Slots Available",
+    label: "Flexible Time Slots",
     icon: "/wcu-sub-3.webp",
   },
   {
     target: 100000,
     suffix: "+",
-    label: "Learning Community",
+    label: "People learning at the moment",
     icon: "svg",
   },
 ];
