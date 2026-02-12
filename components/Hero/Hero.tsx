@@ -12,15 +12,14 @@ export default function Hero() {
 
           {/* Main Heading */}
           <h1 className={styles.heading}>
-            Trust{" "}
             <span className={styles.winningWrapper}>
-              <span className={styles.winning}>Gaining</span>
+              <span className={styles.winning}>Personalized</span>
               <svg
                 className={styles.circle}
                 viewBox="-2 10 260 90"
                 xmlns="http://www.w3.org/2000/svg"
                 // Removed inline width/height to let CSS control it
-                preserveAspectRatio="xMidYMid meet"
+                preserveAspectRatio="none"
               >
                 <path
                   d="M 20 55 Q 25 22, 70 18 Q 115 15, 160 18 Q 205 22, 235 42 Q 242 52, 238 62 Q 232 75, 190 82 Q 145 88, 95 87 Q 50 85, 22 70 Q 15 62, 18 55 Q 19 52, 20 55 Z"
@@ -34,10 +33,10 @@ export default function Hero() {
               </svg>
             </span>
             <br />
-            Online & Offline
-            <br /> English & Hindi
-            <br />
-            Learning Platform
+            Hindi & English 
+            <br />training,
+            <br />Online, Offline
+            <br />or 1-on-1
           </h1>
 
           {/* Description */}

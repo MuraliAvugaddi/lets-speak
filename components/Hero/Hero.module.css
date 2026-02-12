@@ -87,19 +87,21 @@
 
 .circle {
   position: absolute;
-  left: -20%;
-  top: -25%;
-  width: 140%; /* Relative width ensures it scales with the text */
-  height: 160%;
+  top: -35%;
+  left: -11%;
+  width: 120%;
+  height: 180%;
   z-index: 1;
   pointer-events: none;
   overflow: visible;
+  display: block;
 }
 
 .circlePath {
   stroke-dasharray: 600;
   stroke-dashoffset: 600;
   animation: drawCircle 3s ease-in-out infinite;
+  vector-effect: non-scaling-stroke;
 }
 
 @keyframes drawCircle {

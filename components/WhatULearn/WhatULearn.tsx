@@ -59,7 +59,7 @@ export default function LearnSection() {
           </svg>
         </div>
         <div className={styles.ratingText}>
-          <div className={styles.ratingScore}>Rated 4.7/5.0</div>
+          <div className={styles.ratingScore}>Rated 5.0/5.0</div>
           <div className={styles.ratingReviews}>More Than 7500 Reviews</div>
         </div>
       </div>
