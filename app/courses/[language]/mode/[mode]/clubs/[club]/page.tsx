@@ -1,12 +1,12 @@
-'use client';
+"use client";
 
-import React, { useState } from 'react';
-import { useParams, useRouter } from 'next/navigation';
-import styles from './clubs.module.css';
-import { courses } from '@/data/courses';
-import UpcomingBatch from '@/components/UpcomingBatch/UpcomingBatch';
-import FAQ from '@/components/FAQ/FAQ';
-import Image from 'next/image';
+import React, { useState } from "react";
+import { useParams, useRouter } from "next/navigation";
+import styles from "./clubs.module.css";
+import { courses } from "@/data/courses";
+import UpcomingBatch from "@/components/UpcomingBatch/UpcomingBatch";
+import FAQ from "@/components/FAQ/FAQ";
+import Image from "next/image";
 
 export default function ClubDetailPage() {
   const params = useParams();
@@ -30,8 +30,8 @@ export default function ClubDetailPage() {
   }
 
   // Use clubs if available, otherwise fallback to stages
-  const clubs = selectedMode.clubs || selectedMode.stages;
-  const clubData = clubs.find((c) => c.id === club);
+  const clubs = (selectedMode as any).clubs || selectedMode.stages;
+  const clubData = clubs.find((c: any) => c.id === club);
 
   if (!clubData) {
     return <div className={styles.errorContainer}>Club not found</div>;
@@ -43,7 +43,9 @@ export default function ClubDetailPage() {
 
   const handleFacultyClick = () => {
     if (clubData.faculty_name) {
-      router.push(`/faculty/${clubData.faculty_name.toLowerCase().replace(/\s+/g, '-')}`);
+      router.push(
+        `/faculty/${clubData.faculty_name.toLowerCase().replace(/\s+/g, "-")}`,
+      );
     }
   };
 
@@ -77,19 +79,35 @@ export default function ClubDetailPage() {
                   </div>
                   <div className={styles.facultyInfo}>
                     <div className={styles.facultyHeader}>
-                      <h3 className={styles.facultyName}>{clubData.faculty_name}</h3>
+                      <h3 className={styles.facultyName}>
+                        {clubData.faculty_name}
+                      </h3>
                       <p className={styles.facultyTitle}>Club Facilitator</p>
                     </div>
                     <p className={styles.facultyDescription}>
-                      Your guide through this learning journey with years of experience in language education and a proven track record of student success.
+                      Your guide through this learning journey with years of
+                      experience in language education and a proven track record
+                      of student success.
                     </p>
-                    <button 
+                    <button
                       className={styles.facultyButton}
                       onClick={handleFacultyClick}
                     >
                       View Faculty Profile
-                      <svg className={styles.buttonIcon} width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                        <path d="M5 12h14M12 5l7 7-7 7" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                      <svg
+                        className={styles.buttonIcon}
+                        width="20"
+                        height="20"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                      >
+                        <path
+                          d="M5 12h14M12 5l7 7-7 7"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
                       </svg>
                     </button>
                   </div>
@@ -107,10 +125,10 @@ export default function ClubDetailPage() {
             </p>
 
             <div className={styles.accordionWrapper}>
-              {clubData.planner.map((item) => (
-                <div 
-                  key={`day-${item.day}`} 
-                  className={`${styles.accordionItem} ${openDay === item.day ? styles.accordionItemActive : ''}`}
+              {clubData.planner.map((item: any) => (
+                <div
+                  key={`day-${item.day}`}
+                  className={`${styles.accordionItem} ${openDay === item.day ? styles.accordionItemActive : ""}`}
                 >
                   <button
                     className={styles.accordionHeader}
@@ -121,14 +139,29 @@ export default function ClubDetailPage() {
                       <div className={styles.dayBadge}>Day {item.day}</div>
                       <h3 className={styles.accordionTitle}>{item.title}</h3>
                     </div>
-                    <div className={`${styles.accordionIcon} ${openDay === item.day ? styles.accordionIconOpen : ''}`}>
-                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor">
-                        <path d="M19 9l-7 7-7-7" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                    <div
+                      className={`${styles.accordionIcon} ${openDay === item.day ? styles.accordionIconOpen : ""}`}
+                    >
+                      <svg
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                      >
+                        <path
+                          d="M19 9l-7 7-7-7"
+                          strokeWidth="2"
+                          strokeLinecap="round"
+                          strokeLinejoin="round"
+                        />
                       </svg>
                     </div>
                   </button>
-                  
-                  <div className={`${styles.accordionContent} ${openDay === item.day ? styles.accordionContentOpen : ''}`}>
+
+                  <div
+                    className={`${styles.accordionContent} ${openDay === item.day ? styles.accordionContentOpen : ""}`}
+                  >
                     <div className={styles.accordionInner}>
                       <div className={styles.syllabusGrid}>
                         <p>{item.description}</p>
@@ -148,10 +181,10 @@ export default function ClubDetailPage() {
               Comprehensive curriculum designed for complete mastery
             </p>
             <div className={styles.blocksGrid}>
-              {clubData.blocks.map((block, index) => (
+              {clubData.blocks.map((block: any, index: number) => (
                 <div key={block.id} className={styles.contentBlock}>
                   <div className={styles.blockNumber}>
-                    {String(index + 1).padStart(2, '0')}
+                    {String(index + 1).padStart(2, "0")}
                   </div>
                   <h3 className={styles.blockTitle}>{block.title}</h3>
                   <p className={styles.blockDescription}>{block.description}</p>
@@ -161,8 +194,8 @@ export default function ClubDetailPage() {
           </div>
         </section>
 
-        <UpcomingBatch/>
-        <FAQ/>
+        <UpcomingBatch />
+        <FAQ />
       </main>
     </div>
   );

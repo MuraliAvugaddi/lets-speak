@@ -30,7 +30,7 @@ export default function ClubsPage() {
   }
 
   // Use clubs if available, otherwise fallback to stages
-  const clubs = selectedMode.clubs || selectedMode.stages;
+  const clubs: any[] = (selectedMode as any).clubs || selectedMode.stages;
 
   return (
     <section className={styles.english_section}>
@@ -44,7 +44,7 @@ export default function ClubsPage() {
         </p>
 
         <div className={styles.english_coursesGrid}>
-          {clubs.map((club) => (
+          {clubs.map((club: any) => (
             <div key={club.id} className={styles.english_courseCard}>
               <div className={styles.english_cardHeader}>
                 <h3 className={styles.english_stageName}>{club.title}</h3>
@@ -69,7 +69,7 @@ export default function ClubsPage() {
                 </div>
 
                 <ul className={styles.english_featuresList}>
-                  {club.blocks.slice(0, 4).map((block) => (
+                  {club.blocks.slice(0, 4).map((block: any) => (
                     <li key={block.id} className={styles.english_featureItem}>
                       <svg
                         className={styles.english_checkIcon}
