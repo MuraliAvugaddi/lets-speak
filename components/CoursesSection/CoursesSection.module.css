@@ -135,13 +135,12 @@
   margin-top: auto;
   padding-bottom: 20px;
   display: flex;
-  flex-direction: column;
-  gap: 12px;
+  gap:14px;
+  flex-direction: row;
 }
 
 /* Button */
 .button {
-  margin-left: 26px;
   background: #9ca3af;
   color: white;
   border: none;

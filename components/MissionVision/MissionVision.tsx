@@ -91,18 +91,11 @@ const MissionVisionSection: React.FC = () => {
           </h1>
           <h2 className={styles.founderSubtitle}>The Founder of Let's Speak</h2>
           <p className={styles.founderText}>
-            With 30+ expert trainers, you can learn efficiently at your own
-            pace. We work tirelessly to help you understand languages better.
-            Our trainers are gracious, friendly, and available around the clock
-            to support your learning journey.
+            Surendra is a dedicated Life Skills Coach and Communication Trainer who believes that real education goes beyond language learning. His approach focuses on building strong communication skills, discipline, civic sense, social responsibility, and healthy life habits.
           </p>
           
           <p className={styles.founderText}>
-            You'll receive personalised guidance that adapts to your unique
-            goals. Our sessions are interactive, engaging, and designed to keep
-            you motivated. We blend proven teaching methods with modern tools
-            for maximum results. Every step you take is supported by a community
-            that believes in your success.
+            With a practical, value-driven training style, he helps learners develop confidence, clarity, and consistency in both personal and professional life. As a founder, he ensures quality training and continuous learner support through structured systems and dedicated teams.
           </p>
         </div>
       </div>

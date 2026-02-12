@@ -13,27 +13,27 @@ type StatData = {
 
 const STATS: StatData[] = [
   {
-    target: 50000,
+    target: 15,
     suffix: "+",
-    label: "Satisfied & Empowered",
+    label: "Years of Excellence",
     icon: "/wcu-sub-1.webp",
   },
   {
-    target: 7,
-    suffix: "~",
-    label: "Extra care provided through clubs in 7 days, stages and timings",
+    target: 50000,
+    suffix: "+",
+    label: "Satisfied & Empowered",
     icon: "/wcu-sub-2.png",
   },
   {
     target: 7,
     suffix: "~",
-    label: "Flexible Time Slots",
+    label: "Days Practise Clubs",
     icon: "/wcu-sub-3.webp",
   },
   {
-    target: 100000,
+    target: 1000,
     suffix: "+",
-    label: "People learning at the moment",
+    label: "Active Learners Community",
     icon: "svg",
   },
 ];
@@ -125,7 +125,7 @@ export default function WhyChooseUs() {
                 loading="lazy"
               />
             </div>
-            <p className={styles.text}>15+ Years of Excellence</p>
+            <p className={styles.text}>Flexible Time Slots</p>
           </div>
 
           <div className={styles.card}>
@@ -137,7 +137,7 @@ export default function WhyChooseUs() {
                 loading="lazy"
               />
             </div>
-            <p className={styles.text}>Students Empowered</p>
+            <p className={styles.text}>Structured Stage-Based Learning</p>
           </div>
 
           <div className={styles.card}>
@@ -149,7 +149,7 @@ export default function WhyChooseUs() {
                 loading="lazy"
               />
             </div>
-            <p className={styles.text}>Online & Offline Flexibility</p>
+            <p className={styles.text}>Online & Offline Options</p>
           </div>
         </div>
 

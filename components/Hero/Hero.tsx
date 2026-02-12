@@ -5,10 +5,6 @@ export default function Hero() {
     <div className={styles.heroContainer}>
       <section className={styles.hero}>
         <div className={styles.left}>
-          {/* Eyebrow text */}
-          <p className={styles.eyebrow}>
-            Learn English & Hindi Through Mother Tongue Languages
-          </p>
 
           {/* Main Heading */}
           <h1 className={styles.heading}>
@@ -41,10 +37,10 @@ export default function Hero() {
 
           {/* Description */}
           <p className={styles.description}>
-            Learn Hindi & English through Online & Offline | Grammar + Spoken
-            English
-            <br />
-            Course | 1 to 1 Personal Training
+            Learn Hindi & English
+            through Online & Offline | Grammar + Spoken
+            English |
+            <br /> 1 to 1 Personal Training
           </p>
 
           {/* CTA Buttons */}

@@ -5,34 +5,34 @@ import styles from "./AboutHighlights.module.css";
 
 const coreValues = [
   {
-    title: "Core Visibility",
-    desc: "We ensure complete clarity and transparency in every learning process and communication.",
-    img: "/h-1.png",
+    title: "Communication Skills",
+    desc: "We train students to speak clearly, confidently and effectively.",
+    img: "/h-6.png",
   },
   {
-    title: "Responsibility",
-    desc: "We take ownership of results and the outcomes of every student's journey.",
+    title: "Organizing Skills",
+    desc: "We teach time management, planning and task prioritisation.",
     img: "/h-2.png",
   },
   {
-    title: "Ethical Standards",
-    desc: "Honesty and integrity guide every decision we make and every class we deliver.",
+    title: "Soft Skills",
+    desc: "We develop teamwork, leadership, empathy and professional behaviour.",
     img: "/h-3.png",
   },
   {
-    title: "Decisive Action",
-    desc: "We use data-backed strategies to make smart, effective decisions.",
+    title: "Self-Discipline",
+    desc: "We build focus, consistency and responsible habits.",
     img: "/h-4.png",
   },
   {
-    title: "Perseverance",
-    desc: "We remain determined and resilient even through challenges.",
+    title: "Civic Sense",
+    desc: "We promote respect for rules, public spaces and social etiquette.",
     img: "/h-5.png",
   },
   {
-    title: "Strategic Planning",
-    desc: "We plan ahead to ensure growth and future success for every learner.",
-    img: "/h-6.png",
+    title: "Social Responsibilty",
+    desc: "We encourage compassion and positive contribution to society.",
+    img: "/h-1.png",
   },
 ];
 

@@ -3,12 +3,12 @@ export const hindi = {
   id: "hindi",
   name: "Hindi Mastery Program",
   description:
-    "A complete Hindi learning journey from beginner to advanced fluency with structured stages and guided mentorship.",
+    "A structured 7-stage journey from beginner to confident fluency — with expert guidance and real-life speaking practice.",
   modes: [
     {
       id: "offline",
       name: "Offline Classroom",
-      description: "Physical classroom sessions with live faculty interaction.",
+      description: "Interactive in-person sessions with structured guidance and active speaking practice.",
       stages: [
         //Stage 1 - Offline
         {
@@ -821,7 +821,7 @@ export const hindi = {
     {
       id: "online",
       name: "Online Live",
-      description: "Interactive live sessions conducted via digital platform.",
+      description: "High-impact live sessions designed for flexibility and consistent improvement.",
       stages: [
         //Stage 1 - Online
         {
@@ -1634,7 +1634,7 @@ export const hindi = {
     {
       id: "one-to-one",
       name: "1:1 Personal Training",
-      description: "Dedicated personal mentor with customized attention.",
+      description: "This is our exclusive premium offering — positioning and experience are crafted to feel truly exceptional.",
       stages: [
         //Stage 1 - One to One
         {

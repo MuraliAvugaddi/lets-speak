@@ -43,21 +43,21 @@ export default function Page() {
     switch (mode.id) {
       case "online":
         return [
-          "Live interactive sessions",
-          "Flexible schedule",
-          "Recorded support",
+          "Real-time interactive classes",
+          "Flexible scheduling options",
+          "Recorded support access",
         ];
       case "offline":
         return [
-          "In-person guidance",
-          "Classroom practice",
-          "Structured stages",
+          "Direct faculty mentoring",
+          "Live classroom discussions",
+          "Stage-wise structured learning",
         ];
       case "one-to-one":
         return [
-          "Dedicated trainer",
-          "Customized lessons",
-          "Personalized feedback",
+          "Dedicated personal mentor",
+          "Customized lesson plan",
+          "Detailed performance feedback",
         ];
       default:
         return [];

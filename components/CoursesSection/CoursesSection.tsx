@@ -4,13 +4,12 @@ import styles from "./CoursesSection.module.css";
 const courses = [
   {
     language: "English Language Course",
-    subtitle:
-      "Stage-based, personalized English training to improve speaking, listening, reading, and writing skills",
+    subtitle: "Stage-Based Spoken English Mastery",
     bullets: [
-      "Level-based stages (Beginner to Advanced)",
-      "Online, Offline & One-on-One sessions",
-      "Focus on spoken English & communication",
-      "Practical, real-life usage",
+      "Beginner to Advanced Levels",
+      "Focus on Speaking & Communication",
+      "Real-Life Practice Activities",
+      "Online | Offline | One-on-One Options",
     ],
     rating: 4.6,
     reviews: 4.6,
@@ -19,13 +18,12 @@ const courses = [
   },
   {
     language: "Hindi Language Course",
-    subtitle:
-      "Personalized, stage-based Hindi training to build confidence in speaking and understanding.",
+    subtitle: "Stage-Based Spoken Hindi Mastery",
     bullets: [
       "Beginner-friendly stages",
       "Speaking-focused approach",
-      "Online, Offline & One-on-One options",
-      "Useful for daily and professional use",
+      "Daily & Professional Usage",
+      "Online | Offline | One-on-One Options",
     ],
     rating: 4.5,
     reviews: 4.5,
@@ -34,12 +32,10 @@ const courses = [
   },
   {
     language: "More Courses Coming Soon",
-    subtitle:
-      "We’re expanding our learning programs to help you grow in communication and life skills.",
+    subtitle: "Expanding Your Growth Opportunities",
     bullets: [
       "New language courses",
-      "Communication & life skills training",
-      "Skill-based programs for all age groups",
+      "Communication & Life Skills Training",
       "Skill-based programs for all age groups",
     ],
     rating: 4.7,
@@ -53,11 +49,10 @@ export default function CoursesSection() {
   return (
     <section className={styles.section}>
       <div className={styles.intro}>
-        <h1>Choose Your Choice</h1>
+        <h1>Explore Our Programs</h1>
         <p>
-          Our online English courses are customized according to your level,
-          ensuring a progressive learning experience, explore the comprehensive
-          curriculum we have prepared.
+          Personalized, stage-based programs designed to help you speak with
+          clarity and confidence.
         </p>
       </div>
       <div className={styles.grid}>
@@ -90,11 +85,6 @@ export default function CoursesSection() {
             </ul>
 
             <div className={styles.bottomContent}>
-              {/* Button */}
-              <button className={styles.button}>
-                <Link href={course.link}>View Details</Link>
-              </button>
-
               {/* Rating */}
               <div className={styles.rating}>
                 {"★".repeat(Math.floor(course.rating))}
@@ -102,8 +92,36 @@ export default function CoursesSection() {
                 <span>({course.reviews})</span>
               </div>
 
-              {/* Level */}
-              <p className={styles.level}>Course level {course.level}</p>
+              <button className={styles.button}>
+                <Link href={course.link} className={styles.linkWithIcon}>
+                  View Details
+                  <span
+                    className={styles.icon}
+                    aria-hidden="true"
+                    style={{
+                      display: "inline-flex",
+                      verticalAlign: "middle",
+                      marginLeft: 6,
+                    }}
+                  >
+                    <svg
+                      width="18"
+                      height="18"
+                      viewBox="0 0 18 18"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M7 4L12 9L7 14"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                      />
+                    </svg>
+                  </span>
+                </Link>
+              </button>
             </div>
           </div>
         ))}

@@ -1,5 +1,5 @@
 // FAQ.tsx
-'use client';
+"use client";
 
 import { useState } from "react";
 import styles from "./FAQ.module.css";
@@ -11,29 +11,39 @@ type FAQItem = {
 
 const faqs: FAQItem[] = [
   {
-    question: "Who can join your English speaking courses?",
+    question: "Is this course only about learning English/Hindi?",
     answer:
-      "Our courses are designed for everyone from beginners to working professionals. Whether you're a student, homemaker, or someone aiming to improve workplace communication, we offer flexible modules that match your level and goals.",
+      "<strong>No.</strong> Along with language skills, the course focuses on communication skills, soft skills, self-discipline, civic sense, social responsibility, and overall personality development.",
   },
   {
-    question: "Is the course useful for job interviews or career growth?",
+    question: " Who can join this course?",
     answer:
-      "Absolutely! Our courses focus on practical communication skills that are essential for job interviews, presentations, and professional development. We include mock interviews, business communication modules, and confidence-building exercises.",
+      "Our courses are suitable for school students, college students, working professionals, and anyone who wants to improve communication, confidence, and life skills.",
   },
   {
-    question: "Do you offer an online English speaking course in India?",
+    question: "What teaching method do you follow?",
     answer:
-      "Yes, we offer comprehensive online English speaking courses accessible throughout India. Our virtual classes are interactive, scheduled at flexible timings, and designed to provide the same quality as in-person sessions.",
+      "We follow a practical, activity-based approach that includes real-life situations, role plays, guided practice, and continuous feedback.",
   },
   {
-    question: "How do I know my level—beginner, intermediate, or advanced?",
+    question: "Will I receive individual attention and support?",
     answer:
-      "We provide a free assessment test when you enroll. This test evaluates your speaking, listening, reading, and writing skills to place you in the appropriate level. You can also discuss your goals with our counselors for personalized recommendations.",
+      "<strong>Yes.</strong> We have dedicated teams for training, quality control, admin, and management to ensure instant support and personalised guidance whenever required.",
   },
   {
-    question: "Do you offer grammar-focused classes too?",
+    question: "How does this course help in daily life and career?",
     answer:
-      "Yes, grammar is an integral part of our curriculum. We offer dedicated grammar modules as well as integrated grammar lessons within our speaking courses to ensure you build a strong foundation.",
+      "The training helps you communicate clearly, manage time better, stay disciplined, improve social behaviour, and build confidence for both personal and professional growth.",
+  },
+  {
+    question: "Do you focus on habits like punctuality and discipline?",
+    answer:
+      "Absolutely. Punctuality, self-discipline, organising skills, and responsibility are core values that are practised consistently throughout the course.",
+  },
+  {
+    question: "Are the sessions practical or theory-based?",
+    answer:
+      "Our sessions are mostly practical. Learners actively participate in discussions, activities, and exercises designed for real-world application.",
   },
 ];
 
@@ -47,7 +57,7 @@ export default function FAQ() {
   return (
     <section className={styles.faqSection}>
       <div className={styles.container}>
-        <h2 className={styles.title}>Frequently Asked Question?</h2>
+        <h2 className={styles.title}>Frequently Asked Questions?</h2>
 
         <div className={styles.faqList}>
           {faqs.map((faq, index) => (
@@ -69,7 +79,7 @@ export default function FAQ() {
                   openIndex === index ? styles.open : ""
                 }`}
               >
-                <p>{faq.answer}</p>
+                <p dangerouslySetInnerHTML={{ __html: faq.answer }} />
               </div>
             </div>
           ))}

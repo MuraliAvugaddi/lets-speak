@@ -220,7 +220,7 @@ export default function OurTeam() {
       {/* Header */}
       <div className={styles.header}>
         <h2 className={styles.title}>
-          Our <span className={styles.highlight}>Team</span>
+          Our <span className={styles.highlight}>Dedicated Team</span>
         </h2>
         <p className={styles.description}>
           Our team is driven by a passion for empowering learners worldwide. We

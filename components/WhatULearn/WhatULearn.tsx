@@ -66,8 +66,8 @@ export default function LearnSection() {
 
       {/* Main Heading */}
       <h2 className={styles.heading}>
-        What are you <span className={styles.going}>going</span> to{' '}
-        <span className={styles.learn}>learn here?</span>
+        Your <span className={styles.going}>Success</span> Our{' '}
+        <span className={styles.learn}>Support</span>
       </h2>
 
       {/* Description */}
