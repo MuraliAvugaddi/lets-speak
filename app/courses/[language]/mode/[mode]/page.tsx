@@ -1,16 +1,10 @@
 "use client";
 
 import { useParams, useRouter } from "next/navigation";
-import styles from "./Stage.module.css";
+import styles from "./Selection.module.css";
 import { courses } from "@/data/courses";
-import UpcomingBatch from "@/components/UpcomingBatch/UpcomingBatch";
-import ClassroomCulture from "@/components/ClassroomCulture/ClassroomCulture";
-import LearnerFeedback from "@/components/LearnerFeedback/LearnerFeedback";
-import OurTeam from "@/components/OurTeam/OurTeam";
-import FAQ from "@/components/FAQ/FAQ";
-import MissionVisionSection from "@/components/MissionVision/MissionVision";
 
-export default function Page() {
+export default function SelectionPage() {
   const params = useParams();
   const router = useRouter();
 
@@ -20,124 +14,100 @@ export default function Page() {
   const courseData = courses[language];
 
   if (!courseData) {
-    return <div>Language not found</div>;
+    return <div className={styles.errorContainer}>Language not found</div>;
   }
 
   const selectedMode = courseData.modes.find((m) => m.id === mode);
 
   if (!selectedMode) {
-    return <div>Mode not found</div>;
+    return <div className={styles.errorContainer}>Mode not found</div>;
   }
 
+  const selectionOptions = [
+    {
+      id: "levels",
+      title: "Learning Levels",
+      description: "Structured stage-wise progression designed for systematic skill development and mastery.",
+      icon: (
+        <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+          <path d="M3 3h7v7H3zM14 3h7v7h-7zM14 14h7v7h-7zM3 14h7v7H3z" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+        </svg>
+      ),
+      features: [
+        "Stage-wise structured learning",
+        "30-day comprehensive curriculum",
+        "Progressive skill building",
+        "Dedicated faculty guidance"
+      ],
+      route: `/courses/${language}/mode/${mode}/levels`
+    },
+    {
+      id: "clubs",
+      title: "Learning Clubs",
+      description: "Specialized club-based learning focusing on specific interests and interactive group activities.",
+      icon: (
+        <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+          <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2M9 11a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+        </svg>
+      ),
+      features: [
+        "Club-based interactive learning",
+        "Community-driven activities",
+        "Specialized focus areas",
+        "Collaborative practice sessions"
+      ],
+      route: `/courses/${language}/mode/${mode}/clubs`
+    }
+  ];
+
   return (
-    <section className={styles.english_section}>
-      <div className={styles.english_container}>
-        <h2 className={styles.english_heading}>
-          {selectedMode.name} -{" "}
-          <span className={styles.english_highlight}>Stages</span>
-        </h2>
-        <p style={{ textAlign: "center", marginBottom: "2rem", color: "#666" }}>
-          {selectedMode.description}
-        </p>
+    <section className={styles.selectionSection}>
+      <div className={styles.selectionContainer}>
+        <div className={styles.headerSection}>
+          <h1 className={styles.mainHeading}>
+            Choose Your Learning Path
+          </h1>
+          <p className={styles.mainSubheading}>
+            {selectedMode.description}
+          </p>
+        </div>
 
-        <div className={styles.english_coursesGrid}>
-          {selectedMode.stages.map((stage) => (
-            <div key={stage.id} className={styles.english_courseCard}>
-              <div className={styles.english_cardHeader}>
-                <h3 className={styles.english_stageName}>{stage.title}</h3>
+        <div className={styles.cardsGrid}>
+          {selectionOptions.map((option) => (
+            <div key={option.id} className={styles.selectionCard}>
+              <div className={styles.cardIcon}>
+                {option.icon}
               </div>
-
-              <div className={styles.english_cardBody}>
-                <div className={styles.english_duration}>
-                  <svg
-                    className={styles.english_clockIcon}
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                  >
-                    <circle cx="12" cy="12" r="10" strokeWidth="2" />
-                    <path
-                      d="M12 6v6l4 2"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                    />
-                  </svg>
-                  <span>{stage.duration}</span>
-                </div>
-
-                <ul className={styles.english_featuresList}>
-                  {stage.blocks.slice(0, 4).map((block) => (
-                    <li key={block.id} className={styles.english_featureItem}>
-                      <svg
-                        className={styles.english_checkIcon}
-                        viewBox="0 0 24 24"
-                        fill="none"
-                        stroke="currentColor"
-                      >
-                        <path
-                          d="M20 6L9 17l-5-5"
-                          strokeWidth="2"
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                        />
+              
+              <div className={styles.cardContent}>
+                <h2 className={styles.cardTitle}>{option.title}</h2>
+                <p className={styles.cardDescription}>{option.description}</p>
+                
+                <ul className={styles.featuresList}>
+                  {option.features.map((feature, index) => (
+                    <li key={index} className={styles.featureItem}>
+                      <svg className={styles.checkIcon} viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M20 6L9 17l-5-5" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
                       </svg>
-                      <span>{block.title}</span>
+                      <span>{feature}</span>
                     </li>
                   ))}
                 </ul>
               </div>
 
-              <div className={styles.english_cardFooter}>
-                <button
-                  className={styles.english_enrollButton}
-                  onClick={() =>
-                    router.push(
-                      `/courses/${language}/mode/${mode}/levels/${stage.id}`,
-                    )
-                  }
-                >
-                  View Stage Details
-                  <svg
-                    className={styles.english_arrowIcon}
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                  >
-                    <path
-                      d="M5 12h14M12 5l7 7-7 7"
-                      strokeWidth="2"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
-                </button>
-              </div>
+              <button
+                className={styles.exploreButton}
+                onClick={() => router.push(option.route)}
+              >
+                Explore {option.title}
+                <svg className={styles.arrowIcon} viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                  <path d="M5 12h14M12 5l7 7-7 7" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+              </button>
             </div>
           ))}
         </div>
       </div>
-      {mode === "one-to-one" && (
-        <>
-          <MissionVisionSection />
-          <FAQ />
-        </>
-      )}
-      {mode === "offline" && (
-        <>
-          <UpcomingBatch />
-          <ClassroomCulture />
-          <LearnerFeedback />
-          <OurTeam />
-        </>
-      )}
-      {mode === "online" && (
-        <>
-          <UpcomingBatch />
-          <LearnerFeedback />
-          <OurTeam />
-        </>
-      )}
-      {/* <FAQ /> */}
     </section>
   );
 }
