@@ -45,19 +45,25 @@ export default function Page() {
         return [
           "Real-time interactive classes",
           "Flexible scheduling options",
-          "Recorded support access",
+          "Recorded Session Access",
+          "Daily Practice Support",
+          "Soft Skills & Life Skills Integration"
         ];
       case "offline":
         return [
           "Direct faculty mentoring",
-          "Live classroom discussions",
-          "Stage-wise structured learning",
+          "Live Doubt-Clearing Sessions",
+          "Stage-Wise Structured Learning",
+          "Daily Speaking Activities",
+          "Personality & Communication Development"
         ];
       case "one-to-one":
         return [
-          "Dedicated personal mentor",
-          "Customized lesson plan",
-          "Detailed performance feedback",
+          "Dedicated Personal Mentor",
+          "Customized Learning Plan",
+          "Performance-Based Feedback",
+          "Public Speaking Support",
+          "Business Communication Skills"
         ];
       default:
         return [];
@@ -131,27 +137,39 @@ export default function Page() {
 
             return (
               <div key={mode.id} className={styles.courseCard}>
-                <div className={styles.iconWrapper}>
-                  <img src={displayData.icon} alt={`${mode.name} icon`} />
-                </div>
-                <h3 className={styles.courseCardTitle}>{mode.name}</h3>
-                <p className={styles.courseCardDesc}>{mode.description}</p>
-
-                <div className={styles.checklistWrapper}>
-                  {features.map((feature, index) => (
-                    <div key={index} className={styles.checklistItem}>
-                      <span className={styles.checkIcon}>✓</span>
-                      <span>{feature}</span>
-                    </div>
-                  ))}
+                <div className={styles.cardHeader}>
+                  <div className={styles.iconWrapper}>
+                    <img src={displayData.icon} alt={`${mode.name} icon`} />
+                  </div>
+                  <h3 className={styles.courseCardTitle}>{mode.name}</h3>
+                  <p className={styles.courseCardDesc}>{mode.description}</p>
                 </div>
 
-                <button
-                  className={styles.exploreButton}
-                  onClick={() => handleExploreClick(mode.id)}
-                >
-                  Explore {mode.name} →
-                </button>
+                <div className={styles.cardBody}>
+                  <div className={styles.checklistWrapper}>
+                    {features.map((feature, index) => (
+                      <div key={index} className={styles.checklistItem}>
+                        <span className={styles.checkIcon}>✓</span>
+                        <span>{feature}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                <div className={styles.cardFooter}>
+                  <button
+                    className={styles.exploreButton}
+                    onClick={() => handleExploreClick(mode.id)}
+                  >
+                    {`Explore ${
+                      mode.name === "Offline Classroom"
+                        ? "Offline Training"
+                        : mode.name === "Online Live"
+                        ? "Online Training"
+                        : "1-on-1 Training"
+                    } →`}
+                  </button>
+                </div>
               </div>
             );
           })}
@@ -159,6 +177,7 @@ export default function Page() {
       </section>
 
       <UpcomingBatch />
+      
       <div className={styles.reviewSection}>
         <h2 className={styles.review_heading}>Students Feedback</h2>
 
@@ -178,32 +197,44 @@ export default function Page() {
               {/* First set of reviews */}
               {reviews.map((r, i) => (
                 <div key={`first-${i}`} className={styles.review_reviewCard}>
-                  <img
-                    src={r.image}
-                    alt={`Photo of ${r.name}`}
-                    className={styles.review_reviewPhoto}
-                    loading="lazy"
-                  />
-                  <p className={styles.review_reviewText}>"{r.text}"</p>
-                  <div className={styles.review_reviewAuthor}>
-                    <p className={styles.review_reviewName}>{r.name}</p>
-                    <p className={styles.review_reviewJob}>{r.job}</p>
+                  <div className={styles.review_cardHeader}>
+                    <img
+                      src={r.image}
+                      alt={`Photo of ${r.name}`}
+                      className={styles.review_reviewPhoto}
+                      loading="lazy"
+                    />
+                  </div>
+                  <div className={styles.review_cardBody}>
+                    <p className={styles.review_reviewText}>"{r.text}"</p>
+                  </div>
+                  <div className={styles.review_cardFooter}>
+                    <div className={styles.review_reviewAuthor}>
+                      <p className={styles.review_reviewName}>{r.name}</p>
+                      <p className={styles.review_reviewJob}>{r.job}</p>
+                    </div>
                   </div>
                 </div>
               ))}
               {/* Duplicate set for seamless loop */}
               {reviews.map((r, i) => (
                 <div key={`second-${i}`} className={styles.review_reviewCard}>
-                  <img
-                    src={r.image}
-                    alt={`Photo of ${r.name}`}
-                    className={styles.review_reviewPhoto}
-                    loading="lazy"
-                  />
-                  <p className={styles.review_reviewText}>"{r.text}"</p>
-                  <div className={styles.review_reviewAuthor}>
-                    <p className={styles.review_reviewName}>{r.name}</p>
-                    <p className={styles.review_reviewJob}>{r.job}</p>
+                  <div className={styles.review_cardHeader}>
+                    <img
+                      src={r.image}
+                      alt={`Photo of ${r.name}`}
+                      className={styles.review_reviewPhoto}
+                      loading="lazy"
+                    />
+                  </div>
+                  <div className={styles.review_cardBody}>
+                    <p className={styles.review_reviewText}>"{r.text}"</p>
+                  </div>
+                  <div className={styles.review_cardFooter}>
+                    <div className={styles.review_reviewAuthor}>
+                      <p className={styles.review_reviewName}>{r.name}</p>
+                      <p className={styles.review_reviewJob}>{r.job}</p>
+                    </div>
                   </div>
                 </div>
               ))}
@@ -211,6 +242,7 @@ export default function Page() {
           </div>
         </div>
       </div>
+      
       <OurTeam />
     </div>
   );

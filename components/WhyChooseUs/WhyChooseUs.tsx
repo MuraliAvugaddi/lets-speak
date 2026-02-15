@@ -112,7 +112,7 @@ export default function WhyChooseUs() {
   return (
     <div className={styles.wrapper}>
       <section ref={sectionRef} className={styles.section}>
-        <h2 className={styles.heading}>Why Choose Us?</h2>
+        <h2 className={styles.heading}>What Makes Us Different</h2>
 
         {/* Top Cards */}
         <div className={styles.cards}>

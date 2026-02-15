@@ -34,6 +34,137 @@
   line-height: 1.6;
 }
 
+/* Manager Profile Card */
+.managerCard {
+  background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+  border: 3px solid #e5e7eb;
+  border-radius: 24px;
+  padding: 48px;
+  margin: 0 auto 60px;
+  max-width: 900px;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.managerCard::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 6px;
+  background: linear-gradient(90deg, #0b3c63 0%, #082c49 100%);
+}
+
+.managerCard:hover {
+  transform: translateY(-8px);
+  border-color: #0b3c63;
+  box-shadow: 0 20px 60px rgba(11, 60, 99, 0.12);
+}
+
+.managerImageWrapper {
+  position: relative;
+  flex-shrink: 0;
+}
+
+.managerImage {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #0b3c63;
+  box-shadow: 0 8px 24px rgba(11, 60, 99, 0.15);
+}
+
+.managerBadge {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 36px;
+  height: 36px;
+  background: #10b981;
+  border-radius: 50%;
+  border: 3px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.managerContent {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.managerInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.managerName {
+  font-size: 28px;
+  font-weight: 700;
+  color: #0b3c63;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.managerRole {
+  font-size: 16px;
+  color: #64748b;
+  margin: 0;
+  font-weight: 500;
+}
+
+.managerDescription {
+  font-size: 15px;
+  color: #475569;
+  line-height: 1.7;
+}
+
+.managerDescription p {
+  margin: 0;
+}
+
+.managerStats {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding-top: 8px;
+}
+
+.statItem {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.statValue {
+  font-size: 24px;
+  font-weight: 700;
+  color: #0b3c63;
+  line-height: 1;
+}
+
+.statLabel {
+  font-size: 13px;
+  color: #64748b;
+  font-weight: 500;
+}
+
+.statDivider {
+  width: 1px;
+  height: 40px;
+  background: #e5e7eb;
+}
+
 /* Cards Grid */
 .cardsGrid {
   display: grid;
@@ -230,6 +361,24 @@
     margin-bottom: 50px;
   }
 
+  .managerCard {
+    padding: 40px;
+    gap: 32px;
+    margin-bottom: 50px;
+  }
+
+  .managerName {
+    font-size: 26px;
+  }
+
+  .managerDescription {
+    font-size: 14px;
+  }
+
+  .statValue {
+    font-size: 22px;
+  }
+
   .cardsGrid {
     grid-template-columns: 1fr;
     max-width: 600px;
@@ -259,6 +408,52 @@
 
   .headerSection {
     margin-bottom: 40px;
+  }
+
+  .managerCard {
+    flex-direction: column;
+    text-align: center;
+    padding: 36px 28px;
+    gap: 24px;
+    margin-bottom: 40px;
+  }
+
+  .managerImageWrapper {
+    margin: 0 auto;
+  }
+
+  .managerContent {
+    align-items: center;
+  }
+
+  .managerInfo {
+    text-align: center;
+  }
+
+  .managerName {
+    font-size: 24px;
+  }
+
+  .managerRole {
+    font-size: 15px;
+  }
+
+  .managerDescription {
+    font-size: 14px;
+    text-align: center;
+  }
+
+  .managerStats {
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .statValue {
+    font-size: 20px;
+  }
+
+  .statLabel {
+    font-size: 12px;
   }
 
   .cardsGrid {
@@ -309,6 +504,55 @@
     padding: 40px 12px;
   }
 
+  .managerCard {
+    padding: 32px 24px;
+    gap: 20px;
+    margin-bottom: 36px;
+  }
+
+  .managerImage {
+    width: 100px;
+    height: 100px;
+  }
+
+  .managerBadge {
+    width: 32px;
+    height: 32px;
+  }
+
+  .managerBadge svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .managerName {
+    font-size: 22px;
+  }
+
+  .managerRole {
+    font-size: 14px;
+  }
+
+  .managerDescription {
+    font-size: 13px;
+  }
+
+  .managerStats {
+    gap: 16px;
+  }
+
+  .statValue {
+    font-size: 18px;
+  }
+
+  .statLabel {
+    font-size: 11px;
+  }
+
+  .statDivider {
+    height: 36px;
+  }
+
   .selectionCard {
     padding: 32px 24px;
   }
@@ -340,6 +584,42 @@
 @media (max-width: 360px) {
   .selectionSection {
     padding: 36px 10px;
+  }
+
+  .managerCard {
+    padding: 28px 20px;
+    gap: 18px;
+    margin-bottom: 32px;
+  }
+
+  .managerImage {
+    width: 90px;
+    height: 90px;
+  }
+
+  .managerName {
+    font-size: 20px;
+  }
+
+  .managerRole {
+    font-size: 13px;
+  }
+
+  .managerDescription {
+    font-size: 12px;
+  }
+
+  .managerStats {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .statValue {
+    font-size: 16px;
+  }
+
+  .statDivider {
+    display: none;
   }
 
   .selectionCard {
@@ -374,11 +654,13 @@
   .selectionCard,
   .exploreButton,
   .arrowIcon,
-  .cardIcon {
+  .cardIcon,
+  .managerCard {
     transition: none;
   }
 
-  .selectionCard:hover {
+  .selectionCard:hover,
+  .managerCard:hover {
     transform: none;
   }
 

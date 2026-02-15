@@ -69,7 +69,7 @@ export default function ClubsPage() {
                 </div>
 
                 <ul className={styles.english_featuresList}>
-                  {club.blocks.slice(0, 4).map((block: any) => (
+                  {club.blocks.slice(0, 7).map((block: any) => (
                     <li key={block.id} className={styles.english_featureItem}>
                       <svg
                         className={styles.english_checkIcon}

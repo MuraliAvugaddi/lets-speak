@@ -16,8 +16,8 @@ const MissionVisionSection: React.FC = () => {
             </div>
             <h3 className={styles.cardTitle}>Mission</h3>
             <p className={styles.cardText}>
-              We strive to provide the best platform for people to learn and
-              master, both English and Life.
+              To empower individuals with communication and life skills that
+              build confidence for real-life success.
             </p>
           </div>
 
@@ -28,8 +28,8 @@ const MissionVisionSection: React.FC = () => {
             </div>
             <h3 className={styles.cardTitle}>Passion</h3>
             <p className={styles.cardText}>
-              We are on a never-ending pursuit to give the best training and
-              learning platform at your comfort!
+              Driven by a commitment to make quality English training accessible
+              to every learner.
             </p>
           </div>
 
@@ -40,8 +40,8 @@ const MissionVisionSection: React.FC = () => {
             </div>
             <h3 className={styles.cardTitle}>Vision</h3>
             <p className={styles.cardText}>
-              To inspire people to learn something new and help them taste the
-              triumph of life with the weapon of English language.
+              To create confident communicators who can express themselves
+              clearly in personal and professional life.
             </p>
           </div>
 
@@ -50,10 +50,10 @@ const MissionVisionSection: React.FC = () => {
             <div className={styles.iconWrapper}>
               <FiAward className={styles.icon} size={24} />
             </div>
-            <h3 className={styles.cardTitle}>Achievement</h3>
+            <h3 className={styles.cardTitle}>Impact</h3>
             <p className={styles.cardText}>
-              We have successfully trained more than 200,000 exceptional English
-              language speakers around the world.
+              Trusted by 50,000+ learners for structured training in English
+              communication and life skills.
             </p>
           </div>
         </div>
@@ -79,9 +79,9 @@ const MissionVisionSection: React.FC = () => {
       {/* Founder Section */}
       <div className={styles.founderSpace}>
         <div className={styles.leftSection}>
-          <img 
-            src="/surendra-the-founder.jpg" 
-            alt="Surendra - Founder of Let's Speak" 
+          <img
+            src="/surendra-the-founder.jpg"
+            alt="Surendra - Founder of Let's Speak"
             loading="lazy"
           />
         </div>
@@ -89,13 +89,29 @@ const MissionVisionSection: React.FC = () => {
           <h1 className={styles.founderHeading}>
             I'm <span className={styles.founderName}>Surendra</span>
           </h1>
-          <h2 className={styles.founderSubtitle}>The Founder of Let's Speak</h2>
+          <h2 className={styles.founderSubtitle}>Founder, Let's Speak</h2>
           <p className={styles.founderText}>
-            Surendra is a dedicated Life Skills Coach and Communication Trainer who believes that real education goes beyond language learning. His approach focuses on building strong communication skills, discipline, civic sense, social responsibility, and healthy life habits.
+            A Life Skills Coach and Communication Trainer who believes that
+            learning Any language is not just about language, but about building
+            confidence to speak in real-life situations
           </p>
-          
+
+          <div className={styles.founderText}>
+            <p>His training approach integrates:</p>
+            <ul>
+              <li>Communication Skills</li>
+              <li>Public Speaking</li>
+              <li>Personality Development</li>
+              <li>Social & Business Etiquette</li>
+              <li>Habit Building Techniques</li>
+              <li>Self Discipline</li>
+              <li>Soft skills… Besides languages</li>
+            </ul>
+          </div>
           <p className={styles.founderText}>
-            With a practical, value-driven training style, he helps learners develop confidence, clarity, and consistency in both personal and professional life. As a founder, he ensures quality training and continuous learner support through structured systems and dedicated teams.
+            Through structured learning stages and dedicated practice clubs, he
+            helps learners develop clarity, fluency, and confidence in both
+            personal and professional communication.
           </p>
         </div>
       </div>

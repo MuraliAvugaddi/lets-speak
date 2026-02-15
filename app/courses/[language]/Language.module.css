@@ -1,4 +1,4 @@
-  .pageWrapper {
+.pageWrapper {
   font-family:
     var(--font-poppins),
     -apple-system,
@@ -10,7 +10,7 @@
 /* Hero Section */
 .hero {
   text-align: center;
-  background: #fafbfa;
+  background:   #fdfdfe;
   padding: 60px 24px;
   max-width: 1220px;
   margin: 0 auto;
@@ -34,7 +34,7 @@
 
 /* Course Section */
 .courseSection {
-  background: #fafbfa;
+  background: #fdfdfe;
   padding: 40px 24px 80px;
   max-width: 1220px;
   margin: 0 auto;
@@ -46,19 +46,19 @@
   gap: 24px;
   max-width: 1100px;
   margin: 0 auto;
+  align-items: stretch;
 }
 
+/* Course Card - Consistent Flexbox Layout */
 .courseCard {
   background: white;
   border-radius: 12px;
-  padding: 32px 24px;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
-  height: fit-content;
+  height: 100%;
+  overflow: hidden;
 }
 
 .courseCard:hover {
@@ -66,69 +66,68 @@
   transform: translateY(-4px);
 }
 
+/* Card Header - Fixed */
+.cardHeader {
+  padding: 32px 24px 24px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
 .iconWrapper {
-  margin-bottom: 24px;
-  height: fit-content;
+  margin: 0 auto 24px;
+  max-width: 200px;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  border-bottom: 1px solid rgb(0, 0, 0);
+  border-bottom: 2px solid #0b3c63;
+  padding-bottom: 16px;
 }
 
 .iconWrapper img {
   width: 100%;
+  height: auto;
+  display: block;
 }
 
 .courseCardTitle {
   font-size: 24px;
   font-weight: 700;
   color: #0f172a;
+  margin: 0 0 12px 0;
+  line-height: 1.3;
 }
 
 .courseCardDesc {
   font-size: 16px;
   color: #64748b;
-  margin-bottom: 16px;
-}
-
-.featureList {
-  list-style: none;
-  padding: 0;
   margin: 0;
-  width: 70%;
-  text-align: left;
+  line-height: 1.5;
 }
 
-.featureItem {
-  font-size: 15px;
-  color: #475569;
-  padding: 6px 0;
-  position: relative;
-}
-
-.featureItem::before {
-  content: "•";
-  padding-right:10px ;
-  color: #0b3c63;
-  font-weight: bold;
+/* Card Body - Grows to fill space */
+.cardBody {
+  flex: 1;
+  padding: 0 24px 24px;
+  display: flex;
+  flex-direction: column;
 }
 
 .checklistWrapper {
-  width: 70%;
-  margin: 20px 0;
   display: flex;
   flex-direction: column;
   gap: 12px;
+  flex: 1;
 }
 
 .checklistItem {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 12px;
   font-size: 14px;
   color: #475569;
   text-align: left;
+  line-height: 1.5;
 }
 
 .checkIcon {
@@ -141,6 +140,14 @@
   align-items: center;
   justify-content: center;
   font-size: 12px;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+/* Card Footer - Fixed at bottom */
+.cardFooter {
+  padding: 0 24px 24px;
+  margin-top: auto;
   flex-shrink: 0;
 }
 
@@ -155,7 +162,6 @@
   cursor: pointer;
   transition: all 0.3s ease;
   width: 100%;
-  margin-top: auto;
 }
 
 .exploreButton:hover {
@@ -164,182 +170,35 @@
   box-shadow: 0 6px 20px rgba(11, 60, 99, 0.3);
 }
 
-/* Classroom Section */
-.classroomSection {
+/* Error Container */
+.errorContainer {
   text-align: center;
-  background: white;
   padding: 80px 24px;
-  max-width: 1220px;
-  margin: 0 auto;
 }
 
-.classroomTitle {
-  font-size: 40px;
-  font-weight: 800;
+.errorContainer h1 {
+  font-size: 32px;
   color: #0f172a;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
 }
 
-.classroomSubtitle {
+.errorContainer p {
   font-size: 18px;
-  color: #475569;
-  max-width: 700px;
-  margin: 0 auto;
-}
-
-/* RESPONSIVE STYLES */
-
-/* Large Desktop */
-@media (max-width: 1200px) {
-  .heroTitle {
-    font-size: 44px;
-  }
-
-  .courseGrid {
-    gap: 20px;
-  }
-}
-
-/* Tablet - Large */
-@media (max-width: 1024px) {
-  .heroTitle {
-    font-size: 40px;
-  }
-
-  .heroSubtitle {
-    font-size: 17px;
-  }
-
-  .courseGrid {
-    grid-template-columns: repeat(2, 1fr);
-    max-width: 800px;
-  }
-
-  .classroomTitle {
-    font-size: 36px;
-  }
-}
-
-/* Tablet - Medium */
-@media (max-width: 768px) {
-  .heroTitle {
-    font-size: 36px;
-  }
-
-  .heroSubtitle {
-    font-size: 16px;
-  }
-
-  .hero {
-    padding: 50px 20px;
-  }
-
-  .courseSection {
-    padding: 30px 20px 60px;
-  }
-
-  .courseGrid {
-    grid-template-columns: 1fr;
-    max-width: 500px;
-  }
-
-  .classroomSection {
-    padding: 60px 20px;
-  }
-
-  .classroomTitle {
-    font-size: 32px;
-  }
-
-  .classroomSubtitle {
-    font-size: 16px;
-  }
-}
-
-/* Mobile */
-@media (max-width: 480px) {
-  .heroTitle {
-    font-size: 32px;
-  }
-
-  .heroSubtitle {
-    font-size: 15px;
-  }
-
-  .hero {
-    padding: 40px 16px;
-  }
-
-  .courseSection {
-    padding: 24px 16px 50px;
-  }
-
-  .courseCard {
-    padding: 28px 20px;
-  }
-
-  .courseCardTitle {
-    font-size: 22px;
-  }
-
-  .courseCardDesc {
-    font-size: 15px;
-  }
-
-  .exploreButton {
-    padding: 12px 24px;
-    font-size: 14px;
-  }
-
-  .classroomSection {
-    padding: 50px 16px;
-  }
-
-  .classroomTitle {
-    font-size: 28px;
-  }
-
-  .classroomSubtitle {
-    font-size: 15px;
-  }
-}
-
-/* Extra Small Mobile */
-@media (max-width: 360px) {
-  .heroTitle {
-    font-size: 28px;
-  }
-
-  .heroSubtitle {
-    font-size: 14px;
-  }
-
-  .courseCardTitle {
-    font-size: 20px;
-  }
-
-  .classroomTitle {
-    font-size: 26px;
-  }
-
-  .classroomSubtitle {
-    font-size: 14px;
-  }
+  color: #64748b;
 }
 
 /***************
-*****************
+* Reviews Section
 *****************/
-/*Reviews stylings*/
-.reviewSection{
-  width: min(100%,1200px);
+.reviewSection {
+  width: min(100%, 1200px);
   margin: 30px auto;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.review_heading{
+.review_heading {
   text-align: center;
   font-size: clamp(28px, 5vw, 42px);
   font-weight: 800;
@@ -368,12 +227,12 @@
 
 .review_fadeLeft {
   left: 0;
-  background: linear-gradient(to right, #f6f9fc 0%, transparent 100%);
+  background: linear-gradient(to right, #fdfdfe 0%, transparent 100%);
 }
 
 .review_fadeRight {
   right: 0;
-  background: linear-gradient(to left, #f6f9fc 0%, transparent 100%);
+  background: linear-gradient(to left, #fdfdfe 0%, transparent 100%);
 }
 
 .review_reviewScroller {
@@ -401,20 +260,20 @@
   }
 }
 
+/* Review Card - Consistent Flexbox Layout */
 .review_reviewCard {
   background: #fff;
   border-radius: 14px;
-  padding: 28px;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
   transition: all 0.3s ease;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
   min-width: 350px;
   max-width: 350px;
+  height: 100%;
   flex-shrink: 0;
   box-sizing: border-box;
+  overflow: hidden;
 }
 
 .review_reviewCard:hover {
@@ -422,27 +281,50 @@
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
 }
 
+/* Review Card Header - Fixed */
+.review_cardHeader {
+  padding: 28px 28px 0;
+  display: flex;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
 .review_reviewPhoto {
   width: 96px;
   height: 96px;
   object-fit: cover;
   border-radius: 50%;
-  margin-bottom: 16px;
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
   flex-shrink: 0;
+}
+
+/* Review Card Body - Grows to fill space */
+.review_cardBody {
+  flex: 1;
+  padding: 20px 28px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .review_reviewText {
   font-size: 15px;
   color: #333;
   line-height: 1.7;
-  margin: 0 0 16px 0;
+  margin: 0;
   font-style: italic;
-  flex-grow: 1;
+  text-align: center;
+}
+
+/* Review Card Footer - Fixed at bottom */
+.review_cardFooter {
+  padding: 0 28px 28px;
+  flex-shrink: 0;
 }
 
 .review_reviewAuthor {
   width: 100%;
+  text-align: center;
 }
 
 .review_reviewName {
@@ -463,12 +345,12 @@
 
 /* Large Desktop */
 @media (max-width: 1200px) {
-  .section {
-    padding: 70px 40px;
+  .heroTitle {
+    font-size: 44px;
   }
 
-  .heading {
-    margin: 50px 0 36px;
+  .courseGrid {
+    gap: 20px;
   }
 
   .review_reviewCard {
@@ -477,21 +359,94 @@
   }
 }
 
-@media (max-width: 1024px){
+/* Tablet - Large */
+@media (max-width: 1024px) {
+  .heroTitle {
+    font-size: 40px;
+  }
+
+  .heroSubtitle {
+    font-size: 17px;
+  }
+
+  .courseGrid {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 800px;
+  }
+
+  .cardHeader {
+    padding: 28px 20px 20px;
+  }
+
+  .iconWrapper {
+    max-width: 180px;
+    margin-bottom: 20px;
+  }
+
+  .courseCardTitle {
+    font-size: 22px;
+  }
+
+  .courseCardDesc {
+    font-size: 15px;
+  }
+
+  .cardBody {
+    padding: 0 20px 20px;
+  }
+
+  .checklistItem {
+    font-size: 13px;
+  }
+
+  .cardFooter {
+    padding: 0 20px 20px;
+  }
+
   .review_fadeLeft,
   .review_fadeRight {
     width: 80px;
   }
 }
 
-@media (max-width: 768px){
+/* Tablet - Medium */
+@media (max-width: 768px) {
+  .heroTitle {
+    font-size: 36px;
+  }
+
+  .heroSubtitle {
+    font-size: 16px;
+  }
+
+  .hero {
+    padding: 50px 20px;
+  }
+
+  .courseSection {
+    padding: 30px 20px 60px;
+  }
+
+  .courseGrid {
+    grid-template-columns: 1fr;
+    max-width: 500px;
+  }
+
   .review_reviewPhoto {
     width: 80px;
     height: 80px;
   }
 
+  .review_cardBody {
+    padding: 16px 24px;
+  }
+
   .review_reviewText {
     font-size: 14px;
+  }
+
+  .review_cardFooter {
+    padding: 0 24px 24px;
   }
 
   .review_reviewName {
@@ -503,16 +458,160 @@
   }
 }
 
-@media (max-width:600px){
-   .review_reviewTrack {
+/* Mobile */
+@media (max-width: 600px) {
+  .review_reviewTrack {
     gap: 16px;
   }
 }
 
-@media (max-width:360px){
+@media (max-width: 480px) {
+  .heroTitle {
+    font-size: 32px;
+  }
+
+  .heroSubtitle {
+    font-size: 15px;
+  }
+
+  .hero {
+    padding: 40px 16px;
+  }
+
+  .courseSection {
+    padding: 24px 16px 50px;
+  }
+
+  .cardHeader {
+    padding: 24px 20px 16px;
+  }
+
+  .iconWrapper {
+    max-width: 160px;
+    margin-bottom: 16px;
+    padding-bottom: 12px;
+  }
+
+  .courseCardTitle {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .courseCardDesc {
+    font-size: 14px;
+  }
+
+  .cardBody {
+    padding: 0 20px 16px;
+  }
+
+  .checklistWrapper {
+    gap: 10px;
+  }
+
+  .checklistItem {
+    font-size: 13px;
+    gap: 10px;
+  }
+
+  .checkIcon {
+    width: 18px;
+    height: 18px;
+    font-size: 11px;
+  }
+
+  .cardFooter {
+    padding: 0 20px 20px;
+  }
+
+  .exploreButton {
+    padding: 12px 24px;
+    font-size: 14px;
+  }
+}
+
+/* Extra Small Mobile */
+@media (max-width: 360px) {
+  .heroTitle {
+    font-size: 28px;
+  }
+
+  .heroSubtitle {
+    font-size: 14px;
+  }
+
+  .cardHeader {
+    padding: 20px 16px 14px;
+  }
+
+  .iconWrapper {
+    max-width: 140px;
+    margin-bottom: 14px;
+  }
+
+  .courseCardTitle {
+    font-size: 18px;
+  }
+
+  .courseCardDesc {
+    font-size: 13px;
+  }
+
+  .cardBody {
+    padding: 0 16px 14px;
+  }
+
+  .checklistItem {
+    font-size: 12px;
+    gap: 8px;
+  }
+
+  .checkIcon {
+    width: 16px;
+    height: 16px;
+    font-size: 10px;
+  }
+
+  .cardFooter {
+    padding: 0 16px 16px;
+  }
+
+  .exploreButton {
+    padding: 11px 20px;
+    font-size: 13px;
+  }
+
   .review_reviewCard {
-    min-width: 220px;
-    max-width: 220px;
-    padding: 18px;
+    min-width: 280px;
+    max-width: 280px;
+  }
+
+  .review_cardHeader {
+    padding: 20px 20px 0;
+  }
+
+  .review_reviewPhoto {
+    width: 70px;
+    height: 70px;
+  }
+
+  .review_cardBody {
+    padding: 14px 20px;
+  }
+
+  .review_reviewText {
+    font-size: 13px;
+  }
+
+  .review_cardFooter {
+    padding: 0 20px 20px;
+  }
+
+  .review_reviewName {
+    font-size: 14px;
+  }
+
+  .review_reviewJob {
+    font-size: 11px;
   }
 }

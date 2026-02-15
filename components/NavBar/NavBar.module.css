@@ -1,3 +1,47 @@
+/* ANNOUNCEMENT BAR */
+.announcementBar {
+  width: 100%;
+  background: linear-gradient(135deg, #eb9e33 0%, #ffa726 100%);
+  overflow: hidden;
+  position: relative;
+  z-index: 999;
+}
+
+.announcementTrack {
+  display: flex;
+  width: 100%;
+}
+
+.announcementContent {
+  display: flex;
+  animation: scroll 30s linear infinite;
+  white-space: nowrap;
+}
+
+.announcementText {
+  display: inline-block;
+  padding: 12px 0;
+  font-size: 15px;
+  font-weight: 600;
+  color: white;
+  margin-right: 100px;
+  font-family: var(--font-poppins), sans-serif;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-33.333%);
+  }
+}
+
+.announcementContent:hover {
+  animation-play-state: paused;
+}
+
+/* NAVBAR */
 .navbar {
   display: flex;
   align-items: center;
@@ -162,6 +206,12 @@
 
 /* TABLET BREAKPOINT */
 @media (max-width: 1024px) {
+  .announcementText {
+    font-size: 14px;
+    padding: 10px 0;
+    margin-right: 80px;
+  }
+
   .navbar {
     padding: 0px 20px;
   }
@@ -187,6 +237,21 @@
 
 /* MOBILE BREAKPOINT */
 @media (max-width: 768px) {
+  .announcementText {
+    font-size: 13px;
+    padding: 10px 0;
+    margin-right: 60px;
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-33.333%);
+    }
+  }
+
   .navbar {
     padding: 12px 20px;
   }
@@ -277,11 +342,28 @@
 
 /* SMALL MOBILE */
 @media (max-width: 480px) {
+  .announcementText {
+    font-size: 12px;
+    padding: 9px 0;
+    margin-right: 50px;
+  }
+
   .navLinks {
     width: 250px;
   }
 
   .logoImage {
     width: 60px;
+  }
+}
+
+/* Accessibility - Respect user's motion preferences */
+@media (prefers-reduced-motion: reduce) {
+  .announcementContent {
+    animation: none;
+  }
+  
+  .announcementText {
+    animation: none;
   }
 }

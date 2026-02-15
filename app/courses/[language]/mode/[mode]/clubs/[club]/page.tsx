@@ -37,6 +37,32 @@ export default function ClubDetailPage() {
     return <div className={styles.errorContainer}>Club not found</div>;
   }
 
+  // Smart planner selection: Use club's planner if available, 
+  // otherwise use the corresponding stage's planner
+  const getPlanner = () => {
+    // If club has its own planner, use it
+    if (clubData.planner && clubData.planner.length > 0) {
+      return clubData.planner;
+    }
+
+    // Otherwise, find the corresponding stage by extracting the number
+    // club-1 -> stage-1, club-2 -> stage-2, etc.
+    const clubNumber = club.match(/\d+/)?.[0];
+    if (clubNumber) {
+      const correspondingStage = selectedMode.stages.find(
+        (stage: any) => stage.id === `stage-${clubNumber}`
+      );
+      if (correspondingStage) {
+        return correspondingStage.planner;
+      }
+    }
+
+    // Fallback to first stage's planner if no match found
+    return selectedMode.stages[0]?.planner || [];
+  };
+
+  const planner = getPlanner();
+
   const toggleDay = (day: number) => {
     setOpenDay(openDay === day ? null : day);
   };
@@ -44,7 +70,7 @@ export default function ClubDetailPage() {
   const handleFacultyClick = () => {
     if (clubData.faculty_name) {
       router.push(
-        `/faculty/${clubData.faculty_name.toLowerCase().replace(/\s+/g, "-")}`,
+        `/faculty/${clubData.faculty_name.toLowerCase().replace(/\s+/g, "-")}`
       );
     }
   };
@@ -125,7 +151,7 @@ export default function ClubDetailPage() {
             </p>
 
             <div className={styles.accordionWrapper}>
-              {clubData.planner.map((item: any) => (
+              {planner.map((item: any) => (
                 <div
                   key={`day-${item.day}`}
                   className={`${styles.accordionItem} ${openDay === item.day ? styles.accordionItemActive : ""}`}
@@ -176,9 +202,9 @@ export default function ClubDetailPage() {
 
         <section className={styles.blocksSection}>
           <div className={styles.blocksContainer}>
-            <h2 className={styles.blocksHeading}>Learning Modules</h2>
+            <h2 className={styles.blocksHeading}>Practice Includes</h2>
             <p className={styles.blocksDesc}>
-              Comprehensive curriculum designed for complete mastery
+              Comprehensive practice modules designed for complete mastery
             </p>
             <div className={styles.blocksGrid}>
               {clubData.blocks.map((block: any, index: number) => (

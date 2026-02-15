@@ -203,6 +203,16 @@
   margin: 0 0 20px 0;
 }
 
+.founderText li{
+  padding-left: 5px;
+  list-style: none;
+}
+
+.founderText li::before{
+  content:"✓ ";
+  padding-right: 5px;
+}
+
 .founderText:last-child {
   margin-bottom: 0;
 }

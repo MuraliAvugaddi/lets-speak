@@ -29,18 +29,15 @@ export default function Hero() {
               </svg>
             </span>
             <br />
-            Hindi & English 
-            <br />training,
-            <br />Online, Offline
-            <br />or 1-on-1
+            English & Hindi 
+            <br />Training Programs.
+            <br />Online | Offline 
+            <br />| 1-on-1
           </h1>
 
           {/* Description */}
           <p className={styles.description}>
-            Learn Hindi & English
-            through Online & Offline | Grammar + Spoken
-            English |
-            <br /> 1 to 1 Personal Training
+             Speak Confidently with Strong Grammar and Real-Life Communication Practice through Online, Offline or 1 to 1 Training.
           </p>
 
           {/* CTA Buttons */}

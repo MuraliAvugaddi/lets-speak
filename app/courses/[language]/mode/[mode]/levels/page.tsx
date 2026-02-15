@@ -34,10 +34,10 @@ export default function LevelsPage() {
       <div className={styles.english_container}>
         <h2 className={styles.english_heading}>
           {selectedMode.name} -{" "}
-          <span className={styles.english_highlight}>Levels</span>
+          <span className={styles.english_highlight}>stage based training</span>
         </h2>
-        <p style={{ textAlign: "center", marginBottom: "2rem", color: "#666" }}>
-          Choose your level and start your learning journey
+        <p style={{ textAlign: "center", marginBottom: "4rem", color: "#666" }}>
+          A structured 7-stage journey designed to transform you from a beginner to a confident communicator through guided daily practice. 
         </p>
 
         <div className={styles.english_coursesGrid}>
@@ -66,7 +66,7 @@ export default function LevelsPage() {
                 </div>
 
                 <ul className={styles.english_featuresList}>
-                  {stage.blocks.slice(0, 4).map((block) => (
+                  {stage.blocks.slice(0, 7).map((block) => (
                     <li key={block.id} className={styles.english_featureItem}>
                       <svg
                         className={styles.english_checkIcon}
@@ -96,7 +96,7 @@ export default function LevelsPage() {
                     )
                   }
                 >
-                  View Level Details
+                  View Stage Details
                   <svg
                     className={styles.english_arrowIcon}
                     viewBox="0 0 24 24"
