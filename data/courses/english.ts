@@ -8,7 +8,7 @@ export const english = {
       id: "offline",
       name: "Offline Classroom",
       manager_name: "Surendhar Sir",
-      manager_img: "/staff/surendhra sir 1.png",
+      manager_img: "/staff/suredhra sir 1.png",
       description: "Offline Classroom Training Interactive in-person sessions for structured learning and real-life speaking practice.",
       stages: [
         {
@@ -2773,7 +2773,7 @@ export const english = {
       id: "online",
       name: "Online Live",
       manager_name: "Surendhar Sir",
-      manager_img: "/staff/surendhra sir 1.png",
+      manager_img: "/staff/suredhra sir 1.png",
       description: "Online Live Training Flexible live sessions designed for consistent learning from anywhere.",
       stages: [
         {
@@ -5538,7 +5538,7 @@ export const english = {
       id: "one-to-one",
       name: "1:1 Personal Training",
       manager_name: "Surendhar Sir",
-      manager_img: "/staff/surendhra sir 1.png",
+      manager_img: "/staff/suredhra sir 1.png",
       description: "1-on-1 Personal Training Customized premium sessions designed for faster improvement and individual attention.",
       stages: [
         {
