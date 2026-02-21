@@ -71,13 +71,13 @@
 }
 
 .socialIcon {
-  width: 40px;
-  height: 40px;
-  border-radius: 50%;
+  width: 42px;
+  height: 42px;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: transform 0.3s ease, background 0.3s ease;
+  border-radius: 50%;      /* makes it circle */
+  text-decoration: none;
 }
 
 .socialIcon svg {
@@ -146,7 +146,7 @@
 }
 
 .linkList li a:hover {
-  color: #0b2a6f;
+  color: #718dc9;
 }
 
 /* Contact Section */
@@ -186,5 +186,14 @@
 }
 
 .contactItem a:hover {
-  color: #0b2a6f;
+  color: #718dc9;
+}
+
+.x {
+  background: #000;   /* X official black */
+  color: #fff;
+}
+
+.x:hover {
+  background: #111;
 }
