@@ -1,7 +1,7 @@
 /* ANNOUNCEMENT BAR */
 .announcementBar {
   width: 100%;
-  background: linear-gradient(135deg, #eb9e33 0%, #ffa726 100%);
+  background: linear-gradient(135deg, #0b2c6f 0%, #0b2c6f 60%,  #ffa726 100%);
   overflow: hidden;
   position: relative;
   z-index: 999;
@@ -182,7 +182,7 @@
 
 /* WHATSAPP BUTTON */
 .whatsappBtn {
-  background: #eb9e33;
+  background: #0b2c6f;
   color: white;
   padding: 10px 18px;
   border-radius: 999px;
