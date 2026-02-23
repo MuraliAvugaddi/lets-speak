@@ -95,16 +95,7 @@ export default function CoursesSection() {
             </div>
 
             {/* Footer - always at bottom */}
-            <div className={styles.cardFooter}>
-              {/* Rating */}
-              <div className={styles.rating}>
-                <span className={styles.stars}>
-                  {"★".repeat(Math.floor(course.rating))}
-                  {"☆".repeat(5 - Math.floor(course.rating))}
-                </span>
-                <span className={styles.ratingText}>({course.reviews})</span>
-              </div>
-
+            <div className={styles.cardFooter}> 
               <Link href={course.link} className={styles.button}>
                 <span>Explore More</span>
                 <svg
