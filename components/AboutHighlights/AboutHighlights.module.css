@@ -37,6 +37,20 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 28px;
+  justify-items: center;
+}
+
+/* Centers a lone last card (1 orphan in a 3-col grid) */
+.coreGrid > .card:last-child:nth-child(3n - 2) {
+  grid-column: 2 / 3;
+}
+
+/* Centers two orphan cards in the last row */
+.coreGrid > .card:nth-last-child(2):nth-child(3n + 1) {
+  grid-column: 1 / 2;
+}
+.coreGrid > .card:last-child:nth-child(3n - 1) {
+  grid-column: 2 / 3;
 }
 
 .card {

@@ -10,19 +10,9 @@ const coreValues = [
     img: "/h-6.png",
   },
   {
-    title: "Organizing Skills",
-    desc: "We teach time management, planning and task prioritisation.",
-    img: "/h-2.png",
-  },
-  {
     title: "Soft Skills",
     desc: "We develop teamwork, leadership, empathy and professional behaviour.",
     img: "/h-3.png",
-  },
-  {
-    title: "Self-Discipline",
-    desc: "We build focus, consistency and responsible habits.",
-    img: "/h-4.png",
   },
   {
     title: "Civic Sense",
@@ -33,6 +23,21 @@ const coreValues = [
     title: "Social Responsibilty",
     desc: "We encourage compassion and positive contribution to society.",
     img: "/h-1.png",
+  },
+  {
+    title: "Self-Discipline",
+    desc: "We build focus, consistency and responsible habits.",
+    img: "/h-4.png",
+  },
+  {
+    title: "Organizing Skills",
+    desc: "We teach time management, planning and task prioritisation.",
+    img: "/h-2.png",
+  },
+  {
+    title: "Health Awareness",
+    desc: "We teach time management, planning and task prioritisation.",
+    img: "/h-2.png",
   },
 ];
 

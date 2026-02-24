@@ -10,7 +10,8 @@ export const hindi = {
       name: "Offline Classroom",
       manager_name: "Surendhar Sir",
       manager_img: "/staff/suredhra sir 1.png",
-      description: "Interactive in-person sessions with structured guidance and active speaking practice.",
+      description:
+        "Interactive in-person sessions with structured guidance and active speaking practice.",
       stages: [
         {
           faculty_name: "Surendhra",
@@ -168,7 +169,7 @@ export const hindi = {
               day: 30,
               title: "Foundation - Day 30 Learning Module",
               description: "Promotion Day",
-            }
+            },
           ],
           blocks: [
             {
@@ -179,17 +180,20 @@ export const hindi = {
             {
               id: "block-2",
               title: "पढ़ना (Reading) _ 15 Min.",
-              description: "शब्दावली / वाक्यांश। (Vocabulary / Phrases.) दिन प्रति दिन / परिस्थितिजन्य अभिव्यक्तियां। (Day2Day expressions.) पाठ्यक्रम से संबंधित वाक्य। (Syllabus related sentences.) विषय से संबंधित वाक्य। (Topic related sentences.)",
+              description:
+                "शब्दावली / वाक्यांश। (Vocabulary / Phrases.) दिन प्रति दिन / परिस्थितिजन्य अभिव्यक्तियां। (Day2Day expressions.) पाठ्यक्रम से संबंधित वाक्य। (Syllabus related sentences.) विषय से संबंधित वाक्य। (Topic related sentences.)",
             },
             {
               id: "block-3",
               title: "बोलना (Speaking)_ 20 Min.",
-              description: "एक अंतर्क्रिया। (An Interaction.) | एक आख्यान। (A Narration.) एक बातचीत दिए गए विषय पर। (A Conversation on the given topic.) एक सामान्य बातचीत। (A General interaction.)",
+              description:
+                "एक अंतर्क्रिया। (An Interaction.) | एक आख्यान। (A Narration.) एक बातचीत दिए गए विषय पर। (A Conversation on the given topic.) एक सामान्य बातचीत। (A General interaction.)",
             },
             {
               id: "block-4",
               title: "पाठ्यक्रम (Syllabus)_ 10 Min.",
-              description: "अवधारणा (Concept.) | संरचना। (Structure.) कुछ उदाहरणों। (A few examples.)",
+              description:
+                "अवधारणा (Concept.) | संरचना। (Structure.) कुछ उदाहरणों। (A few examples.)",
             },
             {
               id: "block-5",
@@ -203,9 +207,10 @@ export const hindi = {
             },
             {
               id: "block-7",
-              title: "एक वास्तविक जीवन गतिविधि। (A real life activity)_ 10 Min.",
+              title:
+                "एक वास्तविक जीवन गतिविधि। (A real life activity)_ 10 Min.",
               description: "A real life activity",
-            }
+            },
           ],
         },
         {
@@ -364,7 +369,7 @@ export const hindi = {
               day: 30,
               title: "Accuracy - Day 30 Learning Module",
               description: "Promotion Day",
-            }
+            },
           ],
           blocks: [
             {
@@ -375,17 +380,20 @@ export const hindi = {
             {
               id: "block-2",
               title: "पढ़ना (Reading) _ 15 Min.",
-              description: "शब्दावली / वाक्यांश। (Vocabulary / Phrases.) दिन प्रति दिन / परिस्थितिजन्य अभिव्यक्तियां। (Day2Day expressions.) पाठ्यक्रम से संबंधित वाक्य। (Syllabus related sentences.) विषय से संबंधित वाक्य। (Topic related sentences.)",
+              description:
+                "शब्दावली / वाक्यांश। (Vocabulary / Phrases.) दिन प्रति दिन / परिस्थितिजन्य अभिव्यक्तियां। (Day2Day expressions.) पाठ्यक्रम से संबंधित वाक्य। (Syllabus related sentences.) विषय से संबंधित वाक्य। (Topic related sentences.)",
             },
             {
               id: "block-3",
               title: "बोलना (Speaking)_ 20 Min.",
-              description: "एक अंतर्क्रिया। (An Interaction.) | एक आख्यान। (A Narration.) एक बातचीत दिए गए विषय पर। (A Conversation on the given topic.) एक सामान्य बातचीत। (A General interaction.)",
+              description:
+                "एक अंतर्क्रिया। (An Interaction.) | एक आख्यान। (A Narration.) एक बातचीत दिए गए विषय पर। (A Conversation on the given topic.) एक सामान्य बातचीत। (A General interaction.)",
             },
             {
               id: "block-4",
               title: "पाठ्यक्रम (Syllabus)_ 10 Min.",
-              description: "अवधारणा (Concept.) | संरचना। (Structure.) कुछ उदाहरणों। (A few examples.)",
+              description:
+                "अवधारणा (Concept.) | संरचना। (Structure.) कुछ उदाहरणों। (A few examples.)",
             },
             {
               id: "block-5",
@@ -399,9 +407,10 @@ export const hindi = {
             },
             {
               id: "block-7",
-              title: "एक वास्तविक जीवन गतिविधि। (A real life activity)_ 10 Min.",
+              title:
+                "एक वास्तविक जीवन गतिविधि। (A real life activity)_ 10 Min.",
               description: "A real life activity",
-            }
+            },
           ],
         },
         {
@@ -560,7 +569,7 @@ export const hindi = {
               day: 30,
               title: "Progression - Day 30 Learning Module",
               description: "Promotion Day",
-            }
+            },
           ],
           blocks: [
             {
@@ -571,17 +580,20 @@ export const hindi = {
             {
               id: "block-2",
               title: "पढ़ना (Reading) _ 15 Min.",
-              description: "शब्दावली / वाक्यांश। (Vocabulary / Phrases.) दिन प्रति दिन / परिस्थितिजन्य अभिव्यक्तियां। (Day2Day expressions.) पाठ्यक्रम से संबंधित वाक्य। (Syllabus related sentences.) विषय से संबंधित वाक्य। (Topic related sentences.)",
+              description:
+                "शब्दावली / वाक्यांश। (Vocabulary / Phrases.) दिन प्रति दिन / परिस्थितिजन्य अभिव्यक्तियां। (Day2Day expressions.) पाठ्यक्रम से संबंधित वाक्य। (Syllabus related sentences.) विषय से संबंधित वाक्य। (Topic related sentences.)",
             },
             {
               id: "block-3",
               title: "बोलना (Speaking)_ 20 Min.",
-              description: "एक अंतर्क्रिया। (An Interaction.) | एक आख्यान। (A Narration.) एक बातचीत दिए गए विषय पर। (A Conversation on the given topic.) एक सामान्य बातचीत। (A General interaction.)",
+              description:
+                "एक अंतर्क्रिया। (An Interaction.) | एक आख्यान। (A Narration.) एक बातचीत दिए गए विषय पर। (A Conversation on the given topic.) एक सामान्य बातचीत। (A General interaction.)",
             },
             {
               id: "block-4",
               title: "पाठ्यक्रम (Syllabus)_ 10 Min.",
-              description: "अवधारणा (Concept.) | संरचना। (Structure.) कुछ उदाहरणों। (A few examples.)",
+              description:
+                "अवधारणा (Concept.) | संरचना। (Structure.) कुछ उदाहरणों। (A few examples.)",
             },
             {
               id: "block-5",
@@ -595,9 +607,10 @@ export const hindi = {
             },
             {
               id: "block-7",
-              title: "एक वास्तविक जीवन गतिविधि। (A real life activity)_ 10 Min.",
+              title:
+                "एक वास्तविक जीवन गतिविधि। (A real life activity)_ 10 Min.",
               description: "A real life activity",
-            }
+            },
           ],
         },
         {
@@ -635,7 +648,8 @@ export const hindi = {
             {
               day: 6,
               title: "Correctness - Day 6 Learning Module",
-              description: "(+/-) Y/N & W.H Questions Present Temporary Ability",
+              description:
+                "(+/-) Y/N & W.H Questions Present Temporary Ability",
             },
             {
               day: 7,
@@ -690,7 +704,8 @@ export const hindi = {
             {
               day: 17,
               title: "Correctness - Day 17 Learning Module",
-              description: "[Statements, Y/N & W.H Questions] Future Perfect Ability",
+              description:
+                "[Statements, Y/N & W.H Questions] Future Perfect Ability",
             },
             {
               day: 18,
@@ -756,7 +771,7 @@ export const hindi = {
               day: 30,
               title: "Correctness - Day 30 Learning Module",
               description: "Promotion Day",
-            }
+            },
           ],
           blocks: [
             {
@@ -767,17 +782,20 @@ export const hindi = {
             {
               id: "block-2",
               title: "पढ़ना (Reading) _ 10 Min.",
-              description: "शब्दावली / वाक्यांश। (Vocabulary / Phrases.) दिन प्रति दिन / परिस्थितिजन्य अभिव्यक्तियां। (Day2Day expressions.) पाठ्यक्रम से संबंधित वाक्य। (Syllabus related sentences.) विषय से संबंधित वाक्य। (Topic related sentences.)",
+              description:
+                "शब्दावली / वाक्यांश। (Vocabulary / Phrases.) दिन प्रति दिन / परिस्थितिजन्य अभिव्यक्तियां। (Day2Day expressions.) पाठ्यक्रम से संबंधित वाक्य। (Syllabus related sentences.) विषय से संबंधित वाक्य। (Topic related sentences.)",
             },
             {
               id: "block-3",
               title: "बोलना (Speaking)_ 30 Min.",
-              description: "एक अंतर्क्रिया। (An Interaction.) | एक आख्यान। (A Narration.) एक बातचीत दिए गए विषय पर। (A Conversation on the given topic.) एक सामान्य बातचीत। (A General interaction.)",
+              description:
+                "एक अंतर्क्रिया। (An Interaction.) | एक आख्यान। (A Narration.) एक बातचीत दिए गए विषय पर। (A Conversation on the given topic.) एक सामान्य बातचीत। (A General interaction.)",
             },
             {
               id: "block-4",
               title: "पाठ्यक्रम (Syllabus)_ 10 Min.",
-              description: "अवधारणा (Concept.) | संरचना। (Structure.) कुछ उदाहरणों। (A few examples.)",
+              description:
+                "अवधारणा (Concept.) | संरचना। (Structure.) कुछ उदाहरणों। (A few examples.)",
             },
             {
               id: "block-5",
@@ -791,20 +809,228 @@ export const hindi = {
             },
             {
               id: "block-7",
-              title: "एक वास्तविक जीवन गतिविधि। (A real life activity)_ 10 Min.",
+              title:
+                "एक वास्तविक जीवन गतिविधि। (A real life activity)_ 10 Min.",
               description: "A real life activity",
-            }
+            },
           ],
         },
-        {          // DUMMY DATA - Hindi syllabus for this stage not yet provided
-
+        {
+          // DUMMY DATA - Hindi syllabus for this stage not yet provided
           faculty_name: "Surendhra",
           faculty_img_url: "/suredhra sir 1.png",
           id: "stage-5",
-          title: "Stage 5 - Fluency",
+          title: "Stage 5 - Confidence",
           duration: "30 Days",
-          planner: // TODO: Replace with real Hindi syllabus for Fluency
-          [
+          // TODO: Replace with real Hindi syllabus for Fluency
+          planner: [
+            {
+              day: 1,
+              title: "Confidence - Day 1 Learning Module",
+              description: "Review of Stage 1 Foundations",
+            },
+            {
+              day: 2,
+              title: "Confidence - Day 2 Learning Module",
+              description: "Present Continuous Tense Introduction",
+            },
+            {
+              day: 3,
+              title: "Confidence - Day 3 Learning Module",
+              description: "Past Continuous Tense and Usage",
+            },
+            {
+              day: 4,
+              title: "Confidence - Day 4 Learning Module",
+              description: "Present Perfect Tense Introduction",
+            },
+            {
+              day: 5,
+              title: "Confidence - Day 5 Learning Module",
+              description: "Articles and Determiners (A, An, The)",
+            },
+            {
+              day: 6,
+              title: "Confidence - Day 6 Learning Module",
+              description: "Singular and Plural Nouns",
+            },
+            {
+              day: 7,
+              title: "Confidence - Day 7 Learning Module",
+              description: "Countable and Uncountable Nouns",
+            },
+            {
+              day: 8,
+              title: "Confidence - Day 8 Learning Module",
+              description: "Prepositions of Time and Frequency",
+            },
+            {
+              day: 9,
+              title: "Confidence - Day 9 Learning Module",
+              description: "Modals: Can, Could, May, Might",
+            },
+            {
+              day: 10,
+              title: "Confidence - Day 10 Learning Module",
+              description: "Revision and Practice - Week 1",
+            },
+            {
+              day: 11,
+              title: "Confidence - Day 11 Learning Module",
+              description: "Future Tense Introduction (Will, Going to)",
+            },
+            {
+              day: 12,
+              title: "Confidence - Day 12 Learning Module",
+              description: "Conditionals (If Clauses)",
+            },
+            {
+              day: 13,
+              title: "Confidence - Day 13 Learning Module",
+              description: "Comparison Structures (Comparative, Superlative)",
+            },
+            {
+              day: 14,
+              title: "Confidence - Day 14 Learning Module",
+              description: "Degrees of Comparison",
+            },
+            {
+              day: 15,
+              title: "Confidence - Day 15 Learning Module",
+              description: "Connecting Words and Conjunctions",
+            },
+            {
+              day: 16,
+              title: "Confidence - Day 16 Learning Module",
+              description: "Complex Sentence Formation",
+            },
+            {
+              day: 17,
+              title: "Confidence - Day 17 Learning Module",
+              description: "Listening Comprehension Exercises",
+            },
+            {
+              day: 18,
+              title: "Confidence - Day 18 Learning Module",
+              description: "Interactive Speaking Drills",
+            },
+            {
+              day: 19,
+              title: "Confidence - Day 19 Learning Module",
+              description: "Reading Comprehension Practice",
+            },
+            {
+              day: 20,
+              title: "Confidence - Day 20 Learning Module",
+              description: "Revision and Practice - Week 2",
+            },
+            {
+              day: 21,
+              title: "Confidence - Day 21 Learning Module",
+              description: "Written Expression and Composition",
+            },
+            {
+              day: 22,
+              title: "Confidence - Day 22 Learning Module",
+              description: "Dialogue Practice and Scenarios",
+            },
+            {
+              day: 23,
+              title: "Confidence - Day 23 Learning Module",
+              description: "Vocabulary Building Through Context",
+            },
+            {
+              day: 24,
+              title: "Confidence - Day 24 Learning Module",
+              description: "Pronunciation and Accent Training",
+            },
+            {
+              day: 25,
+              title: "Confidence - Day 25 Learning Module",
+              description: "Common Mistakes and Error Correction",
+            },
+            {
+              day: 26,
+              title: "Confidence - Day 26 Learning Module",
+              description: "Advanced Listening and Note-taking",
+            },
+            {
+              day: 27,
+              title: "Confidence - Day 27 Learning Module",
+              description: "Comprehensive Revision Session",
+            },
+            {
+              day: 28,
+              title: "Confidence - Day 28 Learning Module",
+              description: "Practice Tests and Quizzes",
+            },
+            {
+              day: 29,
+              title: "Confidence - Day 29 Learning Module",
+              description: "Final Review and Doubt Clearing",
+            },
+            {
+              day: 30,
+              title: "Confidence - Day 30 Learning Module",
+              description: "Stage Assessment and Certification",
+            },
+          ],
+          // TODO: Replace with real Hindi blocks for this stage
+          blocks: [
+            {
+              id: "block-1",
+              title: "Foundation Building",
+              description:
+                "Foundation Building module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
+            },
+            {
+              id: "block-2",
+              title: "Vocabulary Expansion",
+              description:
+                "Vocabulary Expansion module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
+            },
+            {
+              id: "block-3",
+              title: "Grammar & Structure",
+              description:
+                "Grammar & Structure module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
+            },
+            {
+              id: "block-4",
+              title: "Speaking Practice",
+              description:
+                "Speaking Practice module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
+            },
+            {
+              id: "block-5",
+              title: "Listening Skills",
+              description:
+                "Listening Skills module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
+            },
+            {
+              id: "block-6",
+              title: "Practical Application",
+              description:
+                "Practical Application module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
+            },
+            {
+              id: "block-7",
+              title: "Assessment & Feedback",
+              description:
+                "Assessment & Feedback module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
+            },
+          ],
+        },
+        {
+          // DUMMY DATA - Hindi syllabus for this stage not yet provided
+
+          faculty_name: "Surendhra",
+          faculty_img_url: "/suredhra sir 1.png",
+          id: "stage-6",
+          title: "Stage 6 - Fluency",
+          duration: "30 Days",
+          // TODO: Replace with real Hindi syllabus for Proficiency
+          planner: [
             {
               day: 1,
               title: "Fluency - Day 1 Learning Module",
@@ -954,255 +1180,64 @@ export const hindi = {
               day: 30,
               title: "Fluency - Day 30 Learning Module",
               description: "Stage Assessment and Certification",
-            }
+            },
           ],
-          blocks: // TODO: Replace with real Hindi blocks for this stage
-          [
+          // TODO: Replace with real Hindi blocks for this stage
+          blocks: [
             {
               id: "block-1",
               title: "Foundation Building",
-              description: "Foundation Building module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
+              description:
+                "Foundation Building module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
             },
             {
               id: "block-2",
               title: "Vocabulary Expansion",
-              description: "Vocabulary Expansion module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
+              description:
+                "Vocabulary Expansion module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
             },
             {
               id: "block-3",
               title: "Grammar & Structure",
-              description: "Grammar & Structure module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
+              description:
+                "Grammar & Structure module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
             },
             {
               id: "block-4",
               title: "Speaking Practice",
-              description: "Speaking Practice module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
+              description:
+                "Speaking Practice module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
             },
             {
               id: "block-5",
               title: "Listening Skills",
-              description: "Listening Skills module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
+              description:
+                "Listening Skills module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
             },
             {
               id: "block-6",
               title: "Practical Application",
-              description: "Practical Application module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
+              description:
+                "Practical Application module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
             },
             {
               id: "block-7",
               title: "Assessment & Feedback",
-              description: "Assessment & Feedback module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
-            }
+              description:
+                "Assessment & Feedback module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
+            },
           ],
         },
-        {          // DUMMY DATA - Hindi syllabus for this stage not yet provided
-
-          faculty_name: "Surendhra",
-          faculty_img_url: "/suredhra sir 1.png",
-          id: "stage-6",
-          title: "Stage 6 - Proficiency",
-          duration: "30 Days",
-          planner: // TODO: Replace with real Hindi syllabus for Proficiency
-          [
-            {
-              day: 1,
-              title: "Proficiency - Day 1 Learning Module",
-              description: "Review of Stage 1 Foundations",
-            },
-            {
-              day: 2,
-              title: "Proficiency - Day 2 Learning Module",
-              description: "Present Continuous Tense Introduction",
-            },
-            {
-              day: 3,
-              title: "Proficiency - Day 3 Learning Module",
-              description: "Past Continuous Tense and Usage",
-            },
-            {
-              day: 4,
-              title: "Proficiency - Day 4 Learning Module",
-              description: "Present Perfect Tense Introduction",
-            },
-            {
-              day: 5,
-              title: "Proficiency - Day 5 Learning Module",
-              description: "Articles and Determiners (A, An, The)",
-            },
-            {
-              day: 6,
-              title: "Proficiency - Day 6 Learning Module",
-              description: "Singular and Plural Nouns",
-            },
-            {
-              day: 7,
-              title: "Proficiency - Day 7 Learning Module",
-              description: "Countable and Uncountable Nouns",
-            },
-            {
-              day: 8,
-              title: "Proficiency - Day 8 Learning Module",
-              description: "Prepositions of Time and Frequency",
-            },
-            {
-              day: 9,
-              title: "Proficiency - Day 9 Learning Module",
-              description: "Modals: Can, Could, May, Might",
-            },
-            {
-              day: 10,
-              title: "Proficiency - Day 10 Learning Module",
-              description: "Revision and Practice - Week 1",
-            },
-            {
-              day: 11,
-              title: "Proficiency - Day 11 Learning Module",
-              description: "Future Tense Introduction (Will, Going to)",
-            },
-            {
-              day: 12,
-              title: "Proficiency - Day 12 Learning Module",
-              description: "Conditionals (If Clauses)",
-            },
-            {
-              day: 13,
-              title: "Proficiency - Day 13 Learning Module",
-              description: "Comparison Structures (Comparative, Superlative)",
-            },
-            {
-              day: 14,
-              title: "Proficiency - Day 14 Learning Module",
-              description: "Degrees of Comparison",
-            },
-            {
-              day: 15,
-              title: "Proficiency - Day 15 Learning Module",
-              description: "Connecting Words and Conjunctions",
-            },
-            {
-              day: 16,
-              title: "Proficiency - Day 16 Learning Module",
-              description: "Complex Sentence Formation",
-            },
-            {
-              day: 17,
-              title: "Proficiency - Day 17 Learning Module",
-              description: "Listening Comprehension Exercises",
-            },
-            {
-              day: 18,
-              title: "Proficiency - Day 18 Learning Module",
-              description: "Interactive Speaking Drills",
-            },
-            {
-              day: 19,
-              title: "Proficiency - Day 19 Learning Module",
-              description: "Reading Comprehension Practice",
-            },
-            {
-              day: 20,
-              title: "Proficiency - Day 20 Learning Module",
-              description: "Revision and Practice - Week 2",
-            },
-            {
-              day: 21,
-              title: "Proficiency - Day 21 Learning Module",
-              description: "Written Expression and Composition",
-            },
-            {
-              day: 22,
-              title: "Proficiency - Day 22 Learning Module",
-              description: "Dialogue Practice and Scenarios",
-            },
-            {
-              day: 23,
-              title: "Proficiency - Day 23 Learning Module",
-              description: "Vocabulary Building Through Context",
-            },
-            {
-              day: 24,
-              title: "Proficiency - Day 24 Learning Module",
-              description: "Pronunciation and Accent Training",
-            },
-            {
-              day: 25,
-              title: "Proficiency - Day 25 Learning Module",
-              description: "Common Mistakes and Error Correction",
-            },
-            {
-              day: 26,
-              title: "Proficiency - Day 26 Learning Module",
-              description: "Advanced Listening and Note-taking",
-            },
-            {
-              day: 27,
-              title: "Proficiency - Day 27 Learning Module",
-              description: "Comprehensive Revision Session",
-            },
-            {
-              day: 28,
-              title: "Proficiency - Day 28 Learning Module",
-              description: "Practice Tests and Quizzes",
-            },
-            {
-              day: 29,
-              title: "Proficiency - Day 29 Learning Module",
-              description: "Final Review and Doubt Clearing",
-            },
-            {
-              day: 30,
-              title: "Proficiency - Day 30 Learning Module",
-              description: "Stage Assessment and Certification",
-            }
-          ],
-          blocks: // TODO: Replace with real Hindi blocks for this stage
-          [
-            {
-              id: "block-1",
-              title: "Foundation Building",
-              description: "Foundation Building module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
-            },
-            {
-              id: "block-2",
-              title: "Vocabulary Expansion",
-              description: "Vocabulary Expansion module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
-            },
-            {
-              id: "block-3",
-              title: "Grammar & Structure",
-              description: "Grammar & Structure module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
-            },
-            {
-              id: "block-4",
-              title: "Speaking Practice",
-              description: "Speaking Practice module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
-            },
-            {
-              id: "block-5",
-              title: "Listening Skills",
-              description: "Listening Skills module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
-            },
-            {
-              id: "block-6",
-              title: "Practical Application",
-              description: "Practical Application module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
-            },
-            {
-              id: "block-7",
-              title: "Assessment & Feedback",
-              description: "Assessment & Feedback module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
-            }
-          ],
-        },
-        {          // DUMMY DATA - Hindi syllabus for this stage not yet provided
+        {
+          // DUMMY DATA - Hindi syllabus for this stage not yet provided
 
           faculty_name: "Surendhra",
           faculty_img_url: "/suredhra sir 1.png",
           id: "stage-7",
           title: "Stage 7 - Mastery",
           duration: "30 Days",
-          planner: // TODO: Replace with real Hindi syllabus for Mastery
-          [
+          // TODO: Replace with real Hindi syllabus for Mastery
+          planner: [
             {
               day: 1,
               title: "Mastery - Day 1 Learning Module",
@@ -1352,47 +1387,54 @@ export const hindi = {
               day: 30,
               title: "Mastery - Day 30 Learning Module",
               description: "Stage Assessment and Certification",
-            }
+            },
           ],
-          blocks: // TODO: Replace with real Hindi blocks for this stage
-          [
+          // TODO: Replace with real Hindi blocks for this stage
+          blocks: [
             {
               id: "block-1",
               title: "Foundation Building",
-              description: "Foundation Building module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
+              description:
+                "Foundation Building module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
             },
             {
               id: "block-2",
               title: "Vocabulary Expansion",
-              description: "Vocabulary Expansion module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
+              description:
+                "Vocabulary Expansion module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
             },
             {
               id: "block-3",
               title: "Grammar & Structure",
-              description: "Grammar & Structure module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
+              description:
+                "Grammar & Structure module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
             },
             {
               id: "block-4",
               title: "Speaking Practice",
-              description: "Speaking Practice module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
+              description:
+                "Speaking Practice module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
             },
             {
               id: "block-5",
               title: "Listening Skills",
-              description: "Listening Skills module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
+              description:
+                "Listening Skills module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
             },
             {
               id: "block-6",
               title: "Practical Application",
-              description: "Practical Application module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
+              description:
+                "Practical Application module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
             },
             {
               id: "block-7",
               title: "Assessment & Feedback",
-              description: "Assessment & Feedback module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
-            }
+              description:
+                "Assessment & Feedback module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
+            },
           ],
-        }
+        },
       ],
       clubs: [
         {
@@ -1402,8 +1444,8 @@ export const hindi = {
           id: "club-1",
           title: "Club 1 - Foundation",
           duration: "30 Days",
-          planner: // TODO: Replace with real Hindi syllabus for Foundation
-          [
+          // TODO: Replace with real Hindi syllabus for Foundation
+          planner: [
             {
               day: 1,
               title: "Foundation - Day 1 Learning Module",
@@ -1553,49 +1595,57 @@ export const hindi = {
               day: 30,
               title: "Foundation - Day 30 Learning Module",
               description: "Promotion Day",
-            }
+            },
           ],
           blocks: [
             {
               id: "block-1",
               title: "Basic Sentence Practice",
-              description: "Master the fundamentals of English sentence construction through systematic practice and repetition, building a strong foundation for clear communication.",
+              description:
+                "Master the fundamentals of English sentence construction through systematic practice and repetition, building a strong foundation for clear communication.",
             },
             {
               id: "block-2",
               title: "Word Usage Activities",
-              description: "Learn correct word selection and application in various contexts through interactive exercises designed to enhance vocabulary precision.",
+              description:
+                "Learn correct word selection and application in various contexts through interactive exercises designed to enhance vocabulary precision.",
             },
             {
               id: "block-3",
               title: "Guided Speaking",
-              description: "Develop speaking confidence with structured guidance, focusing on proper sentence formation and natural expression in everyday conversations.",
+              description:
+                "Develop speaking confidence with structured guidance, focusing on proper sentence formation and natural expression in everyday conversations.",
             },
             {
               id: "block-4",
               title: "Smart Sentence Correction",
-              description: "Identify and correct common grammatical errors through intelligent feedback systems that help you learn from mistakes effectively.",
+              description:
+                "Identify and correct common grammatical errors through intelligent feedback systems that help you learn from mistakes effectively.",
             },
             {
               id: "block-5",
               title: "Confidence Building",
-              description: "Build self-assurance in English communication through progressive speaking exercises and supportive practice environments.",
+              description:
+                "Build self-assurance in English communication through progressive speaking exercises and supportive practice environments.",
             },
             {
               id: "block-6",
               title: "Accent Awareness",
-              description: "Develop awareness of pronunciation patterns and accent features to improve clarity and understanding in spoken English.",
+              description:
+                "Develop awareness of pronunciation patterns and accent features to improve clarity and understanding in spoken English.",
             },
             {
               id: "block-7",
               title: "Voice Modulation Basics",
-              description: "Learn fundamental voice control techniques including pitch, tone, and volume variations for more engaging communication.",
+              description:
+                "Learn fundamental voice control techniques including pitch, tone, and volume variations for more engaging communication.",
             },
             {
               id: "block-8",
               title: "Intonation Introduction",
-              description: "Understand the basics of English intonation patterns to convey meaning, emotion, and emphasis more naturally in speech.",
-            }
+              description:
+                "Understand the basics of English intonation patterns to convey meaning, emotion, and emphasis more naturally in speech.",
+            },
           ],
         },
         {
@@ -1605,8 +1655,8 @@ export const hindi = {
           id: "club-2",
           title: "Club 2 - Accuracy",
           duration: "30 Days",
-          planner: // TODO: Replace with real Hindi syllabus for Accuracy
-          [
+          // TODO: Replace with real Hindi syllabus for Accuracy
+          planner: [
             {
               day: 1,
               title: "Accuracy - Day 1 Learning Module",
@@ -1756,49 +1806,57 @@ export const hindi = {
               day: 30,
               title: "Accuracy - Day 30 Learning Module",
               description: "Promotion Day",
-            }
+            },
           ],
           blocks: [
             {
               id: "block-1",
               title: "Daily Use Sentence Practice",
-              description: "Practice commonly used English sentences for everyday situations, building fluency in practical, real-world communication scenarios.",
+              description:
+                "Practice commonly used English sentences for everyday situations, building fluency in practical, real-world communication scenarios.",
             },
             {
               id: "block-2",
               title: "Grammar-Based Activities",
-              description: "Strengthen grammatical accuracy through targeted exercises focusing on essential rules and structures for error-free communication.",
+              description:
+                "Strengthen grammatical accuracy through targeted exercises focusing on essential rules and structures for error-free communication.",
             },
             {
               id: "block-3",
               title: "Pattern Speaking Drills",
-              description: "Master English sentence patterns through repetitive drills that develop automatic, accurate language production skills.",
+              description:
+                "Master English sentence patterns through repetitive drills that develop automatic, accurate language production skills.",
             },
             {
               id: "block-4",
               title: "Real-Time Error Correction",
-              description: "Receive immediate feedback on spoken errors, enabling quick learning and improvement in grammatical accuracy and fluency.",
+              description:
+                "Receive immediate feedback on spoken errors, enabling quick learning and improvement in grammatical accuracy and fluency.",
             },
             {
               id: "block-5",
               title: "Pronunciation Support",
-              description: "Get personalized guidance on pronouncing difficult sounds, words, and phrases correctly for clearer spoken English.",
+              description:
+                "Get personalized guidance on pronouncing difficult sounds, words, and phrases correctly for clearer spoken English.",
             },
             {
               id: "block-6",
               title: "Stress & Rhythm Practice",
-              description: "Learn English stress patterns and rhythm to speak more naturally and be better understood by native speakers.",
+              description:
+                "Learn English stress patterns and rhythm to speak more naturally and be better understood by native speakers.",
             },
             {
               id: "block-7",
               title: "Listening & Repetition Tasks",
-              description: "Improve pronunciation and listening skills through carefully designed repetition exercises that train your ear and voice.",
+              description:
+                "Improve pronunciation and listening skills through carefully designed repetition exercises that train your ear and voice.",
             },
             {
               id: "block-8",
               title: "Controlled Conversation",
-              description: "Engage in structured conversations with guided topics and vocabulary to practice accuracy in realistic communication contexts.",
-            }
+              description:
+                "Engage in structured conversations with guided topics and vocabulary to practice accuracy in realistic communication contexts.",
+            },
           ],
         },
         {
@@ -1808,8 +1866,8 @@ export const hindi = {
           id: "club-3",
           title: "Club 3 - Excellence",
           duration: "30 Days",
-          planner: // TODO: Replace with real Hindi syllabus for Excellence
-          [
+          // TODO: Replace with real Hindi syllabus for Excellence
+          planner: [
             {
               day: 1,
               title: "Excellence - Day 1 Learning Module",
@@ -1959,44 +2017,51 @@ export const hindi = {
               day: 30,
               title: "Excellence - Day 30 Learning Module",
               description: "Promotion Day",
-            }
+            },
           ],
           blocks: [
             {
               id: "block-1",
               title: "Situation-Based Practice",
-              description: "Apply English skills in realistic scenarios including workplace, social, and professional contexts for practical language mastery.",
+              description:
+                "Apply English skills in realistic scenarios including workplace, social, and professional contexts for practical language mastery.",
             },
             {
               id: "block-2",
               title: "Vocabulary Expansion",
-              description: "Systematically build your word bank with advanced vocabulary, idiomatic expressions, and context-appropriate terminology.",
+              description:
+                "Systematically build your word bank with advanced vocabulary, idiomatic expressions, and context-appropriate terminology.",
             },
             {
               id: "block-3",
               title: "Sentence Refinement",
-              description: "Polish your sentence construction by learning sophisticated structures and eliminating common errors for professional-level communication.",
+              description:
+                "Polish your sentence construction by learning sophisticated structures and eliminating common errors for professional-level communication.",
             },
             {
               id: "block-4",
               title: "Fluency Development",
-              description: "Enhance speaking speed and smoothness through exercises designed to reduce hesitation and improve natural flow.",
+              description:
+                "Enhance speaking speed and smoothness through exercises designed to reduce hesitation and improve natural flow.",
             },
             {
               id: "block-5",
               title: "Clear Pronunciation Practice",
-              description: "Perfect your pronunciation through focused practice on problem areas, ensuring clarity and confidence in every word.",
+              description:
+                "Perfect your pronunciation through focused practice on problem areas, ensuring clarity and confidence in every word.",
             },
             {
               id: "block-6",
               title: "Guided Discussions",
-              description: "Participate in facilitated conversations on diverse topics to develop critical thinking and articulate expression in English.",
+              description:
+                "Participate in facilitated conversations on diverse topics to develop critical thinking and articulate expression in English.",
             },
             {
               id: "block-7",
               title: "Thought Expression Tasks",
-              description: "Learn to organize and express complex ideas clearly and coherently in English through structured speaking activities.",
-            }
+              description:
+                "Learn to organize and express complex ideas clearly and coherently in English through structured speaking activities.",
+            },
           ],
         },
         {
@@ -2006,8 +2071,8 @@ export const hindi = {
           id: "club-4",
           title: "Club 4 - Correctness",
           duration: "30 Days",
-          planner: // TODO: Replace with real Hindi syllabus for Correctness
-          [
+          // TODO: Replace with real Hindi syllabus for Correctness
+          planner: [
             {
               day: 1,
               title: "Correctness - Day 1 Learning Module",
@@ -2036,7 +2101,8 @@ export const hindi = {
             {
               day: 6,
               title: "Correctness - Day 6 Learning Module",
-              description: "(+/-) Y/N & W.H Questions Present Temporary Ability",
+              description:
+                "(+/-) Y/N & W.H Questions Present Temporary Ability",
             },
             {
               day: 7,
@@ -2091,7 +2157,8 @@ export const hindi = {
             {
               day: 17,
               title: "Correctness - Day 17 Learning Module",
-              description: "[Statements, Y/N & W.H Questions] Future Perfect Ability",
+              description:
+                "[Statements, Y/N & W.H Questions] Future Perfect Ability",
             },
             {
               day: 18,
@@ -2157,44 +2224,51 @@ export const hindi = {
               day: 30,
               title: "Correctness - Day 30 Learning Module",
               description: "Promotion Day",
-            }
+            },
           ],
           blocks: [
             {
               id: "block-1",
               title: "Topic-Based Conversations",
-              description: "Engage in focused discussions on specific subjects to build depth in vocabulary and confidence in expressing detailed opinions.",
+              description:
+                "Engage in focused discussions on specific subjects to build depth in vocabulary and confidence in expressing detailed opinions.",
             },
             {
               id: "block-2",
               title: "Spontaneous Sentence Building",
-              description: "Develop the ability to construct grammatically correct sentences on the spot without preparation or hesitation.",
+              description:
+                "Develop the ability to construct grammatically correct sentences on the spot without preparation or hesitation.",
             },
             {
               id: "block-3",
               title: "Advanced Sentence Correction",
-              description: "Master complex grammar rules and learn to self-correct sophisticated errors for near-native language accuracy.",
+              description:
+                "Master complex grammar rules and learn to self-correct sophisticated errors for near-native language accuracy.",
             },
             {
               id: "block-4",
               title: "Speaking Without Hesitation",
-              description: "Build confidence to speak continuously and naturally without pauses, fillers, or uncertainty in your expression.",
+              description:
+                "Build confidence to speak continuously and naturally without pauses, fillers, or uncertainty in your expression.",
             },
             {
               id: "block-5",
               title: "Accent Improvement",
-              description: "Refine your accent through targeted practice on specific sounds, stress patterns, and intonation for professional clarity.",
+              description:
+                "Refine your accent through targeted practice on specific sounds, stress patterns, and intonation for professional clarity.",
             },
             {
               id: "block-6",
               title: "Voice Control Techniques",
-              description: "Master advanced vocal techniques including projection, pace, and emphasis to make your speech more effective and engaging.",
+              description:
+                "Master advanced vocal techniques including projection, pace, and emphasis to make your speech more effective and engaging.",
             },
             {
               id: "block-7",
               title: "Role-Play Activities",
-              description: "Practice real-world scenarios through interactive role-playing exercises that simulate professional and social situations.",
-            }
+              description:
+                "Practice real-world scenarios through interactive role-playing exercises that simulate professional and social situations.",
+            },
           ],
         },
         {
@@ -2204,8 +2278,8 @@ export const hindi = {
           id: "club-5",
           title: "Club 5 - Fluency",
           duration: "30 Days",
-          planner: // TODO: Replace with real Hindi syllabus for Fluency
-          [
+          // TODO: Replace with real Hindi syllabus for Fluency
+          planner: [
             {
               day: 1,
               title: "Fluency - Day 1 Learning Module",
@@ -2355,44 +2429,51 @@ export const hindi = {
               day: 30,
               title: "Fluency - Day 30 Learning Module",
               description: "Stage Assessment and Certification",
-            }
+            },
           ],
           blocks: [
             {
               id: "block-1",
               title: "Descriptive Speaking",
-              description: "Learn to paint vivid pictures with words through detailed descriptions of people, places, events, and experiences.",
+              description:
+                "Learn to paint vivid pictures with words through detailed descriptions of people, places, events, and experiences.",
             },
             {
               id: "block-2",
               title: "Idea Presentation",
-              description: "Develop skills to present thoughts, concepts, and proposals clearly and persuasively in professional and academic settings.",
+              description:
+                "Develop skills to present thoughts, concepts, and proposals clearly and persuasively in professional and academic settings.",
             },
             {
               id: "block-3",
               title: "Error-Free Communication",
-              description: "Achieve grammatical precision and accuracy in spontaneous speech through intensive practice and error elimination techniques.",
+              description:
+                "Achieve grammatical precision and accuracy in spontaneous speech through intensive practice and error elimination techniques.",
             },
             {
               id: "block-4",
               title: "Confidence Enhancement",
-              description: "Build unwavering self-assurance in English speaking through progressive challenges and positive reinforcement strategies.",
+              description:
+                "Build unwavering self-assurance in English speaking through progressive challenges and positive reinforcement strategies.",
             },
             {
               id: "block-5",
               title: "Emotional Tone Practice",
-              description: "Learn to convey emotions, attitudes, and subtle meanings through appropriate tone variations in your voice.",
+              description:
+                "Learn to convey emotions, attitudes, and subtle meanings through appropriate tone variations in your voice.",
             },
             {
               id: "block-6",
               title: "Intonation Mastery",
-              description: "Perfect the rise and fall patterns in English speech to communicate meaning, questions, and emphasis like a native speaker.",
+              description:
+                "Perfect the rise and fall patterns in English speech to communicate meaning, questions, and emphasis like a native speaker.",
             },
             {
               id: "block-7",
               title: "Interactive Discussions",
-              description: "Engage in dynamic group conversations that build quick thinking, active listening, and responsive communication skills.",
-            }
+              description:
+                "Engage in dynamic group conversations that build quick thinking, active listening, and responsive communication skills.",
+            },
           ],
         },
         {
@@ -2402,8 +2483,8 @@ export const hindi = {
           id: "club-6",
           title: "Club 6 - Proficiency",
           duration: "30 Days",
-          planner: // TODO: Replace with real Hindi syllabus for Proficiency
-          [
+          // TODO: Replace with real Hindi syllabus for Proficiency
+          planner: [
             {
               day: 1,
               title: "Proficiency - Day 1 Learning Module",
@@ -2553,44 +2634,51 @@ export const hindi = {
               day: 30,
               title: "Proficiency - Day 30 Learning Module",
               description: "Stage Assessment and Certification",
-            }
+            },
           ],
           blocks: [
             {
               id: "block-1",
               title: "Group Discussions",
-              description: "Participate in collaborative conversations that develop teamwork, negotiation, and consensus-building skills in English.",
+              description:
+                "Participate in collaborative conversations that develop teamwork, negotiation, and consensus-building skills in English.",
             },
             {
               id: "block-2",
               title: "Situation Handling Practice",
-              description: "Master difficult communication scenarios including conflicts, complaints, and complex professional interactions with confidence.",
+              description:
+                "Master difficult communication scenarios including conflicts, complaints, and complex professional interactions with confidence.",
             },
             {
               id: "block-3",
               title: "Professional Vocabulary Use",
-              description: "Command business and professional terminology across various industries for effective workplace communication and networking.",
+              description:
+                "Command business and professional terminology across various industries for effective workplace communication and networking.",
             },
             {
               id: "block-4",
               title: "Public Speaking Basics",
-              description: "Learn fundamental public speaking techniques including structure, delivery, and audience engagement for presentations and speeches.",
+              description:
+                "Learn fundamental public speaking techniques including structure, delivery, and audience engagement for presentations and speeches.",
             },
             {
               id: "block-5",
               title: "Speech Clarity Training",
-              description: "Refine articulation and pronunciation to ensure every word is heard and understood clearly in professional settings.",
+              description:
+                "Refine articulation and pronunciation to ensure every word is heard and understood clearly in professional settings.",
             },
             {
               id: "block-6",
               title: "Emphasis & Pausing",
-              description: "Master the strategic use of pauses and emphasis to add impact, clarity, and professionalism to your spoken English.",
+              description:
+                "Master the strategic use of pauses and emphasis to add impact, clarity, and professionalism to your spoken English.",
             },
             {
               id: "block-7",
               title: "Advanced Voice Modulation",
-              description: "Perfect sophisticated vocal techniques including pitch control, tonal variation, and dynamic range for powerful communication.",
-            }
+              description:
+                "Perfect sophisticated vocal techniques including pitch control, tonal variation, and dynamic range for powerful communication.",
+            },
           ],
         },
         {
@@ -2600,8 +2688,8 @@ export const hindi = {
           id: "club-7",
           title: "Club 7 - Mastery",
           duration: "30 Days",
-          planner: // TODO: Replace with real Hindi syllabus for Mastery
-          [
+          // TODO: Replace with real Hindi syllabus for Mastery
+          planner: [
             {
               day: 1,
               title: "Mastery - Day 1 Learning Module",
@@ -2751,46 +2839,53 @@ export const hindi = {
               day: 30,
               title: "Mastery - Day 30 Learning Module",
               description: "Stage Assessment and Certification",
-            }
+            },
           ],
           blocks: [
             {
               id: "block-1",
               title: "Real-Life Communication",
-              description: "Apply all learned skills in authentic, unscripted situations that mirror real-world personal and professional interactions.",
+              description:
+                "Apply all learned skills in authentic, unscripted situations that mirror real-world personal and professional interactions.",
             },
             {
               id: "block-2",
               title: "Debate & Presentation",
-              description: "Develop advanced argumentation and presentation skills through formal debates and comprehensive topic presentations.",
+              description:
+                "Develop advanced argumentation and presentation skills through formal debates and comprehensive topic presentations.",
             },
             {
               id: "block-3",
               title: "Advanced Expression Skills",
-              description: "Master nuanced communication including persuasion, negotiation, and sophisticated idea articulation at a professional level.",
+              description:
+                "Master nuanced communication including persuasion, negotiation, and sophisticated idea articulation at a professional level.",
             },
             {
               id: "block-4",
               title: "Accent Neutralization",
-              description: "Achieve a neutral, easily understood accent that transcends regional variations for global professional communication.",
+              description:
+                "Achieve a neutral, easily understood accent that transcends regional variations for global professional communication.",
             },
             {
               id: "block-5",
               title: "Impactful Speaking",
-              description: "Learn to deliver powerful, memorable messages that influence, inspire, and motivate audiences in any context.",
+              description:
+                "Learn to deliver powerful, memorable messages that influence, inspire, and motivate audiences in any context.",
             },
             {
               id: "block-6",
               title: "Stage Speaking Practice",
-              description: "Develop confidence and skills for formal stage presentations, conferences, and large audience addresses.",
+              description:
+                "Develop confidence and skills for formal stage presentations, conferences, and large audience addresses.",
             },
             {
               id: "block-7",
               title: "Personality-Based Communication",
-              description: "Develop your unique communication style that reflects your personality while maintaining professional English standards.",
-            }
+              description:
+                "Develop your unique communication style that reflects your personality while maintaining professional English standards.",
+            },
           ],
-        }
+        },
       ],
     },
     {
@@ -2798,7 +2893,8 @@ export const hindi = {
       name: "Online Live",
       manager_name: "Surendhar Sir",
       manager_img: "/staff/suredhra sir 1.png",
-      description: "High-impact live sessions designed for flexibility and consistent improvement.",
+      description:
+        "High-impact live sessions designed for flexibility and consistent improvement.",
       stages: [
         {
           faculty_name: "Surendhra",
@@ -2956,7 +3052,7 @@ export const hindi = {
               day: 30,
               title: "Foundation - Day 30 Learning Module",
               description: "Promotion Day",
-            }
+            },
           ],
           blocks: [
             {
@@ -2967,17 +3063,20 @@ export const hindi = {
             {
               id: "block-2",
               title: "पढ़ना (Reading) _ 15 Min.",
-              description: "शब्दावली / वाक्यांश। (Vocabulary / Phrases.) दिन प्रति दिन / परिस्थितिजन्य अभिव्यक्तियां। (Day2Day expressions.) पाठ्यक्रम से संबंधित वाक्य। (Syllabus related sentences.) विषय से संबंधित वाक्य। (Topic related sentences.)",
+              description:
+                "शब्दावली / वाक्यांश। (Vocabulary / Phrases.) दिन प्रति दिन / परिस्थितिजन्य अभिव्यक्तियां। (Day2Day expressions.) पाठ्यक्रम से संबंधित वाक्य। (Syllabus related sentences.) विषय से संबंधित वाक्य। (Topic related sentences.)",
             },
             {
               id: "block-3",
               title: "बोलना (Speaking)_ 20 Min.",
-              description: "एक अंतर्क्रिया। (An Interaction.) | एक आख्यान। (A Narration.) एक बातचीत दिए गए विषय पर। (A Conversation on the given topic.) एक सामान्य बातचीत। (A General interaction.)",
+              description:
+                "एक अंतर्क्रिया। (An Interaction.) | एक आख्यान। (A Narration.) एक बातचीत दिए गए विषय पर। (A Conversation on the given topic.) एक सामान्य बातचीत। (A General interaction.)",
             },
             {
               id: "block-4",
               title: "पाठ्यक्रम (Syllabus)_ 10 Min.",
-              description: "अवधारणा (Concept.) | संरचना। (Structure.) कुछ उदाहरणों। (A few examples.)",
+              description:
+                "अवधारणा (Concept.) | संरचना। (Structure.) कुछ उदाहरणों। (A few examples.)",
             },
             {
               id: "block-5",
@@ -2991,9 +3090,10 @@ export const hindi = {
             },
             {
               id: "block-7",
-              title: "एक वास्तविक जीवन गतिविधि। (A real life activity)_ 10 Min.",
+              title:
+                "एक वास्तविक जीवन गतिविधि। (A real life activity)_ 10 Min.",
               description: "A real life activity",
-            }
+            },
           ],
         },
         {
@@ -3152,7 +3252,7 @@ export const hindi = {
               day: 30,
               title: "Accuracy - Day 30 Learning Module",
               description: "Promotion Day",
-            }
+            },
           ],
           blocks: [
             {
@@ -3163,17 +3263,20 @@ export const hindi = {
             {
               id: "block-2",
               title: "पढ़ना (Reading) _ 15 Min.",
-              description: "शब्दावली / वाक्यांश। (Vocabulary / Phrases.) दिन प्रति दिन / परिस्थितिजन्य अभिव्यक्तियां। (Day2Day expressions.) पाठ्यक्रम से संबंधित वाक्य। (Syllabus related sentences.) विषय से संबंधित वाक्य। (Topic related sentences.)",
+              description:
+                "शब्दावली / वाक्यांश। (Vocabulary / Phrases.) दिन प्रति दिन / परिस्थितिजन्य अभिव्यक्तियां। (Day2Day expressions.) पाठ्यक्रम से संबंधित वाक्य। (Syllabus related sentences.) विषय से संबंधित वाक्य। (Topic related sentences.)",
             },
             {
               id: "block-3",
               title: "बोलना (Speaking)_ 20 Min.",
-              description: "एक अंतर्क्रिया। (An Interaction.) | एक आख्यान। (A Narration.) एक बातचीत दिए गए विषय पर। (A Conversation on the given topic.) एक सामान्य बातचीत। (A General interaction.)",
+              description:
+                "एक अंतर्क्रिया। (An Interaction.) | एक आख्यान। (A Narration.) एक बातचीत दिए गए विषय पर। (A Conversation on the given topic.) एक सामान्य बातचीत। (A General interaction.)",
             },
             {
               id: "block-4",
               title: "पाठ्यक्रम (Syllabus)_ 10 Min.",
-              description: "अवधारणा (Concept.) | संरचना। (Structure.) कुछ उदाहरणों। (A few examples.)",
+              description:
+                "अवधारणा (Concept.) | संरचना। (Structure.) कुछ उदाहरणों। (A few examples.)",
             },
             {
               id: "block-5",
@@ -3187,9 +3290,10 @@ export const hindi = {
             },
             {
               id: "block-7",
-              title: "एक वास्तविक जीवन गतिविधि। (A real life activity)_ 10 Min.",
+              title:
+                "एक वास्तविक जीवन गतिविधि। (A real life activity)_ 10 Min.",
               description: "A real life activity",
-            }
+            },
           ],
         },
         {
@@ -3348,7 +3452,7 @@ export const hindi = {
               day: 30,
               title: "Progression - Day 30 Learning Module",
               description: "Promotion Day",
-            }
+            },
           ],
           blocks: [
             {
@@ -3359,17 +3463,20 @@ export const hindi = {
             {
               id: "block-2",
               title: "पढ़ना (Reading) _ 15 Min.",
-              description: "शब्दावली / वाक्यांश। (Vocabulary / Phrases.) दिन प्रति दिन / परिस्थितिजन्य अभिव्यक्तियां। (Day2Day expressions.) पाठ्यक्रम से संबंधित वाक्य। (Syllabus related sentences.) विषय से संबंधित वाक्य। (Topic related sentences.)",
+              description:
+                "शब्दावली / वाक्यांश। (Vocabulary / Phrases.) दिन प्रति दिन / परिस्थितिजन्य अभिव्यक्तियां। (Day2Day expressions.) पाठ्यक्रम से संबंधित वाक्य। (Syllabus related sentences.) विषय से संबंधित वाक्य। (Topic related sentences.)",
             },
             {
               id: "block-3",
               title: "बोलना (Speaking)_ 20 Min.",
-              description: "एक अंतर्क्रिया। (An Interaction.) | एक आख्यान। (A Narration.) एक बातचीत दिए गए विषय पर। (A Conversation on the given topic.) एक सामान्य बातचीत। (A General interaction.)",
+              description:
+                "एक अंतर्क्रिया। (An Interaction.) | एक आख्यान। (A Narration.) एक बातचीत दिए गए विषय पर। (A Conversation on the given topic.) एक सामान्य बातचीत। (A General interaction.)",
             },
             {
               id: "block-4",
               title: "पाठ्यक्रम (Syllabus)_ 10 Min.",
-              description: "अवधारणा (Concept.) | संरचना। (Structure.) कुछ उदाहरणों। (A few examples.)",
+              description:
+                "अवधारणा (Concept.) | संरचना। (Structure.) कुछ उदाहरणों। (A few examples.)",
             },
             {
               id: "block-5",
@@ -3383,9 +3490,10 @@ export const hindi = {
             },
             {
               id: "block-7",
-              title: "एक वास्तविक जीवन गतिविधि। (A real life activity)_ 10 Min.",
+              title:
+                "एक वास्तविक जीवन गतिविधि। (A real life activity)_ 10 Min.",
               description: "A real life activity",
-            }
+            },
           ],
         },
         {
@@ -3423,7 +3531,8 @@ export const hindi = {
             {
               day: 6,
               title: "Correctness - Day 6 Learning Module",
-              description: "(+/-) Y/N & W.H Questions Present Temporary Ability",
+              description:
+                "(+/-) Y/N & W.H Questions Present Temporary Ability",
             },
             {
               day: 7,
@@ -3478,7 +3587,8 @@ export const hindi = {
             {
               day: 17,
               title: "Correctness - Day 17 Learning Module",
-              description: "[Statements, Y/N & W.H Questions] Future Perfect Ability",
+              description:
+                "[Statements, Y/N & W.H Questions] Future Perfect Ability",
             },
             {
               day: 18,
@@ -3544,7 +3654,7 @@ export const hindi = {
               day: 30,
               title: "Correctness - Day 30 Learning Module",
               description: "Promotion Day",
-            }
+            },
           ],
           blocks: [
             {
@@ -3555,17 +3665,20 @@ export const hindi = {
             {
               id: "block-2",
               title: "पढ़ना (Reading) _ 10 Min.",
-              description: "शब्दावली / वाक्यांश। (Vocabulary / Phrases.) दिन प्रति दिन / परिस्थितिजन्य अभिव्यक्तियां। (Day2Day expressions.) पाठ्यक्रम से संबंधित वाक्य। (Syllabus related sentences.) विषय से संबंधित वाक्य। (Topic related sentences.)",
+              description:
+                "शब्दावली / वाक्यांश। (Vocabulary / Phrases.) दिन प्रति दिन / परिस्थितिजन्य अभिव्यक्तियां। (Day2Day expressions.) पाठ्यक्रम से संबंधित वाक्य। (Syllabus related sentences.) विषय से संबंधित वाक्य। (Topic related sentences.)",
             },
             {
               id: "block-3",
               title: "बोलना (Speaking)_ 30 Min.",
-              description: "एक अंतर्क्रिया। (An Interaction.) | एक आख्यान। (A Narration.) एक बातचीत दिए गए विषय पर। (A Conversation on the given topic.) एक सामान्य बातचीत। (A General interaction.)",
+              description:
+                "एक अंतर्क्रिया। (An Interaction.) | एक आख्यान। (A Narration.) एक बातचीत दिए गए विषय पर। (A Conversation on the given topic.) एक सामान्य बातचीत। (A General interaction.)",
             },
             {
               id: "block-4",
               title: "पाठ्यक्रम (Syllabus)_ 10 Min.",
-              description: "अवधारणा (Concept.) | संरचना। (Structure.) कुछ उदाहरणों। (A few examples.)",
+              description:
+                "अवधारणा (Concept.) | संरचना। (Structure.) कुछ उदाहरणों। (A few examples.)",
             },
             {
               id: "block-5",
@@ -3579,20 +3692,228 @@ export const hindi = {
             },
             {
               id: "block-7",
-              title: "एक वास्तविक जीवन गतिविधि। (A real life activity)_ 10 Min.",
+              title:
+                "एक वास्तविक जीवन गतिविधि। (A real life activity)_ 10 Min.",
               description: "A real life activity",
-            }
+            },
           ],
         },
-        {          // DUMMY DATA - Hindi syllabus for this stage not yet provided
-
+        {
+          // DUMMY DATA - Hindi syllabus for this stage not yet provided
           faculty_name: "Surendhra",
           faculty_img_url: "/suredhra sir 1.png",
           id: "stage-5",
-          title: "Stage 5 - Fluency",
+          title: "Stage 5 - Confidence",
           duration: "30 Days",
-          planner: // TODO: Replace with real Hindi syllabus for Fluency
-          [
+          // TODO: Replace with real Hindi syllabus for Fluency
+          planner: [
+            {
+              day: 1,
+              title: "Confidence - Day 1 Learning Module",
+              description: "Review of Stage 1 Foundations",
+            },
+            {
+              day: 2,
+              title: "Confidence - Day 2 Learning Module",
+              description: "Present Continuous Tense Introduction",
+            },
+            {
+              day: 3,
+              title: "Confidence - Day 3 Learning Module",
+              description: "Past Continuous Tense and Usage",
+            },
+            {
+              day: 4,
+              title: "Confidence - Day 4 Learning Module",
+              description: "Present Perfect Tense Introduction",
+            },
+            {
+              day: 5,
+              title: "Confidence - Day 5 Learning Module",
+              description: "Articles and Determiners (A, An, The)",
+            },
+            {
+              day: 6,
+              title: "Confidence - Day 6 Learning Module",
+              description: "Singular and Plural Nouns",
+            },
+            {
+              day: 7,
+              title: "Confidence - Day 7 Learning Module",
+              description: "Countable and Uncountable Nouns",
+            },
+            {
+              day: 8,
+              title: "Confidence - Day 8 Learning Module",
+              description: "Prepositions of Time and Frequency",
+            },
+            {
+              day: 9,
+              title: "Confidence - Day 9 Learning Module",
+              description: "Modals: Can, Could, May, Might",
+            },
+            {
+              day: 10,
+              title: "Confidence - Day 10 Learning Module",
+              description: "Revision and Practice - Week 1",
+            },
+            {
+              day: 11,
+              title: "Confidence - Day 11 Learning Module",
+              description: "Future Tense Introduction (Will, Going to)",
+            },
+            {
+              day: 12,
+              title: "Confidence - Day 12 Learning Module",
+              description: "Conditionals (If Clauses)",
+            },
+            {
+              day: 13,
+              title: "Confidence - Day 13 Learning Module",
+              description: "Comparison Structures (Comparative, Superlative)",
+            },
+            {
+              day: 14,
+              title: "Confidence - Day 14 Learning Module",
+              description: "Degrees of Comparison",
+            },
+            {
+              day: 15,
+              title: "Confidence - Day 15 Learning Module",
+              description: "Connecting Words and Conjunctions",
+            },
+            {
+              day: 16,
+              title: "Confidence - Day 16 Learning Module",
+              description: "Complex Sentence Formation",
+            },
+            {
+              day: 17,
+              title: "Confidence - Day 17 Learning Module",
+              description: "Listening Comprehension Exercises",
+            },
+            {
+              day: 18,
+              title: "Confidence - Day 18 Learning Module",
+              description: "Interactive Speaking Drills",
+            },
+            {
+              day: 19,
+              title: "Confidence - Day 19 Learning Module",
+              description: "Reading Comprehension Practice",
+            },
+            {
+              day: 20,
+              title: "Confidence - Day 20 Learning Module",
+              description: "Revision and Practice - Week 2",
+            },
+            {
+              day: 21,
+              title: "Confidence - Day 21 Learning Module",
+              description: "Written Expression and Composition",
+            },
+            {
+              day: 22,
+              title: "Confidence - Day 22 Learning Module",
+              description: "Dialogue Practice and Scenarios",
+            },
+            {
+              day: 23,
+              title: "Confidence - Day 23 Learning Module",
+              description: "Vocabulary Building Through Context",
+            },
+            {
+              day: 24,
+              title: "Confidence - Day 24 Learning Module",
+              description: "Pronunciation and Accent Training",
+            },
+            {
+              day: 25,
+              title: "Confidence - Day 25 Learning Module",
+              description: "Common Mistakes and Error Correction",
+            },
+            {
+              day: 26,
+              title: "Confidence - Day 26 Learning Module",
+              description: "Advanced Listening and Note-taking",
+            },
+            {
+              day: 27,
+              title: "Confidence - Day 27 Learning Module",
+              description: "Comprehensive Revision Session",
+            },
+            {
+              day: 28,
+              title: "Confidence - Day 28 Learning Module",
+              description: "Practice Tests and Quizzes",
+            },
+            {
+              day: 29,
+              title: "Confidence - Day 29 Learning Module",
+              description: "Final Review and Doubt Clearing",
+            },
+            {
+              day: 30,
+              title: "Confidence - Day 30 Learning Module",
+              description: "Stage Assessment and Certification",
+            },
+          ],
+          // TODO: Replace with real Hindi blocks for this stage
+          blocks: [
+            {
+              id: "block-1",
+              title: "Foundation Building",
+              description:
+                "Foundation Building module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
+            },
+            {
+              id: "block-2",
+              title: "Vocabulary Expansion",
+              description:
+                "Vocabulary Expansion module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
+            },
+            {
+              id: "block-3",
+              title: "Grammar & Structure",
+              description:
+                "Grammar & Structure module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
+            },
+            {
+              id: "block-4",
+              title: "Speaking Practice",
+              description:
+                "Speaking Practice module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
+            },
+            {
+              id: "block-5",
+              title: "Listening Skills",
+              description:
+                "Listening Skills module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
+            },
+            {
+              id: "block-6",
+              title: "Practical Application",
+              description:
+                "Practical Application module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
+            },
+            {
+              id: "block-7",
+              title: "Assessment & Feedback",
+              description:
+                "Assessment & Feedback module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
+            },
+          ],
+        },
+        {
+          // DUMMY DATA - Hindi syllabus for this stage not yet provided
+
+          faculty_name: "Surendhra",
+          faculty_img_url: "/suredhra sir 1.png",
+          id: "stage-6",
+          title: "Stage 6 - Fluency",
+          duration: "30 Days",
+          // TODO: Replace with real Hindi syllabus for Proficiency
+          planner: [
             {
               day: 1,
               title: "Fluency - Day 1 Learning Module",
@@ -3742,255 +4063,64 @@ export const hindi = {
               day: 30,
               title: "Fluency - Day 30 Learning Module",
               description: "Stage Assessment and Certification",
-            }
+            },
           ],
-          blocks: // TODO: Replace with real Hindi blocks for this stage
-          [
+          // TODO: Replace with real Hindi blocks for this stage
+          blocks: [
             {
               id: "block-1",
               title: "Foundation Building",
-              description: "Foundation Building module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
+              description:
+                "Foundation Building module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
             },
             {
               id: "block-2",
               title: "Vocabulary Expansion",
-              description: "Vocabulary Expansion module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
+              description:
+                "Vocabulary Expansion module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
             },
             {
               id: "block-3",
               title: "Grammar & Structure",
-              description: "Grammar & Structure module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
+              description:
+                "Grammar & Structure module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
             },
             {
               id: "block-4",
               title: "Speaking Practice",
-              description: "Speaking Practice module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
+              description:
+                "Speaking Practice module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
             },
             {
               id: "block-5",
               title: "Listening Skills",
-              description: "Listening Skills module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
+              description:
+                "Listening Skills module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
             },
             {
               id: "block-6",
               title: "Practical Application",
-              description: "Practical Application module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
+              description:
+                "Practical Application module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
             },
             {
               id: "block-7",
               title: "Assessment & Feedback",
-              description: "Assessment & Feedback module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
-            }
+              description:
+                "Assessment & Feedback module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
+            },
           ],
         },
-        {          // DUMMY DATA - Hindi syllabus for this stage not yet provided
-
-          faculty_name: "Surendhra",
-          faculty_img_url: "/suredhra sir 1.png",
-          id: "stage-6",
-          title: "Stage 6 - Proficiency",
-          duration: "30 Days",
-          planner: // TODO: Replace with real Hindi syllabus for Proficiency
-          [
-            {
-              day: 1,
-              title: "Proficiency - Day 1 Learning Module",
-              description: "Review of Stage 1 Foundations",
-            },
-            {
-              day: 2,
-              title: "Proficiency - Day 2 Learning Module",
-              description: "Present Continuous Tense Introduction",
-            },
-            {
-              day: 3,
-              title: "Proficiency - Day 3 Learning Module",
-              description: "Past Continuous Tense and Usage",
-            },
-            {
-              day: 4,
-              title: "Proficiency - Day 4 Learning Module",
-              description: "Present Perfect Tense Introduction",
-            },
-            {
-              day: 5,
-              title: "Proficiency - Day 5 Learning Module",
-              description: "Articles and Determiners (A, An, The)",
-            },
-            {
-              day: 6,
-              title: "Proficiency - Day 6 Learning Module",
-              description: "Singular and Plural Nouns",
-            },
-            {
-              day: 7,
-              title: "Proficiency - Day 7 Learning Module",
-              description: "Countable and Uncountable Nouns",
-            },
-            {
-              day: 8,
-              title: "Proficiency - Day 8 Learning Module",
-              description: "Prepositions of Time and Frequency",
-            },
-            {
-              day: 9,
-              title: "Proficiency - Day 9 Learning Module",
-              description: "Modals: Can, Could, May, Might",
-            },
-            {
-              day: 10,
-              title: "Proficiency - Day 10 Learning Module",
-              description: "Revision and Practice - Week 1",
-            },
-            {
-              day: 11,
-              title: "Proficiency - Day 11 Learning Module",
-              description: "Future Tense Introduction (Will, Going to)",
-            },
-            {
-              day: 12,
-              title: "Proficiency - Day 12 Learning Module",
-              description: "Conditionals (If Clauses)",
-            },
-            {
-              day: 13,
-              title: "Proficiency - Day 13 Learning Module",
-              description: "Comparison Structures (Comparative, Superlative)",
-            },
-            {
-              day: 14,
-              title: "Proficiency - Day 14 Learning Module",
-              description: "Degrees of Comparison",
-            },
-            {
-              day: 15,
-              title: "Proficiency - Day 15 Learning Module",
-              description: "Connecting Words and Conjunctions",
-            },
-            {
-              day: 16,
-              title: "Proficiency - Day 16 Learning Module",
-              description: "Complex Sentence Formation",
-            },
-            {
-              day: 17,
-              title: "Proficiency - Day 17 Learning Module",
-              description: "Listening Comprehension Exercises",
-            },
-            {
-              day: 18,
-              title: "Proficiency - Day 18 Learning Module",
-              description: "Interactive Speaking Drills",
-            },
-            {
-              day: 19,
-              title: "Proficiency - Day 19 Learning Module",
-              description: "Reading Comprehension Practice",
-            },
-            {
-              day: 20,
-              title: "Proficiency - Day 20 Learning Module",
-              description: "Revision and Practice - Week 2",
-            },
-            {
-              day: 21,
-              title: "Proficiency - Day 21 Learning Module",
-              description: "Written Expression and Composition",
-            },
-            {
-              day: 22,
-              title: "Proficiency - Day 22 Learning Module",
-              description: "Dialogue Practice and Scenarios",
-            },
-            {
-              day: 23,
-              title: "Proficiency - Day 23 Learning Module",
-              description: "Vocabulary Building Through Context",
-            },
-            {
-              day: 24,
-              title: "Proficiency - Day 24 Learning Module",
-              description: "Pronunciation and Accent Training",
-            },
-            {
-              day: 25,
-              title: "Proficiency - Day 25 Learning Module",
-              description: "Common Mistakes and Error Correction",
-            },
-            {
-              day: 26,
-              title: "Proficiency - Day 26 Learning Module",
-              description: "Advanced Listening and Note-taking",
-            },
-            {
-              day: 27,
-              title: "Proficiency - Day 27 Learning Module",
-              description: "Comprehensive Revision Session",
-            },
-            {
-              day: 28,
-              title: "Proficiency - Day 28 Learning Module",
-              description: "Practice Tests and Quizzes",
-            },
-            {
-              day: 29,
-              title: "Proficiency - Day 29 Learning Module",
-              description: "Final Review and Doubt Clearing",
-            },
-            {
-              day: 30,
-              title: "Proficiency - Day 30 Learning Module",
-              description: "Stage Assessment and Certification",
-            }
-          ],
-          blocks: // TODO: Replace with real Hindi blocks for this stage
-          [
-            {
-              id: "block-1",
-              title: "Foundation Building",
-              description: "Foundation Building module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
-            },
-            {
-              id: "block-2",
-              title: "Vocabulary Expansion",
-              description: "Vocabulary Expansion module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
-            },
-            {
-              id: "block-3",
-              title: "Grammar & Structure",
-              description: "Grammar & Structure module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
-            },
-            {
-              id: "block-4",
-              title: "Speaking Practice",
-              description: "Speaking Practice module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
-            },
-            {
-              id: "block-5",
-              title: "Listening Skills",
-              description: "Listening Skills module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
-            },
-            {
-              id: "block-6",
-              title: "Practical Application",
-              description: "Practical Application module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
-            },
-            {
-              id: "block-7",
-              title: "Assessment & Feedback",
-              description: "Assessment & Feedback module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
-            }
-          ],
-        },
-        {          // DUMMY DATA - Hindi syllabus for this stage not yet provided
+        {
+          // DUMMY DATA - Hindi syllabus for this stage not yet provided
 
           faculty_name: "Surendhra",
           faculty_img_url: "/suredhra sir 1.png",
           id: "stage-7",
           title: "Stage 7 - Mastery",
           duration: "30 Days",
-          planner: // TODO: Replace with real Hindi syllabus for Mastery
-          [
+          // TODO: Replace with real Hindi syllabus for Mastery
+          planner: [
             {
               day: 1,
               title: "Mastery - Day 1 Learning Module",
@@ -4140,47 +4270,54 @@ export const hindi = {
               day: 30,
               title: "Mastery - Day 30 Learning Module",
               description: "Stage Assessment and Certification",
-            }
+            },
           ],
-          blocks: // TODO: Replace with real Hindi blocks for this stage
-          [
+          // TODO: Replace with real Hindi blocks for this stage
+          blocks: [
             {
               id: "block-1",
               title: "Foundation Building",
-              description: "Foundation Building module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
+              description:
+                "Foundation Building module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
             },
             {
               id: "block-2",
               title: "Vocabulary Expansion",
-              description: "Vocabulary Expansion module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
+              description:
+                "Vocabulary Expansion module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
             },
             {
               id: "block-3",
               title: "Grammar & Structure",
-              description: "Grammar & Structure module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
+              description:
+                "Grammar & Structure module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
             },
             {
               id: "block-4",
               title: "Speaking Practice",
-              description: "Speaking Practice module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
+              description:
+                "Speaking Practice module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
             },
             {
               id: "block-5",
               title: "Listening Skills",
-              description: "Listening Skills module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
+              description:
+                "Listening Skills module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
             },
             {
               id: "block-6",
               title: "Practical Application",
-              description: "Practical Application module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
+              description:
+                "Practical Application module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
             },
             {
               id: "block-7",
               title: "Assessment & Feedback",
-              description: "Assessment & Feedback module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
-            }
+              description:
+                "Assessment & Feedback module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
+            },
           ],
-        }
+        },
       ],
       clubs: [
         {
@@ -4190,8 +4327,8 @@ export const hindi = {
           id: "club-1",
           title: "Club 1 - Foundation",
           duration: "30 Days",
-          planner: // TODO: Replace with real Hindi syllabus for Foundation
-          [
+          // TODO: Replace with real Hindi syllabus for Foundation
+          planner: [
             {
               day: 1,
               title: "Foundation - Day 1 Learning Module",
@@ -4341,49 +4478,57 @@ export const hindi = {
               day: 30,
               title: "Foundation - Day 30 Learning Module",
               description: "Promotion Day",
-            }
+            },
           ],
           blocks: [
             {
               id: "block-1",
               title: "Basic Sentence Practice",
-              description: "Master the fundamentals of English sentence construction through systematic practice and repetition, building a strong foundation for clear communication.",
+              description:
+                "Master the fundamentals of English sentence construction through systematic practice and repetition, building a strong foundation for clear communication.",
             },
             {
               id: "block-2",
               title: "Word Usage Activities",
-              description: "Learn correct word selection and application in various contexts through interactive exercises designed to enhance vocabulary precision.",
+              description:
+                "Learn correct word selection and application in various contexts through interactive exercises designed to enhance vocabulary precision.",
             },
             {
               id: "block-3",
               title: "Guided Speaking",
-              description: "Develop speaking confidence with structured guidance, focusing on proper sentence formation and natural expression in everyday conversations.",
+              description:
+                "Develop speaking confidence with structured guidance, focusing on proper sentence formation and natural expression in everyday conversations.",
             },
             {
               id: "block-4",
               title: "Smart Sentence Correction",
-              description: "Identify and correct common grammatical errors through intelligent feedback systems that help you learn from mistakes effectively.",
+              description:
+                "Identify and correct common grammatical errors through intelligent feedback systems that help you learn from mistakes effectively.",
             },
             {
               id: "block-5",
               title: "Confidence Building",
-              description: "Build self-assurance in English communication through progressive speaking exercises and supportive practice environments.",
+              description:
+                "Build self-assurance in English communication through progressive speaking exercises and supportive practice environments.",
             },
             {
               id: "block-6",
               title: "Accent Awareness",
-              description: "Develop awareness of pronunciation patterns and accent features to improve clarity and understanding in spoken English.",
+              description:
+                "Develop awareness of pronunciation patterns and accent features to improve clarity and understanding in spoken English.",
             },
             {
               id: "block-7",
               title: "Voice Modulation Basics",
-              description: "Learn fundamental voice control techniques including pitch, tone, and volume variations for more engaging communication.",
+              description:
+                "Learn fundamental voice control techniques including pitch, tone, and volume variations for more engaging communication.",
             },
             {
               id: "block-8",
               title: "Intonation Introduction",
-              description: "Understand the basics of English intonation patterns to convey meaning, emotion, and emphasis more naturally in speech.",
-            }
+              description:
+                "Understand the basics of English intonation patterns to convey meaning, emotion, and emphasis more naturally in speech.",
+            },
           ],
         },
         {
@@ -4393,8 +4538,8 @@ export const hindi = {
           id: "club-2",
           title: "Club 2 - Accuracy",
           duration: "30 Days",
-          planner: // TODO: Replace with real Hindi syllabus for Accuracy
-          [
+          // TODO: Replace with real Hindi syllabus for Accuracy
+          planner: [
             {
               day: 1,
               title: "Accuracy - Day 1 Learning Module",
@@ -4544,49 +4689,57 @@ export const hindi = {
               day: 30,
               title: "Accuracy - Day 30 Learning Module",
               description: "Promotion Day",
-            }
+            },
           ],
           blocks: [
             {
               id: "block-1",
               title: "Daily Use Sentence Practice",
-              description: "Practice commonly used English sentences for everyday situations, building fluency in practical, real-world communication scenarios.",
+              description:
+                "Practice commonly used English sentences for everyday situations, building fluency in practical, real-world communication scenarios.",
             },
             {
               id: "block-2",
               title: "Grammar-Based Activities",
-              description: "Strengthen grammatical accuracy through targeted exercises focusing on essential rules and structures for error-free communication.",
+              description:
+                "Strengthen grammatical accuracy through targeted exercises focusing on essential rules and structures for error-free communication.",
             },
             {
               id: "block-3",
               title: "Pattern Speaking Drills",
-              description: "Master English sentence patterns through repetitive drills that develop automatic, accurate language production skills.",
+              description:
+                "Master English sentence patterns through repetitive drills that develop automatic, accurate language production skills.",
             },
             {
               id: "block-4",
               title: "Real-Time Error Correction",
-              description: "Receive immediate feedback on spoken errors, enabling quick learning and improvement in grammatical accuracy and fluency.",
+              description:
+                "Receive immediate feedback on spoken errors, enabling quick learning and improvement in grammatical accuracy and fluency.",
             },
             {
               id: "block-5",
               title: "Pronunciation Support",
-              description: "Get personalized guidance on pronouncing difficult sounds, words, and phrases correctly for clearer spoken English.",
+              description:
+                "Get personalized guidance on pronouncing difficult sounds, words, and phrases correctly for clearer spoken English.",
             },
             {
               id: "block-6",
               title: "Stress & Rhythm Practice",
-              description: "Learn English stress patterns and rhythm to speak more naturally and be better understood by native speakers.",
+              description:
+                "Learn English stress patterns and rhythm to speak more naturally and be better understood by native speakers.",
             },
             {
               id: "block-7",
               title: "Listening & Repetition Tasks",
-              description: "Improve pronunciation and listening skills through carefully designed repetition exercises that train your ear and voice.",
+              description:
+                "Improve pronunciation and listening skills through carefully designed repetition exercises that train your ear and voice.",
             },
             {
               id: "block-8",
               title: "Controlled Conversation",
-              description: "Engage in structured conversations with guided topics and vocabulary to practice accuracy in realistic communication contexts.",
-            }
+              description:
+                "Engage in structured conversations with guided topics and vocabulary to practice accuracy in realistic communication contexts.",
+            },
           ],
         },
         {
@@ -4596,8 +4749,8 @@ export const hindi = {
           id: "club-3",
           title: "Club 3 - Excellence",
           duration: "30 Days",
-          planner: // TODO: Replace with real Hindi syllabus for Excellence
-          [
+          // TODO: Replace with real Hindi syllabus for Excellence
+          planner: [
             {
               day: 1,
               title: "Excellence - Day 1 Learning Module",
@@ -4747,44 +4900,51 @@ export const hindi = {
               day: 30,
               title: "Excellence - Day 30 Learning Module",
               description: "Promotion Day",
-            }
+            },
           ],
           blocks: [
             {
               id: "block-1",
               title: "Situation-Based Practice",
-              description: "Apply English skills in realistic scenarios including workplace, social, and professional contexts for practical language mastery.",
+              description:
+                "Apply English skills in realistic scenarios including workplace, social, and professional contexts for practical language mastery.",
             },
             {
               id: "block-2",
               title: "Vocabulary Expansion",
-              description: "Systematically build your word bank with advanced vocabulary, idiomatic expressions, and context-appropriate terminology.",
+              description:
+                "Systematically build your word bank with advanced vocabulary, idiomatic expressions, and context-appropriate terminology.",
             },
             {
               id: "block-3",
               title: "Sentence Refinement",
-              description: "Polish your sentence construction by learning sophisticated structures and eliminating common errors for professional-level communication.",
+              description:
+                "Polish your sentence construction by learning sophisticated structures and eliminating common errors for professional-level communication.",
             },
             {
               id: "block-4",
               title: "Fluency Development",
-              description: "Enhance speaking speed and smoothness through exercises designed to reduce hesitation and improve natural flow.",
+              description:
+                "Enhance speaking speed and smoothness through exercises designed to reduce hesitation and improve natural flow.",
             },
             {
               id: "block-5",
               title: "Clear Pronunciation Practice",
-              description: "Perfect your pronunciation through focused practice on problem areas, ensuring clarity and confidence in every word.",
+              description:
+                "Perfect your pronunciation through focused practice on problem areas, ensuring clarity and confidence in every word.",
             },
             {
               id: "block-6",
               title: "Guided Discussions",
-              description: "Participate in facilitated conversations on diverse topics to develop critical thinking and articulate expression in English.",
+              description:
+                "Participate in facilitated conversations on diverse topics to develop critical thinking and articulate expression in English.",
             },
             {
               id: "block-7",
               title: "Thought Expression Tasks",
-              description: "Learn to organize and express complex ideas clearly and coherently in English through structured speaking activities.",
-            }
+              description:
+                "Learn to organize and express complex ideas clearly and coherently in English through structured speaking activities.",
+            },
           ],
         },
         {
@@ -4794,8 +4954,8 @@ export const hindi = {
           id: "club-4",
           title: "Club 4 - Correctness",
           duration: "30 Days",
-          planner: // TODO: Replace with real Hindi syllabus for Correctness
-          [
+          // TODO: Replace with real Hindi syllabus for Correctness
+          planner: [
             {
               day: 1,
               title: "Correctness - Day 1 Learning Module",
@@ -4824,7 +4984,8 @@ export const hindi = {
             {
               day: 6,
               title: "Correctness - Day 6 Learning Module",
-              description: "(+/-) Y/N & W.H Questions Present Temporary Ability",
+              description:
+                "(+/-) Y/N & W.H Questions Present Temporary Ability",
             },
             {
               day: 7,
@@ -4879,7 +5040,8 @@ export const hindi = {
             {
               day: 17,
               title: "Correctness - Day 17 Learning Module",
-              description: "[Statements, Y/N & W.H Questions] Future Perfect Ability",
+              description:
+                "[Statements, Y/N & W.H Questions] Future Perfect Ability",
             },
             {
               day: 18,
@@ -4945,44 +5107,51 @@ export const hindi = {
               day: 30,
               title: "Correctness - Day 30 Learning Module",
               description: "Promotion Day",
-            }
+            },
           ],
           blocks: [
             {
               id: "block-1",
               title: "Topic-Based Conversations",
-              description: "Engage in focused discussions on specific subjects to build depth in vocabulary and confidence in expressing detailed opinions.",
+              description:
+                "Engage in focused discussions on specific subjects to build depth in vocabulary and confidence in expressing detailed opinions.",
             },
             {
               id: "block-2",
               title: "Spontaneous Sentence Building",
-              description: "Develop the ability to construct grammatically correct sentences on the spot without preparation or hesitation.",
+              description:
+                "Develop the ability to construct grammatically correct sentences on the spot without preparation or hesitation.",
             },
             {
               id: "block-3",
               title: "Advanced Sentence Correction",
-              description: "Master complex grammar rules and learn to self-correct sophisticated errors for near-native language accuracy.",
+              description:
+                "Master complex grammar rules and learn to self-correct sophisticated errors for near-native language accuracy.",
             },
             {
               id: "block-4",
               title: "Speaking Without Hesitation",
-              description: "Build confidence to speak continuously and naturally without pauses, fillers, or uncertainty in your expression.",
+              description:
+                "Build confidence to speak continuously and naturally without pauses, fillers, or uncertainty in your expression.",
             },
             {
               id: "block-5",
               title: "Accent Improvement",
-              description: "Refine your accent through targeted practice on specific sounds, stress patterns, and intonation for professional clarity.",
+              description:
+                "Refine your accent through targeted practice on specific sounds, stress patterns, and intonation for professional clarity.",
             },
             {
               id: "block-6",
               title: "Voice Control Techniques",
-              description: "Master advanced vocal techniques including projection, pace, and emphasis to make your speech more effective and engaging.",
+              description:
+                "Master advanced vocal techniques including projection, pace, and emphasis to make your speech more effective and engaging.",
             },
             {
               id: "block-7",
               title: "Role-Play Activities",
-              description: "Practice real-world scenarios through interactive role-playing exercises that simulate professional and social situations.",
-            }
+              description:
+                "Practice real-world scenarios through interactive role-playing exercises that simulate professional and social situations.",
+            },
           ],
         },
         {
@@ -4992,8 +5161,8 @@ export const hindi = {
           id: "club-5",
           title: "Club 5 - Fluency",
           duration: "30 Days",
-          planner: // TODO: Replace with real Hindi syllabus for Fluency
-          [
+          // TODO: Replace with real Hindi syllabus for Fluency
+          planner: [
             {
               day: 1,
               title: "Fluency - Day 1 Learning Module",
@@ -5143,44 +5312,51 @@ export const hindi = {
               day: 30,
               title: "Fluency - Day 30 Learning Module",
               description: "Stage Assessment and Certification",
-            }
+            },
           ],
           blocks: [
             {
               id: "block-1",
               title: "Descriptive Speaking",
-              description: "Learn to paint vivid pictures with words through detailed descriptions of people, places, events, and experiences.",
+              description:
+                "Learn to paint vivid pictures with words through detailed descriptions of people, places, events, and experiences.",
             },
             {
               id: "block-2",
               title: "Idea Presentation",
-              description: "Develop skills to present thoughts, concepts, and proposals clearly and persuasively in professional and academic settings.",
+              description:
+                "Develop skills to present thoughts, concepts, and proposals clearly and persuasively in professional and academic settings.",
             },
             {
               id: "block-3",
               title: "Error-Free Communication",
-              description: "Achieve grammatical precision and accuracy in spontaneous speech through intensive practice and error elimination techniques.",
+              description:
+                "Achieve grammatical precision and accuracy in spontaneous speech through intensive practice and error elimination techniques.",
             },
             {
               id: "block-4",
               title: "Confidence Enhancement",
-              description: "Build unwavering self-assurance in English speaking through progressive challenges and positive reinforcement strategies.",
+              description:
+                "Build unwavering self-assurance in English speaking through progressive challenges and positive reinforcement strategies.",
             },
             {
               id: "block-5",
               title: "Emotional Tone Practice",
-              description: "Learn to convey emotions, attitudes, and subtle meanings through appropriate tone variations in your voice.",
+              description:
+                "Learn to convey emotions, attitudes, and subtle meanings through appropriate tone variations in your voice.",
             },
             {
               id: "block-6",
               title: "Intonation Mastery",
-              description: "Perfect the rise and fall patterns in English speech to communicate meaning, questions, and emphasis like a native speaker.",
+              description:
+                "Perfect the rise and fall patterns in English speech to communicate meaning, questions, and emphasis like a native speaker.",
             },
             {
               id: "block-7",
               title: "Interactive Discussions",
-              description: "Engage in dynamic group conversations that build quick thinking, active listening, and responsive communication skills.",
-            }
+              description:
+                "Engage in dynamic group conversations that build quick thinking, active listening, and responsive communication skills.",
+            },
           ],
         },
         {
@@ -5190,8 +5366,8 @@ export const hindi = {
           id: "club-6",
           title: "Club 6 - Proficiency",
           duration: "30 Days",
-          planner: // TODO: Replace with real Hindi syllabus for Proficiency
-          [
+          // TODO: Replace with real Hindi syllabus for Proficiency
+          planner: [
             {
               day: 1,
               title: "Proficiency - Day 1 Learning Module",
@@ -5341,44 +5517,51 @@ export const hindi = {
               day: 30,
               title: "Proficiency - Day 30 Learning Module",
               description: "Stage Assessment and Certification",
-            }
+            },
           ],
           blocks: [
             {
               id: "block-1",
               title: "Group Discussions",
-              description: "Participate in collaborative conversations that develop teamwork, negotiation, and consensus-building skills in English.",
+              description:
+                "Participate in collaborative conversations that develop teamwork, negotiation, and consensus-building skills in English.",
             },
             {
               id: "block-2",
               title: "Situation Handling Practice",
-              description: "Master difficult communication scenarios including conflicts, complaints, and complex professional interactions with confidence.",
+              description:
+                "Master difficult communication scenarios including conflicts, complaints, and complex professional interactions with confidence.",
             },
             {
               id: "block-3",
               title: "Professional Vocabulary Use",
-              description: "Command business and professional terminology across various industries for effective workplace communication and networking.",
+              description:
+                "Command business and professional terminology across various industries for effective workplace communication and networking.",
             },
             {
               id: "block-4",
               title: "Public Speaking Basics",
-              description: "Learn fundamental public speaking techniques including structure, delivery, and audience engagement for presentations and speeches.",
+              description:
+                "Learn fundamental public speaking techniques including structure, delivery, and audience engagement for presentations and speeches.",
             },
             {
               id: "block-5",
               title: "Speech Clarity Training",
-              description: "Refine articulation and pronunciation to ensure every word is heard and understood clearly in professional settings.",
+              description:
+                "Refine articulation and pronunciation to ensure every word is heard and understood clearly in professional settings.",
             },
             {
               id: "block-6",
               title: "Emphasis & Pausing",
-              description: "Master the strategic use of pauses and emphasis to add impact, clarity, and professionalism to your spoken English.",
+              description:
+                "Master the strategic use of pauses and emphasis to add impact, clarity, and professionalism to your spoken English.",
             },
             {
               id: "block-7",
               title: "Advanced Voice Modulation",
-              description: "Perfect sophisticated vocal techniques including pitch control, tonal variation, and dynamic range for powerful communication.",
-            }
+              description:
+                "Perfect sophisticated vocal techniques including pitch control, tonal variation, and dynamic range for powerful communication.",
+            },
           ],
         },
         {
@@ -5388,8 +5571,8 @@ export const hindi = {
           id: "club-7",
           title: "Club 7 - Mastery",
           duration: "30 Days",
-          planner: // TODO: Replace with real Hindi syllabus for Mastery
-          [
+          // TODO: Replace with real Hindi syllabus for Mastery
+          planner: [
             {
               day: 1,
               title: "Mastery - Day 1 Learning Module",
@@ -5539,46 +5722,53 @@ export const hindi = {
               day: 30,
               title: "Mastery - Day 30 Learning Module",
               description: "Stage Assessment and Certification",
-            }
+            },
           ],
           blocks: [
             {
               id: "block-1",
               title: "Real-Life Communication",
-              description: "Apply all learned skills in authentic, unscripted situations that mirror real-world personal and professional interactions.",
+              description:
+                "Apply all learned skills in authentic, unscripted situations that mirror real-world personal and professional interactions.",
             },
             {
               id: "block-2",
               title: "Debate & Presentation",
-              description: "Develop advanced argumentation and presentation skills through formal debates and comprehensive topic presentations.",
+              description:
+                "Develop advanced argumentation and presentation skills through formal debates and comprehensive topic presentations.",
             },
             {
               id: "block-3",
               title: "Advanced Expression Skills",
-              description: "Master nuanced communication including persuasion, negotiation, and sophisticated idea articulation at a professional level.",
+              description:
+                "Master nuanced communication including persuasion, negotiation, and sophisticated idea articulation at a professional level.",
             },
             {
               id: "block-4",
               title: "Accent Neutralization",
-              description: "Achieve a neutral, easily understood accent that transcends regional variations for global professional communication.",
+              description:
+                "Achieve a neutral, easily understood accent that transcends regional variations for global professional communication.",
             },
             {
               id: "block-5",
               title: "Impactful Speaking",
-              description: "Learn to deliver powerful, memorable messages that influence, inspire, and motivate audiences in any context.",
+              description:
+                "Learn to deliver powerful, memorable messages that influence, inspire, and motivate audiences in any context.",
             },
             {
               id: "block-6",
               title: "Stage Speaking Practice",
-              description: "Develop confidence and skills for formal stage presentations, conferences, and large audience addresses.",
+              description:
+                "Develop confidence and skills for formal stage presentations, conferences, and large audience addresses.",
             },
             {
               id: "block-7",
               title: "Personality-Based Communication",
-              description: "Develop your unique communication style that reflects your personality while maintaining professional English standards.",
-            }
+              description:
+                "Develop your unique communication style that reflects your personality while maintaining professional English standards.",
+            },
           ],
-        }
+        },
       ],
     },
     {
@@ -5586,7 +5776,8 @@ export const hindi = {
       name: "1:1 Personal Training",
       manager_name: "Surendhar Sir",
       manager_img: "/staff/suredhra sir 1.png",
-      description: "This is our exclusive premium offering — positioning and experience are crafted to feel truly exceptional.",
+      description:
+        "This is our exclusive premium offering — positioning and experience are crafted to feel truly exceptional.",
       stages: [
         {
           faculty_name: "Surendhra",
@@ -5744,7 +5935,7 @@ export const hindi = {
               day: 30,
               title: "Foundation - Day 30 Learning Module",
               description: "Promotion Day",
-            }
+            },
           ],
           blocks: [
             {
@@ -5755,17 +5946,20 @@ export const hindi = {
             {
               id: "block-2",
               title: "पढ़ना (Reading) _ 15 Min.",
-              description: "शब्दावली / वाक्यांश। (Vocabulary / Phrases.) दिन प्रति दिन / परिस्थितिजन्य अभिव्यक्तियां। (Day2Day expressions.) पाठ्यक्रम से संबंधित वाक्य। (Syllabus related sentences.) विषय से संबंधित वाक्य। (Topic related sentences.)",
+              description:
+                "शब्दावली / वाक्यांश। (Vocabulary / Phrases.) दिन प्रति दिन / परिस्थितिजन्य अभिव्यक्तियां। (Day2Day expressions.) पाठ्यक्रम से संबंधित वाक्य। (Syllabus related sentences.) विषय से संबंधित वाक्य। (Topic related sentences.)",
             },
             {
               id: "block-3",
               title: "बोलना (Speaking)_ 20 Min.",
-              description: "एक अंतर्क्रिया। (An Interaction.) | एक आख्यान। (A Narration.) एक बातचीत दिए गए विषय पर। (A Conversation on the given topic.) एक सामान्य बातचीत। (A General interaction.)",
+              description:
+                "एक अंतर्क्रिया। (An Interaction.) | एक आख्यान। (A Narration.) एक बातचीत दिए गए विषय पर। (A Conversation on the given topic.) एक सामान्य बातचीत। (A General interaction.)",
             },
             {
               id: "block-4",
               title: "पाठ्यक्रम (Syllabus)_ 10 Min.",
-              description: "अवधारणा (Concept.) | संरचना। (Structure.) कुछ उदाहरणों। (A few examples.)",
+              description:
+                "अवधारणा (Concept.) | संरचना। (Structure.) कुछ उदाहरणों। (A few examples.)",
             },
             {
               id: "block-5",
@@ -5779,9 +5973,10 @@ export const hindi = {
             },
             {
               id: "block-7",
-              title: "एक वास्तविक जीवन गतिविधि। (A real life activity)_ 10 Min.",
+              title:
+                "एक वास्तविक जीवन गतिविधि। (A real life activity)_ 10 Min.",
               description: "A real life activity",
-            }
+            },
           ],
         },
         {
@@ -5940,7 +6135,7 @@ export const hindi = {
               day: 30,
               title: "Accuracy - Day 30 Learning Module",
               description: "Promotion Day",
-            }
+            },
           ],
           blocks: [
             {
@@ -5951,17 +6146,20 @@ export const hindi = {
             {
               id: "block-2",
               title: "पढ़ना (Reading) _ 15 Min.",
-              description: "शब्दावली / वाक्यांश। (Vocabulary / Phrases.) दिन प्रति दिन / परिस्थितिजन्य अभिव्यक्तियां। (Day2Day expressions.) पाठ्यक्रम से संबंधित वाक्य। (Syllabus related sentences.) विषय से संबंधित वाक्य। (Topic related sentences.)",
+              description:
+                "शब्दावली / वाक्यांश। (Vocabulary / Phrases.) दिन प्रति दिन / परिस्थितिजन्य अभिव्यक्तियां। (Day2Day expressions.) पाठ्यक्रम से संबंधित वाक्य। (Syllabus related sentences.) विषय से संबंधित वाक्य। (Topic related sentences.)",
             },
             {
               id: "block-3",
               title: "बोलना (Speaking)_ 20 Min.",
-              description: "एक अंतर्क्रिया। (An Interaction.) | एक आख्यान। (A Narration.) एक बातचीत दिए गए विषय पर। (A Conversation on the given topic.) एक सामान्य बातचीत। (A General interaction.)",
+              description:
+                "एक अंतर्क्रिया। (An Interaction.) | एक आख्यान। (A Narration.) एक बातचीत दिए गए विषय पर। (A Conversation on the given topic.) एक सामान्य बातचीत। (A General interaction.)",
             },
             {
               id: "block-4",
               title: "पाठ्यक्रम (Syllabus)_ 10 Min.",
-              description: "अवधारणा (Concept.) | संरचना। (Structure.) कुछ उदाहरणों। (A few examples.)",
+              description:
+                "अवधारणा (Concept.) | संरचना। (Structure.) कुछ उदाहरणों। (A few examples.)",
             },
             {
               id: "block-5",
@@ -5975,9 +6173,10 @@ export const hindi = {
             },
             {
               id: "block-7",
-              title: "एक वास्तविक जीवन गतिविधि। (A real life activity)_ 10 Min.",
+              title:
+                "एक वास्तविक जीवन गतिविधि। (A real life activity)_ 10 Min.",
               description: "A real life activity",
-            }
+            },
           ],
         },
         {
@@ -6136,7 +6335,7 @@ export const hindi = {
               day: 30,
               title: "Progression - Day 30 Learning Module",
               description: "Promotion Day",
-            }
+            },
           ],
           blocks: [
             {
@@ -6147,17 +6346,20 @@ export const hindi = {
             {
               id: "block-2",
               title: "पढ़ना (Reading) _ 15 Min.",
-              description: "शब्दावली / वाक्यांश। (Vocabulary / Phrases.) दिन प्रति दिन / परिस्थितिजन्य अभिव्यक्तियां। (Day2Day expressions.) पाठ्यक्रम से संबंधित वाक्य। (Syllabus related sentences.) विषय से संबंधित वाक्य। (Topic related sentences.)",
+              description:
+                "शब्दावली / वाक्यांश। (Vocabulary / Phrases.) दिन प्रति दिन / परिस्थितिजन्य अभिव्यक्तियां। (Day2Day expressions.) पाठ्यक्रम से संबंधित वाक्य। (Syllabus related sentences.) विषय से संबंधित वाक्य। (Topic related sentences.)",
             },
             {
               id: "block-3",
               title: "बोलना (Speaking)_ 20 Min.",
-              description: "एक अंतर्क्रिया। (An Interaction.) | एक आख्यान। (A Narration.) एक बातचीत दिए गए विषय पर। (A Conversation on the given topic.) एक सामान्य बातचीत। (A General interaction.)",
+              description:
+                "एक अंतर्क्रिया। (An Interaction.) | एक आख्यान। (A Narration.) एक बातचीत दिए गए विषय पर। (A Conversation on the given topic.) एक सामान्य बातचीत। (A General interaction.)",
             },
             {
               id: "block-4",
               title: "पाठ्यक्रम (Syllabus)_ 10 Min.",
-              description: "अवधारणा (Concept.) | संरचना। (Structure.) कुछ उदाहरणों। (A few examples.)",
+              description:
+                "अवधारणा (Concept.) | संरचना। (Structure.) कुछ उदाहरणों। (A few examples.)",
             },
             {
               id: "block-5",
@@ -6171,9 +6373,10 @@ export const hindi = {
             },
             {
               id: "block-7",
-              title: "एक वास्तविक जीवन गतिविधि। (A real life activity)_ 10 Min.",
+              title:
+                "एक वास्तविक जीवन गतिविधि। (A real life activity)_ 10 Min.",
               description: "A real life activity",
-            }
+            },
           ],
         },
         {
@@ -6211,7 +6414,8 @@ export const hindi = {
             {
               day: 6,
               title: "Correctness - Day 6 Learning Module",
-              description: "(+/-) Y/N & W.H Questions Present Temporary Ability",
+              description:
+                "(+/-) Y/N & W.H Questions Present Temporary Ability",
             },
             {
               day: 7,
@@ -6266,7 +6470,8 @@ export const hindi = {
             {
               day: 17,
               title: "Correctness - Day 17 Learning Module",
-              description: "[Statements, Y/N & W.H Questions] Future Perfect Ability",
+              description:
+                "[Statements, Y/N & W.H Questions] Future Perfect Ability",
             },
             {
               day: 18,
@@ -6332,7 +6537,7 @@ export const hindi = {
               day: 30,
               title: "Correctness - Day 30 Learning Module",
               description: "Promotion Day",
-            }
+            },
           ],
           blocks: [
             {
@@ -6343,17 +6548,20 @@ export const hindi = {
             {
               id: "block-2",
               title: "पढ़ना (Reading) _ 10 Min.",
-              description: "शब्दावली / वाक्यांश। (Vocabulary / Phrases.) दिन प्रति दिन / परिस्थितिजन्य अभिव्यक्तियां। (Day2Day expressions.) पाठ्यक्रम से संबंधित वाक्य। (Syllabus related sentences.) विषय से संबंधित वाक्य। (Topic related sentences.)",
+              description:
+                "शब्दावली / वाक्यांश। (Vocabulary / Phrases.) दिन प्रति दिन / परिस्थितिजन्य अभिव्यक्तियां। (Day2Day expressions.) पाठ्यक्रम से संबंधित वाक्य। (Syllabus related sentences.) विषय से संबंधित वाक्य। (Topic related sentences.)",
             },
             {
               id: "block-3",
               title: "बोलना (Speaking)_ 30 Min.",
-              description: "एक अंतर्क्रिया। (An Interaction.) | एक आख्यान। (A Narration.) एक बातचीत दिए गए विषय पर। (A Conversation on the given topic.) एक सामान्य बातचीत। (A General interaction.)",
+              description:
+                "एक अंतर्क्रिया। (An Interaction.) | एक आख्यान। (A Narration.) एक बातचीत दिए गए विषय पर। (A Conversation on the given topic.) एक सामान्य बातचीत। (A General interaction.)",
             },
             {
               id: "block-4",
               title: "पाठ्यक्रम (Syllabus)_ 10 Min.",
-              description: "अवधारणा (Concept.) | संरचना। (Structure.) कुछ उदाहरणों। (A few examples.)",
+              description:
+                "अवधारणा (Concept.) | संरचना। (Structure.) कुछ उदाहरणों। (A few examples.)",
             },
             {
               id: "block-5",
@@ -6367,20 +6575,228 @@ export const hindi = {
             },
             {
               id: "block-7",
-              title: "एक वास्तविक जीवन गतिविधि। (A real life activity)_ 10 Min.",
+              title:
+                "एक वास्तविक जीवन गतिविधि। (A real life activity)_ 10 Min.",
               description: "A real life activity",
-            }
+            },
           ],
         },
-        {          // DUMMY DATA - Hindi syllabus for this stage not yet provided
-
+        {
+          // DUMMY DATA - Hindi syllabus for this stage not yet provided
           faculty_name: "Surendhra",
           faculty_img_url: "/suredhra sir 1.png",
           id: "stage-5",
-          title: "Stage 5 - Fluency",
+          title: "Stage 5 - Confidence",
           duration: "30 Days",
-          planner: // TODO: Replace with real Hindi syllabus for Fluency
-          [
+          // TODO: Replace with real Hindi syllabus for Fluency
+          planner: [
+            {
+              day: 1,
+              title: "Confidence - Day 1 Learning Module",
+              description: "Review of Stage 1 Foundations",
+            },
+            {
+              day: 2,
+              title: "Confidence - Day 2 Learning Module",
+              description: "Present Continuous Tense Introduction",
+            },
+            {
+              day: 3,
+              title: "Confidence - Day 3 Learning Module",
+              description: "Past Continuous Tense and Usage",
+            },
+            {
+              day: 4,
+              title: "Confidence - Day 4 Learning Module",
+              description: "Present Perfect Tense Introduction",
+            },
+            {
+              day: 5,
+              title: "Confidence - Day 5 Learning Module",
+              description: "Articles and Determiners (A, An, The)",
+            },
+            {
+              day: 6,
+              title: "Confidence - Day 6 Learning Module",
+              description: "Singular and Plural Nouns",
+            },
+            {
+              day: 7,
+              title: "Confidence - Day 7 Learning Module",
+              description: "Countable and Uncountable Nouns",
+            },
+            {
+              day: 8,
+              title: "Confidence - Day 8 Learning Module",
+              description: "Prepositions of Time and Frequency",
+            },
+            {
+              day: 9,
+              title: "Confidence - Day 9 Learning Module",
+              description: "Modals: Can, Could, May, Might",
+            },
+            {
+              day: 10,
+              title: "Confidence - Day 10 Learning Module",
+              description: "Revision and Practice - Week 1",
+            },
+            {
+              day: 11,
+              title: "Confidence - Day 11 Learning Module",
+              description: "Future Tense Introduction (Will, Going to)",
+            },
+            {
+              day: 12,
+              title: "Confidence - Day 12 Learning Module",
+              description: "Conditionals (If Clauses)",
+            },
+            {
+              day: 13,
+              title: "Confidence - Day 13 Learning Module",
+              description: "Comparison Structures (Comparative, Superlative)",
+            },
+            {
+              day: 14,
+              title: "Confidence - Day 14 Learning Module",
+              description: "Degrees of Comparison",
+            },
+            {
+              day: 15,
+              title: "Confidence - Day 15 Learning Module",
+              description: "Connecting Words and Conjunctions",
+            },
+            {
+              day: 16,
+              title: "Confidence - Day 16 Learning Module",
+              description: "Complex Sentence Formation",
+            },
+            {
+              day: 17,
+              title: "Confidence - Day 17 Learning Module",
+              description: "Listening Comprehension Exercises",
+            },
+            {
+              day: 18,
+              title: "Confidence - Day 18 Learning Module",
+              description: "Interactive Speaking Drills",
+            },
+            {
+              day: 19,
+              title: "Confidence - Day 19 Learning Module",
+              description: "Reading Comprehension Practice",
+            },
+            {
+              day: 20,
+              title: "Confidence - Day 20 Learning Module",
+              description: "Revision and Practice - Week 2",
+            },
+            {
+              day: 21,
+              title: "Confidence - Day 21 Learning Module",
+              description: "Written Expression and Composition",
+            },
+            {
+              day: 22,
+              title: "Confidence - Day 22 Learning Module",
+              description: "Dialogue Practice and Scenarios",
+            },
+            {
+              day: 23,
+              title: "Confidence - Day 23 Learning Module",
+              description: "Vocabulary Building Through Context",
+            },
+            {
+              day: 24,
+              title: "Confidence - Day 24 Learning Module",
+              description: "Pronunciation and Accent Training",
+            },
+            {
+              day: 25,
+              title: "Confidence - Day 25 Learning Module",
+              description: "Common Mistakes and Error Correction",
+            },
+            {
+              day: 26,
+              title: "Confidence - Day 26 Learning Module",
+              description: "Advanced Listening and Note-taking",
+            },
+            {
+              day: 27,
+              title: "Confidence - Day 27 Learning Module",
+              description: "Comprehensive Revision Session",
+            },
+            {
+              day: 28,
+              title: "Confidence - Day 28 Learning Module",
+              description: "Practice Tests and Quizzes",
+            },
+            {
+              day: 29,
+              title: "Confidence - Day 29 Learning Module",
+              description: "Final Review and Doubt Clearing",
+            },
+            {
+              day: 30,
+              title: "Confidence - Day 30 Learning Module",
+              description: "Stage Assessment and Certification",
+            },
+          ],
+          // TODO: Replace with real Hindi blocks for this stage
+          blocks: [
+            {
+              id: "block-1",
+              title: "Foundation Building",
+              description:
+                "Foundation Building module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
+            },
+            {
+              id: "block-2",
+              title: "Vocabulary Expansion",
+              description:
+                "Vocabulary Expansion module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
+            },
+            {
+              id: "block-3",
+              title: "Grammar & Structure",
+              description:
+                "Grammar & Structure module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
+            },
+            {
+              id: "block-4",
+              title: "Speaking Practice",
+              description:
+                "Speaking Practice module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
+            },
+            {
+              id: "block-5",
+              title: "Listening Skills",
+              description:
+                "Listening Skills module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
+            },
+            {
+              id: "block-6",
+              title: "Practical Application",
+              description:
+                "Practical Application module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
+            },
+            {
+              id: "block-7",
+              title: "Assessment & Feedback",
+              description:
+                "Assessment & Feedback module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
+            },
+          ],
+        },
+        {
+          // DUMMY DATA - Hindi syllabus for this stage not yet provided
+
+          faculty_name: "Surendhra",
+          faculty_img_url: "/suredhra sir 1.png",
+          id: "stage-6",
+          title: "Stage 6 - Fluency",
+          duration: "30 Days",
+          // TODO: Replace with real Hindi syllabus for Proficiency
+          planner: [
             {
               day: 1,
               title: "Fluency - Day 1 Learning Module",
@@ -6530,255 +6946,64 @@ export const hindi = {
               day: 30,
               title: "Fluency - Day 30 Learning Module",
               description: "Stage Assessment and Certification",
-            }
+            },
           ],
-          blocks: // TODO: Replace with real Hindi blocks for this stage
-          [
+          // TODO: Replace with real Hindi blocks for this stage
+          blocks: [
             {
               id: "block-1",
               title: "Foundation Building",
-              description: "Foundation Building module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
+              description:
+                "Foundation Building module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
             },
             {
               id: "block-2",
               title: "Vocabulary Expansion",
-              description: "Vocabulary Expansion module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
+              description:
+                "Vocabulary Expansion module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
             },
             {
               id: "block-3",
               title: "Grammar & Structure",
-              description: "Grammar & Structure module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
+              description:
+                "Grammar & Structure module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
             },
             {
               id: "block-4",
               title: "Speaking Practice",
-              description: "Speaking Practice module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
+              description:
+                "Speaking Practice module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
             },
             {
               id: "block-5",
               title: "Listening Skills",
-              description: "Listening Skills module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
+              description:
+                "Listening Skills module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
             },
             {
               id: "block-6",
               title: "Practical Application",
-              description: "Practical Application module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
+              description:
+                "Practical Application module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
             },
             {
               id: "block-7",
               title: "Assessment & Feedback",
-              description: "Assessment & Feedback module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
-            }
+              description:
+                "Assessment & Feedback module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
+            },
           ],
         },
-        {          // DUMMY DATA - Hindi syllabus for this stage not yet provided
-
-          faculty_name: "Surendhra",
-          faculty_img_url: "/suredhra sir 1.png",
-          id: "stage-6",
-          title: "Stage 6 - Proficiency",
-          duration: "30 Days",
-          planner: // TODO: Replace with real Hindi syllabus for Proficiency
-          [
-            {
-              day: 1,
-              title: "Proficiency - Day 1 Learning Module",
-              description: "Review of Stage 1 Foundations",
-            },
-            {
-              day: 2,
-              title: "Proficiency - Day 2 Learning Module",
-              description: "Present Continuous Tense Introduction",
-            },
-            {
-              day: 3,
-              title: "Proficiency - Day 3 Learning Module",
-              description: "Past Continuous Tense and Usage",
-            },
-            {
-              day: 4,
-              title: "Proficiency - Day 4 Learning Module",
-              description: "Present Perfect Tense Introduction",
-            },
-            {
-              day: 5,
-              title: "Proficiency - Day 5 Learning Module",
-              description: "Articles and Determiners (A, An, The)",
-            },
-            {
-              day: 6,
-              title: "Proficiency - Day 6 Learning Module",
-              description: "Singular and Plural Nouns",
-            },
-            {
-              day: 7,
-              title: "Proficiency - Day 7 Learning Module",
-              description: "Countable and Uncountable Nouns",
-            },
-            {
-              day: 8,
-              title: "Proficiency - Day 8 Learning Module",
-              description: "Prepositions of Time and Frequency",
-            },
-            {
-              day: 9,
-              title: "Proficiency - Day 9 Learning Module",
-              description: "Modals: Can, Could, May, Might",
-            },
-            {
-              day: 10,
-              title: "Proficiency - Day 10 Learning Module",
-              description: "Revision and Practice - Week 1",
-            },
-            {
-              day: 11,
-              title: "Proficiency - Day 11 Learning Module",
-              description: "Future Tense Introduction (Will, Going to)",
-            },
-            {
-              day: 12,
-              title: "Proficiency - Day 12 Learning Module",
-              description: "Conditionals (If Clauses)",
-            },
-            {
-              day: 13,
-              title: "Proficiency - Day 13 Learning Module",
-              description: "Comparison Structures (Comparative, Superlative)",
-            },
-            {
-              day: 14,
-              title: "Proficiency - Day 14 Learning Module",
-              description: "Degrees of Comparison",
-            },
-            {
-              day: 15,
-              title: "Proficiency - Day 15 Learning Module",
-              description: "Connecting Words and Conjunctions",
-            },
-            {
-              day: 16,
-              title: "Proficiency - Day 16 Learning Module",
-              description: "Complex Sentence Formation",
-            },
-            {
-              day: 17,
-              title: "Proficiency - Day 17 Learning Module",
-              description: "Listening Comprehension Exercises",
-            },
-            {
-              day: 18,
-              title: "Proficiency - Day 18 Learning Module",
-              description: "Interactive Speaking Drills",
-            },
-            {
-              day: 19,
-              title: "Proficiency - Day 19 Learning Module",
-              description: "Reading Comprehension Practice",
-            },
-            {
-              day: 20,
-              title: "Proficiency - Day 20 Learning Module",
-              description: "Revision and Practice - Week 2",
-            },
-            {
-              day: 21,
-              title: "Proficiency - Day 21 Learning Module",
-              description: "Written Expression and Composition",
-            },
-            {
-              day: 22,
-              title: "Proficiency - Day 22 Learning Module",
-              description: "Dialogue Practice and Scenarios",
-            },
-            {
-              day: 23,
-              title: "Proficiency - Day 23 Learning Module",
-              description: "Vocabulary Building Through Context",
-            },
-            {
-              day: 24,
-              title: "Proficiency - Day 24 Learning Module",
-              description: "Pronunciation and Accent Training",
-            },
-            {
-              day: 25,
-              title: "Proficiency - Day 25 Learning Module",
-              description: "Common Mistakes and Error Correction",
-            },
-            {
-              day: 26,
-              title: "Proficiency - Day 26 Learning Module",
-              description: "Advanced Listening and Note-taking",
-            },
-            {
-              day: 27,
-              title: "Proficiency - Day 27 Learning Module",
-              description: "Comprehensive Revision Session",
-            },
-            {
-              day: 28,
-              title: "Proficiency - Day 28 Learning Module",
-              description: "Practice Tests and Quizzes",
-            },
-            {
-              day: 29,
-              title: "Proficiency - Day 29 Learning Module",
-              description: "Final Review and Doubt Clearing",
-            },
-            {
-              day: 30,
-              title: "Proficiency - Day 30 Learning Module",
-              description: "Stage Assessment and Certification",
-            }
-          ],
-          blocks: // TODO: Replace with real Hindi blocks for this stage
-          [
-            {
-              id: "block-1",
-              title: "Foundation Building",
-              description: "Foundation Building module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
-            },
-            {
-              id: "block-2",
-              title: "Vocabulary Expansion",
-              description: "Vocabulary Expansion module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
-            },
-            {
-              id: "block-3",
-              title: "Grammar & Structure",
-              description: "Grammar & Structure module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
-            },
-            {
-              id: "block-4",
-              title: "Speaking Practice",
-              description: "Speaking Practice module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
-            },
-            {
-              id: "block-5",
-              title: "Listening Skills",
-              description: "Listening Skills module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
-            },
-            {
-              id: "block-6",
-              title: "Practical Application",
-              description: "Practical Application module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
-            },
-            {
-              id: "block-7",
-              title: "Assessment & Feedback",
-              description: "Assessment & Feedback module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
-            }
-          ],
-        },
-        {          // DUMMY DATA - Hindi syllabus for this stage not yet provided
+        {
+          // DUMMY DATA - Hindi syllabus for this stage not yet provided
 
           faculty_name: "Surendhra",
           faculty_img_url: "/suredhra sir 1.png",
           id: "stage-7",
           title: "Stage 7 - Mastery",
           duration: "30 Days",
-          planner: // TODO: Replace with real Hindi syllabus for Mastery
-          [
+          // TODO: Replace with real Hindi syllabus for Mastery
+          planner: [
             {
               day: 1,
               title: "Mastery - Day 1 Learning Module",
@@ -6928,47 +7153,54 @@ export const hindi = {
               day: 30,
               title: "Mastery - Day 30 Learning Module",
               description: "Stage Assessment and Certification",
-            }
+            },
           ],
-          blocks: // TODO: Replace with real Hindi blocks for this stage
-          [
+          // TODO: Replace with real Hindi blocks for this stage
+          blocks: [
             {
               id: "block-1",
               title: "Foundation Building",
-              description: "Foundation Building module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
+              description:
+                "Foundation Building module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
             },
             {
               id: "block-2",
               title: "Vocabulary Expansion",
-              description: "Vocabulary Expansion module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
+              description:
+                "Vocabulary Expansion module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
             },
             {
               id: "block-3",
               title: "Grammar & Structure",
-              description: "Grammar & Structure module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
+              description:
+                "Grammar & Structure module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
             },
             {
               id: "block-4",
               title: "Speaking Practice",
-              description: "Speaking Practice module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
+              description:
+                "Speaking Practice module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
             },
             {
               id: "block-5",
               title: "Listening Skills",
-              description: "Listening Skills module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
+              description:
+                "Listening Skills module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
             },
             {
               id: "block-6",
               title: "Practical Application",
-              description: "Practical Application module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
+              description:
+                "Practical Application module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
             },
             {
               id: "block-7",
               title: "Assessment & Feedback",
-              description: "Assessment & Feedback module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
-            }
+              description:
+                "Assessment & Feedback module designed specifically for Elementary Communication. This block ensures structured progress and measurable skill improvement.",
+            },
           ],
-        }
+        },
       ],
       clubs: [
         {
@@ -6978,8 +7210,8 @@ export const hindi = {
           id: "club-1",
           title: "Club 1 - Foundation",
           duration: "30 Days",
-          planner: // TODO: Replace with real Hindi syllabus for Foundation
-          [
+          // TODO: Replace with real Hindi syllabus for Foundation
+          planner: [
             {
               day: 1,
               title: "Foundation - Day 1 Learning Module",
@@ -7129,49 +7361,57 @@ export const hindi = {
               day: 30,
               title: "Foundation - Day 30 Learning Module",
               description: "Promotion Day",
-            }
+            },
           ],
           blocks: [
             {
               id: "block-1",
               title: "Basic Sentence Practice",
-              description: "Master the fundamentals of English sentence construction through systematic practice and repetition, building a strong foundation for clear communication.",
+              description:
+                "Master the fundamentals of English sentence construction through systematic practice and repetition, building a strong foundation for clear communication.",
             },
             {
               id: "block-2",
               title: "Word Usage Activities",
-              description: "Learn correct word selection and application in various contexts through interactive exercises designed to enhance vocabulary precision.",
+              description:
+                "Learn correct word selection and application in various contexts through interactive exercises designed to enhance vocabulary precision.",
             },
             {
               id: "block-3",
               title: "Guided Speaking",
-              description: "Develop speaking confidence with structured guidance, focusing on proper sentence formation and natural expression in everyday conversations.",
+              description:
+                "Develop speaking confidence with structured guidance, focusing on proper sentence formation and natural expression in everyday conversations.",
             },
             {
               id: "block-4",
               title: "Smart Sentence Correction",
-              description: "Identify and correct common grammatical errors through intelligent feedback systems that help you learn from mistakes effectively.",
+              description:
+                "Identify and correct common grammatical errors through intelligent feedback systems that help you learn from mistakes effectively.",
             },
             {
               id: "block-5",
               title: "Confidence Building",
-              description: "Build self-assurance in English communication through progressive speaking exercises and supportive practice environments.",
+              description:
+                "Build self-assurance in English communication through progressive speaking exercises and supportive practice environments.",
             },
             {
               id: "block-6",
               title: "Accent Awareness",
-              description: "Develop awareness of pronunciation patterns and accent features to improve clarity and understanding in spoken English.",
+              description:
+                "Develop awareness of pronunciation patterns and accent features to improve clarity and understanding in spoken English.",
             },
             {
               id: "block-7",
               title: "Voice Modulation Basics",
-              description: "Learn fundamental voice control techniques including pitch, tone, and volume variations for more engaging communication.",
+              description:
+                "Learn fundamental voice control techniques including pitch, tone, and volume variations for more engaging communication.",
             },
             {
               id: "block-8",
               title: "Intonation Introduction",
-              description: "Understand the basics of English intonation patterns to convey meaning, emotion, and emphasis more naturally in speech.",
-            }
+              description:
+                "Understand the basics of English intonation patterns to convey meaning, emotion, and emphasis more naturally in speech.",
+            },
           ],
         },
         {
@@ -7181,8 +7421,8 @@ export const hindi = {
           id: "club-2",
           title: "Club 2 - Accuracy",
           duration: "30 Days",
-          planner: // TODO: Replace with real Hindi syllabus for Accuracy
-          [
+          // TODO: Replace with real Hindi syllabus for Accuracy
+          planner: [
             {
               day: 1,
               title: "Accuracy - Day 1 Learning Module",
@@ -7332,49 +7572,57 @@ export const hindi = {
               day: 30,
               title: "Accuracy - Day 30 Learning Module",
               description: "Promotion Day",
-            }
+            },
           ],
           blocks: [
             {
               id: "block-1",
               title: "Daily Use Sentence Practice",
-              description: "Practice commonly used English sentences for everyday situations, building fluency in practical, real-world communication scenarios.",
+              description:
+                "Practice commonly used English sentences for everyday situations, building fluency in practical, real-world communication scenarios.",
             },
             {
               id: "block-2",
               title: "Grammar-Based Activities",
-              description: "Strengthen grammatical accuracy through targeted exercises focusing on essential rules and structures for error-free communication.",
+              description:
+                "Strengthen grammatical accuracy through targeted exercises focusing on essential rules and structures for error-free communication.",
             },
             {
               id: "block-3",
               title: "Pattern Speaking Drills",
-              description: "Master English sentence patterns through repetitive drills that develop automatic, accurate language production skills.",
+              description:
+                "Master English sentence patterns through repetitive drills that develop automatic, accurate language production skills.",
             },
             {
               id: "block-4",
               title: "Real-Time Error Correction",
-              description: "Receive immediate feedback on spoken errors, enabling quick learning and improvement in grammatical accuracy and fluency.",
+              description:
+                "Receive immediate feedback on spoken errors, enabling quick learning and improvement in grammatical accuracy and fluency.",
             },
             {
               id: "block-5",
               title: "Pronunciation Support",
-              description: "Get personalized guidance on pronouncing difficult sounds, words, and phrases correctly for clearer spoken English.",
+              description:
+                "Get personalized guidance on pronouncing difficult sounds, words, and phrases correctly for clearer spoken English.",
             },
             {
               id: "block-6",
               title: "Stress & Rhythm Practice",
-              description: "Learn English stress patterns and rhythm to speak more naturally and be better understood by native speakers.",
+              description:
+                "Learn English stress patterns and rhythm to speak more naturally and be better understood by native speakers.",
             },
             {
               id: "block-7",
               title: "Listening & Repetition Tasks",
-              description: "Improve pronunciation and listening skills through carefully designed repetition exercises that train your ear and voice.",
+              description:
+                "Improve pronunciation and listening skills through carefully designed repetition exercises that train your ear and voice.",
             },
             {
               id: "block-8",
               title: "Controlled Conversation",
-              description: "Engage in structured conversations with guided topics and vocabulary to practice accuracy in realistic communication contexts.",
-            }
+              description:
+                "Engage in structured conversations with guided topics and vocabulary to practice accuracy in realistic communication contexts.",
+            },
           ],
         },
         {
@@ -7384,8 +7632,8 @@ export const hindi = {
           id: "club-3",
           title: "Club 3 - Excellence",
           duration: "30 Days",
-          planner: // TODO: Replace with real Hindi syllabus for Excellence
-          [
+          // TODO: Replace with real Hindi syllabus for Excellence
+          planner: [
             {
               day: 1,
               title: "Excellence - Day 1 Learning Module",
@@ -7535,44 +7783,51 @@ export const hindi = {
               day: 30,
               title: "Excellence - Day 30 Learning Module",
               description: "Promotion Day",
-            }
+            },
           ],
           blocks: [
             {
               id: "block-1",
               title: "Situation-Based Practice",
-              description: "Apply English skills in realistic scenarios including workplace, social, and professional contexts for practical language mastery.",
+              description:
+                "Apply English skills in realistic scenarios including workplace, social, and professional contexts for practical language mastery.",
             },
             {
               id: "block-2",
               title: "Vocabulary Expansion",
-              description: "Systematically build your word bank with advanced vocabulary, idiomatic expressions, and context-appropriate terminology.",
+              description:
+                "Systematically build your word bank with advanced vocabulary, idiomatic expressions, and context-appropriate terminology.",
             },
             {
               id: "block-3",
               title: "Sentence Refinement",
-              description: "Polish your sentence construction by learning sophisticated structures and eliminating common errors for professional-level communication.",
+              description:
+                "Polish your sentence construction by learning sophisticated structures and eliminating common errors for professional-level communication.",
             },
             {
               id: "block-4",
               title: "Fluency Development",
-              description: "Enhance speaking speed and smoothness through exercises designed to reduce hesitation and improve natural flow.",
+              description:
+                "Enhance speaking speed and smoothness through exercises designed to reduce hesitation and improve natural flow.",
             },
             {
               id: "block-5",
               title: "Clear Pronunciation Practice",
-              description: "Perfect your pronunciation through focused practice on problem areas, ensuring clarity and confidence in every word.",
+              description:
+                "Perfect your pronunciation through focused practice on problem areas, ensuring clarity and confidence in every word.",
             },
             {
               id: "block-6",
               title: "Guided Discussions",
-              description: "Participate in facilitated conversations on diverse topics to develop critical thinking and articulate expression in English.",
+              description:
+                "Participate in facilitated conversations on diverse topics to develop critical thinking and articulate expression in English.",
             },
             {
               id: "block-7",
               title: "Thought Expression Tasks",
-              description: "Learn to organize and express complex ideas clearly and coherently in English through structured speaking activities.",
-            }
+              description:
+                "Learn to organize and express complex ideas clearly and coherently in English through structured speaking activities.",
+            },
           ],
         },
         {
@@ -7582,8 +7837,8 @@ export const hindi = {
           id: "club-4",
           title: "Club 4 - Correctness",
           duration: "30 Days",
-          planner: // TODO: Replace with real Hindi syllabus for Correctness
-          [
+          // TODO: Replace with real Hindi syllabus for Correctness
+          planner: [
             {
               day: 1,
               title: "Correctness - Day 1 Learning Module",
@@ -7612,7 +7867,8 @@ export const hindi = {
             {
               day: 6,
               title: "Correctness - Day 6 Learning Module",
-              description: "(+/-) Y/N & W.H Questions Present Temporary Ability",
+              description:
+                "(+/-) Y/N & W.H Questions Present Temporary Ability",
             },
             {
               day: 7,
@@ -7667,7 +7923,8 @@ export const hindi = {
             {
               day: 17,
               title: "Correctness - Day 17 Learning Module",
-              description: "[Statements, Y/N & W.H Questions] Future Perfect Ability",
+              description:
+                "[Statements, Y/N & W.H Questions] Future Perfect Ability",
             },
             {
               day: 18,
@@ -7733,44 +7990,51 @@ export const hindi = {
               day: 30,
               title: "Correctness - Day 30 Learning Module",
               description: "Promotion Day",
-            }
+            },
           ],
           blocks: [
             {
               id: "block-1",
               title: "Topic-Based Conversations",
-              description: "Engage in focused discussions on specific subjects to build depth in vocabulary and confidence in expressing detailed opinions.",
+              description:
+                "Engage in focused discussions on specific subjects to build depth in vocabulary and confidence in expressing detailed opinions.",
             },
             {
               id: "block-2",
               title: "Spontaneous Sentence Building",
-              description: "Develop the ability to construct grammatically correct sentences on the spot without preparation or hesitation.",
+              description:
+                "Develop the ability to construct grammatically correct sentences on the spot without preparation or hesitation.",
             },
             {
               id: "block-3",
               title: "Advanced Sentence Correction",
-              description: "Master complex grammar rules and learn to self-correct sophisticated errors for near-native language accuracy.",
+              description:
+                "Master complex grammar rules and learn to self-correct sophisticated errors for near-native language accuracy.",
             },
             {
               id: "block-4",
               title: "Speaking Without Hesitation",
-              description: "Build confidence to speak continuously and naturally without pauses, fillers, or uncertainty in your expression.",
+              description:
+                "Build confidence to speak continuously and naturally without pauses, fillers, or uncertainty in your expression.",
             },
             {
               id: "block-5",
               title: "Accent Improvement",
-              description: "Refine your accent through targeted practice on specific sounds, stress patterns, and intonation for professional clarity.",
+              description:
+                "Refine your accent through targeted practice on specific sounds, stress patterns, and intonation for professional clarity.",
             },
             {
               id: "block-6",
               title: "Voice Control Techniques",
-              description: "Master advanced vocal techniques including projection, pace, and emphasis to make your speech more effective and engaging.",
+              description:
+                "Master advanced vocal techniques including projection, pace, and emphasis to make your speech more effective and engaging.",
             },
             {
               id: "block-7",
               title: "Role-Play Activities",
-              description: "Practice real-world scenarios through interactive role-playing exercises that simulate professional and social situations.",
-            }
+              description:
+                "Practice real-world scenarios through interactive role-playing exercises that simulate professional and social situations.",
+            },
           ],
         },
         {
@@ -7780,8 +8044,8 @@ export const hindi = {
           id: "club-5",
           title: "Club 5 - Fluency",
           duration: "30 Days",
-          planner: // TODO: Replace with real Hindi syllabus for Fluency
-          [
+          // TODO: Replace with real Hindi syllabus for Fluency
+          planner: [
             {
               day: 1,
               title: "Fluency - Day 1 Learning Module",
@@ -7931,44 +8195,51 @@ export const hindi = {
               day: 30,
               title: "Fluency - Day 30 Learning Module",
               description: "Stage Assessment and Certification",
-            }
+            },
           ],
           blocks: [
             {
               id: "block-1",
               title: "Descriptive Speaking",
-              description: "Learn to paint vivid pictures with words through detailed descriptions of people, places, events, and experiences.",
+              description:
+                "Learn to paint vivid pictures with words through detailed descriptions of people, places, events, and experiences.",
             },
             {
               id: "block-2",
               title: "Idea Presentation",
-              description: "Develop skills to present thoughts, concepts, and proposals clearly and persuasively in professional and academic settings.",
+              description:
+                "Develop skills to present thoughts, concepts, and proposals clearly and persuasively in professional and academic settings.",
             },
             {
               id: "block-3",
               title: "Error-Free Communication",
-              description: "Achieve grammatical precision and accuracy in spontaneous speech through intensive practice and error elimination techniques.",
+              description:
+                "Achieve grammatical precision and accuracy in spontaneous speech through intensive practice and error elimination techniques.",
             },
             {
               id: "block-4",
               title: "Confidence Enhancement",
-              description: "Build unwavering self-assurance in English speaking through progressive challenges and positive reinforcement strategies.",
+              description:
+                "Build unwavering self-assurance in English speaking through progressive challenges and positive reinforcement strategies.",
             },
             {
               id: "block-5",
               title: "Emotional Tone Practice",
-              description: "Learn to convey emotions, attitudes, and subtle meanings through appropriate tone variations in your voice.",
+              description:
+                "Learn to convey emotions, attitudes, and subtle meanings through appropriate tone variations in your voice.",
             },
             {
               id: "block-6",
               title: "Intonation Mastery",
-              description: "Perfect the rise and fall patterns in English speech to communicate meaning, questions, and emphasis like a native speaker.",
+              description:
+                "Perfect the rise and fall patterns in English speech to communicate meaning, questions, and emphasis like a native speaker.",
             },
             {
               id: "block-7",
               title: "Interactive Discussions",
-              description: "Engage in dynamic group conversations that build quick thinking, active listening, and responsive communication skills.",
-            }
+              description:
+                "Engage in dynamic group conversations that build quick thinking, active listening, and responsive communication skills.",
+            },
           ],
         },
         {
@@ -7978,8 +8249,8 @@ export const hindi = {
           id: "club-6",
           title: "Club 6 - Proficiency",
           duration: "30 Days",
-          planner: // TODO: Replace with real Hindi syllabus for Proficiency
-          [
+          // TODO: Replace with real Hindi syllabus for Proficiency
+          planner: [
             {
               day: 1,
               title: "Proficiency - Day 1 Learning Module",
@@ -8129,44 +8400,51 @@ export const hindi = {
               day: 30,
               title: "Proficiency - Day 30 Learning Module",
               description: "Stage Assessment and Certification",
-            }
+            },
           ],
           blocks: [
             {
               id: "block-1",
               title: "Group Discussions",
-              description: "Participate in collaborative conversations that develop teamwork, negotiation, and consensus-building skills in English.",
+              description:
+                "Participate in collaborative conversations that develop teamwork, negotiation, and consensus-building skills in English.",
             },
             {
               id: "block-2",
               title: "Situation Handling Practice",
-              description: "Master difficult communication scenarios including conflicts, complaints, and complex professional interactions with confidence.",
+              description:
+                "Master difficult communication scenarios including conflicts, complaints, and complex professional interactions with confidence.",
             },
             {
               id: "block-3",
               title: "Professional Vocabulary Use",
-              description: "Command business and professional terminology across various industries for effective workplace communication and networking.",
+              description:
+                "Command business and professional terminology across various industries for effective workplace communication and networking.",
             },
             {
               id: "block-4",
               title: "Public Speaking Basics",
-              description: "Learn fundamental public speaking techniques including structure, delivery, and audience engagement for presentations and speeches.",
+              description:
+                "Learn fundamental public speaking techniques including structure, delivery, and audience engagement for presentations and speeches.",
             },
             {
               id: "block-5",
               title: "Speech Clarity Training",
-              description: "Refine articulation and pronunciation to ensure every word is heard and understood clearly in professional settings.",
+              description:
+                "Refine articulation and pronunciation to ensure every word is heard and understood clearly in professional settings.",
             },
             {
               id: "block-6",
               title: "Emphasis & Pausing",
-              description: "Master the strategic use of pauses and emphasis to add impact, clarity, and professionalism to your spoken English.",
+              description:
+                "Master the strategic use of pauses and emphasis to add impact, clarity, and professionalism to your spoken English.",
             },
             {
               id: "block-7",
               title: "Advanced Voice Modulation",
-              description: "Perfect sophisticated vocal techniques including pitch control, tonal variation, and dynamic range for powerful communication.",
-            }
+              description:
+                "Perfect sophisticated vocal techniques including pitch control, tonal variation, and dynamic range for powerful communication.",
+            },
           ],
         },
         {
@@ -8176,8 +8454,8 @@ export const hindi = {
           id: "club-7",
           title: "Club 7 - Mastery",
           duration: "30 Days",
-          planner: // TODO: Replace with real Hindi syllabus for Mastery
-          [
+          // TODO: Replace with real Hindi syllabus for Mastery
+          planner: [
             {
               day: 1,
               title: "Mastery - Day 1 Learning Module",
@@ -8327,47 +8605,54 @@ export const hindi = {
               day: 30,
               title: "Mastery - Day 30 Learning Module",
               description: "Stage Assessment and Certification",
-            }
+            },
           ],
           blocks: [
             {
               id: "block-1",
               title: "Real-Life Communication",
-              description: "Apply all learned skills in authentic, unscripted situations that mirror real-world personal and professional interactions.",
+              description:
+                "Apply all learned skills in authentic, unscripted situations that mirror real-world personal and professional interactions.",
             },
             {
               id: "block-2",
               title: "Debate & Presentation",
-              description: "Develop advanced argumentation and presentation skills through formal debates and comprehensive topic presentations.",
+              description:
+                "Develop advanced argumentation and presentation skills through formal debates and comprehensive topic presentations.",
             },
             {
               id: "block-3",
               title: "Advanced Expression Skills",
-              description: "Master nuanced communication including persuasion, negotiation, and sophisticated idea articulation at a professional level.",
+              description:
+                "Master nuanced communication including persuasion, negotiation, and sophisticated idea articulation at a professional level.",
             },
             {
               id: "block-4",
               title: "Accent Neutralization",
-              description: "Achieve a neutral, easily understood accent that transcends regional variations for global professional communication.",
+              description:
+                "Achieve a neutral, easily understood accent that transcends regional variations for global professional communication.",
             },
             {
               id: "block-5",
               title: "Impactful Speaking",
-              description: "Learn to deliver powerful, memorable messages that influence, inspire, and motivate audiences in any context.",
+              description:
+                "Learn to deliver powerful, memorable messages that influence, inspire, and motivate audiences in any context.",
             },
             {
               id: "block-6",
               title: "Stage Speaking Practice",
-              description: "Develop confidence and skills for formal stage presentations, conferences, and large audience addresses.",
+              description:
+                "Develop confidence and skills for formal stage presentations, conferences, and large audience addresses.",
             },
             {
               id: "block-7",
               title: "Personality-Based Communication",
-              description: "Develop your unique communication style that reflects your personality while maintaining professional English standards.",
-            }
+              description:
+                "Develop your unique communication style that reflects your personality while maintaining professional English standards.",
+            },
           ],
-        }
+        },
       ],
-    }
+    },
   ],
 };

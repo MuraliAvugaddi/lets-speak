@@ -9,7 +9,6 @@ const LearnerFeedback = () => {
   const videos = [
     'XSb-8UR-Qhc',
     '-0VtH0Ju37c',
-    '4b6zaC_ttN8',
     'FIqNwQIziwY',
   ];
 

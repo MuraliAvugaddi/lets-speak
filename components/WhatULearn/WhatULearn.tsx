@@ -6,38 +6,45 @@ import styles from './WhatULearn.module.css';
 const mentorTypes = [
   {
     id: 'mentor',
-    title: 'The Mentor',
+    title: 'Online mentor',
     heading: 'Personalized Guidance Every Step',
     description: 'Get one-on-one attention from expert trainers who understand your learning style. Our mentors provide customized feedback, track your progress, and adapt lessons to your pace. With years of teaching experience, they help you overcome challenges and build confidence in speaking English naturally.',
     image: './WUL-1.png',
   },
   {
     id: 'motivator',
-    title: 'The Motivator',
+    title: 'Offline mentor',
     heading: 'Stay Inspired and Energized',
     description: 'Learning a language requires consistent motivation. Our courses are designed to keep you engaged with interactive sessions, gamified learning, and regular achievements. Celebrate your milestones with our supportive community and trainers who encourage you to push beyond your limits.',
     image: './WUL-2.png',
   },
   {
     id: 'curator',
-    title: 'The Curator',
+    title: 'Online manager',
     heading: 'Carefully Crafted Content',
     description: 'Every lesson is thoughtfully designed by language experts. We curate content that is relevant, practical, and aligned with real-world scenarios. From business presentations to casual conversations, our curriculum covers what you actually need to succeed in your personal and professional life.',
     image: './WUL-3.png',
   },
   {
     id: 'companion',
-    title: 'The Companion',
+    title: 'Offline manager',
     heading: 'Learn Together, Grow Together',
     description: 'Join a vibrant community of learners just like you. Practice speaking with peers, participate in group discussions, and build lasting connections. Our companion approach ensures you never feel alone on your learning journey. Share experiences, learn from others, and grow your network.',
     image: './WUL-4.png',
   },
   {
     id: 'champion',
-    title: 'The Champion',
+    title: 'Quality control',
     heading: 'Achieve Excellence',
     description: 'We are committed to making you a champion in English communication. With proven teaching methods, comprehensive support, and result-oriented strategies, we help you achieve fluency and confidence. Our success stories speak for themselves - join thousands who have transformed their careers and lives.',
     image: './WUL-5.png',
+  },
+  {
+    id: 'director',
+    title: 'Managing Director',
+    heading: 'Learn Together, Grow Together',
+    description: 'Join a vibrant community of learners just like you. Practice speaking with peers, participate in group discussions, and build lasting connections. Our companion approach ensures you never feel alone on your learning journey. Share experiences, learn from others, and grow your network.',
+    image: './WUL-4.png',
   },
 ];
 
