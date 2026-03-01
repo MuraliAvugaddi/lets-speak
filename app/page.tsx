@@ -7,6 +7,13 @@ import LearnSection from "@/components/WhatULearn/WhatULearn";
 import OurTeam from "@/components/OurTeam/OurTeam";
 import FAQ from "@/components/FAQ/FAQ";
 import ClassroomCulture from "@/components/ClassroomCulture/ClassroomCulture";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Home",
+  description:
+    "Join structured English & Hindi language courses with levels, clubs and expert mentors.",
+};
 
 export default function Home() {
   return (

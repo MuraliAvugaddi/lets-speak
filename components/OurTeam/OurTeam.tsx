@@ -116,7 +116,7 @@ export const TEAM: TeamMember[] = [
      },
      {
       name: "Poorna",
-      role: "Englsih Trainer",
+      role: "Offline Manager",
       image: "/ls/Poorna-LP.jpeg",
       linkedin: "#",
      },

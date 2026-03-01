@@ -1,6 +1,12 @@
 // ContactPage.tsx
 import styles from "./styles.module.css";
 
+export const metadata = {
+  title: "Contact Us",
+  description:
+    "Get in touch for course details, enrollment queries and faculty support.",
+};
+
 export default function ContactPage() {
   return (
     <div className={styles.contactPage}>

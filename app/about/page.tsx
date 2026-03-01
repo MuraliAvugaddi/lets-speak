@@ -4,6 +4,12 @@ import MissionVision from '@/components/MissionVision/MissionVision'
 import LearnerFeedback from '@/components/LearnerFeedback/LearnerFeedback'
 import HeadCarousel from '@/components/HeadCarousel/HeadCarousel'
 
+export const metadata = {
+  title: "About Us",
+  description:
+    "Learn about our mission to provide structured language courses.",
+};
+
 const about = () => {
   return (
     <div className={styles.aboutPage}>

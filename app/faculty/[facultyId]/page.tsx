@@ -1,18 +1,18 @@
-"use client"
+import FacultyClient from "./FacultyClient";
 
-import React from "react";
-import { useParams } from "next/navigation";
-
-const FacultyPage = () => {
-  const params = useParams();
+export async function generateMetadata({
+  params,
+}: {
+  params: { facultyId: string };
+}) {
   const { facultyId } = params;
 
-  return (
-    <div>
-      <h1>Faculty: {facultyId}</h1>
-      <p>This is the dynamic faculty page for ID: {facultyId}</p>
-    </div>
-  );
-};
+  return {
+    title: `Faculty ${facultyId}`,
+    description: `Meet ${facultyId}, expert language mentor at Let's Speak.`,
+  };
+}
 
-export default FacultyPage;
+export default function FacultyPage() {
+  return <FacultyClient />;
+}
