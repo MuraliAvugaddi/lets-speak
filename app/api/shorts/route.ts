@@ -4,8 +4,8 @@ import { NextRequest, NextResponse } from 'next/server';
 // Manually add some of your YouTube Shorts video IDs here
 // You can find these in the URL: youtube.com/shorts/VIDEO_ID
 const HARDCODED_SHORTS = [
-  'UlJ9vAynJUc',
-  'ToE1Te-qhoQ',
+  '4WRJwS3XM3I',
+  'FIqNwQIziwY',
   'THCndMIgQpM',
   'LaL28u278gk',
 ];

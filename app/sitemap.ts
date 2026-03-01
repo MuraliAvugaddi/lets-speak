@@ -5,7 +5,7 @@ export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
   // Example dynamic data
   const languages = ["english", "hindi"];
-  const modes = ["online", "offline"];
+  const modes = ["online", "offline", "one to one"];
   const levels = ["beginner", "intermediate", "advanced"];
 
   const courseUrls = languages.flatMap((language) =>

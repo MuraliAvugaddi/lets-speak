@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
   title: {
     default: "Let's Speak | Spoken English & Hindi",
-    template: "%s | YourBrand",
+    template: "%s | Let's Speak",
   },
 
   description:
