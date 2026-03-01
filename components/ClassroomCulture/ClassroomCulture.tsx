@@ -4,13 +4,36 @@ import React, { useState, useEffect, useRef } from "react";
 import styles from "./ClassroomCulture.module.css";
 
 const images = [
-  { src: "/cc-1.webp", alt: "Classroom culture moment 1" },
-  { src: "/cc-2.webp", alt: "Classroom culture moment 2" },
-  { src: "/cc-3.webp", alt: "Classroom culture moment 3" },
-  { src: "/cc-4.webp", alt: "Classroom culture moment 4" },
-  { src: "/cc-5.webp", alt: "Classroom culture moment 5" },
-  { src: "/cc-6.webp", alt: "Classroom culture moment 6" },
-  { src: "/cc-7.webp", alt: "Classroom culture moment 7" },
+  { src: "/cc-1.jpeg", alt: "Classroom culture moment 1" },
+  { src: "/cc-2.jpeg", alt: "Classroom culture moment 2" },
+  { src: "/cc-3.jpeg", alt: "Classroom culture moment 3" },
+  { src: "/cc-4.jpeg", alt: "Classroom culture moment 4" },
+  { src: "/cc-5.jpeg", alt: "Classroom culture moment 5" },
+  { src: "/cc-6.jpeg", alt: "Classroom culture moment 6" },
+  { src: "/cc-7.jpeg", alt: "Classroom culture moment 7" },
+  { src: "/cc-8.jpeg", alt: "Classroom culture moment 8" },
+  { src: "/cc-9.jpeg", alt: "Classroom culture moment 9" },
+  { src: "/cc-10.jpeg", alt: "Classroom culture moment 10" },
+  { src: "/cc-11.jpeg", alt: "Classroom culture moment 11" },
+  { src: "/cc-12.jpeg", alt: "Classroom culture moment 12" },
+  { src: "/cc-13.jpeg", alt: "Classroom culture moment 13" },
+  { src: "/cc-14.jpeg", alt: "Classroom culture moment 14" },
+  { src: "/cc-15.jpeg", alt: "Classroom culture moment 15" },
+  { src: "/cc-16.jpeg", alt: "Classroom culture moment 16" },
+  { src: "/cc-17.jpeg", alt: "Classroom culture moment 17" },
+  { src: "/cc-18.jpeg", alt: "Classroom culture moment 18" },
+  { src: "/cc-19.jpeg", alt: "Classroom culture moment 19" },
+  { src: "/cc-20.jpeg", alt: "Classroom culture moment 20" },
+  { src: "/cc-21.jpeg", alt: "Classroom culture moment 21" },
+  { src: "/cc-22.jpeg", alt: "Classroom culture moment 22" },
+  { src: "/cc-23.jpeg", alt: "Classroom culture moment 23" },
+  { src: "/cc-24.jpeg", alt: "Classroom culture moment 24" },
+  { src: "/cc-25.jpeg", alt: "Classroom culture moment 25" },
+  { src: "/cc-26.jpeg", alt: "Classroom culture moment 26" },
+  { src: "/cc-27.jpeg", alt: "Classroom culture moment 27" },
+  { src: "/cc-28.jpeg", alt: "Classroom culture moment 28" },
+  { src: "/cc-29.jpeg", alt: "Classroom culture moment 29" },
+  { src: "/cc-30.jpeg", alt: "Classroom culture moment 30" },
 ];
 
 const ClassroomCulture = () => {
@@ -175,7 +198,7 @@ const ClassroomCulture = () => {
         </div>
 
         {/* Thumbnail Preview (Desktop only) */}
-        <div className={styles.thumbnailContainer}>
+        {/* <div className={styles.thumbnailContainer}>
           {images.map((image, index) => (
             <button
               key={index}
@@ -192,7 +215,7 @@ const ClassroomCulture = () => {
               />
             </button>
           ))}
-        </div>
+        </div> */}
       </div>
     </section>
   );

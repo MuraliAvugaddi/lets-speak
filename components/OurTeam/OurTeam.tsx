@@ -12,96 +12,138 @@ type TeamMember = {
 };
 
 export const TEAM: TeamMember[] = [
-  {
-    name: "Surendhra",
-    role: "English Trainer",
-    image: "/staff/suredhra sir 1.png",
-    linkedin: "#",
-  },
-  {
-    name: "Sireesha",
-    role: "English Trainer",
-    image: "/staff/0.2.Sireesha mam 1.png",
-    linkedin: "#",
-  },
-  {
-    name: "Poornima",
-    role: "English Trainer",
-    image: "/staff/0.3.Poornima garu1 1.png",
-    linkedin: "#",
-  },
-  {
-    name: "Mourya",
-    role: "English Trainer",
-    image: "/staff/0.5.Mourya mam 1.png",
-    linkedin: "#",
-  },
-  {
-    name: "Gayatri",
-    role: "English Trainer",
-    image: "/staff/Gayatri mam 1.png",
-    linkedin: "#",
-  },
-  {
-    name: "Gopal",
-    role: "English Trainer",
-    image: "/staff/gopal mam 1.png",
-    linkedin: "#",
-  },
-  {
-    name: "Jyothi",
-    role: "English Trainer",
-    image: "/staff/jyothi mam 1.png",
-    linkedin: "#",
-  },
-  {
-    name: "Laxman",
-    role: "English Trainer",
-    image: "/staff/laxman sir 1.png",
-    linkedin: "#",
-  },
-  {
-    name: "Padmavathi",
-    role: "English Trainer",
-    image: "/staff/padmavathi mam 1.png",
-    linkedin: "#",
-  },
-  {
-    name: "Pavani",
-    role: "English Trainer",
-    image: "/staff/pavani mam 1.png",
-    linkedin: "#",
-  },
-  {
-    name: "Raju",
-    role: "English Trainer",
-    image: "/staff/raju sir 1.png",
-    linkedin: "#",
-  },
-  {
-    name: "Revathi",
-    role: "English Trainer",
-    image: "/staff/revathi mam 1.png",
-    linkedin: "#",
-  },
-  {
-    name: "Sripathi",
-    role: "English Trainer",
-    image: "/staff/sripathi sir 1.png",
-    linkedin: "#",
-  },
-  {
-    name: "Hyma",
-    role: "English Trainer",
-    image: "/staff/hyma.png",
-    linkedin: "#",
-  },
-  {
-    name: "Santhosh",
-    role: "English Trainer",
-    image: "/staff/santhosh.png",
-    linkedin: "#",
-  },
+  // {
+  //   name: "Surendhra",
+  //   role: "English Trainer",
+  //   image: "/staff/suredhra sir 1.png",
+  //   linkedin: "#",
+  // },
+  // {
+  //   name: "Sireesha",
+  //   role: "English Trainer",
+  //   image: "/staff/0.2.Sireesha mam 1.png",
+  //   linkedin: "#",
+  // },
+  // {
+  //   name: "Poornima",
+  //   role: "English Trainer",
+  //   image: "/staff/0.3.Poornima garu1 1.png",
+  //   linkedin: "#",
+  // },
+  // {
+  //   name: "Mourya",
+  //   role: "English Trainer",
+  //   image: "/staff/0.5.Mourya mam 1.png",
+  //   linkedin: "#",
+  // },
+  // {
+  //   name: "Gayatri",
+  //   role: "English Trainer",
+  //   image: "/staff/Gayatri mam 1.png",
+  //   linkedin: "#",
+  // },
+  // {
+  //   name: "Gopal",
+  //   role: "English Trainer",
+  //   image: "/staff/gopal mam 1.png",
+  //   linkedin: "#",
+  // },
+  // {
+  //   name: "Jyothi",
+  //   role: "English Trainer",
+  //   image: "/staff/jyothi mam 1.png",
+  //   linkedin: "#",
+  // },
+  // {
+  //   name: "Laxman",
+  //   role: "English Trainer",
+  //   image: "/staff/laxman sir 1.png",
+  //   linkedin: "#",
+  // },
+  // {
+  //   name: "Padmavathi",
+  //   role: "English Trainer",
+  //   image: "/staff/padmavathi mam 1.png",
+  //   linkedin: "#",
+  // },
+  // {
+  //   name: "Pavani",
+  //   role: "English Trainer",
+  //   image: "/staff/pavani mam 1.png",
+  //   linkedin: "#",
+  // },
+  // {
+  //   name: "Raju",
+  //   role: "English Trainer",
+  //   image: "/staff/raju sir 1.png",
+  //   linkedin: "#",
+  // },
+  // {
+  //   name: "Revathi",
+  //   role: "English Trainer",
+  //   image: "/staff/revathi mam 1.png",
+  //   linkedin: "#",
+  // },
+  // {
+  //   name: "Sripathi",
+  //   role: "English Trainer",
+  //   image: "/staff/sripathi sir 1.png",
+  //   linkedin: "#",
+  // },
+  // {
+  //   name: "Hyma",
+  //   role: "English Trainer",
+  //   image: "/staff/hyma.png",
+  //   linkedin: "#",
+  // },
+  // {
+  //   name: "Santhosh",
+  //   role: "English Trainer",
+  //   image: "/staff/santhosh.png",
+  //   linkedin: "#",
+  // },
+     {
+      name: "Santhosh",
+      role: "Englsih Trainer",
+      image: "/ls/Santhosh-LP.jpeg",
+      linkedin: "#",
+     },
+     {
+      name: "Raju",
+      role: "Englsih Trainer",
+      image: "/ls/Raju-LP.jpeg",
+      linkedin: "#",
+     },
+     {
+      name: "Poorna",
+      role: "Englsih Trainer",
+      image: "/ls/Poorna-LP.jpeg",
+      linkedin: "#",
+     },
+     {
+      name: "Person",
+      role: "Englsih Trainer",
+      image: "/ls/U3-LP.jpeg",
+      linkedin: "#",
+     },
+     {
+      name: "Person",
+      role: "Englsih Trainer",
+      image: "/ls/UK-LP.jpeg",
+      linkedin: "#",
+     },
+     {
+      name: "Person",
+      role: "Englsih Trainer",
+      image: "/ls/UK1-LP.jpeg",
+      linkedin: "#",
+     },
+     {
+      name: "Person",
+      role: "Englsih Trainer",
+      image: "/ls/Unknown-LP.jpeg",
+      linkedin: "#",
+     }
 ];
 
 export default function OurTeam() {

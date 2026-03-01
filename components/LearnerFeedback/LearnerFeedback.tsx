@@ -1,15 +1,18 @@
-'use client';
+"use client";
 
-import React, { useState } from 'react';
-import styles from './LearnerFeedback.module.css';
+import React, { useState } from "react";
+import styles from "./LearnerFeedback.module.css";
 
 const LearnerFeedback = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  
+
   const videos = [
-    'XSb-8UR-Qhc',
-    '-0VtH0Ju37c',
-    'FIqNwQIziwY',
+    "4WRJwS3XM3I",
+    "YVx-r0vlN9g",
+    "XSb-8UR-Qhc",
+    "-0VtH0Ju37c",
+    "FIqNwQIziwY",
+    "ToE1Te-qhoQ",
   ];
 
   const handlePrev = () => {
@@ -32,9 +35,9 @@ const LearnerFeedback = () => {
   return (
     <div className={styles.container}>
       <h1 className={styles.title}>Our learner's feedback</h1>
-      
+
       <div className={styles.carouselWrapper}>
-        <button 
+        <button
           className={`${styles.navButton} ${styles.prevButton}`}
           onClick={handlePrev}
           aria-label="Previous"
@@ -62,7 +65,7 @@ const LearnerFeedback = () => {
           ))}
         </div>
 
-        <button 
+        <button
           className={`${styles.navButton} ${styles.nextButton}`}
           onClick={handleNext}
           aria-label="Next"
