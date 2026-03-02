@@ -1,6 +1,11 @@
+// URL: /courses/[language]/mode/[mode]/levels/[level]
 import CourseStagePageClient from "./CourseStagePageClient";
 
-export async function generateMetadata({ params }: { params: { language: string; mode: string; level: string } }) {
+export async function generateMetadata({
+  params,
+}: {
+  params: { language: string; mode: string; level: string };
+}) {
   const { language, mode, level } = params;
 
   return {

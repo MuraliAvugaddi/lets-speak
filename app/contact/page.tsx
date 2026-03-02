@@ -1,10 +1,12 @@
+// URL: /contact
 // ContactPage.tsx
 import styles from "./styles.module.css";
+import type { Metadata } from "next";
 
-export const metadata = {
-  title: "Contact Us",
+export const metadata: Metadata = {
+  title: "Contact Us | Let's Speak Global",
   description:
-    "Get in touch for course details, enrollment queries and faculty support.",
+    "Have questions about enrollment, courses, or faculty? Get in touch with the Let's Speak Global team — we're happy to help you start your language journey.",
 };
 
 export default function ContactPage() {
@@ -42,7 +44,10 @@ export default function ContactPage() {
             </a>
 
             {/* Email */}
-            <a href="mailto:letsspeakglobal@gmail.com" className={styles.contactItem}>
+            <a
+              href="mailto:letsspeakglobal@gmail.com"
+              className={styles.contactItem}
+            >
               <div className={`${styles.iconWrapper} ${styles.email}`}>
                 <svg viewBox="0 0 24 24" fill="currentColor">
                   <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />

@@ -1,4 +1,3 @@
-// data/courses/hindi.ts
 export const hindi = {
   id: "hindi",
   name: "Hindi Mastery Program",
@@ -14,8 +13,8 @@ export const hindi = {
         "Interactive in-person sessions with structured guidance and active speaking practice.",
       stages: [
         {
-          faculty_name: "Surendhra",
-          faculty_img_url: "/suredhra sir 1.png",
+          faculty_name: "Santhosh",
+          faculty_img_url: "/ls/Santhosh-LS.jpeg",
           id: "stage-1",
           title: "Stage 1 - Foundation",
           duration: "30 Days",
@@ -214,8 +213,8 @@ export const hindi = {
           ],
         },
         {
-          faculty_name: "Surendhra",
-          faculty_img_url: "/suredhra sir 1.png",
+          faculty_name: "Raju",
+          faculty_img_url: "/ls/Raju-LS.jpeg",
           id: "stage-2",
           title: "Stage 2 - Accuracy",
           duration: "30 Days",
@@ -414,8 +413,8 @@ export const hindi = {
           ],
         },
         {
-          faculty_name: "Surendhra",
-          faculty_img_url: "/suredhra sir 1.png",
+          faculty_name: "Sridhar",
+          faculty_img_url: "/ls/Sridhar-LS.jpeg",
           id: "stage-3",
           title: "Stage 3 - Progression",
           duration: "30 Days",
@@ -614,8 +613,8 @@ export const hindi = {
           ],
         },
         {
-          faculty_name: "Surendhra",
-          faculty_img_url: "/suredhra sir 1.png",
+          faculty_name: "Stage 4 Trainer",
+          faculty_img_url: "/ls/S4-LS.jpeg",
           id: "stage-4",
           title: "Stage 4 - Correctness",
           duration: "30 Days",
@@ -816,13 +815,11 @@ export const hindi = {
           ],
         },
         {
-          // DUMMY DATA - Hindi syllabus for this stage not yet provided
-          faculty_name: "Surendhra",
-          faculty_img_url: "/suredhra sir 1.png",
+          faculty_name: "Sripathi",
+          faculty_img_url: "/ls/Sripathi-LS.jpeg",
           id: "stage-5",
           title: "Stage 5 - Confidence",
           duration: "30 Days",
-          // TODO: Replace with real Hindi syllabus for Fluency
           planner: [
             {
               day: 1,
@@ -975,7 +972,6 @@ export const hindi = {
               description: "Stage Assessment and Certification",
             },
           ],
-          // TODO: Replace with real Hindi blocks for this stage
           blocks: [
             {
               id: "block-1",
@@ -1022,14 +1018,11 @@ export const hindi = {
           ],
         },
         {
-          // DUMMY DATA - Hindi syllabus for this stage not yet provided
-
           faculty_name: "Surendhra",
           faculty_img_url: "/suredhra sir 1.png",
           id: "stage-6",
           title: "Stage 6 - Fluency",
           duration: "30 Days",
-          // TODO: Replace with real Hindi syllabus for Proficiency
           planner: [
             {
               day: 1,
@@ -1182,7 +1175,6 @@ export const hindi = {
               description: "Stage Assessment and Certification",
             },
           ],
-          // TODO: Replace with real Hindi blocks for this stage
           blocks: [
             {
               id: "block-1",
@@ -1229,14 +1221,11 @@ export const hindi = {
           ],
         },
         {
-          // DUMMY DATA - Hindi syllabus for this stage not yet provided
-
           faculty_name: "Surendhra",
           faculty_img_url: "/suredhra sir 1.png",
           id: "stage-7",
           title: "Stage 7 - Mastery",
           duration: "30 Days",
-          // TODO: Replace with real Hindi syllabus for Mastery
           planner: [
             {
               day: 1,
@@ -1389,7 +1378,6 @@ export const hindi = {
               description: "Stage Assessment and Certification",
             },
           ],
-          // TODO: Replace with real Hindi blocks for this stage
           blocks: [
             {
               id: "block-1",
@@ -1438,13 +1426,11 @@ export const hindi = {
       ],
       clubs: [
         {
-          // DUMMY DATA - Hindi has no clubs defined yet; planner uses matching stage descriptions
-          faculty_name: "Surendhra",
-          faculty_img_url: "/suredhra sir 1.png",
+          faculty_name: "Santhosh",
+          faculty_img_url: "/ls/Santhosh-LS.jpeg",
           id: "club-1",
           title: "Club 1 - Foundation",
           duration: "30 Days",
-          // TODO: Replace with real Hindi syllabus for Foundation
           planner: [
             {
               day: 1,
@@ -1649,13 +1635,11 @@ export const hindi = {
           ],
         },
         {
-          // DUMMY DATA - Hindi has no clubs defined yet; planner uses matching stage descriptions
-          faculty_name: "Surendhra",
-          faculty_img_url: "/suredhra sir 1.png",
+          faculty_name: "Raju",
+          faculty_img_url: "/ls/Raju-LS.jpeg",
           id: "club-2",
           title: "Club 2 - Accuracy",
           duration: "30 Days",
-          // TODO: Replace with real Hindi syllabus for Accuracy
           planner: [
             {
               day: 1,
@@ -1860,13 +1844,11 @@ export const hindi = {
           ],
         },
         {
-          // DUMMY DATA - Hindi has no clubs defined yet; planner uses matching stage descriptions
-          faculty_name: "Surendhra",
-          faculty_img_url: "/suredhra sir 1.png",
+          faculty_name: "Sridhar",
+          faculty_img_url: "/ls/Sridhar-LS.jpeg",
           id: "club-3",
           title: "Club 3 - Excellence",
           duration: "30 Days",
-          // TODO: Replace with real Hindi syllabus for Excellence
           planner: [
             {
               day: 1,
@@ -2065,13 +2047,11 @@ export const hindi = {
           ],
         },
         {
-          // DUMMY DATA - Hindi has no clubs defined yet; planner uses matching stage descriptions
-          faculty_name: "Surendhra",
-          faculty_img_url: "/suredhra sir 1.png",
+          faculty_name: "Stage 4 Trainer",
+          faculty_img_url: "/ls/S4-LS.jpeg",
           id: "club-4",
           title: "Club 4 - Correctness",
           duration: "30 Days",
-          // TODO: Replace with real Hindi syllabus for Correctness
           planner: [
             {
               day: 1,
@@ -2272,13 +2252,11 @@ export const hindi = {
           ],
         },
         {
-          // DUMMY DATA - Hindi has no clubs defined yet; planner uses matching stage descriptions
-          faculty_name: "Surendhra",
-          faculty_img_url: "/suredhra sir 1.png",
+          faculty_name: "Sripathi",
+          faculty_img_url: "/ls/Sripathi-LS.jpeg",
           id: "club-5",
           title: "Club 5 - Fluency",
           duration: "30 Days",
-          // TODO: Replace with real Hindi syllabus for Fluency
           planner: [
             {
               day: 1,
@@ -2477,13 +2455,11 @@ export const hindi = {
           ],
         },
         {
-          // DUMMY DATA - Hindi has no clubs defined yet; planner uses matching stage descriptions
           faculty_name: "Surendhra",
           faculty_img_url: "/suredhra sir 1.png",
           id: "club-6",
           title: "Club 6 - Proficiency",
           duration: "30 Days",
-          // TODO: Replace with real Hindi syllabus for Proficiency
           planner: [
             {
               day: 1,
@@ -2682,13 +2658,11 @@ export const hindi = {
           ],
         },
         {
-          // DUMMY DATA - Hindi has no clubs defined yet; planner uses matching stage descriptions
           faculty_name: "Surendhra",
           faculty_img_url: "/suredhra sir 1.png",
           id: "club-7",
           title: "Club 7 - Mastery",
           duration: "30 Days",
-          // TODO: Replace with real Hindi syllabus for Mastery
           planner: [
             {
               day: 1,
@@ -2897,8 +2871,8 @@ export const hindi = {
         "High-impact live sessions designed for flexibility and consistent improvement.",
       stages: [
         {
-          faculty_name: "Surendhra",
-          faculty_img_url: "/suredhra sir 1.png",
+          faculty_name: "Santhosh",
+          faculty_img_url: "/ls/Santhosh-LS.jpeg",
           id: "stage-1",
           title: "Stage 1 - Foundation",
           duration: "30 Days",
@@ -3097,8 +3071,8 @@ export const hindi = {
           ],
         },
         {
-          faculty_name: "Surendhra",
-          faculty_img_url: "/suredhra sir 1.png",
+          faculty_name: "Raju",
+          faculty_img_url: "/ls/Raju-LS.jpeg",
           id: "stage-2",
           title: "Stage 2 - Accuracy",
           duration: "30 Days",
@@ -3297,8 +3271,8 @@ export const hindi = {
           ],
         },
         {
-          faculty_name: "Surendhra",
-          faculty_img_url: "/suredhra sir 1.png",
+          faculty_name: "Sridhar",
+          faculty_img_url: "/ls/Sridhar-LS.jpeg",
           id: "stage-3",
           title: "Stage 3 - Progression",
           duration: "30 Days",
@@ -3497,8 +3471,8 @@ export const hindi = {
           ],
         },
         {
-          faculty_name: "Surendhra",
-          faculty_img_url: "/suredhra sir 1.png",
+          faculty_name: "Stage 4 Trainer",
+          faculty_img_url: "/ls/S4-LS.jpeg",
           id: "stage-4",
           title: "Stage 4 - Correctness",
           duration: "30 Days",
@@ -3699,13 +3673,11 @@ export const hindi = {
           ],
         },
         {
-          // DUMMY DATA - Hindi syllabus for this stage not yet provided
-          faculty_name: "Surendhra",
-          faculty_img_url: "/suredhra sir 1.png",
+          faculty_name: "Sripathi",
+          faculty_img_url: "/ls/Sripathi-LS.jpeg",
           id: "stage-5",
           title: "Stage 5 - Confidence",
           duration: "30 Days",
-          // TODO: Replace with real Hindi syllabus for Fluency
           planner: [
             {
               day: 1,
@@ -3858,7 +3830,6 @@ export const hindi = {
               description: "Stage Assessment and Certification",
             },
           ],
-          // TODO: Replace with real Hindi blocks for this stage
           blocks: [
             {
               id: "block-1",
@@ -3905,14 +3876,11 @@ export const hindi = {
           ],
         },
         {
-          // DUMMY DATA - Hindi syllabus for this stage not yet provided
-
           faculty_name: "Surendhra",
           faculty_img_url: "/suredhra sir 1.png",
           id: "stage-6",
           title: "Stage 6 - Fluency",
           duration: "30 Days",
-          // TODO: Replace with real Hindi syllabus for Proficiency
           planner: [
             {
               day: 1,
@@ -4065,7 +4033,6 @@ export const hindi = {
               description: "Stage Assessment and Certification",
             },
           ],
-          // TODO: Replace with real Hindi blocks for this stage
           blocks: [
             {
               id: "block-1",
@@ -4112,14 +4079,11 @@ export const hindi = {
           ],
         },
         {
-          // DUMMY DATA - Hindi syllabus for this stage not yet provided
-
           faculty_name: "Surendhra",
           faculty_img_url: "/suredhra sir 1.png",
           id: "stage-7",
           title: "Stage 7 - Mastery",
           duration: "30 Days",
-          // TODO: Replace with real Hindi syllabus for Mastery
           planner: [
             {
               day: 1,
@@ -4272,7 +4236,6 @@ export const hindi = {
               description: "Stage Assessment and Certification",
             },
           ],
-          // TODO: Replace with real Hindi blocks for this stage
           blocks: [
             {
               id: "block-1",
@@ -4321,13 +4284,11 @@ export const hindi = {
       ],
       clubs: [
         {
-          // DUMMY DATA - Hindi has no clubs defined yet; planner uses matching stage descriptions
-          faculty_name: "Surendhra",
-          faculty_img_url: "/suredhra sir 1.png",
+          faculty_name: "Santhosh",
+          faculty_img_url: "/ls/Santhosh-LS.jpeg",
           id: "club-1",
           title: "Club 1 - Foundation",
           duration: "30 Days",
-          // TODO: Replace with real Hindi syllabus for Foundation
           planner: [
             {
               day: 1,
@@ -4532,13 +4493,11 @@ export const hindi = {
           ],
         },
         {
-          // DUMMY DATA - Hindi has no clubs defined yet; planner uses matching stage descriptions
-          faculty_name: "Surendhra",
-          faculty_img_url: "/suredhra sir 1.png",
+          faculty_name: "Raju",
+          faculty_img_url: "/ls/Raju-LS.jpeg",
           id: "club-2",
           title: "Club 2 - Accuracy",
           duration: "30 Days",
-          // TODO: Replace with real Hindi syllabus for Accuracy
           planner: [
             {
               day: 1,
@@ -4743,13 +4702,11 @@ export const hindi = {
           ],
         },
         {
-          // DUMMY DATA - Hindi has no clubs defined yet; planner uses matching stage descriptions
-          faculty_name: "Surendhra",
-          faculty_img_url: "/suredhra sir 1.png",
+          faculty_name: "Sridhar",
+          faculty_img_url: "/ls/Sridhar-LS.jpeg",
           id: "club-3",
           title: "Club 3 - Excellence",
           duration: "30 Days",
-          // TODO: Replace with real Hindi syllabus for Excellence
           planner: [
             {
               day: 1,
@@ -4948,13 +4905,11 @@ export const hindi = {
           ],
         },
         {
-          // DUMMY DATA - Hindi has no clubs defined yet; planner uses matching stage descriptions
-          faculty_name: "Surendhra",
-          faculty_img_url: "/suredhra sir 1.png",
+          faculty_name: "Stage 4 Trainer",
+          faculty_img_url: "/ls/S4-LS.jpeg",
           id: "club-4",
           title: "Club 4 - Correctness",
           duration: "30 Days",
-          // TODO: Replace with real Hindi syllabus for Correctness
           planner: [
             {
               day: 1,
@@ -5155,13 +5110,11 @@ export const hindi = {
           ],
         },
         {
-          // DUMMY DATA - Hindi has no clubs defined yet; planner uses matching stage descriptions
-          faculty_name: "Surendhra",
-          faculty_img_url: "/suredhra sir 1.png",
+          faculty_name: "Sripathi",
+          faculty_img_url: "/ls/Sripathi-LS.jpeg",
           id: "club-5",
           title: "Club 5 - Fluency",
           duration: "30 Days",
-          // TODO: Replace with real Hindi syllabus for Fluency
           planner: [
             {
               day: 1,
@@ -5360,13 +5313,11 @@ export const hindi = {
           ],
         },
         {
-          // DUMMY DATA - Hindi has no clubs defined yet; planner uses matching stage descriptions
           faculty_name: "Surendhra",
           faculty_img_url: "/suredhra sir 1.png",
           id: "club-6",
           title: "Club 6 - Proficiency",
           duration: "30 Days",
-          // TODO: Replace with real Hindi syllabus for Proficiency
           planner: [
             {
               day: 1,
@@ -5565,13 +5516,11 @@ export const hindi = {
           ],
         },
         {
-          // DUMMY DATA - Hindi has no clubs defined yet; planner uses matching stage descriptions
           faculty_name: "Surendhra",
           faculty_img_url: "/suredhra sir 1.png",
           id: "club-7",
           title: "Club 7 - Mastery",
           duration: "30 Days",
-          // TODO: Replace with real Hindi syllabus for Mastery
           planner: [
             {
               day: 1,
@@ -5780,8 +5729,8 @@ export const hindi = {
         "This is our exclusive premium offering — positioning and experience are crafted to feel truly exceptional.",
       stages: [
         {
-          faculty_name: "Surendhra",
-          faculty_img_url: "/suredhra sir 1.png",
+          faculty_name: "Santhosh",
+          faculty_img_url: "/ls/Santhosh-LS.jpeg",
           id: "stage-1",
           title: "Stage 1 - Foundation",
           duration: "30 Days",
@@ -5980,8 +5929,8 @@ export const hindi = {
           ],
         },
         {
-          faculty_name: "Surendhra",
-          faculty_img_url: "/suredhra sir 1.png",
+          faculty_name: "Raju",
+          faculty_img_url: "/ls/Raju-LS.jpeg",
           id: "stage-2",
           title: "Stage 2 - Accuracy",
           duration: "30 Days",
@@ -6180,8 +6129,8 @@ export const hindi = {
           ],
         },
         {
-          faculty_name: "Surendhra",
-          faculty_img_url: "/suredhra sir 1.png",
+          faculty_name: "Sridhar",
+          faculty_img_url: "/ls/Sridhar-LS.jpeg",
           id: "stage-3",
           title: "Stage 3 - Progression",
           duration: "30 Days",
@@ -6380,8 +6329,8 @@ export const hindi = {
           ],
         },
         {
-          faculty_name: "Surendhra",
-          faculty_img_url: "/suredhra sir 1.png",
+          faculty_name: "Stage 4 Trainer",
+          faculty_img_url: "/ls/S4-LS.jpeg",
           id: "stage-4",
           title: "Stage 4 - Correctness",
           duration: "30 Days",
@@ -6582,13 +6531,11 @@ export const hindi = {
           ],
         },
         {
-          // DUMMY DATA - Hindi syllabus for this stage not yet provided
-          faculty_name: "Surendhra",
-          faculty_img_url: "/suredhra sir 1.png",
+          faculty_name: "Sripathi",
+          faculty_img_url: "/ls/Sripathi-LS.jpeg",
           id: "stage-5",
           title: "Stage 5 - Confidence",
           duration: "30 Days",
-          // TODO: Replace with real Hindi syllabus for Fluency
           planner: [
             {
               day: 1,
@@ -6741,7 +6688,6 @@ export const hindi = {
               description: "Stage Assessment and Certification",
             },
           ],
-          // TODO: Replace with real Hindi blocks for this stage
           blocks: [
             {
               id: "block-1",
@@ -6788,14 +6734,11 @@ export const hindi = {
           ],
         },
         {
-          // DUMMY DATA - Hindi syllabus for this stage not yet provided
-
           faculty_name: "Surendhra",
           faculty_img_url: "/suredhra sir 1.png",
           id: "stage-6",
           title: "Stage 6 - Fluency",
           duration: "30 Days",
-          // TODO: Replace with real Hindi syllabus for Proficiency
           planner: [
             {
               day: 1,
@@ -6948,7 +6891,6 @@ export const hindi = {
               description: "Stage Assessment and Certification",
             },
           ],
-          // TODO: Replace with real Hindi blocks for this stage
           blocks: [
             {
               id: "block-1",
@@ -6995,14 +6937,11 @@ export const hindi = {
           ],
         },
         {
-          // DUMMY DATA - Hindi syllabus for this stage not yet provided
-
           faculty_name: "Surendhra",
           faculty_img_url: "/suredhra sir 1.png",
           id: "stage-7",
           title: "Stage 7 - Mastery",
           duration: "30 Days",
-          // TODO: Replace with real Hindi syllabus for Mastery
           planner: [
             {
               day: 1,
@@ -7155,7 +7094,6 @@ export const hindi = {
               description: "Stage Assessment and Certification",
             },
           ],
-          // TODO: Replace with real Hindi blocks for this stage
           blocks: [
             {
               id: "block-1",
@@ -7204,13 +7142,11 @@ export const hindi = {
       ],
       clubs: [
         {
-          // DUMMY DATA - Hindi has no clubs defined yet; planner uses matching stage descriptions
-          faculty_name: "Surendhra",
-          faculty_img_url: "/suredhra sir 1.png",
+          faculty_name: "Santhosh",
+          faculty_img_url: "/ls/Santhosh-LS.jpeg",
           id: "club-1",
           title: "Club 1 - Foundation",
           duration: "30 Days",
-          // TODO: Replace with real Hindi syllabus for Foundation
           planner: [
             {
               day: 1,
@@ -7415,13 +7351,11 @@ export const hindi = {
           ],
         },
         {
-          // DUMMY DATA - Hindi has no clubs defined yet; planner uses matching stage descriptions
-          faculty_name: "Surendhra",
-          faculty_img_url: "/suredhra sir 1.png",
+          faculty_name: "Raju",
+          faculty_img_url: "/ls/Raju-LS.jpeg",
           id: "club-2",
           title: "Club 2 - Accuracy",
           duration: "30 Days",
-          // TODO: Replace with real Hindi syllabus for Accuracy
           planner: [
             {
               day: 1,
@@ -7626,13 +7560,11 @@ export const hindi = {
           ],
         },
         {
-          // DUMMY DATA - Hindi has no clubs defined yet; planner uses matching stage descriptions
-          faculty_name: "Surendhra",
-          faculty_img_url: "/suredhra sir 1.png",
+          faculty_name: "Sridhar",
+          faculty_img_url: "/ls/Sridhar-LS.jpeg",
           id: "club-3",
           title: "Club 3 - Excellence",
           duration: "30 Days",
-          // TODO: Replace with real Hindi syllabus for Excellence
           planner: [
             {
               day: 1,
@@ -7831,13 +7763,11 @@ export const hindi = {
           ],
         },
         {
-          // DUMMY DATA - Hindi has no clubs defined yet; planner uses matching stage descriptions
-          faculty_name: "Surendhra",
-          faculty_img_url: "/suredhra sir 1.png",
+          faculty_name: "Stage 4 Trainer",
+          faculty_img_url: "/ls/S4-LS.jpeg",
           id: "club-4",
           title: "Club 4 - Correctness",
           duration: "30 Days",
-          // TODO: Replace with real Hindi syllabus for Correctness
           planner: [
             {
               day: 1,
@@ -8038,13 +7968,11 @@ export const hindi = {
           ],
         },
         {
-          // DUMMY DATA - Hindi has no clubs defined yet; planner uses matching stage descriptions
-          faculty_name: "Surendhra",
-          faculty_img_url: "/suredhra sir 1.png",
+          faculty_name: "Sripathi",
+          faculty_img_url: "/ls/Sripathi-LS.jpeg",
           id: "club-5",
           title: "Club 5 - Fluency",
           duration: "30 Days",
-          // TODO: Replace with real Hindi syllabus for Fluency
           planner: [
             {
               day: 1,
@@ -8243,13 +8171,11 @@ export const hindi = {
           ],
         },
         {
-          // DUMMY DATA - Hindi has no clubs defined yet; planner uses matching stage descriptions
           faculty_name: "Surendhra",
           faculty_img_url: "/suredhra sir 1.png",
           id: "club-6",
           title: "Club 6 - Proficiency",
           duration: "30 Days",
-          // TODO: Replace with real Hindi syllabus for Proficiency
           planner: [
             {
               day: 1,
@@ -8448,13 +8374,11 @@ export const hindi = {
           ],
         },
         {
-          // DUMMY DATA - Hindi has no clubs defined yet; planner uses matching stage descriptions
           faculty_name: "Surendhra",
           faculty_img_url: "/suredhra sir 1.png",
           id: "club-7",
           title: "Club 7 - Mastery",
           duration: "30 Days",
-          // TODO: Replace with real Hindi syllabus for Mastery
           planner: [
             {
               day: 1,

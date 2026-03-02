@@ -1,3 +1,4 @@
+// URL: /
 import Hero from "@/components/Hero/Hero";
 import WhyChooseUs from "@/components/WhyChooseUs/WhyChooseUs";
 import CoursesSection from "@/components/CoursesSection/CoursesSection";
@@ -10,23 +11,49 @@ import ClassroomCulture from "@/components/ClassroomCulture/ClassroomCulture";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Home",
+  title: "Let's Speak Global | English & Hindi Language Courses",
   description:
-    "Join structured English & Hindi language courses with levels, clubs and expert mentors.",
+    "Join structured English & Hindi language courses with expert mentors. Choose from Offline, Online, and One-to-One modes across 7 progressive learning stages.",
 };
 
 export default function Home() {
   return (
-    <div style={{ width: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}>
-      <div id="home"><Hero /></div>
-      <div id="why-choose-us"><WhyChooseUs /></div>
-      <div id="courses"><CoursesSection /></div>
-      <div id="upcoming-batch"><UpcomingBatch /></div>
-      <div id="about"><AboutHighlights /></div>
-      <div id="classroom-culture"><ClassroomCulture /></div>
-      <div id="learn"><LearnSection /></div>
-      <div id="our-team"><OurTeam /></div>
-      <div id="faq"><FAQ /></div>
+    <div
+      style={{
+        width: "100%",
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+        flexDirection: "column",
+      }}
+    >
+      <div id="home">
+        <Hero />
+      </div>
+      <div id="why-choose-us">
+        <WhyChooseUs />
+      </div>
+      <div id="courses">
+        <CoursesSection />
+      </div>
+      <div id="upcoming-batch">
+        <UpcomingBatch />
+      </div>
+      <div id="about">
+        <AboutHighlights />
+      </div>
+      <div id="classroom-culture">
+        <ClassroomCulture />
+      </div>
+      <div id="learn">
+        <LearnSection />
+      </div>
+      <div id="our-team">
+        <OurTeam />
+      </div>
+      <div id="faq">
+        <FAQ />
+      </div>
     </div>
   );
 }

@@ -1,3 +1,4 @@
+// URL: /courses/[language]/mode/[mode]/clubs/[club]
 "use client";
 
 import React, { useState } from "react";
@@ -7,6 +8,7 @@ import { courses } from "@/data/courses";
 import UpcomingBatch from "@/components/UpcomingBatch/UpcomingBatch";
 import FAQ from "@/components/FAQ/FAQ";
 import Image from "next/image";
+
 
 export default function ClubDetailPage() {
   const params = useParams();
@@ -37,7 +39,7 @@ export default function ClubDetailPage() {
     return <div className={styles.errorContainer}>Club not found</div>;
   }
 
-  // Smart planner selection: Use club's planner if available, 
+  // Smart planner selection: Use club's planner if available,
   // otherwise use the corresponding stage's planner
   const getPlanner = () => {
     // If club has its own planner, use it
@@ -50,7 +52,7 @@ export default function ClubDetailPage() {
     const clubNumber = club.match(/\d+/)?.[0];
     if (clubNumber) {
       const correspondingStage = selectedMode.stages.find(
-        (stage: any) => stage.id === `stage-${clubNumber}`
+        (stage: any) => stage.id === `stage-${clubNumber}`,
       );
       if (correspondingStage) {
         return correspondingStage.planner;
@@ -70,7 +72,7 @@ export default function ClubDetailPage() {
   const handleFacultyClick = () => {
     if (clubData.faculty_name) {
       router.push(
-        `/faculty/${clubData.faculty_name.toLowerCase().replace(/\s+/g, "-")}`
+        `/faculty/${clubData.faculty_name.toLowerCase().replace(/\s+/g, "-")}`,
       );
     }
   };

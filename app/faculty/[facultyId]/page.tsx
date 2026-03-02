@@ -1,3 +1,4 @@
+// URL: /faculty/[facultyId]
 import FacultyClient from "./FacultyClient";
 
 export async function generateMetadata({

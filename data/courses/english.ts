@@ -13,8 +13,8 @@ export const english = {
         "Offline Classroom Training Interactive in-person sessions for structured learning and real-life speaking practice.",
       stages: [
         {
-          faculty_name: "Surendhra",
-          faculty_img_url: "/suredhra sir 1.png",
+          faculty_name: "Santhosh",
+          faculty_img_url: "/ls/Santhosh-LS.jpeg",
           id: "stage-1",
           title: "Stage 1 - Foundation",
           duration: "30 Days",
@@ -212,8 +212,8 @@ export const english = {
           ],
         },
         {
-          faculty_name: "Surendhra",
-          faculty_img_url: "/suredhra sir 1.png",
+          faculty_name: "Raju",
+          faculty_img_url: "/ls/Raju-LS.jpeg",
           id: "stage-2",
           title: "Stage 2 - Accuracy",
           duration: "30 Days",
@@ -411,8 +411,8 @@ export const english = {
           ],
         },
         {
-          faculty_name: "Surendhra",
-          faculty_img_url: "/suredhra sir 1.png",
+          faculty_name: "Sridhar",
+          faculty_img_url: "/ls/Sridhar-LS.jpeg",
           id: "stage-3",
           title: "Stage 3 - Progression",
           duration: "30 Days",
@@ -611,8 +611,8 @@ export const english = {
           ],
         },
         {
-          faculty_name: "Surendhra",
-          faculty_img_url: "/suredhra sir 1.png",
+          faculty_name: "Stage 4 Trainer",
+          faculty_img_url: "/ls/S4-LS.jpeg",
           id: "stage-4",
           title: "Stage 4 - Correctness",
           duration: "30 Days",
@@ -809,8 +809,8 @@ export const english = {
           ],
         },
         {
-          faculty_name: "Surendhra",
-          faculty_img_url: "/suredhra sir 1.png",
+          faculty_name: "Sripathi",
+          faculty_img_url: "/ls/Sripathi-LS.jpeg",
           id: "stage-5",
           title: "Stage 5 - Confidence",
           duration: "30 Days",
@@ -1410,8 +1410,8 @@ export const english = {
       ],
       clubs: [
         {
-          faculty_name: "Surendhra",
-          faculty_img_url: "/suredhra sir 1.png",
+          faculty_name: "Santhosh",
+          faculty_img_url: "/ls/Santhosh-LS.jpeg",
           id: "club-1",
           title: "Club 1 - Foundation",
           duration: "30 Days",
@@ -1620,8 +1620,8 @@ export const english = {
           ],
         },
         {
-          faculty_name: "Surendhra",
-          faculty_img_url: "/suredhra sir 1.png",
+          faculty_name: "Raju",
+          faculty_img_url: "/ls/Raju-LS.jpeg",
           id: "club-2",
           title: "Club 2 - Accuracy",
           duration: "30 Days",
@@ -1830,8 +1830,8 @@ export const english = {
           ],
         },
         {
-          faculty_name: "Surendhra",
-          faculty_img_url: "/suredhra sir 1.png",
+          faculty_name: "Sridhar",
+          faculty_img_url: "/ls/Sridhar-LS.jpeg",
           id: "club-3",
           title: "Club 3 - Excellence",
           duration: "30 Days",
@@ -2035,8 +2035,8 @@ export const english = {
           ],
         },
         {
-          faculty_name: "Surendhra",
-          faculty_img_url: "/suredhra sir 1.png",
+          faculty_name: "Stage 4 Trainer",
+          faculty_img_url: "/ls/S4-LS.jpeg",
           id: "club-4",
           title: "Club 4 - Correctness",
           duration: "30 Days",
@@ -2238,8 +2238,8 @@ export const english = {
           ],
         },
         {
-          faculty_name: "Surendhra",
-          faculty_img_url: "/suredhra sir 1.png",
+          faculty_name: "Sripathi",
+          faculty_img_url: "/ls/Sripathi-LS.jpeg",
           id: "club-5",
           title: "Club 5 - Fluency",
           duration: "30 Days",
@@ -2857,8 +2857,8 @@ export const english = {
         "Online Live Training Flexible live sessions designed for consistent learning from anywhere.",
       stages: [
         {
-          faculty_name: "Surendhra",
-          faculty_img_url: "/suredhra sir 1.png",
+          faculty_name: "Santhosh",
+          faculty_img_url: "/ls/Santhosh-LS.jpeg",
           id: "stage-1",
           title: "Stage 1 - Foundation",
           duration: "30 Days",
@@ -3056,8 +3056,8 @@ export const english = {
           ],
         },
         {
-          faculty_name: "Surendhra",
-          faculty_img_url: "/suredhra sir 1.png",
+          faculty_name: "Raju",
+          faculty_img_url: "/ls/Raju-LS.jpeg",
           id: "stage-2",
           title: "Stage 2 - Accuracy",
           duration: "30 Days",
@@ -3255,8 +3255,8 @@ export const english = {
           ],
         },
         {
-          faculty_name: "Surendhra",
-          faculty_img_url: "/suredhra sir 1.png",
+          faculty_name: "Sridhar",
+          faculty_img_url: "/ls/Sridhar-LS.jpeg",
           id: "stage-3",
           title: "Stage 3 - Progression",
           duration: "30 Days",
@@ -3455,8 +3455,8 @@ export const english = {
           ],
         },
         {
-          faculty_name: "Surendhra",
-          faculty_img_url: "/suredhra sir 1.png",
+          faculty_name: "Stage 4 Trainer",
+          faculty_img_url: "/ls/S4-LS.jpeg",
           id: "stage-4",
           title: "Stage 4 - Correctness",
           duration: "30 Days",
@@ -3653,8 +3653,8 @@ export const english = {
           ],
         },
         {
-          faculty_name: "Surendhra",
-          faculty_img_url: "/suredhra sir 1.png",
+          faculty_name: "Sripathi",
+          faculty_img_url: "/ls/Sripathi-LS.jpeg",
           id: "stage-5",
           title: "Stage 5 - Confidence",
           duration: "30 Days",
@@ -4254,8 +4254,8 @@ export const english = {
       ],
       clubs: [
         {
-          faculty_name: "Surendhra",
-          faculty_img_url: "/suredhra sir 1.png",
+          faculty_name: "Santhosh",
+          faculty_img_url: "/ls/Santhosh-LS.jpeg",
           id: "club-1",
           title: "Club 1 - Foundation",
           duration: "30 Days",
@@ -4464,8 +4464,8 @@ export const english = {
           ],
         },
         {
-          faculty_name: "Surendhra",
-          faculty_img_url: "/suredhra sir 1.png",
+          faculty_name: "Raju",
+          faculty_img_url: "/ls/Raju-LS.jpeg",
           id: "club-2",
           title: "Club 2 - Accuracy",
           duration: "30 Days",
@@ -4674,8 +4674,8 @@ export const english = {
           ],
         },
         {
-          faculty_name: "Surendhra",
-          faculty_img_url: "/suredhra sir 1.png",
+          faculty_name: "Sridhar",
+          faculty_img_url: "/ls/Sridhar-LS.jpeg",
           id: "club-3",
           title: "Club 3 - Excellence",
           duration: "30 Days",
@@ -4879,8 +4879,8 @@ export const english = {
           ],
         },
         {
-          faculty_name: "Surendhra",
-          faculty_img_url: "/suredhra sir 1.png",
+          faculty_name: "Stage 4 Trainer",
+          faculty_img_url: "/ls/S4-LS.jpeg",
           id: "club-4",
           title: "Club 4 - Correctness",
           duration: "30 Days",
@@ -5082,8 +5082,8 @@ export const english = {
           ],
         },
         {
-          faculty_name: "Surendhra",
-          faculty_img_url: "/suredhra sir 1.png",
+          faculty_name: "Sripathi",
+          faculty_img_url: "/ls/Sripathi-LS.jpeg",
           id: "club-5",
           title: "Club 5 - Fluency",
           duration: "30 Days",
@@ -5701,8 +5701,8 @@ export const english = {
         "1-on-1 Personal Training Customized premium sessions designed for faster improvement and individual attention.",
       stages: [
         {
-          faculty_name: "Surendhra",
-          faculty_img_url: "/suredhra sir 1.png",
+          faculty_name: "Santhosh",
+          faculty_img_url: "/ls/Santhosh-LS.jpeg",
           id: "stage-1",
           title: "Stage 1 - Foundation",
           duration: "30 Days",
@@ -5900,8 +5900,8 @@ export const english = {
           ],
         },
         {
-          faculty_name: "Surendhra",
-          faculty_img_url: "/suredhra sir 1.png",
+          faculty_name: "Raju",
+          faculty_img_url: "/ls/Raju-LS.jpeg",
           id: "stage-2",
           title: "Stage 2 - Accuracy",
           duration: "30 Days",
@@ -6099,8 +6099,8 @@ export const english = {
           ],
         },
         {
-          faculty_name: "Surendhra",
-          faculty_img_url: "/suredhra sir 1.png",
+          faculty_name: "Sridhar",
+          faculty_img_url: "/ls/Sridhar-LS.jpeg",
           id: "stage-3",
           title: "Stage 3 - Progression",
           duration: "30 Days",
@@ -6299,8 +6299,8 @@ export const english = {
           ],
         },
         {
-          faculty_name: "Surendhra",
-          faculty_img_url: "/suredhra sir 1.png",
+          faculty_name: "Stage 4 Trainer",
+          faculty_img_url: "/ls/S4-LS.jpeg",
           id: "stage-4",
           title: "Stage 4 - Correctness",
           duration: "30 Days",
@@ -6497,8 +6497,8 @@ export const english = {
           ],
         },
         {
-          faculty_name: "Surendhra",
-          faculty_img_url: "/suredhra sir 1.png",
+          faculty_name: "Sripathi",
+          faculty_img_url: "/ls/Sripathi-LS.jpeg",
           id: "stage-5",
           title: "Stage 5 - Confidence",
           duration: "30 Days",
@@ -7098,8 +7098,8 @@ export const english = {
       ],
       clubs: [
         {
-          faculty_name: "Surendhra",
-          faculty_img_url: "/suredhra sir 1.png",
+          faculty_name: "Santhosh",
+          faculty_img_url: "/ls/Santhosh-LS.jpeg",
           id: "club-1",
           title: "Club 1 - Foundation",
           duration: "30 Days",
@@ -7308,8 +7308,8 @@ export const english = {
           ],
         },
         {
-          faculty_name: "Surendhra",
-          faculty_img_url: "/suredhra sir 1.png",
+          faculty_name: "Raju",
+          faculty_img_url: "/ls/Raju-LS.jpeg",
           id: "club-2",
           title: "Club 2 - Accuracy",
           duration: "30 Days",
@@ -7518,8 +7518,8 @@ export const english = {
           ],
         },
         {
-          faculty_name: "Surendhra",
-          faculty_img_url: "/suredhra sir 1.png",
+          faculty_name: "Sridhar",
+          faculty_img_url: "/ls/Sridhar-LS.jpeg",
           id: "club-3",
           title: "Club 3 - Excellence",
           duration: "30 Days",
@@ -7723,8 +7723,8 @@ export const english = {
           ],
         },
         {
-          faculty_name: "Surendhra",
-          faculty_img_url: "/suredhra sir 1.png",
+          faculty_name: "Stage 4 Trainer",
+          faculty_img_url: "/ls/S4-LS.jpeg",
           id: "club-4",
           title: "Club 4 - Correctness",
           duration: "30 Days",
@@ -7926,8 +7926,8 @@ export const english = {
           ],
         },
         {
-          faculty_name: "Surendhra",
-          faculty_img_url: "/suredhra sir 1.png",
+          faculty_name: "Sripathi",
+          faculty_img_url: "/ls/Sripathi-LS.jpeg",
           id: "club-5",
           title: "Club 5 - Fluency",
           duration: "30 Days",

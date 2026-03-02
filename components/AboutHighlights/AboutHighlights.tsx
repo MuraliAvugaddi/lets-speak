@@ -43,9 +43,9 @@ const coreValues = [
 
 // Define quotes for each video ID
 const videoQuotes: Record<string, string> = {
-  UlJ9vAynJUc:
+  FIqNwQIziwY:
     "Our structured approach provides lifelong learners of every age with the expert mentorship and practical tools needed to master real-world communication.",
-  "ToE1Te-qhoQ":
+  "4WRJwS3XM3I":
     "Through a foundation of practical application and expert-led guidance, we have designed a structured environment where communication skills are honed for real-world success.",
   THCndMIgQpM:
     "We bridge the gap between learning and real-world application, offering a structured, inclusive program that builds communication clarity and confidence across all generations.",
