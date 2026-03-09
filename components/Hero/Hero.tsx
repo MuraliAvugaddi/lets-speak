@@ -11,8 +11,7 @@ export default function Hero() {
             <br />
             English & Hindi
             <br />
-            Training Programs.
-            <br />
+            <p style={{color:"black"}}>Training Programs.</p>
             Online | Offline
             <br />| 1-on-1
           </h1>

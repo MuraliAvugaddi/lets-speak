@@ -43,14 +43,14 @@ const coreValues = [
 
 // Define quotes for each video ID
 const videoQuotes: Record<string, string> = {
-  FIqNwQIziwY:
-    "Our structured approach provides lifelong learners of every age with the expert mentorship and practical tools needed to master real-world communication.",
+  GhQ0eOvAEm4:
+    "Expert guidance for learners of all ages—master real-world communication skills with proven methods.",
   "4WRJwS3XM3I":
-    "Through a foundation of practical application and expert-led guidance, we have designed a structured environment where communication skills are honed for real-world success.",
-  THCndMIgQpM:
-    "We bridge the gap between learning and real-world application, offering a structured, inclusive program that builds communication clarity and confidence across all generations.",
-  LaL28u278gk:
-    "Regardless of age, our primary focus is empowering individuals with the confidence and clarity required to navigate real-world interactions effectively through practical, skill-based training.",
+    "Learn through practice, not just theory. Build communication skills that actually work.",
+  iujDkpW27j8:
+    "From classroom learning to real-life conversations—we bridge the gap with practical training.",
+   "0UiwQzv9jHc":
+    "Speak with confidence and clarity at any age. Communication made simple and effective.",
 };
 
 const reviews = [

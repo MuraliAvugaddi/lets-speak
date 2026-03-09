@@ -131,12 +131,10 @@
   flex-direction: column;
 }
 
-/* ─── MOBILE MARQUEE (hidden on larger screens) ─── */
-.marqueeWrapper {
+/* ─── CAROUSEL (hidden on larger screens) ─── */
+.carouselOuter {
   display: none;
 }
-
-
 
 /* LARGE DESKTOP */
 @media (max-width: 1200px) {
@@ -263,11 +261,10 @@
 }
 
 /* ═══════════════════════════════════════════════
-   MOBILE — horizontal scroll feature cards + full-width stacked stats
+   MOBILE — auto carousel + core-values stat cards
    ═══════════════════════════════════════════════ */
 @media (max-width: 480px) {
 
-  /* Strict containment — nothing bleeds outside */
   .wrapper {
     overflow-x: hidden;
     width: 100%;
@@ -282,137 +279,167 @@
     overflow: hidden;
   }
 
-  /* Heading gets its own horizontal padding */
   .heading {
     font-size: 26px;
     margin-bottom: 24px;
     padding: 0 20px;
   }
 
-  /* ── Hide the normal grid cards ── */
+  /* ── Hide desktop grid cards ── */
   .cards {
     display: none;
     margin-bottom: 0;
   }
 
-  /* ── Marquee: visible scroller, lives inside section width ── */
-  .marqueeWrapper {
+  /* ── Carousel outer wrapper ── */
+  .carouselOuter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 24px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    gap: 14px;
+  }
+
+  /* ── Carousel track: clips to one card at a time ── */
+  .carouselTrack {
     display: flex;
     flex-direction: row;
-    align-items: stretch;
-    overflow-x: auto;
-    overflow-y: visible;
-    gap: 12px;
-    /* Indent start, let last card trail off naturally */
-    padding: 4px 20px 12px 20px;
-    margin-bottom: 20px;
     width: 100%;
-    box-sizing: border-box;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-    /* Smooth snap scrolling */
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
+    overflow: hidden;
+    scroll-behavior: smooth;
+    border-radius: 14px;
   }
 
-  .marqueeWrapper::-webkit-scrollbar {
-    display: none;
-  }
-
-  /* Each card snaps into place */
-  .marqueeCard {
-    scroll-snap-align: start;
+  /* ── Each carousel card: full track width ── */
+  .carouselCard {
+    flex: 0 0 100%;
     background: #ffffff;
     border-radius: 14px;
-    padding: 14px 16px;
+    padding: 22px 20px;
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 16px;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
-    /* ~75% width = 2 cards visible with peek of 3rd */
-    flex: 0 0 72%;
     box-sizing: border-box;
+    border: 2px solid #dae6f2;
   }
 
-  .marqueeIcon {
-    width: 42px;
-    height: 42px;
-    min-width: 42px;
+  .carouselIcon {
+    width: 52px;
+    height: 52px;
+    min-width: 52px;
     background: #eef3fb;
-    border-radius: 10px;
+    border-radius: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
   }
 
-  .marqueeIcon img {
-    width: 56%;
-    height: 56%;
+  .carouselIcon img {
+    width: 58%;
+    height: 58%;
     object-fit: contain;
     display: block;
   }
 
-  .marqueeText {
-    font-size: 13px;
+  .carouselText {
+    font-size: 15px;
     font-weight: 600;
     color: #222;
-    line-height: 1.35;
+    line-height: 1.4;
   }
 
-  /* ── Stats: single column, full width, stacked, row layout ── */
+  /* ── Dot indicators ── */
+  .carouselDots {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+
+  .dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #cdd8ea;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    flex-shrink: 0;
+  }
+
+  .dotActive {
+    background: #002768;
+    width: 24px;
+    border-radius: 4px;
+  }
+
+  /* ── Stats: single column, full width, Core Values style ── */
   .stats {
     display: flex;
     flex-direction: column;
-    gap: 12px;
+    gap: 16px;
     width: 100%;
     padding: 0 20px;
     box-sizing: border-box;
-    /* Reset grid from larger breakpoints */
-    grid-template-columns: unset;
   }
 
   .statCard {
     width: 100%;
-    box-sizing: border-box;
+    background: #ffffff;
     border-radius: 14px;
-    /* Row layout: icon | number + label */
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    justify-content: flex-start;
-    gap: 18px;
-    padding: 18px 20px;
+    justify-content: center;
+    text-align: center;
+    padding: 32px 28px;
     min-height: unset;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.07);
-    text-align: left;
+    gap: 0;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.06);
+    border: 2px solid #dae6f2;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
   }
 
   .statCard:hover {
-    transform: translateY(-3px);
+    transform: translateY(-4px);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.1);
+    border-color: #002768;
   }
 
   .statIcon {
-    width: 40px;
-    height: 40px;
+    width: 64px;
+    height: 64px;
+    margin-bottom: 16px;
     flex-shrink: 0;
-    /* Remove bottom margin used in column layout */
-    margin-bottom: 0;
+    object-fit: contain;
+    display: block;
+  }
+
+  .statText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .statCard h3 {
-    font-size: 26px;
+    font-size: 28px;
     font-weight: 800;
-    margin-bottom: 2px;
+    margin-bottom: 6px;
     color: #002768;
     line-height: 1;
   }
 
   .statCard p {
-    font-size: 13px;
+    font-size: 15px;
     font-weight: 500;
     color: #555;
-    line-height: 1.4;
-    text-align: left;
+    line-height: 1.5;
+    text-align: center;
     padding: 0;
   }
 }
@@ -425,47 +452,46 @@
     padding: 0 16px;
   }
 
-  .marqueeWrapper {
-    padding: 4px 16px 10px 16px;
+  .carouselOuter {
+    padding: 0 16px;
+    gap: 12px;
   }
 
-  .marqueeCard {
-    flex: 0 0 75%;
-    padding: 12px 14px;
-    gap: 10px;
+  .carouselCard {
+    padding: 18px 16px;
+    gap: 12px;
   }
 
-  .marqueeIcon {
-    width: 38px;
-    height: 38px;
-    min-width: 38px;
+  .carouselIcon {
+    width: 44px;
+    height: 44px;
+    min-width: 44px;
   }
 
-  .marqueeText {
-    font-size: 12px;
+  .carouselText {
+    font-size: 13px;
   }
 
   .stats {
     padding: 0 16px;
-    gap: 10px;
+    gap: 14px;
   }
 
   .statCard {
-    padding: 16px 18px;
-    gap: 14px;
-    border-radius: 12px;
+    padding: 28px 20px;
   }
 
   .statIcon {
-    width: 34px;
-    height: 34px;
+    width: 54px;
+    height: 54px;
+    margin-bottom: 14px;
   }
 
   .statCard h3 {
-    font-size: 22px;
+    font-size: 24px;
   }
 
   .statCard p {
-    font-size: 12px;
+    font-size: 13px;
   }
 }

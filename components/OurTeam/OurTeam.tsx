@@ -105,43 +105,43 @@ export const TEAM: TeamMember[] = [
      {
       name: "Santhosh",
       role: "Englsih Trainer",
-      image: "/ls/Santhosh-LS.jpeg",
+      image: "/ls/Santhosh-LS.png",
       linkedin: "#",
      },
      {
       name: "Raju",
       role: "Englsih Trainer",
-      image: "/ls/Raju-LS.jpeg",
+      image: "/ls/ls-raju.png",
       linkedin: "#",
      },
      {
       name: "Poorna",
       role: "Offline Manager",
-      image: "/ls/Poorna-LS.jpeg",
+      image: "/ls/Poorna-LS.png",
       linkedin: "#",
      },
      {
       name: "Prathap",
       role: "Englsih Trainer",
-      image: "/ls/S4-LS.jpeg",
+      image: "/ls/S4-LS1.png",
       linkedin: "#",
      },
      {
       name: "Laxman",
       role: "Driver",
-      image: "/ls/UK-LS.jpeg",
+      image: "/ls/UK-LS.png",
       linkedin: "#",
      },
      {
       name: "Sripathi",
       role: "Englsih Trainer",
-      image: "/ls/Sripathi-LS.jpeg",
+      image: "/ls/Sripathi-LS.png",
       linkedin: "#",
      },
      {
       name: "Sridhar",
       role: "Englsih Trainer",
-      image: "/ls/Sridhar-LS.jpeg",
+      image: "/ls/Sridhar-LS.png",
       linkedin: "#",
      }
 ];

@@ -59,21 +59,7 @@ const MissionVisionSection: React.FC = () => {
         </div>
 
         {/* Right Column: Image with Decorative Frames */}
-        <div className={styles.imageSection}>
-          {/* Decorative Frames */}
-          <div className={`${styles.frame} ${styles.frameTopRight}`}></div>
-          <div className={`${styles.frame} ${styles.frameBottomLeft}`}></div>
-
-          {/* Image Container & Image */}
-          <div className={styles.imageBackground}>
-            <img
-              src="/surendra-pose-1.jpg"
-              alt="Trainer speaking with microphone"
-              className={styles.personImage}
-              loading="lazy"
-            />
-          </div>
-        </div>
+      
       </div>
 
       {/* Founder Section */}
