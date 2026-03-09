@@ -121,14 +121,14 @@ export const TEAM: TeamMember[] = [
       linkedin: "#",
      },
      {
-      name: "Stage-4 Trainer",
+      name: "Prathap",
       role: "Englsih Trainer",
       image: "/ls/S4-LS.jpeg",
       linkedin: "#",
      },
      {
-      name: "Person",
-      role: "Englsih Trainer",
+      name: "Laxman",
+      role: "Driver",
       image: "/ls/UK-LS.jpeg",
       linkedin: "#",
      },

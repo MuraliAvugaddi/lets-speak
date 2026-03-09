@@ -125,6 +125,19 @@
   line-height: 1.4;
 }
 
+/* Text wrapper — used for row layout on mobile */
+.statText {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ─── MOBILE MARQUEE (hidden on larger screens) ─── */
+.marqueeWrapper {
+  display: none;
+}
+
+
+
 /* LARGE DESKTOP */
 @media (max-width: 1200px) {
   .section {
@@ -249,109 +262,207 @@
   }
 }
 
-/* MOBILE */
+/* ═══════════════════════════════════════════════
+   MOBILE — horizontal scroll feature cards + full-width stacked stats
+   ═══════════════════════════════════════════════ */
 @media (max-width: 480px) {
+
+  /* Strict containment — nothing bleeds outside */
+  .wrapper {
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 100vw;
+  }
+
   .section {
-    padding: 40px 20px;
+    padding: 40px 0;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
   }
 
+  /* Heading gets its own horizontal padding */
   .heading {
-    font-size: 28px;
-    margin-bottom: 28px;
+    font-size: 26px;
+    margin-bottom: 24px;
+    padding: 0 20px;
   }
 
+  /* ── Hide the normal grid cards ── */
   .cards {
-    gap: 14px;
-    margin-bottom: 28px;
+    display: none;
+    margin-bottom: 0;
   }
 
-  .card {
-    padding: 18px 20px;
-    gap: 14px;
-    min-height: 90px;
+  /* ── Marquee: visible scroller, lives inside section width ── */
+  .marqueeWrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    overflow-x: auto;
+    overflow-y: visible;
+    gap: 12px;
+    /* Indent start, let last card trail off naturally */
+    padding: 4px 20px 12px 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    /* Smooth snap scrolling */
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
   }
 
-  .icon {
-    width: 48px;
-    height: 48px;
+  .marqueeWrapper::-webkit-scrollbar {
+    display: none;
   }
 
-  .text {
-    font-size: 14px;
+  /* Each card snaps into place */
+  .marqueeCard {
+    scroll-snap-align: start;
+    background: #ffffff;
+    border-radius: 14px;
+    padding: 14px 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+    /* ~75% width = 2 cards visible with peek of 3rd */
+    flex: 0 0 72%;
+    box-sizing: border-box;
   }
 
+  .marqueeIcon {
+    width: 42px;
+    height: 42px;
+    min-width: 42px;
+    background: #eef3fb;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .marqueeIcon img {
+    width: 56%;
+    height: 56%;
+    object-fit: contain;
+    display: block;
+  }
+
+  .marqueeText {
+    font-size: 13px;
+    font-weight: 600;
+    color: #222;
+    line-height: 1.35;
+  }
+
+  /* ── Stats: single column, full width, stacked, row layout ── */
   .stats {
-    gap: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    /* Reset grid from larger breakpoints */
+    grid-template-columns: unset;
   }
 
   .statCard {
-    padding: 20px 12px;
-    min-height: 140px;
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 14px;
+    /* Row layout: icon | number + label */
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 18px;
+    padding: 18px 20px;
+    min-height: unset;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.07);
+    text-align: left;
+  }
+
+  .statCard:hover {
+    transform: translateY(-3px);
   }
 
   .statIcon {
-    width: 36px;
-    height: 36px;
-    margin-bottom: 10px;
+    width: 40px;
+    height: 40px;
+    flex-shrink: 0;
+    /* Remove bottom margin used in column layout */
+    margin-bottom: 0;
   }
 
   .statCard h3 {
-    font-size: 20px;
-    margin-bottom: 4px;
+    font-size: 26px;
+    font-weight: 800;
+    margin-bottom: 2px;
+    color: #002768;
+    line-height: 1;
   }
 
   .statCard p {
     font-size: 13px;
+    font-weight: 500;
+    color: #555;
+    line-height: 1.4;
+    text-align: left;
+    padding: 0;
   }
 }
 
 /* EXTRA SMALL MOBILE */
 @media (max-width: 360px) {
-  .section {
-    padding: 36px 16px;
-  }
-
   .heading {
-    font-size: 24px;
-    margin-bottom: 24px;
+    font-size: 22px;
+    margin-bottom: 20px;
+    padding: 0 16px;
   }
 
-  .cards {
-    gap: 12px;
-    margin-bottom: 24px;
+  .marqueeWrapper {
+    padding: 4px 16px 10px 16px;
   }
 
-  .card {
-    padding: 16px 18px;
-    gap: 12px;
+  .marqueeCard {
+    flex: 0 0 75%;
+    padding: 12px 14px;
+    gap: 10px;
   }
 
-  .icon {
-    width: 44px;
-    height: 44px;
+  .marqueeIcon {
+    width: 38px;
+    height: 38px;
+    min-width: 38px;
   }
 
-  .text {
-    font-size: 13px;
+  .marqueeText {
+    font-size: 12px;
   }
 
   .stats {
-    gap: 12px;
+    padding: 0 16px;
+    gap: 10px;
   }
 
   .statCard {
-    padding: 18px 10px;
-    min-height: 130px;
+    padding: 16px 18px;
+    gap: 14px;
+    border-radius: 12px;
   }
 
   .statIcon {
-    width: 32px;
-    height: 32px;
-    margin-bottom: 8px;
+    width: 34px;
+    height: 34px;
   }
 
   .statCard h3 {
-    font-size: 18px;
+    font-size: 22px;
   }
 
   .statCard p {

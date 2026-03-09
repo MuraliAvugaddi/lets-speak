@@ -1,4 +1,4 @@
-/* Hero.module.css */
+  /* Hero.module.css */
 .heroContainer {
   background-color: #fdfdfe;
   width: 100%;
@@ -68,7 +68,7 @@
   font-size: 42px;
   font-weight: 800;
   line-height: 1.2;
-  color: #1a1a1a;
+  color: #0b2c6f;
   margin-bottom: 24px;
 }
 
@@ -79,8 +79,9 @@
   white-space: nowrap; /* Prevent "Winning" and the circle from splitting lines */
 }
 
+
 .winning {
-  color: #0b2c6f;
+  color: #1a1a1a;
   position: relative;
   z-index: 2;
 }

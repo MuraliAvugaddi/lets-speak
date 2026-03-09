@@ -5,45 +5,28 @@ export default function Hero() {
     <div className={styles.heroContainer}>
       <section className={styles.hero}>
         <div className={styles.left}>
-
           {/* Main Heading */}
           <h1 className={styles.heading}>
-            <span className={styles.winningWrapper}>
-              <span className={styles.winning}>Personalized</span>
-              <svg
-                className={styles.circle}
-                viewBox="-2 10 260 90"
-                xmlns="http://www.w3.org/2000/svg"
-                // Removed inline width/height to let CSS control it
-                preserveAspectRatio="none"
-              >
-                <path
-                  d="M 20 55 Q 25 22, 70 18 Q 115 15, 160 18 Q 205 22, 235 42 Q 242 52, 238 62 Q 232 75, 190 82 Q 145 88, 95 87 Q 50 85, 22 70 Q 15 62, 18 55 Q 19 52, 20 55 Z"
-                  fill="none"
-                  stroke="#d61f26"
-                  strokeWidth="7"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className={styles.circlePath}
-                />
-              </svg>
-            </span>
+            <span className={styles.winning}>Personalized</span>
             <br />
-            English & Hindi 
-            <br />Training Programs.
-            <br />Online | Offline 
+            English & Hindi
+            <br />
+            Training Programs.
+            <br />
+            Online | Offline
             <br />| 1-on-1
           </h1>
 
           {/* Description */}
           <p className={styles.description}>
-             Speak Confidently with Strong Grammar and Real-Life Communication Practice through Online, Offline or 1 to 1 Training.
+            Speak Confidently with Strong Grammar and Real-Life Communication
+            Practice through Online, Offline or 1 to 1 Training.
           </p>
 
           {/* CTA Buttons */}
           <div className={styles.actions}>
             <a
-              href="https://wa.me/919959751194"
+              href="https://wa.me/917075378877"
               target="_blank"
               rel="noopener noreferrer"
               className={styles.whatsappBtn}
@@ -51,7 +34,7 @@ export default function Hero() {
               WhatsApp Now
             </a>
 
-            <a href="tel:+919959751194" className={styles.courseBtn}>
+            <a href="tel:+917075378877" className={styles.courseBtn}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"

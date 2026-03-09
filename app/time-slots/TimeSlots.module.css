@@ -1,0 +1,457 @@
+/* TimeSlots.module.css */
+
+/* ── CSS Variables ─────────────────────────────── */
+:root {
+  --navy:   #0b3c63;
+  --teal:   #19a8a0;
+  --yellow: #c8c036;
+  --light:  #e8edf5;
+  --white:  #ffffff;
+  --text:   #ffffff;
+}
+
+/* ══ PAGE WRAPPER ══════════════════════════════════════════════ */
+.page {
+  min-height: 100vh;
+  background: #f0f4f8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 20px 0;
+  font-family: var(--font-poppins, 'Poppins', sans-serif);
+  gap: 0;
+}
+
+/* ══ MAIN CARD ══════════════════════════════════════════════════ */
+.card {
+  width: 100%;
+  max-width: 640px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+  margin: 40px;
+}
+
+/* ── Header Pill ───────────────────────────────── */
+.headerPill {
+  background: var(--navy);
+  border-radius: 50px;
+  padding: 14px 40px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  z-index: 2;
+  position: relative;
+  /* Slightly overlap the frame below */
+  margin-bottom: -1px;
+  box-shadow: 0 4px 20px rgba(11, 60, 99, 0.3);
+}
+
+.headerIcon {
+  display: flex;
+  align-items: center;
+}
+
+.headerTitle {
+  font-size: 28px;
+  font-weight: 900;
+  color: var(--white);
+  letter-spacing: 3px;
+  margin: 0;
+  line-height: 1;
+}
+
+/* ── Outer Border Frame ────────────────────────── */
+.frame {
+  width: 100%;
+  border: 2.5px solid var(--navy);
+  border-radius: 20px;
+  padding: 32px 28px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  background: var(--white);
+  position: relative;
+}
+
+/* ── Period Label (A.M / P.M) ──────────────────── */
+.periodLabel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 4px 0 2px;
+}
+
+.periodLabel span {
+  background: #cdd8ea;
+  color: var(--navy);
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  padding: 6px 36px;
+  border-radius: 8px;
+  border: 1.5px solid #b0c0d8;
+}
+
+/* ── Slot List ─────────────────────────────────── */
+.slotList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* ── Single Slot Row ───────────────────────────── */
+.slotRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 12px;
+  padding: 16px 20px 16px 28px;
+  position: relative;
+  overflow: visible;
+  /* Left coloured border accent */
+  border-left: 5px solid transparent;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.slotRow:hover {
+  transform: translateX(4px);
+  box-shadow: 0 6px 20px rgba(11, 60, 99, 0.2);
+}
+
+/* Teal-accented rows */
+.slotRow.teal {
+  background: var(--navy);
+  border-left-color: var(--teal);
+}
+
+/* Yellow-accented rows */
+.slotRow.yellow {
+  background: #0f4f78;          /* slightly lighter navy for contrast */
+  border-left-color: var(--yellow);
+}
+
+/* ── Slot Time ─────────────────────────────────── */
+.slotTime {
+  font-size: 26px;
+  font-weight: 800;
+  color: var(--white);
+  letter-spacing: 1px;
+  line-height: 1;
+}
+
+/* ── Batch Badge ───────────────────────────────── */
+.batchBadge {
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  padding: 6px 16px;
+  border-radius: 50px;
+  color: var(--navy);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.tealBadge {
+  background: var(--teal);
+  color: var(--white);
+}
+
+.yellowBadge {
+  background: var(--yellow);
+  color: var(--navy);
+}
+
+/* ── Section Divider ───────────────────────────── */
+.divider {
+  width: 100%;
+  height: 1.5px;
+  background: var(--navy);
+  opacity: 0.2;
+  margin: 2px 0;
+}
+
+/* ── CTA Pill ──────────────────────────────────── */
+.ctaPill {
+  display: block;
+  background: var(--navy);
+  color: var(--white);
+  text-align: center;
+  font-size: 22px;
+  font-weight: 900;
+  letter-spacing: 2px;
+  padding: 18px 28px;
+  border-radius: 50px;
+  text-decoration: none;
+  margin-top: 8px;
+  transition: background 0.25s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 4px 16px rgba(11, 60, 99, 0.25);
+}
+
+.ctaPill:hover {
+  background: #082c49;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(11, 60, 99, 0.35);
+}
+
+/* ══ FOOTER ═════════════════════════════════════════════════════ */
+.footer {
+  width: 100%;
+  max-width: 640px;
+  margin-top: 0;
+  border-top: 3px solid var(--teal);
+  border-left: 3px solid var(--yellow);
+  border-right: 3px solid var(--yellow);
+  display: flex;
+  align-items: stretch;
+  background: var(--white);
+  border-bottom-left-radius: 16px;
+  border-bottom-right-radius: 16px;
+  overflow: hidden;
+}
+
+/* ── Footer Left ───────────────────────────────── */
+.footerLeft {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 14px;
+  padding: 20px 24px;
+  border-right: 1.5px solid #e0e7ee;
+  flex: 0 0 auto;
+}
+
+.footerLogo {
+  display: flex;
+  flex-direction: column;
+}
+
+.footerLogoText {
+  font-size: 22px;
+  font-weight: 400;
+  color: var(--navy);
+  line-height: 1.15;
+}
+
+.footerLogoText strong {
+  font-size: 26px;
+  font-weight: 900;
+  color: var(--navy);
+}
+
+.footerLogoSub {
+  font-size: 9px;
+  font-weight: 600;
+  color: #6b7280;
+  letter-spacing: 0.5px;
+  margin-top: 2px;
+}
+
+.modes {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.modeItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.modeIcon {
+  font-size: 16px;
+  width: 22px;
+  text-align: center;
+}
+
+.modeLabel {
+  font-size: 12px;
+  font-weight: 700;
+  color: #333;
+  letter-spacing: 0.5px;
+}
+
+/* ── Footer Right ──────────────────────────────── */
+.footerRight {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 12px;
+  padding: 20px 20px 20px 24px;
+}
+
+/* Stats Bar */
+.statsBar {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  background: var(--navy);
+  border-radius: 8px;
+  overflow: hidden;
+  padding: 10px 4px;
+}
+
+.statItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  position: relative;
+  padding: 0 8px;
+}
+
+.statValue {
+  font-size: 18px;
+  font-weight: 900;
+  color: var(--white);
+  line-height: 1;
+}
+
+.statLabel {
+  font-size: 10px;
+  font-weight: 500;
+  color: #93c5fd;
+  margin-top: 2px;
+  letter-spacing: 0.3px;
+}
+
+.statDivider {
+  position: absolute;
+  right: 0;
+  top: 10%;
+  height: 80%;
+  width: 1px;
+  background: rgba(255, 255, 255, 0.25);
+}
+
+/* Contact */
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.contact p {
+  font-size: 12px;
+  font-weight: 500;
+  color: #333;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  line-height: 1.4;
+}
+
+.contactIcon {
+  font-size: 13px;
+  flex-shrink: 0;
+}
+
+/* ══ RESPONSIVE ══════════════════════════════════════════════════ */
+
+@media (max-width: 600px) {
+  .page {
+    padding: 32px 16px 0;
+  }
+
+  .headerPill {
+    padding: 12px 28px;
+    gap: 10px;
+  }
+
+  .headerTitle {
+    font-size: 22px;
+    letter-spacing: 2px;
+  }
+
+  .frame {
+    padding: 24px 16px 20px;
+    gap: 10px;
+    border-radius: 16px;
+  }
+
+  .periodLabel span {
+    font-size: 15px;
+    padding: 5px 28px;
+  }
+
+  .slotRow {
+    padding: 13px 14px 13px 18px;
+    border-radius: 10px;
+  }
+
+  .slotTime {
+    font-size: 20px;
+  }
+
+  .batchBadge {
+    font-size: 11px;
+    padding: 5px 12px;
+  }
+
+  .ctaPill {
+    font-size: 18px;
+    padding: 15px 20px;
+    letter-spacing: 1.5px;
+  }
+
+  /* Footer stacks on small screens */
+  .footer {
+    flex-direction: column;
+    border-left: none;
+    border-right: none;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+  }
+
+  .footerLeft {
+    border-right: none;
+    border-bottom: 1.5px solid #e0e7ee;
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+    padding: 16px 20px;
+  }
+
+  .footerRight {
+    padding: 16px 20px;
+  }
+
+  .statValue {
+    font-size: 16px;
+  }
+
+  .statLabel {
+    font-size: 9px;
+  }
+}
+
+@media (max-width: 400px) {
+  .headerTitle {
+    font-size: 19px;
+  }
+
+  .slotTime {
+    font-size: 17px;
+    letter-spacing: 0;
+  }
+
+  .batchBadge {
+    font-size: 10px;
+    padding: 4px 10px;
+  }
+
+  .ctaPill {
+    font-size: 16px;
+  }
+
+  .footerLeft {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+}

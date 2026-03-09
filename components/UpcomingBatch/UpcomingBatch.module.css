@@ -1,41 +1,53 @@
+/* UpcomingBatch.module.css */
+
+/* ── Section: two-column split ── */
 .section {
-  text-align: center;
-  background: #fdfdfe;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 60px;
   max-width: 1220px;
   margin: 0 auto;
+  padding: 80px 60px;
+  background: #f4f6f9;
   font-family: var(--font-poppins), sans-serif;
-  padding-bottom: 30px;
+  border-radius: 0;
+}
+
+/* ══════════════════════════════
+   LEFT COLUMN
+══════════════════════════════ */
+.left {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  gap: 16px;
 }
 
 .heading {
-  font-size: 36px;
+  font-size: 48px;
   font-weight: 800;
+  line-height: 1.15;
   color: #0b3c63;
-  margin-bottom: 10px;
+  margin: 0;
   display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
   gap: 10px;
-  justify-content: center;
-  align-items: center;
 }
 
-.heading p {
-  font-size: 36px;
-  font-weight: 800;
-  color: #000000;
-  margin-bottom: 10px;
+.headingAccent {
+  color: #1a1a1a;
 }
 
-/* Typing Effect Styles */
-.typingText {
-  display: inline-block;
-  position: relative;
+.typingWrapper {
+  display: inline-flex;
+  align-items: baseline;
   color: #0b3c63;
-  min-width: 120px;
-  text-align: left;
+  min-width: 160px;
+}
+
+.typingText {
+  font-weight: 800;
 }
 
 .cursor {
@@ -46,219 +58,266 @@
 }
 
 @keyframes blink {
-  0%, 50% {
-    opacity: 1;
-  }
-  51%, 100% {
-    opacity: 0;
-  }
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
 }
 
 .subheading {
-  font-size: 16px;
-  color: #333;
-  margin-bottom: 20px;
-  max-width: 900px;
-  margin-left: auto;
-  margin-right: auto;
-  line-height: 1.5;
+  font-size: 17px;
+  color: #4b5563;
+  line-height: 1.65;
+  margin: 0;
+  max-width: 480px;
 }
 
-/* Timeline Container */
-.timeline {
-  display: flex;
-  justify-content: center;
-  align-items: stretch;
-  gap: 0;
-  margin-bottom: 40px;
-  overflow-x: auto;
-  padding: 20px 0;
+.cta {
+  font-size: 17px;
+  color: #111;
+  margin: 0;
 }
 
-/* Chevron Box */
-.box {
-  background: #9ca3af;
-  color: white;
-  padding: 36px 80px;
-  min-width: 140px;
-  position: relative;
+.note {
+  font-size: 14px;
+  color: #6b7280;
+  line-height: 1.6;
+  margin: 0;
+  max-width: 460px;
+}
+
+/* ══════════════════════════════
+   RIGHT COLUMN
+══════════════════════════════ */
+.right {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  clip-path: polygon(0 0, 80% 0, 100% 50%, 80% 100%, 0 100%, 20% 50%);
-  margin-right: -28px;
-  z-index: 1;
+  gap: 20px;
 }
 
-.box:first-child {
-  clip-path: polygon(0 0, 80% 0, 100% 50%, 80% 100%, 0 100%);
+/* ── Countdown row ── */
+.countdown {
+  display: flex;
+  align-items: center;
+  gap: 6px;
 }
 
-.box:last-child {
-  margin-right: 0;
+.countdownItem {
+  display: flex;
+  align-items: center;
+  gap: 6px;
 }
 
-.active {
+.box {
   background: #0b3c63;
-  z-index: 2;
+  border-radius: 10px;
+  width: 72px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 14px rgba(11, 60, 99, 0.25);
 }
 
-.box h3 {
-  font-size: 36px;
+.boxNumber {
+  font-size: 28px;
   font-weight: 800;
-  margin: 0;
+  color: #ffffff;
   line-height: 1;
+  letter-spacing: -1px;
 }
 
-.box p {
-  font-size: 14px;
-  letter-spacing: 1px;
+.boxLabel {
+  font-size: 11px;
+  font-weight: 600;
+  color: #6b7280;
+  letter-spacing: 0.5px;
+  text-align: center;
+  display: block;
   margin-top: 4px;
+  /* Label sits below its box via column in the parent */
 }
 
-/* Note Text */
-.note {
-  font-size: 16px;
-  margin-bottom: 24px;
-  color: #333;
-  max-width: 800px;
+.colon {
+  font-size: 28px;
+  font-weight: 800;
+  color: #0b3c63;
+  line-height: 1;
+  /* Visually align colon with the boxes, not the labels */
+  margin-bottom: 16px;
+  flex-shrink: 0;
+}
+
+/* Rearrange countdownItem to stack box + label */
+.countdownItem {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+  position: relative;
+}
+
+/* Colon floats between items, not inside column */
+.countdownItem .colon {
+  position: absolute;
+  right: -14px;
+  top: 20px;
+}
+
+/* ── "Next Batch Starts On" label ── */
+.nextBatchLabel {
+  font-size: 14px;
+  font-weight: 700;
+  color: #1a1a1a;
+  letter-spacing: 1.5px;
+  margin: 0;
   text-align: center;
 }
 
-/* Button */
-.button {
-  background: #0b3c63;
-  color: white;
-  padding: 14px 28px;
-  border-radius: 10px;
+/* ── Date card ── */
+.dateCard {
+  width: 100%;
+  max-width: 320px;
+  border: 2px solid #1a1a1a;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(185, 28, 28, 0.12);
+}
+
+.dateCardMonth {
+  background: #1a1a1a;
+  color: #ffffff;
   font-size: 16px;
-  font-weight: 600;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-align: center;
+  padding: 10px 20px;
+}
+
+.dateCardDate {
+  background: #ffffff;
+  color: #111;
+  font-size: 32px;
+  font-weight: 800;
+  text-align: center;
+  padding: 18px 20px;
+  letter-spacing: -0.5px;
+}
+
+/* ── CTA Button ── */
+.button {
+  display: block;
+  width: 100%;
+  max-width: 320px;
+  background: #1a1a1a;
+  color: #ffffff;
+  text-align: center;
+  padding: 16px 28px;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 0.3px;
   text-decoration: none;
-  display: inline-block;
   transition: all 0.3s ease;
+  box-shadow: 0 4px 16px rgba(185, 28, 28, 0.3);
 }
 
 .button:hover {
-  background: #082c49;
+  background: #991b1b;
   transform: translateY(-2px);
-  box-shadow: 0 6px 20px rgba(11, 60, 99, 0.3);
+  box-shadow: 0 8px 24px rgba(185, 28, 28, 0.4);
 }
 
-/* RESPONSIVE STYLES */
+/* ══════════════════════════════
+   RESPONSIVE
+══════════════════════════════ */
 
 /* Large Desktop */
 @media (max-width: 1200px) {
   .section {
-    padding: 70px 40px;
+    padding: 70px 48px;
+    gap: 48px;
   }
 
   .heading {
-    font-size: 34px;
-  }
-
-  .heading p {
-    font-size: 34px;
-  }
-
-  .box {
-    padding: 24px 28px;
-    min-width: 130px;
-  }
-
-  .box h3 {
-    font-size: 34px;
+    font-size: 42px;
   }
 }
 
 /* Tablet - Large */
 @media (max-width: 1024px) {
   .section {
-    padding: 60px 30px;
+    padding: 60px 36px;
+    gap: 40px;
   }
 
   .heading {
-    font-size: 32px;
-  }
-
-  .heading p {
-    font-size: 32px;
+    font-size: 38px;
   }
 
   .subheading {
-    font-size: 15px;
-    margin-bottom: 36px;
+    font-size: 16px;
   }
 
   .box {
-    padding: 22px 26px;
-    min-width: 120px;
+    width: 64px;
+    height: 64px;
   }
 
-  .box h3 {
-    font-size: 32px;
-  }
-
-  .box p {
-    font-size: 13px;
+  .boxNumber {
+    font-size: 24px;
   }
 }
 
-/* Tablet - Medium */
-@media (max-width: 768px) {
+/* Tablet - Medium: stack to single column */
+@media (max-width: 860px) {
   .section {
-    padding: 50px 24px;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding: 60px 36px;
+    text-align: center;
+  }
+
+  .left {
+    align-items: center;
   }
 
   .heading {
-    font-size: 30px;
-    flex-wrap: wrap;
+    font-size: 36px;
+    justify-content: center;
   }
 
-  .heading p {
-    font-size: 30px;
+  .subheading,
+  .note {
+    text-align: center;
+    max-width: 560px;
   }
 
-  .typingText {
-    min-width: 100px;
+  .typingWrapper {
+    min-width: 130px;
+  }
+}
+
+/* Tablet - Small */
+@media (max-width: 768px) {
+  .section {
+    padding: 50px 28px;
   }
 
-  .subheading {
-    font-size: 14px;
-    margin-bottom: 32px;
-  }
-
-  .timeline {
-    flex-wrap: wrap;
-    gap: 12px;
-    padding: 10px 0;
+  .heading {
+    font-size: 34px;
   }
 
   .box {
-    clip-path: none;
-    border-radius: 10px;
-    margin-right: 0;
-    flex: 1 1 calc(50% - 6px);
-    min-width: 140px;
-    padding: 20px 24px;
+    width: 60px;
+    height: 60px;
   }
 
-  .box:first-child {
-    clip-path: none;
+  .boxNumber {
+    font-size: 22px;
   }
 
-  .box h3 {
-    font-size: 30px;
-  }
-
-  .note {
-    font-size: 15px;
-    margin-bottom: 20px;
-  }
-
-  .button {
-    padding: 12px 24px;
-    font-size: 15px;
+  .dateCardDate {
+    font-size: 28px;
   }
 }
 
@@ -266,94 +325,106 @@
 @media (max-width: 480px) {
   .section {
     padding: 40px 20px;
+    gap: 32px;
+    border-radius: 0;
   }
 
   .heading {
-    font-size: 28px;
-    margin-bottom: 8px;
+    font-size: 30px;
+    gap: 8px;
   }
 
-  .heading p {
-    font-size: 28px;
-  }
-
-  .typingText {
-    min-width: 90px;
+  .typingWrapper {
+    min-width: 110px;
   }
 
   .subheading {
-    font-size: 13px;
-    margin-bottom: 28px;
+    font-size: 14px;
   }
 
-  .timeline {
-    flex-direction: column;
-    gap: 10px;
-  }
-
-  .box {
-    flex: 1 1 100%;
-    min-width: 100%;
-    padding: 18px 20px;
-  }
-
-  .box h3 {
-    font-size: 28px;
-  }
-
-  .box p {
-    font-size: 12px;
+  .cta {
+    font-size: 15px;
   }
 
   .note {
+    font-size: 13px;
+  }
+
+  .countdown {
+    gap: 4px;
+  }
+
+  .box {
+    width: 56px;
+    height: 56px;
+    border-radius: 8px;
+  }
+
+  .boxNumber {
+    font-size: 20px;
+  }
+
+  .boxLabel {
+    font-size: 10px;
+  }
+
+  .colon {
+    font-size: 22px;
+    top: 14px;
+    right: -12px;
+  }
+
+  .nextBatchLabel {
+    font-size: 13px;
+    letter-spacing: 1px;
+  }
+
+  .dateCard {
+    max-width: 100%;
+  }
+
+  .dateCardMonth {
     font-size: 14px;
-    margin-bottom: 18px;
+    padding: 9px 16px;
+  }
+
+  .dateCardDate {
+    font-size: 26px;
+    padding: 16px;
   }
 
   .button {
-    padding: 12px 24px;
-    font-size: 14px;
-    width: 100%;
-    max-width: 280px;
+    max-width: 100%;
+    font-size: 15px;
+    padding: 14px 24px;
   }
 }
 
 /* Extra Small Mobile */
 @media (max-width: 360px) {
   .section {
-    padding: 36px 16px;
+    padding: 32px 16px;
   }
 
   .heading {
-    font-size: 24px;
-  }
-
-  .heading p {
-    font-size: 24px;
-  }
-
-  .typingText {
-    min-width: 80px;
-  }
-
-  .subheading {
-    font-size: 12px;
-  }
-
-  .box {
-    padding: 16px 18px;
-  }
-
-  .box h3 {
     font-size: 26px;
   }
 
-  .note {
-    font-size: 13px;
+  .box {
+    width: 50px;
+    height: 50px;
+  }
+
+  .boxNumber {
+    font-size: 18px;
+  }
+
+  .dateCardDate {
+    font-size: 22px;
   }
 
   .button {
-    font-size: 13px;
-    padding: 11px 20px;
+    font-size: 14px;
+    padding: 12px 20px;
   }
 }

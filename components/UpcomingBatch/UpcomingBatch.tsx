@@ -5,13 +5,24 @@ import styles from "./UpcomingBatch.module.css";
 
 function getNextBatchDate() {
   const now = new Date();
+  // Next batch: next upcoming Thursday (or customise as needed)
+  // For now, keeping logic: 1st of next month
   return new Date(now.getFullYear(), now.getMonth() + 1, 1, 0, 0, 0);
 }
 
 function getNextMonthName() {
   const now = new Date();
   const next = new Date(now.getFullYear(), now.getMonth() + 1, 1);
-  return next.toLocaleString("en-US", { month: "long" });
+  return next.toLocaleString("en-US", { month: "long" }).toUpperCase();
+}
+
+function getNextBatchDateString() {
+  const now = new Date();
+  const next = new Date(now.getFullYear(), now.getMonth() + 1, 1);
+  const dd = String(next.getDate()).padStart(2, "0");
+  const mm = String(next.getMonth() + 1).padStart(2, "0");
+  const yyyy = next.getFullYear();
+  return `${dd}-${mm}-${yyyy}`;
 }
 
 export default function UpcomingBatch() {
@@ -23,7 +34,7 @@ export default function UpcomingBatch() {
   });
 
   const [typedText, setTypedText] = useState("");
-  const fullText = "Batch";
+  const fullText = "Batches";
 
   // Countdown timer
   useEffect(() => {
@@ -61,9 +72,8 @@ export default function UpcomingBatch() {
       if (!isDeleting && currentIndex <= fullText.length) {
         setTypedText(fullText.slice(0, currentIndex));
         currentIndex++;
-        timeout = setTimeout(type, 150); // Typing speed
+        timeout = setTimeout(type, 150);
       } else if (!isDeleting && currentIndex > fullText.length) {
-        // Pause at the end before deleting
         timeout = setTimeout(() => {
           isDeleting = true;
           type();
@@ -71,9 +81,8 @@ export default function UpcomingBatch() {
       } else if (isDeleting && currentIndex >= 0) {
         setTypedText(fullText.slice(0, currentIndex));
         currentIndex--;
-        timeout = setTimeout(type, 100); // Deleting speed
+        timeout = setTimeout(type, 100);
       } else if (isDeleting && currentIndex < 0) {
-        // Pause before typing again
         isDeleting = false;
         currentIndex = 0;
         timeout = setTimeout(type, 500);
@@ -86,60 +95,83 @@ export default function UpcomingBatch() {
   }, []);
 
   const nextMonthName = getNextMonthName();
+  const nextBatchDateStr = getNextBatchDateString();
+
+  const timeUnits = [
+    { value: timeLeft.days, label: "DAYS" },
+    { value: timeLeft.hours, label: "HRS" },
+    { value: timeLeft.minutes, label: "MINS" },
+    { value: timeLeft.seconds, label: "SECS" },
+  ];
 
   return (
     <section className={styles.section}>
-      <h2 className={styles.heading}>
-        <p>Upcoming</p> 
-        <span className={styles.typingText}>
-          {typedText}
-          <span className={styles.cursor}>|</span>
-        </span>
-      </h2>
-      <p className={styles.subheading}>
-        Plan your schedule now to never miss any crucial deadlines and ensure
-        you enroll on time.
-      </p>
+      {/* ── Left Column ── */}
+      <div className={styles.left}>
+        <h2 className={styles.heading}>
+          <span className={styles.headingAccent}>Upcoming</span>{" "}
+          <span className={styles.typingWrapper}>
+            <span className={styles.typingText}>{typedText}</span>
+            <span className={styles.cursor}>|</span>
+          </span>
+        </h2>
 
-      <p className={styles.note}><i>So begin your journey right now. We have batches every week; we will allocate the batch according to your level, and our trainers are always here to help you kickstart your learning journey.
-      </i></p>
+        <p className={styles.subheading}>
+          Procrastination steals time. Secure your spot in our next batch
+          allocated according to your level.
+        </p>
 
-      {/* Countdown */}
-      <div className={styles.timeline}>
-        <div className={`${styles.box} ${styles.active}`}>
-          <h3>{timeLeft.days}</h3>
-          <p>DAYS</p>
-        </div>
+        <p className={styles.cta}>
+          <strong>Join us and start learning.</strong>
+        </p>
 
-        <div className={styles.box}>
-          <h3>{timeLeft.hours}</h3>
-          <p>HOURS</p>
-        </div>
-
-        <div className={styles.box}>
-          <h3>{timeLeft.minutes}</h3>
-          <p>MINUTES</p>
-        </div>
-
-        <div className={styles.box}>
-          <h3>{timeLeft.seconds}</h3>
-          <p>SECONDS</p>
-        </div>
+        <p className={styles.note}>
+          <i>
+            We have batches every week; we will allocate the batch according to
+            your level, and our trainers are always here to help you kickstart
+            your learning journey.
+          </i>
+        </p>
       </div>
 
-      <p className={styles.note}>
-        Next batch starts on the <b>1st of{" "}
-        {nextMonthName}</b>.
-      </p>
+      {/* ── Right Column ── */}
+      <div className={styles.right}>
+        {/* Countdown boxes */}
+        <div className={styles.countdown}>
+          {timeUnits.map((unit, i) => (
+            <div key={i} className={styles.countdownItem}>
+              <div className={styles.box}>
+                <span className={styles.boxNumber}>
+                  {String(unit.value).padStart(2, "0")}
+                </span>
+              </div>
+              <span className={styles.boxLabel}>{unit.label}</span>
+              {i < timeUnits.length - 1 && (
+                <span className={styles.colon}>:</span>
+              )}
+            </div>
+          ))}
+        </div>
 
-      <a
-        href="https://wa.me/91995975  1194"
-        target="_blank"
-        rel="noopener noreferrer"
-        className={styles.button}
-      >
-        Join via WhatsApp
-      </a>
+        {/* Next batch label */}
+        <p className={styles.nextBatchLabel}>NEXT BATCH STARTS ON</p>
+
+        {/* Date card */}
+        <div className={styles.dateCard}>
+          <div className={styles.dateCardMonth}>{nextMonthName}</div>
+          <div className={styles.dateCardDate}>{nextBatchDateStr}</div>
+        </div>
+
+        {/* WhatsApp CTA button */}
+        <a
+          href="https://wa.me/917075378877"
+          target="_blank"
+          rel="noopener noreferrer"
+          className={styles.button}
+        >
+          Check Availability
+        </a>
+      </div>
     </section>
   );
 }

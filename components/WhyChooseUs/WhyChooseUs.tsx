@@ -3,6 +3,7 @@
 
 import { useState, useEffect, useRef } from "react";
 import styles from "./WhyChooseUs.module.css";
+import Link from "next/link";
 
 type StatData = {
   target: number;
@@ -38,6 +39,13 @@ const STATS: StatData[] = [
   },
 ];
 
+// Cards data mirrored from the grid cards above
+const MARQUEE_CARDS = [
+  { icon: "/wcu-1.png", text: "Flexible Time Slots" },
+  { icon: "/wcu-2.png", text: "Structured Stage-Based Learning" },
+  { icon: "/wcu-3.png", text: "Online & Offline Options" },
+];
+
 export default function WhyChooseUs() {
   const [isVisible, setIsVisible] = useState(false);
   const [counts, setCounts] = useState<number[]>([0, 0, 0, 0]);
@@ -54,8 +62,8 @@ export default function WhyChooseUs() {
         });
       },
       {
-        threshold: 0.3, // Trigger when 30% of component is visible
-      }
+        threshold: 0.3,
+      },
     );
 
     if (sectionRef.current) {
@@ -73,8 +81,8 @@ export default function WhyChooseUs() {
   useEffect(() => {
     if (!isVisible) return;
 
-    const duration = 2000; // 2 seconds
-    const frameRate = 1000 / 60; // 60 FPS
+    const duration = 2000;
+    const frameRate = 1000 / 60;
     const totalFrames = Math.round(duration / frameRate);
 
     let frame = 0;
@@ -87,7 +95,7 @@ export default function WhyChooseUs() {
         STATS.map((stat) => {
           const easeOutProgress = 1 - Math.pow(1 - progress, 3);
           return Math.round(stat.target * easeOutProgress);
-        })
+        }),
       );
 
       if (frame === totalFrames) {
@@ -103,35 +111,41 @@ export default function WhyChooseUs() {
     if (num >= 1000000) {
       return (num / 1000000).toFixed(1).replace(/\.0$/, "") + "M";
     }
-
     return num.toString();
   };
+
+  const marqueeItems = MARQUEE_CARDS;
 
   return (
     <div className={styles.wrapper}>
       <section ref={sectionRef} className={styles.section}>
         <h2 className={styles.heading}>What Makes Us Different</h2>
 
-        {/* Top Cards */}
+        {/* ── Desktop / Tablet: Normal grid cards ── */}
         <div className={styles.cards}>
-          <div className={styles.card}>
-            <div className={styles.icon}>
-              <img
-                className={styles.iconImage}
-                src="/wcu-1.png"
-                alt="15+ Years of Excellence"
-                loading="lazy"
-              />
+          <Link
+            href="/time-slots"
+            style={{ textDecoration: "none", color: "inherit" }}
+          >
+            <div className={styles.card}>
+              <div className={styles.icon}>
+                <img
+                  className={styles.iconImage}
+                  src="/wcu-1.png"
+                  alt="Flexible Time Slots"
+                  loading="lazy"
+                />
+              </div>
+              <p className={styles.text}>Flexible Time Slots</p>
             </div>
-            <p className={styles.text}>Flexible Time Slots</p>
-          </div>
+          </Link>
 
           <div className={styles.card}>
             <div className={styles.icon}>
               <img
                 className={styles.iconImage}
                 src="/wcu-2.png"
-                alt="Students Empowered"
+                alt="Structured Stage-Based Learning"
                 loading="lazy"
               />
             </div>
@@ -143,7 +157,7 @@ export default function WhyChooseUs() {
               <img
                 className={styles.iconImage}
                 src="/wcu-3.png"
-                alt="Online & Offline Flexibility"
+                alt="Online & Offline Options"
                 loading="lazy"
               />
             </div>
@@ -151,35 +165,67 @@ export default function WhyChooseUs() {
           </div>
         </div>
 
-          {/* Stats / Add-ons */}
-          <div className={styles.stats}>
-            {STATS.map((stat, index) => (
-              <div key={index} className={styles.statCard}>
-                {stat.icon === "svg" ? (
-            <svg
-              aria-hidden="true"
-              className={styles.statIcon}
-              viewBox="0 0 640 512"
-              xmlns="http://www.w3.org/2000/svg"
-              fill="#002768"
-              style={{ width: "30px", height: "30px" }}
-            >
-              <path d="M622.3 271.1l-115.2-45c-4.1-1.6-12.6-3.7-22.2 0l-115.2 45c-10.7 4.2-17.7 14-17.7 24.9 0 111.6 68.7 188.8 132.9 213.9 9.6 3.7 18 1.6 22.2 0C558.4 489.9 640 420.5 640 296c0-10.9-7-20.7-17.7-24.9zM496 462.4V273.3l95.5 37.3c-5.6 87.1-60.9 135.4-95.5 151.8zM224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm96 40c0-2.5.8-4.8 1.1-7.2-2.5-.1-4.9-.8-7.5-.8h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c6.8 0 13.3-1.5 19.2-4-54-42.9-99.2-116.7-99.2-212z"></path>
-            </svg>
-                ) : (
-            <img
-              className={styles.statIcon}
-              src={stat.icon}
-              alt={stat.label}
-              loading="lazy"
-              style={{ width: "40px", height: "40px" }}
-            />
-                )}
+        {/* ── Mobile only: Horizontal scrollable strip ── */}
+        <div className={styles.marqueeWrapper}>
+          {marqueeItems.map((item, index) =>
+            index === 0 ? (
+              <Link
+                key={index}
+                href="/time-slots"
+                style={{
+                  textDecoration: "none",
+                  color: "inherit",
+                  display: "block",
+                  flexShrink: 0,
+                }}
+              >
+                <div className={styles.marqueeCard}>
+                  <div className={styles.marqueeIcon}>
+                    <img src={item.icon} alt={item.text} loading="lazy" />
+                  </div>
+                  <p className={styles.marqueeText}>{item.text}</p>
+                </div>
+              </Link>
+            ) : (
+              <div key={index} className={styles.marqueeCard}>
+                <div className={styles.marqueeIcon}>
+                  <img src={item.icon} alt={item.text} loading="lazy" />
+                </div>
+                <p className={styles.marqueeText}>{item.text}</p>
+              </div>
+            ),
+          )}
+        </div>
+
+        {/* Stats / Add-ons */}
+        <div className={styles.stats}>
+          {STATS.map((stat, index) => (
+            <div key={index} className={styles.statCard}>
+              {stat.icon === "svg" ? (
+                <svg
+                  aria-hidden="true"
+                  className={styles.statIcon}
+                  viewBox="0 0 640 512"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="#002768"
+                >
+                  <path d="M622.3 271.1l-115.2-45c-4.1-1.6-12.6-3.7-22.2 0l-115.2 45c-10.7 4.2-17.7 14-17.7 24.9 0 111.6 68.7 188.8 132.9 213.9 9.6 3.7 18 1.6 22.2 0C558.4 489.9 640 420.5 640 296c0-10.9-7-20.7-17.7-24.9zM496 462.4V273.3l95.5 37.3c-5.6 87.1-60.9 135.4-95.5 151.8zM224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm96 40c0-2.5.8-4.8 1.1-7.2-2.5-.1-4.9-.8-7.5-.8h-16.7c-22.2 10.2-46.9 16-72.9 16s-50.6-5.8-72.9-16h-16.7C60.2 288 0 348.2 0 422.4V464c0 26.5 21.5 48 48 48h352c6.8 0 13.3-1.5 19.2-4-54-42.9-99.2-116.7-99.2-212z"></path>
+                </svg>
+              ) : (
+                <img
+                  className={styles.statIcon}
+                  src={stat.icon}
+                  alt={stat.label}
+                  loading="lazy"
+                />
+              )}
+              <div className={styles.statText}>
                 <h3>
-                {formatNumber(counts[index])}
-                {stat.suffix}
-              </h3>
-              <p>{stat.label}</p>
+                  {formatNumber(counts[index])}
+                  {stat.suffix}
+                </h3>
+                <p>{stat.label}</p>
+              </div>
             </div>
           ))}
         </div>

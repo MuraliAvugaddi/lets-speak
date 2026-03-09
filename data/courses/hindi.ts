@@ -613,7 +613,7 @@ export const hindi = {
           ],
         },
         {
-          faculty_name: "Stage 4 Trainer",
+          faculty_name: "Prathap",
           faculty_img_url: "/ls/S4-LS.jpeg",
           id: "stage-4",
           title: "Stage 4 - Correctness",
@@ -2047,7 +2047,7 @@ export const hindi = {
           ],
         },
         {
-          faculty_name: "Stage 4 Trainer",
+          faculty_name: "Prathap",
           faculty_img_url: "/ls/S4-LS.jpeg",
           id: "club-4",
           title: "Club 4 - Correctness",
@@ -3471,7 +3471,7 @@ export const hindi = {
           ],
         },
         {
-          faculty_name: "Stage 4 Trainer",
+          faculty_name: "Prathap",
           faculty_img_url: "/ls/S4-LS.jpeg",
           id: "stage-4",
           title: "Stage 4 - Correctness",
@@ -4905,7 +4905,7 @@ export const hindi = {
           ],
         },
         {
-          faculty_name: "Stage 4 Trainer",
+          faculty_name: "Prathap",
           faculty_img_url: "/ls/S4-LS.jpeg",
           id: "club-4",
           title: "Club 4 - Correctness",
@@ -6329,7 +6329,7 @@ export const hindi = {
           ],
         },
         {
-          faculty_name: "Stage 4 Trainer",
+          faculty_name: "Prathap",
           faculty_img_url: "/ls/S4-LS.jpeg",
           id: "stage-4",
           title: "Stage 4 - Correctness",
@@ -7763,7 +7763,7 @@ export const hindi = {
           ],
         },
         {
-          faculty_name: "Stage 4 Trainer",
+          faculty_name: "Prathap",
           faculty_img_url: "/ls/S4-LS.jpeg",
           id: "club-4",
           title: "Club 4 - Correctness",
