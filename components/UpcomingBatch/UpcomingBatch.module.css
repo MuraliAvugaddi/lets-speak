@@ -9,7 +9,7 @@
   max-width: 1220px;
   margin: 0 auto;
   padding: 80px 60px;
-  background: #f4f6f9;
+  background: #fdfdfe;
   font-family: var(--font-poppins), sans-serif;
   border-radius: 0;
 }
@@ -218,11 +218,11 @@
   letter-spacing: 0.3px;
   text-decoration: none;
   transition: all 0.3s ease;
-  box-shadow: 0 4px 16px rgba(185, 28, 28, 0.3);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
 }
 
 .button:hover {
-  background: #991b1b;
+  background: #0b3c63;
   transform: translateY(-2px);
   box-shadow: 0 8px 24px rgba(185, 28, 28, 0.4);
 }
