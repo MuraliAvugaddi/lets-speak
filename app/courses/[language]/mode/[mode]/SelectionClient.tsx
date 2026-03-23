@@ -96,61 +96,6 @@ export default function SelectionPageClient() {
           <p className={styles.mainSubheading}>{selectedMode.description}</p>
         </div>
 
-        {/* Manager Profile Card */}
-        <div className={styles.managerCard}>
-          <div className={styles.managerImageWrapper}>
-            <Image
-              src={selectedMode.manager_img}
-              alt={selectedMode.manager_name}
-              width={120}
-              height={120}
-              className={styles.managerImage}
-            />
-            <div className={styles.managerBadge}>
-              <svg
-                width="20"
-                height="20"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-              >
-                <path
-                  d="M22 11.08V12a10 10 0 1 1-5.93-9.14"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-                <polyline
-                  points="22 4 12 14.01 9 11.01"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-              </svg>
-            </div>
-          </div>
-
-          <div className={styles.managerContent}>
-            <div className={styles.managerInfo}>
-              <h3 className={styles.managerName}>
-                {selectedMode.manager_name}
-              </h3>
-              <p className={styles.managerRole}>
-                Course Manager & Expert Trainer
-              </p>
-            </div>
-
-            <div className={styles.managerDescription}>
-              <p>
-                Your dedicated course manager who will guide you through{" "}
-                {selectedMode.name}. With years of experience in language
-                training, I ensure personalized attention and continuous support
-                throughout your learning journey.
-              </p>
-            </div>
-          </div>
-        </div>
-
         <div className={styles.cardsGrid}>
           {selectionOptions.map((option) => (
             <div key={option.id} className={styles.selectionCard}>

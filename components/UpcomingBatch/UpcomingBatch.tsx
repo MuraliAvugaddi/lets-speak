@@ -164,7 +164,7 @@ export default function UpcomingBatch() {
 
         {/* WhatsApp CTA button */}
         <a
-          href="https://wa.me/917075378877"
+          href="https://wa.me/919959751194"
           target="_blank"
           rel="noopener noreferrer"
           className={styles.button}

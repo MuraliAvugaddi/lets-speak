@@ -25,7 +25,7 @@ export default function Hero() {
           {/* CTA Buttons */}
           <div className={styles.actions}>
             <a
-              href="https://wa.me/917075378877"
+              href="https://wa.me/919959751194"
               target="_blank"
               rel="noopener noreferrer"
               className={styles.whatsappBtn}
@@ -33,7 +33,7 @@ export default function Hero() {
               WhatsApp Now
             </a>
 
-            <a href="tel:+917075378877" className={styles.courseBtn}>
+            <a href="tel:+919959751194" className={styles.courseBtn}>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"

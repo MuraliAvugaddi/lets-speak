@@ -1,5 +1,10 @@
-// URL: /courses/[language]/mode/[mode]
 import SelectionPageClient from "./SelectionClient";
+import { Metadata } from "next";
+
+// Define types for Next.js 15+ Async Params
+type Props = {
+  params: Promise<{ language: string; mode: string }>;
+};
 
 const languageNames: Record<string, string> = {
   english: "English",
@@ -21,18 +26,23 @@ const modeDescriptions: Record<string, string> = {
     "Get personalized attention with dedicated one-to-one tutoring sessions tailored to your pace and learning goals.",
 };
 
-export async function generateMetadata({
-  params,
-}: {
-  params: { language: string; mode: string };
-}) {
-  const { language, mode } = params;
-  const langLabel = languageNames[language] ?? language;
-  const modeLabel = modeNames[mode] ?? mode;
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  // CRITICAL FIX: Await the params to resolve language and mode
+  const { language, mode } = await params;
+  
+  const langKey = language.toLowerCase();
+  const modeKey = mode.toLowerCase();
+
+  const langLabel = languageNames[langKey] ?? language;
+  const modeLabel = modeNames[modeKey] ?? mode;
+  const description = modeDescriptions[modeKey] ?? `Explore ${langLabel} ${modeLabel} learning options.`;
 
   return {
     title: `${langLabel} ${modeLabel} | Let's Speak Global`,
-    description: `${modeDescriptions[mode] ?? `Explore ${langLabel} ${modeLabel} learning options.`} Choose between structured Levels or community-driven Clubs.`,
+    description: `${description} Choose between structured Levels or community-driven Clubs.`,
+    alternates: {
+      canonical: `/courses/${langKey}/mode/${modeKey}`,
+    },
   };
 }
 

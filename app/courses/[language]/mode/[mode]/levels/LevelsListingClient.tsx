@@ -5,7 +5,6 @@ import styles from "./Stage.module.css";
 import { courses } from "@/data/courses";
 import UpcomingBatch from "@/components/UpcomingBatch/UpcomingBatch";
 import ClassroomCulture from "@/components/ClassroomCulture/ClassroomCulture";
-import LearnerFeedback from "@/components/LearnerFeedback/LearnerFeedback";
 import OurTeam from "@/components/OurTeam/OurTeam";
 import FAQ from "@/components/FAQ/FAQ";
 import MissionVisionSection from "@/components/MissionVision/MissionVision";
@@ -127,14 +126,12 @@ export default function LevelsListingClient() {
         <>
           <UpcomingBatch />
           <ClassroomCulture />
-          <LearnerFeedback />
           <OurTeam />
         </>
       )}
       {mode === "online" && (
         <>
           <UpcomingBatch />
-          <LearnerFeedback />
           <OurTeam />
         </>
       )}

@@ -70,7 +70,7 @@ export default function Navbar() {
 
             {/* Mobile WhatsApp Button */}
             <a
-              href="https://wa.me/917075378877"
+              href="https://wa.me/919959751194"
               target="_blank"
               className={`${styles.whatsappBtn} ${styles.mobileWhatsapp}`}
               onClick={closeMenu}
@@ -82,7 +82,7 @@ export default function Navbar() {
 
           {/* Desktop WhatsApp Button */}
           <a
-            href="https://wa.me/917075378877"
+            href="https://wa.me/919959751194"
             target="_blank"
             className={`${styles.whatsappBtn} ${styles.desktopWhatsapp}`}
           >

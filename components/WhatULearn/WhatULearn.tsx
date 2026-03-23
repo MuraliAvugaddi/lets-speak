@@ -14,8 +14,8 @@ const mentorTypes = [
   {
     id: 'motivator',
     title: 'Offline mentor',
-    heading: 'Stay Inspired and Energized',
-    description: 'Learning a language requires consistent motivation. Our courses are designed to keep you engaged with interactive sessions, gamified learning, and regular achievements. Celebrate your milestones with our supportive community and trainers who encourage you to push beyond your limits.',
+    heading: 'Learn Together, Grow Together',
+    description: 'Provides personal guidance to new beginners and conducts structured practice sessions. Helps students build confidence and develop effective communication skills in a supportive learning environment.',
     image: './WUL-2.png',
   },
   {
@@ -28,23 +28,23 @@ const mentorTypes = [
   {
     id: 'companion',
     title: 'Offline manager',
-    heading: 'Learn Together, Grow Together',
-    description: 'Join a vibrant community of learners just like you. Practice speaking with peers, participate in group discussions, and build lasting connections. Our companion approach ensures you never feel alone on your learning journey. Share experiences, learn from others, and grow your network.',
-    image: './WUL-4.png',
+    heading: 'Guiding Progress at Every Stage',
+    description: 'Supervises daily operations and monitors student performance from Stage 2 to Stage 7. Ensures discipline, maintains consistency in training, and supports the smooth functioning of all learning activities.',
+    image: './WUL-4.jpeg',
   },
   {
     id: 'champion',
     title: 'Quality control',
-    heading: 'Achieve Excellence',
-    description: 'We are committed to making you a champion in English communication. With proven teaching methods, comprehensive support, and result-oriented strategies, we help you achieve fluency and confidence. Our success stories speak for themselves - join thousands who have transformed their careers and lives.',
+    heading: 'Maintaining Standards, Ensuring Success',
+    description: 'Manages student data, progress reports, and feedback systems. Focuses on maintaining high training standards and ensuring continuous improvement in the learning process.',
     image: './WUL-5.png',
   },
   {
     id: 'director',
     title: 'Managing Director',
-    heading: 'Learn Together, Grow Together',
-    description: 'Join a vibrant community of learners just like you. Practice speaking with peers, participate in group discussions, and build lasting connections. Our companion approach ensures you never feel alone on your learning journey. Share experiences, learn from others, and grow your network.',
-    image: './WUL-4.png',
+    heading: 'Vision, Leadership, and Growth',
+    description: 'Oversees the overall operations of the institute, including planning, quality systems, and development strategies. Works towards long-term student success, ensuring that every student grows not only in language skills but also in life skills.',
+    image: './WUL-6.png',
   },
 ];
 

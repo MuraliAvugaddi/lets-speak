@@ -14,7 +14,7 @@ export const english = {
       stages: [
         {
           faculty_name: "Santhosh",
-          faculty_img_url: "/ls/Santhosh-LS.jpeg",
+          faculty_img_url: "/ls/Santhosh-LS.png",
           id: "stage-1",
           title: "Stage 1 - Foundation",
           duration: "30 Days",
@@ -213,7 +213,7 @@ export const english = {
         },
         {
           faculty_name: "Raju",
-          faculty_img_url: "/ls/Raju-LS.jpeg",
+          faculty_img_url: "/ls/ls-raju.png",
           id: "stage-2",
           title: "Stage 2 - Accuracy",
           duration: "30 Days",
@@ -412,7 +412,7 @@ export const english = {
         },
         {
           faculty_name: "Sridhar",
-          faculty_img_url: "/ls/Sridhar-LS.jpeg",
+          faculty_img_url: "/ls/Sridhar-LS.png",
           id: "stage-3",
           title: "Stage 3 - Progression",
           duration: "30 Days",
@@ -612,7 +612,7 @@ export const english = {
         },
         {
           faculty_name: "Prathap",
-          faculty_img_url: "/ls/S4-LS.jpeg",
+          faculty_img_url: "/ls/S4-LS1.png",
           id: "stage-4",
           title: "Stage 4 - Correctness",
           duration: "30 Days",
@@ -1411,7 +1411,7 @@ export const english = {
       clubs: [
         {
           faculty_name: "Santhosh",
-          faculty_img_url: "/ls/Santhosh-LS.jpeg",
+          faculty_img_url: "/ls/Santhosh-LS.png",
           id: "club-1",
           title: "Club 1 - Foundation",
           duration: "30 Days",
@@ -1621,7 +1621,7 @@ export const english = {
         },
         {
           faculty_name: "Raju",
-          faculty_img_url: "/ls/Raju-LS.jpeg",
+          faculty_img_url: "/ls/ls-raju.png",
           id: "club-2",
           title: "Club 2 - Accuracy",
           duration: "30 Days",
@@ -1831,7 +1831,7 @@ export const english = {
         },
         {
           faculty_name: "Sridhar",
-          faculty_img_url: "/ls/Sridhar-LS.jpeg",
+          faculty_img_url: "/ls/Sridhar-LS.png",
           id: "club-3",
           title: "Club 3 - Excellence",
           duration: "30 Days",
@@ -2036,7 +2036,7 @@ export const english = {
         },
         {
           faculty_name: "Prathap",
-          faculty_img_url: "/ls/S4-LS.jpeg",
+          faculty_img_url: "/ls/S4-LS1.png",
           id: "club-4",
           title: "Club 4 - Correctness",
           duration: "30 Days",
@@ -2858,7 +2858,7 @@ export const english = {
       stages: [
         {
           faculty_name: "Santhosh",
-          faculty_img_url: "/ls/Santhosh-LS.jpeg",
+          faculty_img_url: "/ls/Santhosh-LS.png",
           id: "stage-1",
           title: "Stage 1 - Foundation",
           duration: "30 Days",
@@ -3057,7 +3057,7 @@ export const english = {
         },
         {
           faculty_name: "Raju",
-          faculty_img_url: "/ls/Raju-LS.jpeg",
+          faculty_img_url: "/ls/ls-raju.png",
           id: "stage-2",
           title: "Stage 2 - Accuracy",
           duration: "30 Days",
@@ -3256,7 +3256,7 @@ export const english = {
         },
         {
           faculty_name: "Sridhar",
-          faculty_img_url: "/ls/Sridhar-LS.jpeg",
+          faculty_img_url: "/ls/Sridhar-LS.png",
           id: "stage-3",
           title: "Stage 3 - Progression",
           duration: "30 Days",
@@ -3456,7 +3456,7 @@ export const english = {
         },
         {
           faculty_name: "Prathap",
-          faculty_img_url: "/ls/S4-LS.jpeg",
+          faculty_img_url: "/ls/S4-LS1.png",
           id: "stage-4",
           title: "Stage 4 - Correctness",
           duration: "30 Days",
@@ -4255,7 +4255,7 @@ export const english = {
       clubs: [
         {
           faculty_name: "Santhosh",
-          faculty_img_url: "/ls/Santhosh-LS.jpeg",
+          faculty_img_url: "/ls/Santhosh-LS.png",
           id: "club-1",
           title: "Club 1 - Foundation",
           duration: "30 Days",
@@ -4465,7 +4465,7 @@ export const english = {
         },
         {
           faculty_name: "Raju",
-          faculty_img_url: "/ls/Raju-LS.jpeg",
+          faculty_img_url: "/ls/ls-raju.png",
           id: "club-2",
           title: "Club 2 - Accuracy",
           duration: "30 Days",
@@ -4675,7 +4675,7 @@ export const english = {
         },
         {
           faculty_name: "Sridhar",
-          faculty_img_url: "/ls/Sridhar-LS.jpeg",
+          faculty_img_url: "/ls/Sridhar-LS.png",
           id: "club-3",
           title: "Club 3 - Excellence",
           duration: "30 Days",
@@ -4880,7 +4880,7 @@ export const english = {
         },
         {
           faculty_name: "Prathap",
-          faculty_img_url: "/ls/S4-LS.jpeg",
+          faculty_img_url: "/ls/S4-LS1.png",
           id: "club-4",
           title: "Club 4 - Correctness",
           duration: "30 Days",
@@ -5702,7 +5702,7 @@ export const english = {
       stages: [
         {
           faculty_name: "Santhosh",
-          faculty_img_url: "/ls/Santhosh-LS.jpeg",
+          faculty_img_url: "/ls/Santhosh-LS.png",
           id: "stage-1",
           title: "Stage 1 - Foundation",
           duration: "30 Days",
@@ -5901,7 +5901,7 @@ export const english = {
         },
         {
           faculty_name: "Raju",
-          faculty_img_url: "/ls/Raju-LS.jpeg",
+          faculty_img_url: "/ls/ls-raju.png",
           id: "stage-2",
           title: "Stage 2 - Accuracy",
           duration: "30 Days",
@@ -6100,7 +6100,7 @@ export const english = {
         },
         {
           faculty_name: "Sridhar",
-          faculty_img_url: "/ls/Sridhar-LS.jpeg",
+          faculty_img_url: "/ls/Sridhar-LS.png",
           id: "stage-3",
           title: "Stage 3 - Progression",
           duration: "30 Days",
@@ -6300,7 +6300,7 @@ export const english = {
         },
         {
           faculty_name: "Prathap",
-          faculty_img_url: "/ls/S4-LS.jpeg",
+          faculty_img_url: "/ls/S4-LS1.png",
           id: "stage-4",
           title: "Stage 4 - Correctness",
           duration: "30 Days",
@@ -7099,7 +7099,7 @@ export const english = {
       clubs: [
         {
           faculty_name: "Santhosh",
-          faculty_img_url: "/ls/Santhosh-LS.jpeg",
+          faculty_img_url: "/ls/Santhosh-LS.png",
           id: "club-1",
           title: "Club 1 - Foundation",
           duration: "30 Days",
@@ -7309,7 +7309,7 @@ export const english = {
         },
         {
           faculty_name: "Raju",
-          faculty_img_url: "/ls/Raju-LS.jpeg",
+          faculty_img_url: "/ls/ls-raju.png",
           id: "club-2",
           title: "Club 2 - Accuracy",
           duration: "30 Days",
@@ -7519,7 +7519,7 @@ export const english = {
         },
         {
           faculty_name: "Sridhar",
-          faculty_img_url: "/ls/Sridhar-LS.jpeg",
+          faculty_img_url: "/ls/Sridhar-LS.png",
           id: "club-3",
           title: "Club 3 - Excellence",
           duration: "30 Days",
@@ -7724,7 +7724,7 @@ export const english = {
         },
         {
           faculty_name: "Prathap",
-          faculty_img_url: "/ls/S4-LS.jpeg",
+          faculty_img_url: "/ls/S4-LS1.png",
           id: "club-4",
           title: "Club 4 - Correctness",
           duration: "30 Days",
