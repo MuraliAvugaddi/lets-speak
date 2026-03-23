@@ -2,7 +2,6 @@
 import styles from "./about.module.css";
 import OurTeam from "@/components/OurTeam/OurTeam";
 import MissionVision from "@/components/MissionVision/MissionVision";
-import LearnerFeedback from "@/components/LearnerFeedback/LearnerFeedback";
 import HeadCarousel from "@/components/HeadCarousel/HeadCarousel";
 import type { Metadata } from "next";
 
@@ -17,7 +16,6 @@ const about = () => {
     <div className={styles.aboutPage}>
       <HeadCarousel />
       <MissionVision />
-      <LearnerFeedback />
       <OurTeam />
     </div>
   );
